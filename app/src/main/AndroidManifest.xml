@@ -22,8 +22,8 @@
         </activity>
         <!--只能以完全限定组件名启动-->
         <activity
-            android:name=".ReceiveMessageActivity"
-            android:label="@string/title_activity_receive_message">
+            android:name=".TimerActivity"
+            android:label="@string/title_activity_timer">
         </activity>
     </application>
 

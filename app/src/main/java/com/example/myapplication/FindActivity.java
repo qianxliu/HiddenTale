@@ -58,4 +58,10 @@ public class FindActivity extends Activity {
         startActivity(chosenIntent);
 
     }
+
+    public void onClickTimer(View view){
+        Intent intent = new Intent(this, TimerActivity.class);
+
+        startActivity(intent);
+    }
 }

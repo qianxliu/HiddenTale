@@ -3,7 +3,11 @@
     <string name="welcome">欢迎来到城市地图app!在这里,你将领略西安的无限风采。</string>
     <string name="button">开启奇幻之旅</string>
     <string name="share">分享你的感想</string>
-    <string name="views"></string>
+    <string name="views">点击上方按钮会有好运哦!</string>
+    <string name="timer">秒表</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="reset">Reset</string>
     <string name="chooser">发送到…</string>
     <string-array name="pos">
         <item>西北大学</item>
@@ -12,5 +16,5 @@
         <item>电视塔</item>
     </string-array>
     <!--app_name和title_activity_receive_message都是label,活动运行时标签显示于屏幕上方,无label时使用应用名-->
-    <string name="title_activity_receive_message">ReceiveMessageActivity</string>
+    <string name="title_activity_timer">TimerActivity</string>
 </resources>
