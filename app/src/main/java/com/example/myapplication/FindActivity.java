@@ -64,4 +64,10 @@ public class FindActivity extends Activity {
 
         startActivity(intent);
     }
+
+    public void onClickMap(View view){
+        Intent intent = new Intent(this, MapInitActivity.class);
+
+        startActivity(intent);
+    }
 }

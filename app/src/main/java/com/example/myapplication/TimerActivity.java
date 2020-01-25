@@ -9,22 +9,56 @@ import android.widget.TextView;
 public class TimerActivity extends Activity {
 
     //public static final String EXTRA_MESSAGE = "message";
+
+    //rotate will destory activity and reset
     private int seconds = 0;
     private boolean running;
+    private boolean wasRunning;
 
     //helper to know it's a override true?
     //1、可以当注释用,方便阅读；
     //2、编译器可以给你验证@Override下面的方法名是否是你父类中所有的，如果没有则报错。
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_timer);
+        if (savedInstanceState != null) {
+            seconds = savedInstanceState.getInt("seconds");
+            running = savedInstanceState.getBoolean("running");
+            wasRunning = savedInstanceState.getBoolean("wasRunning");
+        }
         runTimer();
         //Intent intent = getIntent();
         //String messageText = intent.getStringExtra(EXTRA_MESSAGE);
         //TextView messageView = (TextView) findViewById(R.id.message);
         //messageView.setText(messageText);
     }
+
+    @Override
+    public void onSaveInstanceState(Bundle savedInstanceState) {
+        //savedInstanceState.putInt("name",value);
+        savedInstanceState.putInt("seconds",seconds);
+        savedInstanceState.putBoolean("running",running);
+        savedInstanceState.putBoolean("wasRunning",wasRunning);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        wasRunning = running;
+        running = false;
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (wasRunning) {
+            running = true;
+        }
+    }
+
 
     //Start the stopwatch running when the Start button is clicked.
     public void onClickStart(View view) {

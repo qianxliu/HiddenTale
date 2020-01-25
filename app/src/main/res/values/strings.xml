@@ -5,6 +5,7 @@
     <string name="share">分享你的感想</string>
     <string name="views">点击上方按钮会有好运哦!</string>
     <string name="timer">秒表</string>
+    <string name="map">地图</string>
     <string name="start">Start</string>
     <string name="stop">Stop</string>
     <string name="reset">Reset</string>
@@ -17,4 +18,5 @@
     </string-array>
     <!--app_name和title_activity_receive_message都是label,活动运行时标签显示于屏幕上方,无label时使用应用名-->
     <string name="title_activity_timer">TimerActivity</string>
+    <string name="title_activity_map_init">MapInitActivity</string>
 </resources>
