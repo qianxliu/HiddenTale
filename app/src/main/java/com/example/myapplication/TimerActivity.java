@@ -6,6 +6,8 @@ import android.os.Handler;
 import android.view.View;
 import android.widget.TextView;
 
+import java.util.Locale;
+
 public class TimerActivity extends Activity {
 
     //public static final String EXTRA_MESSAGE = "message";
@@ -77,8 +79,13 @@ public class TimerActivity extends Activity {
     }
 
     private void runTimer() {
-        //final is constant
-        final TextView timeView = (TextView)findViewById(R.id.time_view);
+        ////    一、使用Final修饰符修饰的类的特点：该类不能有子类；
+        ////    二、使用Final修饰符修饰的对象的特点：该对象的引用地址不能改变；
+        ////    三、使用Final修饰符修饰的方法的特点：该方法不能被重写；
+        ////    四、使用Final修饰符修饰的变量的特点：该变量会变成常亮，值不能被改变。
+
+        ////    Final修饰对象，该对象reference address couldn't be changed
+        final TextView timeView = findViewById(R.id.time_view);
         final Handler handler = new Handler();
         handler.post(new Runnable() {
             @Override
@@ -86,7 +93,9 @@ public class TimerActivity extends Activity {
                 int hours = seconds/3600;
                 int minutes = (seconds%3600)/60;
                 int secs = seconds%60;
-                String time = String.format("%d:%02d:%02d",hours,minutes,secs);
+
+                //Locale.US 本地化 United States
+                String time = String.format(Locale.US,"%d:%02d:%02d",hours,minutes,secs);
                 timeView.setText(time);
                 if(running) {
                     seconds++;
