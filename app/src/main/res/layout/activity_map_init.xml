@@ -5,11 +5,9 @@
     android:layout_height="match_parent"
     tools:context=".MapInitActivity">
 
-    <com.baidu.mapapi.map.MapView
-    android:id="@+id/bmapView"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:clickable="true"
-    android:focusable="true"/>
+    <com.amap.api.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
 </RelativeLayout>

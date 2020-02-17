@@ -4,9 +4,6 @@ android {
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
     defaultConfig {
-        ndk {
-            abiFilters 'armeabi'
-        }
         applicationId "com.example.myapplication"
         minSdkVersion 15
         targetSdkVersion 29
@@ -20,9 +17,11 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
 }
 
+
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation files('libs/AMap3DMap_7.2.1_AMapTrack_1.2.0_AMapLocation_4.8.0_20200115.jar')
 }

@@ -23,9 +23,9 @@ public class FindActivity extends Activity {
     //Call when the button gets clicked
     public void onClickFindPos(View view) {
         //Get a reference to the TextView
-        TextView views = (TextView) findViewById(R.id.views);
+        TextView views = findViewById(R.id.views);
         //Get a reference to the Spinner
-        Spinner choice = (Spinner) findViewById(R.id.choice);
+        Spinner choice = findViewById(R.id.choice);
         //Get the selected item in the Spinner
         String posName = String.valueOf(choice.getSelectedItem());
         //Get recommendations from the pos class
@@ -43,7 +43,7 @@ public class FindActivity extends Activity {
 
     //Call onSendMessage() when the button is clicked
     public void onSendMessage(View view){
-        EditText messageView = (EditText)findViewById(R.id.message);
+        EditText messageView = findViewById(R.id.message);
         //获得信息String
         String messageText = messageView.getText().toString();
         //意图由此活动启动另一活动
