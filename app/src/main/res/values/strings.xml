@@ -20,4 +20,5 @@
     <string name="title_activity_timer">TimerActivity</string>
     <string name="title_activity_map_init">MapInitActivity</string>
     <string name="filter_view_http_neteraxe">https://github.com/Neteraxe/HiddenTale/releases</string>
+    <string name="title_dynamicfeature">Module Title</string>
 </resources>
