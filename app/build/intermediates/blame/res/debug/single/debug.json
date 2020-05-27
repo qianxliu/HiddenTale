@@ -1,0 +1,370 @@
+[
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\layout_user_activity.xml.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\layout\\user_activity.xml"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_flash_light.png.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable-hdpi\\flash_light.png"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable_gesture_right.png.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable\\gesture_right.png"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable_splash.xml.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable\\splash.xml"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_edit_light_small.png.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable-hdpi\\edit_light_small.png"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\layout_demo_thread_pool_activity.xml.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\layout\\demo_thread_pool_activity.xml"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable_p9.png.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable\\p9.png"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_earth_light.png.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable-hdpi\\earth_light.png"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\layout_demo_list_fragment.xml.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\layout\\demo_list_fragment.xml"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_star_light.png.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable-hdpi\\star_light.png"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\layout_view_bottom_sheet_poi.xml.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\layout\\view_bottom_sheet_poi.xml"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_loading.png.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable-hdpi\\loading.png"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\layout_main_tab_activity.xml.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\layout\\main_tab_activity.xml"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable_p2.png.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable\\p2.png"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_search.png.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable-hdpi\\search.png"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable_p6.png.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable\\p6.png"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\layout_demo_main_activity.xml.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\layout\\demo_main_activity.xml"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_angel.png.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable-hdpi\\angel.png"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_call_light.png.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable-hdpi\\call_light.png"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_mail.png.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable-hdpi\\mail.png"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\layout_nav_header_main.xml.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\layout\\nav_header_main.xml"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_down2_small.png.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable-hdpi\\down2_small.png"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_navi.xml.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\layout\\activity_navi.xml"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\layout_demo_tab_fragment.xml.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\layout\\demo_tab_fragment.xml"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_earth.png.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable-hdpi\\earth.png"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\layout_demo_http_recycler_activity.xml.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\layout\\demo_http_recycler_activity.xml"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_grade_18dp.png.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable-hdpi\\ic_grade_18dp.png"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification.xml.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\layout\\notification.xml"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\layout_demo_broadcast_receiver_activity.xml.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\layout\\demo_broadcast_receiver_activity.xml"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\layout_demo_activity.xml.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\layout\\demo_activity.xml"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\layout_demo_sql_activity.xml.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\layout\\demo_sql_activity.xml"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable_texture3.png.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable\\texture3.png"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable_earth_selector.xml.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable\\earth_selector.xml"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_on.png.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable-hdpi\\on.png"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mail_selector.xml.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable\\mail_selector.xml"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable_p3.png.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable\\p3.png"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_send_light.png.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable-hdpi\\send_light.png"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_edit.png.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable-hdpi\\edit.png"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\layout_demo_complex_view.xml.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\layout\\demo_complex_view.xml"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable_edit_selector.xml.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable\\edit_selector.xml"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\layout_setting_fragment.xml.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\layout\\setting_fragment.xml"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_mail_add.png.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable-hdpi\\mail_add.png"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\layout_demo_view.xml.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\layout\\demo_view.xml"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable_p10.png.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable\\p10.png"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher.png.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable\\ic_launcher.png"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_setting.png.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable-hdpi\\setting.png"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\layout_demo_fragment_activity.xml.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\layout\\demo_fragment_activity.xml"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\layout_demo_time_refresher_activity.xml.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\layout\\demo_time_refresher_activity.xml"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\layout_demo_recycler_activity.xml.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\layout\\demo_recycler_activity.xml"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_delete.png.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable-hdpi\\delete.png"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\layout_scan_activity.xml.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\layout\\scan_activity.xml"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable_search_selector.xml.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable\\search_selector.xml"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_search_light.png.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable-hdpi\\search_light.png"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable_p7.png.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable\\p7.png"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_store_mall_directory_18dp.png.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable-hdpi\\ic_store_mall_directory_18dp.png"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable_texture2.png.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable\\texture2.png"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_menu.png.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable-hdpi\\menu.png"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\layout_demo_list_activity.xml.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\layout\\demo_list_activity.xml"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable_gesture_left.png.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable\\gesture_left.png"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\layout_demo_http_list_activity.xml.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\layout\\demo_http_list_activity.xml"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable_p4.png.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable\\p4.png"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_mail_light.png.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable-hdpi\\mail_light.png"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_info_18dp.png.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable-hdpi\\ic_info_18dp.png"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable_logo_pic99.png.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable\\logo_pic99.png"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\layout_map_fragment.xml.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\layout\\map_fragment.xml"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\layout_qrcode_activity.xml.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\layout\\qrcode_activity.xml"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable_p11.png.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable\\p11.png"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_back_black_light.png.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable-hdpi\\back_black_light.png"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_share_18dp.png.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable-hdpi\\ic_share_18dp.png"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable_p1.png.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable\\p1.png"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_qrcode.png.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable-hdpi\\qrcode.png"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_map_18dp.png.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable-hdpi\\ic_map_18dp.png"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_button.xml.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable\\notification_button.xml"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable_setting_selector.xml.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable\\setting_selector.xml"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_bg_btn_poi_selector_2.xml.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable-hdpi\\bg_btn_poi_selector_2.xml"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable_texture1.png.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable\\texture1.png"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable_p8.png.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable\\p8.png"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_edit_light.png.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable-hdpi\\edit_light.png"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\layout_demo_bottom_window.xml.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\layout\\demo_bottom_window.xml"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\layout_setting_activity.xml.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\layout\\setting_activity.xml"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\layout_pdf_view_activity.xml.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\layout\\pdf_view_activity.xml"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_delete_light.png.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable-hdpi\\delete_light.png"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_off.png.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable-hdpi\\off.png"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\xml_file_paths.xml.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\xml\\file_paths.xml"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable_p12.png.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable\\p12.png"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_setting_light.png.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable-hdpi\\setting_light.png"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\layout_about_activity.xml.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\layout\\about_activity.xml"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\layout_user_view.xml.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\layout\\user_view.xml"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\layout_demo_fragment.xml.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\layout\\demo_fragment.xml"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable_p5.png.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable\\p5.png"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\menu_activity_main_drawer.xml.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\menu\\activity_main_drawer.xml"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_menu_light.png.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable-hdpi\\menu_light.png"
+    }
+]

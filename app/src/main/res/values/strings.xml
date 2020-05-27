@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">长安宝藏</string>
+    <string name="ScanQR_Add">扫一扫二维码 添加联系人</string>
+    <string name="neteraxe">Neteraxe</string>
+    <string name="developer">开发者</string>
+    <string name="library">Library</string>
+    <string name="update_diary">更新日志</string>
+    <string name="_5">赏5星好评</string>
+    <string name="blog">博客</string>
+    <string name="contract_us">联系我们</string>
+    <string name="neteraxe_126_com">neteraxe@126.com</string>
+    <string name="QR_download">扫一扫二维码 下载长安宝藏</string>
+    <string name="HangZhou">西安</string>
+    <string name="Choose">筛选</string>
+    <string name="Blog">https://neterace.gitee.io</string>
+    <string name="httprecycler">HttpRecycler</string>
+    <string name="title">标题</string>
+    <string name="httplist">HttpList</string>
+    <string name="detail_data">详细资料</string>
+    <string name="webviewactivity">WebViewActivity</string>
+    <string name="nav_header_title">长安宝藏</string>
+    <string name="nav_header_subtitle">A real true will be told……</string>
+    <string name="explorer">探索</string>
+    <string name="find">发现</string>
+    <string name="setting">设置</string>
+    <string name="nav_skin">皮肤</string>
+    <string name="details">详情</string>
+    <string name="share">分享</string>
+    <string name="favorite">收藏</string>
+    <string name="nearby">附近</string>
+    <string name="scene">街景</string>
+</resources>

@@ -1,0 +1,38 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion '29.0.3'
+    defaultConfig {
+        minSdkVersion 22
+        targetSdkVersion 29
+        versionCode 1
+        versionName '0.1.0'
+    }
+    buildTypes {
+        release {
+            consumerProguardFiles 'proguard-android.txt'
+        }
+        debug {
+            //混淆
+            consumerProguardFiles 'proguard-android.txt'
+        }
+    }
+    useLibrary 'org.apache.http.legacy'
+    productFlavors {
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    //TODO 如果这些依赖和你项目中的依赖有冲突，则需要统一版本号，或者删除重复的依赖
+    api 'com.squareup.okhttp3:okhttp:4.7.0'
+    api 'com.alibaba:fastjson:1.2.68'
+    api 'com.github.bumptech.glide:glide:4.11.0'
+
+    api 'com.google.android.material:material:1.1.0'  //版本随意（必须）
+    api 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.4-4' //版本随意（非必须，引用可以解决无法预览问题）
+}

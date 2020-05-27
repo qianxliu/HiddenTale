@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/activity_page"
+    android:baselineAligned="false">
+
+    <RelativeLayout style="@style/topbar_bg" >
+
+        <ImageButton style="@style/topbar_return_img"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            style="@style/topbar_title"
+            android:layout_centerHorizontal="true"
+            android:text="@string/detail_data" />
+    </RelativeLayout>
+
+    <ScrollView
+            style="@style/match_match"
+            android:layout_weight="1"
+            tools:ignore="InefficientWeight,ScrollViewCount">
+        <LinearLayout style="@style/match_match" >
+            <WebView
+                android:id="@+id/wvWebView"
+                style="@style/match_match" />
+            <ProgressBar
+                android:id="@+id/pbWebView"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:progressDrawable="@drawable/progress_horizontal" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!--
+    <LinearLayout
+        android:id="@+id/llUserBottomMenuContainer"
+        style="@style/ll_vertical_match_wrap" >
+    </LinearLayout>
+    !-->
+</LinearLayout>

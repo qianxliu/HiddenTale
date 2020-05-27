@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.PdfViewActivity"
+    android:theme="@style/Theme.AppCompat.NoActionBar">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@drawable/texture3"
+        tools:ignore="ContentDescription" />
+    <com.github.barteksc.pdfviewer.PDFView
+        android:layout_marginTop="25dp"
+        android:id="@+id/pdfView"
+        android:background="@drawable/texture3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</merge>
