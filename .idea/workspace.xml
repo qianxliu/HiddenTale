@@ -18,8 +18,8 @@
   </component>
   <component name="AutomaticModuleUnloader">
     <loaded-modules>
-      <module name="Library" />
       <module name="app" />
+      <module name="Library" />
     </loaded-modules>
   </component>
   <component name="ChangeListManager">
@@ -33,7 +33,7 @@
   <component name="CompilerWorkspaceConfiguration">
     <option name="PARALLEL_COMPILATION" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="API_22" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="af968b78" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -74,7 +74,7 @@
     <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-05-08T10:23:22.569Z" />
     <property name="SelectDeploymentTargetsDialog.selectedDevices" value="af968b78" />
     <property name="android.sdk.path" value="G:/AndroidLocal/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable-hdpi" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/libs/AMap3DMap_7.4.0_AMapNavi_7.4.0_AMapSearch_7.3.0_AMapLocation_4.9.0_20200416.jar!/assets" />
     <property name="project.structure.last.edited" value="SDK Location" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.44162437" />
@@ -88,15 +88,17 @@
     <option name="LAST_EDITED_BUILD_TYPE" value="release" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\AndroidProject\Project\HiddenTale\app\libs\AMap3DMap_7.4.0_AMapNavi_7.4.0_AMapSearch_7.3.0_AMapLocation_4.9.0_20200416.jar!\assets" />
+      <recent name="G:\AndroidProject\Project\HiddenTale\app\src\main\res\drawable" />
+      <recent name="G:\AndroidProject\Project\HiddenTale\app\src\main\res\drawable-hdpi" />
+      <recent name="G:\AndroidProject\Project\HiddenTale\app\src\main\res\menu" />
       <recent name="G:\AndroidProject\Project\HiddenTale\app\src\main\res\layout" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="hidden.edu.fragment" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="G:\AndroidProject\Project\HiddenTale\app\src\main\res\drawable-hdpi" />
-      <recent name="G:\AndroidProject\Project\HiddenTale\app\src\main\res\menu" />
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="G:\AndroidProject\Project\HiddenTale\app\src\main\res\layout" />
     </key>
   </component>
@@ -299,6 +301,15 @@
     <module name="HiddenTale" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/hidden/edu/activity/PdfViewActivity.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="app">
         <watch expression="PdfViewActivity.INTENT_URL" language="JAVA" custom="hidden.edu.activity.PdfViewActivity" />

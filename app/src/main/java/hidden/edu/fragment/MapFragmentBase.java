@@ -16,6 +16,7 @@ import com.amap.api.location.AMapLocationClient;
 import com.amap.api.location.AMapLocationClientOption;
 import com.amap.api.location.AMapLocationListener;
 import com.amap.api.maps.AMap;
+import com.amap.api.maps.AMapException;
 import com.amap.api.maps.CameraUpdateFactory;
 import com.amap.api.maps.LocationSource;
 import com.amap.api.maps.MapView;
@@ -26,6 +27,7 @@ import com.amap.api.maps.model.MultiPointItem;
 import com.amap.api.maps.model.MultiPointOverlay;
 import com.amap.api.maps.model.MultiPointOverlayOptions;
 import com.amap.api.maps.model.MyLocationStyle;
+import com.amap.api.maps.offlinemap.OfflineMapManager;
 import com.amap.api.services.core.LatLonPoint;
 import com.amap.api.services.core.PoiItem;
 import com.amap.api.services.poisearch.PoiResult;
@@ -39,7 +41,7 @@ import java.util.List;
 
 import hidden.edu.R;
 
-public abstract class MapFragmentBase extends Fragment implements LocationSource, AMapLocationListener, PoiSearch.OnPoiSearchListener, CompoundButton.OnCheckedChangeListener {
+public abstract class MapFragmentBase extends Fragment implements LocationSource, AMapLocationListener, PoiSearch.OnPoiSearchListener, CompoundButton.OnCheckedChangeListener, OfflineMapManager.OfflineMapDownloadListener {
     MapView mapView;
     AMap aMap;
     private PoiSearch mPoiSearch;
@@ -81,7 +83,7 @@ public abstract class MapFragmentBase extends Fragment implements LocationSource
         //mapView.onCreate(savedInstanceState);
     }
 
-    protected void init() {
+    protected void init() throws AMapException {
         if (aMap == null) {
             aMap = mapView.getMap();
             // 设置定位监听
@@ -95,6 +97,9 @@ public abstract class MapFragmentBase extends Fragment implements LocationSource
                             .setEnable(true)
                             .setStyleId("0aa1d1eda90911d20d3551642fcd4980")//官网控制台-自定义样式 获取
             );
+            aMap.showIndoorMap(true);
+            aMap.showBuildings(true);
+            //aMap.showMapText();
 
             MyLocationStyle myLocationStyle = new MyLocationStyle();
             myLocationStyle.interval(2);
@@ -108,6 +113,11 @@ public abstract class MapFragmentBase extends Fragment implements LocationSource
 
             uiSettings.setCompassEnabled(true);
             //aMap.addOnMapLoadedListener((AMap.OnMapLoadedListener) this);
+            //构造OfflineMapManager对象
+            OfflineMapManager amapManager = new OfflineMapManager(activity.getApplicationContext(), this);
+
+            //按照cityname下载
+            amapManager.downloadByCityName("西安市");
         }
     }
 
@@ -293,5 +303,30 @@ public abstract class MapFragmentBase extends Fragment implements LocationSource
         } catch (NoSuchFieldException | IllegalAccessException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    @Override
+    public void onDownload(int i, int i1, String s) {
+
+    }
+
+    @Override
+    public void onCheckUpdate(boolean b, String s) {
+
+    }
+
+    @Override
+    public void onRemove(boolean b, String s, String s1) {
+
+    }
+
+    @Override
+    public void onPoiSearched(PoiResult poiResult, int i) {
+
+    }
+
+    @Override
+    public void onPoiItemSearched(PoiItem poiItem, int i) {
+
     }
 }

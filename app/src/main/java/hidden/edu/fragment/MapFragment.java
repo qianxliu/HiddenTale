@@ -1,9 +1,11 @@
 package hidden.edu.fragment;
 
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 
 import com.amap.api.maps.AMap;
+import com.amap.api.maps.AMapException;
 import com.amap.api.maps.AMapUtils;
 import com.amap.api.maps.model.BitmapDescriptorFactory;
 import com.amap.api.maps.model.CameraPosition;
@@ -148,13 +150,15 @@ public class MapFragment extends MapFragmentBase implements AlertDialog.OnDialog
     }
 
     @Override
-    protected void init() {
+    protected void init() throws AMapException {
         super.init();
         aMap.setOnMapClickListener(v ->
                 {
                     MarkerOptions markerOptions = new MarkerOptions();
                     markerOptions.position(new LatLng(v.latitude, v.longitude)).setFlat(false).zIndex(-2);
                     markerOptions.draggable(true);
+                    markerOptions.icon(BitmapDescriptorFactory.fromBitmap(BitmapFactory
+                            .decodeResource(getResources(),R.drawable.icon_end)));
                     aMap.addMarker(markerOptions);
                 }
         );
@@ -231,7 +235,8 @@ public class MapFragment extends MapFragmentBase implements AlertDialog.OnDialog
     public void onDialogButtonClick(int requestCode, boolean isPositive) {
         if (isPositive) {
             NaviActivity.mEndLatlng = naviLatLng;
-            AmapNaviPage.getInstance().showRouteActivity(activity.getApplicationContext(), new AmapNaviParams(new Poi("", new LatLng(aMap.getMyLocation().getLatitude(), aMap.getMyLocation().getLongitude()), ""), null, new Poi("目的地", new LatLng(naviLatLng.getLatitude(), naviLatLng.getLongitude()), ""), AmapNaviType.DRIVER), naviInfoCallback);
+            AmapNaviParams naviParams = new AmapNaviParams(new Poi("", new LatLng(aMap.getMyLocation().getLatitude(), aMap.getMyLocation().getLongitude()), ""), null, new Poi("目的地", new LatLng(naviLatLng.getLatitude(), naviLatLng.getLongitude()), ""), AmapNaviType.DRIVER);
+            AmapNaviPage.getInstance().showRouteActivity(activity.getApplicationContext(), naviParams, naviInfoCallback);
         }
     }
 

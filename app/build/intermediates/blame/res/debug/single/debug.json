@@ -60,6 +60,10 @@
         "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable-hdpi\\search.png"
     },
     {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable_icon_end.png.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable\\icon_end.png"
+    },
+    {
         "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable_p6.png.flat",
         "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable\\p6.png"
     },

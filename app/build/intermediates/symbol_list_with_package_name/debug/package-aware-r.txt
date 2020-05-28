@@ -1645,6 +1645,7 @@ drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_share_18dp
 drawable ic_store_mall_directory_18dp
+drawable icon_end
 drawable icon_gray_bg
 drawable icon_white_bg
 drawable input_bg
