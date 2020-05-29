@@ -3,9 +3,6 @@
   <component name="AnalysisUIOptions">
     <option name="SPLITTER_PROPORTION" value="0.81646425" />
   </component>
-  <component name="AndroidGradleBuildConfiguration">
-    <option name="COMMAND_LINE_OPTIONS" value="--offline" />
-  </component>
   <component name="AndroidLayouts">
     <shared>
       <config />
@@ -24,7 +21,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="01935e24-191d-4153-927f-5a4ed7589af5" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,17 +65,23 @@
     </option>
   </component>
   <component name="ProjectId" id="1bL4hfWKiybTfP9x5NxdRSC3KJR" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="af968b78" />
     <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-05-08T10:23:22.569Z" />
     <property name="SelectDeploymentTargetsDialog.selectedDevices" value="af968b78" />
     <property name="android.sdk.path" value="G:/AndroidLocal/Sdk" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/app/libs/AMap3DMap_7.4.0_AMapNavi_7.4.0_AMapSearch_7.3.0_AMapLocation_4.9.0_20200416.jar!/assets" />
-    <property name="project.structure.last.edited" value="SDK Location" />
+    <property name="project.structure.last.edited" value="Suggestions" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.44162437" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
+    <property name="settings.editor.selected.configurable" value="gradle.compiler" />
+    <property name="show.do.not.copy.http.proxy.settings.to.gradle" value="true" />
   </component>
   <component name="PsdUISettings">
     <option name="MODULE_TAB" value="Properties" />
@@ -101,18 +103,6 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="G:\AndroidProject\Project\HiddenTale\app\src\main\res\layout" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Android App.app">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
@@ -300,16 +290,53 @@
   <component name="UnloadedModulesList">
     <module name="HiddenTale" />
   </component>
+  <component name="WindowStateProjectService">
+    <state x="200" y="130" key="#PSD" timestamp="1590768079079">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="200" y="130" key="#PSD/0.30.1366.738@0.30.1366.738" timestamp="1590768079079" />
+    <state width="555" height="466" key="DebuggerActiveHint" timestamp="1590765454554">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state width="555" height="466" key="DebuggerActiveHint/0.30.1366.738@0.30.1366.738" timestamp="1590765454554" />
+    <state width="1129" height="206" key="GridCell.Tab.0.bottom" timestamp="1590766732580">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state width="1129" height="206" key="GridCell.Tab.0.bottom/0.30.1366.738@0.30.1366.738" timestamp="1590766732580" />
+    <state width="1129" height="206" key="GridCell.Tab.0.center" timestamp="1590766732580">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state width="1129" height="206" key="GridCell.Tab.0.center/0.30.1366.738@0.30.1366.738" timestamp="1590766732580" />
+    <state width="1129" height="206" key="GridCell.Tab.0.left" timestamp="1590766732580">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state width="1129" height="206" key="GridCell.Tab.0.left/0.30.1366.738@0.30.1366.738" timestamp="1590766732580" />
+    <state width="1129" height="206" key="GridCell.Tab.0.right" timestamp="1590766732580">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state width="1129" height="206" key="GridCell.Tab.0.right/0.30.1366.738@0.30.1366.738" timestamp="1590766732580" />
+    <state width="1129" height="206" key="GridCell.Tab.1.bottom" timestamp="1590766732581">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state width="1129" height="206" key="GridCell.Tab.1.bottom/0.30.1366.738@0.30.1366.738" timestamp="1590766732581" />
+    <state width="1129" height="206" key="GridCell.Tab.1.center" timestamp="1590766732581">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state width="1129" height="206" key="GridCell.Tab.1.center/0.30.1366.738@0.30.1366.738" timestamp="1590766732581" />
+    <state width="1129" height="206" key="GridCell.Tab.1.left" timestamp="1590766732581">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state width="1129" height="206" key="GridCell.Tab.1.left/0.30.1366.738@0.30.1366.738" timestamp="1590766732581" />
+    <state width="1129" height="206" key="GridCell.Tab.1.right" timestamp="1590766732581">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state width="1129" height="206" key="GridCell.Tab.1.right/0.30.1366.738@0.30.1366.738" timestamp="1590766732581" />
+    <state x="184" y="41" key="SettingsEditor" timestamp="1590762801280">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="184" y="41" key="SettingsEditor/0.30.1366.738@0.30.1366.738" timestamp="1590762801280" />
+  </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/hidden/edu/activity/PdfViewActivity.java</url>
-          <line>66</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="app">
         <watch expression="PdfViewActivity.INTENT_URL" language="JAVA" custom="hidden.edu.activity.PdfViewActivity" />

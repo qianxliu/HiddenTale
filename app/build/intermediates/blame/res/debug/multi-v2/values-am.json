@@ -4,7 +4,7 @@
             "outputFile": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-am\\values-am.xml",
             "map": [
                 {
-                    "source": "G:\\AndroidLocal\\.gradle\\caches\\transforms-2\\files-2.1\\0274f0faee0dc3949cb1c6fa9ee7fef3\\appcompat-1.1.0\\res\\values-am\\values-am.xml",
+                    "source": "G:\\AndroidLocal\\.gradle\\caches\\transforms-2\\files-2.1\\11dfd6d06d9be0d818168d855d44d649\\appcompat-1.1.0\\res\\values-am\\values-am.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "G:\\AndroidLocal\\.gradle\\caches\\transforms-2\\files-2.1\\0a9d1ce0f16476ce283cf34e1cf9cb40\\core-1.1.0\\res\\values-am\\values-am.xml",
+                    "source": "G:\\AndroidLocal\\.gradle\\caches\\transforms-2\\files-2.1\\788dbcd7dcbb0d36dfe5349648c923e5\\core-1.1.0\\res\\values-am\\values-am.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

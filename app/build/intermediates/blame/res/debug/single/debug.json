@@ -36,12 +36,12 @@
         "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\layout\\demo_list_fragment.xml"
     },
     {
-        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_star_light.png.flat",
-        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable-hdpi\\star_light.png"
-    },
-    {
         "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\layout_view_bottom_sheet_poi.xml.flat",
         "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\layout\\view_bottom_sheet_poi.xml"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_star_light.png.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable-hdpi\\star_light.png"
     },
     {
         "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_loading.png.flat",
@@ -308,12 +308,12 @@
         "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable\\texture1.png"
     },
     {
-        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable_p8.png.flat",
-        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable\\p8.png"
-    },
-    {
         "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_edit_light.png.flat",
         "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable-hdpi\\edit_light.png"
+    },
+    {
+        "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable_p8.png.flat",
+        "source": "G:\\AndroidProject\\Project\\HiddenTale\\app\\src\\main\\res\\drawable\\p8.png"
     },
     {
         "merged": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\layout_demo_bottom_window.xml.flat",

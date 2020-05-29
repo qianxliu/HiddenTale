@@ -1,1 +1,6 @@
-[]
+{
+  "version": 1,
+  "applicationId": "hidden.edu",
+  "variantType": "BASE_APK",
+  "elements": []
+}

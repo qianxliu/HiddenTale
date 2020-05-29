@@ -13,9 +13,13 @@ import com.github.barteksc.pdfviewer.util.FitPolicy;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.net.URLConnection;
+import java.util.Objects;
 
+import hidden.edu.BuildConfig;
 import hidden.edu.R;
 import zuo.biao.library.base.BaseActivity;
 
@@ -38,11 +42,9 @@ public class PdfViewActivity extends BaseActivity {
         name = intent.getStringExtra(INTENT_TITLE);
 
         initData();
-        try {
-            initEvent();
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-        }
+
+        initEvent();
+
         initView();
     }
 
@@ -55,33 +57,79 @@ public class PdfViewActivity extends BaseActivity {
     public void initData() {
     }
 
+
     @SuppressLint("StaticFieldLeak")
     @Override
-    public void initEvent() throws MalformedURLException {
+    public void initEvent() {
         PDFView pdfView = findViewById(R.id.pdfView);
         //File pdfFile = new File(getCacheDir() + "/testthreepdf/" + "testing.pdf");
         //Uri path = Uri.fromFile(pdfFile);
         //pdfView.fromUri(path).load();
         pdfView.setVisibility(View.VISIBLE);
 
-        URL url = new URL(name);
-        final InputStream[] input = {null};
+        InputStream in = new InputStream() {
+            @Override
+            public int read() {
+                return 0;
+            }
+        };
+        int response;
+        URL url = null;
+        URLConnection conn = null;
+        try {
+            url = new URL(name);
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        }
+        try {
+            assert url != null;
+            conn = url.openConnection();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        if (!(conn instanceof HttpURLConnection))
+            try {
+                throw new IOException("Not an HTTP connection");
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
 
+
+        try {
+            if (BuildConfig.DEBUG && !(conn instanceof HttpURLConnection)) {
+                throw new AssertionError("Assertion failed");
+            }
+            HttpURLConnection httpConn = null;
+            if (conn instanceof HttpURLConnection) {
+                httpConn = (HttpURLConnection) conn;
+            }
+            Objects.requireNonNull(httpConn).setAllowUserInteraction(false);
+            httpConn.setInstanceFollowRedirects(true);
+            httpConn.setRequestMethod("GET");
+            httpConn.connect();
+
+            response = httpConn.getResponseCode();
+            if (response == HttpURLConnection.HTTP_OK) {
+                in = httpConn.getInputStream();
+            }
+        } catch (Exception ex) {
+            try {
+                throw new IOException("Error connecting");
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        InputStream finalIn = in;
         new AsyncTask<Void, Void, Void>() {
             @Override
             protected Void doInBackground(Void... voids) {
-                try {
-                    input[0] = url.openStream();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
                 return null;
             }
 
             @Override
             protected void onPostExecute(Void aVoid) {
                 super.onPostExecute(aVoid);
-                pdfView.fromStream(input[0])
+                pdfView.fromStream(finalIn)
                         .pageFitPolicy(FitPolicy.WIDTH)
                         .enableSwipe(true)
                         //pdf文档翻页是否是水平翻页，默认是左右滑动翻页

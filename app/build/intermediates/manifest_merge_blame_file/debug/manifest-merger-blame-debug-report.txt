@@ -67,17 +67,17 @@
 29-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:24:19-67
 30
 31    <uses-permission android:name="android.permission.CAMERA" />
-31-->[com.king.zxing:zxing-lite:1.1.9-androidx] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\26b39c435e1ff7714327ddd9108acbba\jetified-zxing-lite-1.1.9-androidx\AndroidManifest.xml:11:5-65
-31-->[com.king.zxing:zxing-lite:1.1.9-androidx] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\26b39c435e1ff7714327ddd9108acbba\jetified-zxing-lite-1.1.9-androidx\AndroidManifest.xml:11:22-62
+31-->[com.king.zxing:zxing-lite:1.1.9-androidx] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\ceb39037199cf349c80fb8c9828321d9\jetified-zxing-lite-1.1.9-androidx\AndroidManifest.xml:11:5-65
+31-->[com.king.zxing:zxing-lite:1.1.9-androidx] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\ceb39037199cf349c80fb8c9828321d9\jetified-zxing-lite-1.1.9-androidx\AndroidManifest.xml:11:22-62
 32    <uses-permission android:name="android.permission.VIBRATE" />
-32-->[com.king.zxing:zxing-lite:1.1.9-androidx] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\26b39c435e1ff7714327ddd9108acbba\jetified-zxing-lite-1.1.9-androidx\AndroidManifest.xml:13:5-66
-32-->[com.king.zxing:zxing-lite:1.1.9-androidx] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\26b39c435e1ff7714327ddd9108acbba\jetified-zxing-lite-1.1.9-androidx\AndroidManifest.xml:13:22-63
+32-->[com.king.zxing:zxing-lite:1.1.9-androidx] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\ceb39037199cf349c80fb8c9828321d9\jetified-zxing-lite-1.1.9-androidx\AndroidManifest.xml:13:5-66
+32-->[com.king.zxing:zxing-lite:1.1.9-androidx] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\ceb39037199cf349c80fb8c9828321d9\jetified-zxing-lite-1.1.9-androidx\AndroidManifest.xml:13:22-63
 33    <uses-permission android:name="android.permission.FLASHLIGHT" />
-33-->[com.king.zxing:zxing-lite:1.1.9-androidx] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\26b39c435e1ff7714327ddd9108acbba\jetified-zxing-lite-1.1.9-androidx\AndroidManifest.xml:14:5-69
-33-->[com.king.zxing:zxing-lite:1.1.9-androidx] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\26b39c435e1ff7714327ddd9108acbba\jetified-zxing-lite-1.1.9-androidx\AndroidManifest.xml:14:22-66
+33-->[com.king.zxing:zxing-lite:1.1.9-androidx] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\ceb39037199cf349c80fb8c9828321d9\jetified-zxing-lite-1.1.9-androidx\AndroidManifest.xml:14:5-69
+33-->[com.king.zxing:zxing-lite:1.1.9-androidx] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\ceb39037199cf349c80fb8c9828321d9\jetified-zxing-lite-1.1.9-androidx\AndroidManifest.xml:14:22-66
 34    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-34-->[com.king.zxing:zxing-lite:1.1.9-androidx] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\26b39c435e1ff7714327ddd9108acbba\jetified-zxing-lite-1.1.9-androidx\AndroidManifest.xml:15:5-81
-34-->[com.king.zxing:zxing-lite:1.1.9-androidx] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\26b39c435e1ff7714327ddd9108acbba\jetified-zxing-lite-1.1.9-androidx\AndroidManifest.xml:15:22-78
+34-->[com.king.zxing:zxing-lite:1.1.9-androidx] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\ceb39037199cf349c80fb8c9828321d9\jetified-zxing-lite-1.1.9-androidx\AndroidManifest.xml:15:5-81
+34-->[com.king.zxing:zxing-lite:1.1.9-androidx] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\ceb39037199cf349c80fb8c9828321d9\jetified-zxing-lite-1.1.9-androidx\AndroidManifest.xml:15:22-78
 35    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 36    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 36-->[:Library] G:\AndroidProject\Project\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:5-79
@@ -96,7 +96,7 @@
 42        android:allowBackup="true"
 42-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:28:9-35
 43        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-43-->[androidx.core:core:1.1.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\0a9d1ce0f16476ce283cf34e1cf9cb40\core-1.1.0\AndroidManifest.xml:24:18-86
+43-->[androidx.core:core:1.1.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\788dbcd7dcbb0d36dfe5349648c923e5\core-1.1.0\AndroidManifest.xml:24:18-86
 44        android:debuggable="true"
 45        android:fullBackupContent="true"
 45-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:29:9-41
@@ -466,15 +466,15 @@
 234            android:theme="@android:style/Theme.NoTitleBar" />
 234-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:233:13-60
 235        <activity
-235-->[pub.devrel:easypermissions:3.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\0263a272dccc38be2ee873495628c7f5\jetified-easypermissions-3.0.0\AndroidManifest.xml:12:9-16:66
+235-->[pub.devrel:easypermissions:3.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\9cfa3dd76c2e930e771a1ee5b42d3581\jetified-easypermissions-3.0.0\AndroidManifest.xml:12:9-16:66
 236            android:name="pub.devrel.easypermissions.AppSettingsDialogHolderActivity"
-236-->[pub.devrel:easypermissions:3.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\0263a272dccc38be2ee873495628c7f5\jetified-easypermissions-3.0.0\AndroidManifest.xml:13:13-86
+236-->[pub.devrel:easypermissions:3.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\9cfa3dd76c2e930e771a1ee5b42d3581\jetified-easypermissions-3.0.0\AndroidManifest.xml:13:13-86
 237            android:exported="false"
-237-->[pub.devrel:easypermissions:3.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\0263a272dccc38be2ee873495628c7f5\jetified-easypermissions-3.0.0\AndroidManifest.xml:14:13-37
+237-->[pub.devrel:easypermissions:3.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\9cfa3dd76c2e930e771a1ee5b42d3581\jetified-easypermissions-3.0.0\AndroidManifest.xml:14:13-37
 238            android:label=""
-238-->[pub.devrel:easypermissions:3.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\0263a272dccc38be2ee873495628c7f5\jetified-easypermissions-3.0.0\AndroidManifest.xml:15:13-29
+238-->[pub.devrel:easypermissions:3.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\9cfa3dd76c2e930e771a1ee5b42d3581\jetified-easypermissions-3.0.0\AndroidManifest.xml:15:13-29
 239            android:theme="@style/EasyPermissions.Transparent" /> <!-- 更好的适配全面屏 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
-239-->[pub.devrel:easypermissions:3.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\0263a272dccc38be2ee873495628c7f5\jetified-easypermissions-3.0.0\AndroidManifest.xml:16:13-63
+239-->[pub.devrel:easypermissions:3.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\9cfa3dd76c2e930e771a1ee5b42d3581\jetified-easypermissions-3.0.0\AndroidManifest.xml:16:13-63
 240        <meta-data
 240-->[:Library] G:\AndroidProject\Project\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:30:9-32:35
 241            android:name="android.max_aspect"

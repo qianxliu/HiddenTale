@@ -4,7 +4,17 @@
             "outputFile": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
             "map": [
                 {
-                    "source": "G:\\AndroidLocal\\.gradle\\caches\\transforms-2\\files-2.1\\39214aaf066dcdf08d3b1643f7e71032\\media-1.0.0\\res\\values-v24\\values-v24.xml",
+                    "source": "G:\\AndroidLocal\\.gradle\\caches\\transforms-2\\files-2.1\\11dfd6d06d9be0d818168d855d44d649\\appcompat-1.1.0\\res\\values-v24\\values-v24.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,212",
+                        "endColumns": "156,134",
+                        "endOffsets": "207,342"
+                    }
+                },
+                {
+                    "source": "G:\\AndroidLocal\\.gradle\\caches\\transforms-2\\files-2.1\\ea41b0db64eda83237acc1ff6345782e\\media-1.0.0\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -18,16 +28,6 @@
                         "startOffsets": "347,413,474,540",
                         "endColumns": "65,60,65,66",
                         "endOffsets": "408,469,535,602"
-                    }
-                },
-                {
-                    "source": "G:\\AndroidLocal\\.gradle\\caches\\transforms-2\\files-2.1\\0274f0faee0dc3949cb1c6fa9ee7fef3\\appcompat-1.1.0\\res\\values-v24\\values-v24.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,212",
-                        "endColumns": "156,134",
-                        "endOffsets": "207,342"
                     }
                 }
             ]

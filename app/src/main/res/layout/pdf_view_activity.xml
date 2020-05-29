@@ -4,7 +4,8 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".activity.PdfViewActivity"
-    android:theme="@style/Theme.AppCompat.NoActionBar">
+    android:theme="@style/Theme.AppCompat.NoActionBar"
+    android:largeHeap="true">
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="25dp"
