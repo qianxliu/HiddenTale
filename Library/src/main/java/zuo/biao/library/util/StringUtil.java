@@ -14,12 +14,15 @@ limitations under the License.*/
 
 package zuo.biao.library.util;
 
+import android.annotation.SuppressLint;
 import android.util.Log;
 import android.widget.TextView;
 
 import java.io.File;
 import java.math.BigDecimal;
 import java.text.DecimalFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -733,5 +736,9 @@ public class StringUtil {
 
 
 	//校正（自动补全等）字符串>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
+	public String getRandom() {
+		Date date = new Date(System.currentTimeMillis());
+		@SuppressLint("SimpleDateFormat") SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyyMMddHHmmss");
+		return simpleDateFormat.format(date);
+	}
 }

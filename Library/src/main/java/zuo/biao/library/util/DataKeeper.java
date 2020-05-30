@@ -204,7 +204,6 @@ public class DataKeeper {
     public static String getVideoFileCachePath(String fileName) {
         return getFileCachePath(TYPE_FILE_VIDEO, fileName, "mp4");
     }
-
     /*
      * mp3
      *

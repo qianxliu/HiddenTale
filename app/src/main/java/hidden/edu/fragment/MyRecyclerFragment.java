@@ -4,7 +4,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
+    https://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
@@ -41,7 +41,7 @@ import static hidden.edu.util.TestUtil.getUserList;
 /*用户列表界面fragment
  * @author Lemon
  * @use new UserListFragment(),详细使用见.DemoFragmentActivity(initData方法内)
- * @must 查看 .HttpManager 中的@must和@warn
+ * @must 查看 .httpsManager 中的@must和@warn
  *       查看 .SettingUtil 中的@must和@warn
  */
 public class MyRecyclerFragment extends BaseHttpRecyclerFragment<User, UserView, UserAdapter> implements CacheCallBack<User> {
@@ -66,9 +66,8 @@ public class MyRecyclerFragment extends BaseHttpRecyclerFragment<User, UserView,
     //与Activity通信>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
-    //private static final int RANGE_ALL = HttpRequest.USER_LIST_RANGE_ALL;
+    //private static final int RANGE_ALL = httpRequest.USER_LIST_RANGE_ALL;
     public static final int RANGE_RECOMMEND = HttpRequest.USER_LIST_RANGE_RECOMMEND;
-
     private int range = RANGE_RECOMMEND;
 
     @Override
@@ -134,7 +133,7 @@ public class MyRecyclerFragment extends BaseHttpRecyclerFragment<User, UserView,
 
     @Override
     public void getListAsync(final int page) {
-        //实际使用时用这个，需要配置服务器地址		HttpRequest.getUserList(range, page, -page, this);
+        //实际使用时用这个，需要配置服务器地址		httpsRequest.getUserList(range, page, -page, this);
 
         //仅测试用<<<<<<<<<<<
         //page显示次数
@@ -182,21 +181,21 @@ public class MyRecyclerFragment extends BaseHttpRecyclerFragment<User, UserView,
     }
 
     static String[] URLS = {
-            "http://neteraxe.coding.net/p/coding-demo/d/coding-demo/git/raw/master/1.pdf",
-            "http://neteraxe.coding.net/p/coding-demo/d/coding-demo/git/raw/master/2.pdf",
-            "http://neteraxe.coding.net/p/coding-demo/d/coding-demo/git/raw/master/3.pdf",
-            "http://neteraxe.coding.net/p/coding-demo/d/coding-demo/git/raw/master/4.pdf",
-            "http://neteraxe.coding.net/p/coding-demo/d/coding-demo/git/raw/master/5.pdf",
-            "http://neteraxe.coding.net/p/coding-demo/d/coding-demo/git/raw/master/6.pdf",
-            "http://neteraxe.coding.net/p/coding-demo/d/coding-demo/git/raw/master/7.pdf",
-            "http://neteraxe.coding.net/p/coding-demo/d/coding-demo/git/raw/master/8.pdf",
-            "http://neteraxe.coding.net/p/coding-demo/d/coding-demo/git/raw/master/9.pdf",
-            "http://neteraxe.coding.net/p/coding-demo/d/coding-demo/git/raw/master/10.pdf",
-            "http://neteraxe.coding.net/p/coding-demo/d/coding-demo/git/raw/master/11.pdf",
-            "http://neteraxe.coding.net/p/coding-demo/d/coding-demo/git/raw/master/12.pdf",
-            "http://neteraxe.coding.net/p/coding-demo/d/coding-demo/git/raw/master/13.pdf",
-            "http://neteraxe.coding.net/p/coding-demo/d/coding-demo/git/raw/master/14.pdf",
-            "http://neteraxe.coding.net/p/coding-demo/d/coding-demo/git/raw/master/15.pdf",
+            "https://git.nwu.edu.cn/2018104171/pdf/raw/master/1.pdf",
+            "https://git.nwu.edu.cn/2018104171/pdf/raw/master/2.pdf",
+            "https://git.nwu.edu.cn/2018104171/pdf/raw/master/3.pdf",
+            "https://git.nwu.edu.cn/2018104171/pdf/raw/master/4.pdf",
+            "https://git.nwu.edu.cn/2018104171/pdf/raw/master/5.pdf",
+            "https://git.nwu.edu.cn/2018104171/pdf/raw/master/6.pdf",
+            "https://git.nwu.edu.cn/2018104171/pdf/raw/master/7.pdf",
+            "https://git.nwu.edu.cn/2018104171/pdf/raw/master/8.pdf",
+            "https://git.nwu.edu.cn/2018104171/pdf/raw/master/9.pdf",
+            "https://git.nwu.edu.cn/2018104171/pdf/raw/master/10.pdf",
+            "https://git.nwu.edu.cn/2018104171/pdf/raw/master/11.pdf",
+            "https://git.nwu.edu.cn/2018104171/pdf/raw/master/12.pdf",
+            "https://git.nwu.edu.cn/2018104171/pdf/raw/master/13.pdf",
+            "https://git.nwu.edu.cn/2018104171/pdf/raw/master/14.pdf",
+            "https://git.nwu.edu.cn/2018104171/pdf/raw/master/15.pdf",
             "",
             "",
     };
@@ -205,7 +204,7 @@ public class MyRecyclerFragment extends BaseHttpRecyclerFragment<User, UserView,
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         if (position % URLS.length > -1) {
-            toActivity(PdfViewActivity.createIntent(context, URLS[position % URLS.length]));
+            toActivity(PdfViewActivity.createIntent(context, URLS[position % URLS.length], String.valueOf(position + 1)));
             if (position % URLS.length > 14)
                 showShortToast("“" + getUserList().get(position % URLS.length).getName() + "”期待你的补充!");
         }

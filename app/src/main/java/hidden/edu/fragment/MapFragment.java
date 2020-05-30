@@ -158,7 +158,7 @@ public class MapFragment extends MapFragmentBase implements AlertDialog.OnDialog
                     markerOptions.position(new LatLng(v.latitude, v.longitude)).setFlat(false).zIndex(-2);
                     markerOptions.draggable(true);
                     markerOptions.icon(BitmapDescriptorFactory.fromBitmap(BitmapFactory
-                            .decodeResource(getResources(),R.drawable.icon_end)));
+                            .decodeResource(getResources(), R.drawable.icon_end)));
                     aMap.addMarker(markerOptions);
                 }
         );
@@ -214,10 +214,10 @@ public class MapFragment extends MapFragmentBase implements AlertDialog.OnDialog
         };
         AMap.OnInfoWindowClickListener listener = marker -> {
             if (marker.getZIndex() < latLng.length - 1) {
-                toActivity(activity, PdfViewActivity.createIntent(activity, URLS[(int) marker.getZIndex()]));
+                toActivity(activity, PdfViewActivity.createIntent(activity, URLS[(int) marker.getZIndex()], String.valueOf((int) marker.getZIndex() + 1)));
                 caculate();
             } else if (marker.getZIndex() < latLng.length + 1) {
-                toActivity(activity, PdfViewActivity.createIntent(activity, URLS[(int) marker.getZIndex()]));
+                toActivity(activity, PdfViewActivity.createIntent(activity, URLS[(int) marker.getZIndex()], String.valueOf((int) marker.getZIndex() + 1)));
                 showShortToast(activity, marker.getTitle() + "期待你的补充!");
                 caculate();
             }

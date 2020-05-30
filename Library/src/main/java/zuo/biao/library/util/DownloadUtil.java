@@ -26,7 +26,8 @@ public class DownloadUtil {
         final String fileName = name + StringUtil.getTrimedString(suffix);
         final File file = new File(DataKeeper.fileRootPath + fileName);
         try {
-            httpUrl = StringUtil.getCorrectUrl(httpUrl);
+            //httpUrl = StringUtil.getCorrectUrl(httpUrl);
+
             if (httpUrl.endsWith("/")) {
                 httpUrl = httpUrl.substring(0, httpUrl.length() - 1);
             }
@@ -88,6 +89,4 @@ public class DownloadUtil {
         intent.setDataAndType(Uri.fromFile(file), "application/vnd.android.package-archive");
         context.startActivity(intent);
     }
-
-
 }
