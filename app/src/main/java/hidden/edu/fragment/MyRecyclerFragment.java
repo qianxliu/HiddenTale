@@ -34,6 +34,7 @@ import hidden.edu.view.UserView;
 import zuo.biao.library.base.BaseHttpRecyclerFragment;
 import zuo.biao.library.interfaces.AdapterCallBack;
 import zuo.biao.library.interfaces.CacheCallBack;
+import zuo.biao.library.util.DataKeeper;
 import zuo.biao.library.util.JSON;
 
 import static hidden.edu.util.TestUtil.getUserList;
@@ -177,7 +178,7 @@ public class MyRecyclerFragment extends BaseHttpRecyclerFragment<User, UserView,
     @Override
     public void initEvent() {//必须调用
         super.initEvent();
-
+        DataKeeper.init(this.context.getApplication());
     }
 
     static String[] URLS = {

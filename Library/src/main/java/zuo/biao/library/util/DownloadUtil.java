@@ -27,7 +27,6 @@ public class DownloadUtil {
         final File file = new File(DataKeeper.fileRootPath + fileName);
         try {
             //httpUrl = StringUtil.getCorrectUrl(httpUrl);
-
             if (httpUrl.endsWith("/")) {
                 httpUrl = httpUrl.substring(0, httpUrl.length() - 1);
             }
@@ -57,7 +56,6 @@ public class DownloadUtil {
 
                     }
                 }
-
                 conn.disconnect();
                 fos.close();
                 assert is != null;

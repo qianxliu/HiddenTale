@@ -78,34 +78,37 @@ public class DataKeeper {
 
         Log.i(TAG, "init fileRootPath = " + fileRootPath);
 
+        File froot= new File(fileRootPath);
+        if(!froot.exists())
+        {
+            boolean isDirectoryCreated = froot.mkdir();
+        }
         //判断SD卡存在
         if (android.os.Environment.getExternalStorageState().equals(android.os.Environment.MEDIA_MOUNTED)) {
-            if (fileRootPath != null) {
-                File file = new File(imagePath);
-                if (!file.exists()) {
-                    boolean isDirectoryCreated= file.mkdir();
-                }
-                file = new File(videoPath);
-                if (!file.exists()) {
-                    boolean isDirectoryCreated= file.mkdir();
-                }
-                file = new File(audioPath);
-                if (!file.exists()) {
-                    boolean isDirectoryCreated= file.mkdir();
-                }
-                file = new File(fileRootPath + accountPath);
-                if (!file.exists()) {
-                    boolean isDirectoryCreated= file.mkdir();
-                }
-                file = new File(tempPath);
-                if (!file.exists()) {
-                    boolean isDirectoryCreated= file.mkdir();
-                }
-                file = new File(shotPath);
-                if (!file.exists()) {
-                    boolean isDirectoryCreated= file.mkdir();
+            File file = new File(imagePath);
+            if (!file.exists()) {
+                boolean isDirectoryCreated= file.mkdir();
+            }
+            file = new File(videoPath);
+            if (!file.exists()) {
+                boolean isDirectoryCreated= file.mkdir();
+            }
+            file = new File(audioPath);
+            if (!file.exists()) {
+                boolean isDirectoryCreated= file.mkdir();
+            }
+            file = new File(fileRootPath + accountPath);
+            if (!file.exists()) {
+                boolean isDirectoryCreated= file.mkdir();
+            }
+            file = new File(tempPath);
+            if (!file.exists()) {
+                boolean isDirectoryCreated= file.mkdir();
+            }
+            file = new File(shotPath);
+            if (!file.exists()) {
+                boolean isDirectoryCreated= file.mkdir();
 
-                }
             }
         }
     }

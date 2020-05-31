@@ -32,8 +32,9 @@
         android:screenOrientation="fullSensor"
         android:supportsRtl="true"
         android:largeHeap="true"
+        android:usesCleartextTraffic="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-        >
+        tools:targetApi="m">
         <activity
             android:name="hidden.edu.demo.DemoThreadPoolActivity"
             tools:ignore="InnerclassSeparator" />

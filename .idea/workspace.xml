@@ -29,7 +29,7 @@
   <component name="CompilerWorkspaceConfiguration">
     <option name="PARALLEL_COMPILATION" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="af968b78" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="API_22" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -80,7 +80,7 @@
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.44162437" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="gradle.compiler" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.VCS" />
     <property name="show.do.not.copy.http.proxy.settings.to.gradle" value="false" />
   </component>
   <component name="PsdUISettings">
@@ -299,22 +299,26 @@
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state width="555" height="466" key="DebuggerActiveHint/0.30.1366.738@0.30.1366.738" timestamp="1590765454554" />
-    <state width="1286" height="102" key="GridCell.Tab.0.bottom" timestamp="1590853041612">
+    <state x="463" y="139" key="FileChooserDialogImpl" timestamp="1590933972838">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state width="1286" height="102" key="GridCell.Tab.0.bottom/0.30.1366.738@0.30.1366.738" timestamp="1590853041612" />
-    <state width="1286" height="102" key="GridCell.Tab.0.center" timestamp="1590853041612">
+    <state x="463" y="139" key="FileChooserDialogImpl/0.30.1366.738@0.30.1366.738" timestamp="1590933972838" />
+    <state width="712" height="102" key="GridCell.Tab.0.bottom" timestamp="1590936404330">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state width="1286" height="102" key="GridCell.Tab.0.center/0.30.1366.738@0.30.1366.738" timestamp="1590853041612" />
-    <state width="1286" height="102" key="GridCell.Tab.0.left" timestamp="1590853041612">
+    <state width="712" height="102" key="GridCell.Tab.0.bottom/0.30.1366.738@0.30.1366.738" timestamp="1590936404330" />
+    <state width="712" height="102" key="GridCell.Tab.0.center" timestamp="1590936404329">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state width="1286" height="102" key="GridCell.Tab.0.left/0.30.1366.738@0.30.1366.738" timestamp="1590853041612" />
-    <state width="1286" height="102" key="GridCell.Tab.0.right" timestamp="1590853041612">
+    <state width="712" height="102" key="GridCell.Tab.0.center/0.30.1366.738@0.30.1366.738" timestamp="1590936404329" />
+    <state width="712" height="102" key="GridCell.Tab.0.left" timestamp="1590936404328">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state width="1286" height="102" key="GridCell.Tab.0.right/0.30.1366.738@0.30.1366.738" timestamp="1590853041612" />
+    <state width="712" height="102" key="GridCell.Tab.0.left/0.30.1366.738@0.30.1366.738" timestamp="1590936404328" />
+    <state width="712" height="102" key="GridCell.Tab.0.right" timestamp="1590936404329">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state width="712" height="102" key="GridCell.Tab.0.right/0.30.1366.738@0.30.1366.738" timestamp="1590936404329" />
     <state width="1129" height="206" key="GridCell.Tab.1.bottom" timestamp="1590766732581">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
@@ -331,14 +335,14 @@
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state width="1129" height="206" key="GridCell.Tab.1.right/0.30.1366.738@0.30.1366.738" timestamp="1590766732581" />
-    <state x="184" y="41" key="SettingsEditor" timestamp="1590762801280">
+    <state x="93" y="51" key="SettingsEditor" timestamp="1590920901454">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="184" y="41" key="SettingsEditor/0.30.1366.738@0.30.1366.738" timestamp="1590762801280" />
-    <state x="363" y="222" key="com.intellij.ide.util.TipDialog" timestamp="1590844773474">
+    <state x="93" y="51" key="SettingsEditor/0.30.1366.738@0.30.1366.738" timestamp="1590920901454" />
+    <state x="363" y="222" key="com.intellij.ide.util.TipDialog" timestamp="1590933411194">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="363" y="222" key="com.intellij.ide.util.TipDialog/0.30.1366.738@0.30.1366.738" timestamp="1590844773474" />
+    <state x="363" y="222" key="com.intellij.ide.util.TipDialog/0.30.1366.738@0.30.1366.738" timestamp="1590933411194" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

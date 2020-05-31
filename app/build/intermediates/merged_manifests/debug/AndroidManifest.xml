@@ -48,7 +48,9 @@
         android:largeHeap="true"
         android:screenOrientation="fullSensor"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+        android:testOnly="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:usesCleartextTraffic="true" >
         <activity android:name="hidden.edu.demo.DemoThreadPoolActivity" />
 
         <provider

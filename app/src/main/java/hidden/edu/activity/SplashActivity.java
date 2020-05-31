@@ -21,6 +21,7 @@ import android.os.Handler;
 import androidx.appcompat.app.AppCompatActivity;
 
 import hidden.edu.R;
+import zuo.biao.library.util.DataKeeper;
 
 import static zuo.biao.library.util.SettingUtil.isSplash;
 
@@ -40,6 +41,7 @@ public class SplashActivity extends AppCompatActivity {
             finish();
         }
         new Handler().postDelayed(() -> {
+            DataKeeper.init(this.getApplication());
             startActivity(MainTabActivity.createIntent(SplashActivity.this));
             finish();
         }, 500);
