@@ -1,756 +1,756 @@
 -- Merging decision tree log ---
 provider#androidx.core.content.FileProvider
-INJECTED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:42:9-50:20
+INJECTED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:42:9-50:20
 	android:grantUriPermissions
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:46:13-47
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:46:13-47
 	android:authorities
-		INJECTED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:44:13-64
+		INJECTED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:44:13-64
 	android:exported
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:45:13-37
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:45:13-37
 	android:name
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:43:13-62
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:43:13-62
 manifest
-ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:2:1-239:12
-INJECTED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:2:1-239:12
-INJECTED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:2:1-239:12
-INJECTED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:2:1-239:12
-MERGED from [com.king.zxing:zxing-lite:1.1.9-androidx] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\ceb39037199cf349c80fb8c9828321d9\jetified-zxing-lite-1.1.9-androidx\AndroidManifest.xml:2:1-20:12
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\7319878a0378100275d97b7d8573cec3\constraintlayout-1.1.3\AndroidManifest.xml:2:1-11:12
-MERGED from [pub.devrel:easypermissions:3.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\9cfa3dd76c2e930e771a1ee5b42d3581\jetified-easypermissions-3.0.0\AndroidManifest.xml:2:1-19:12
-MERGED from [com.github.barteksc:android-pdf-viewer:3.2.0-beta.1] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\76446c964db3af8b1bd105c60b7599e2\jetified-android-pdf-viewer-3.2.0-beta.1\AndroidManifest.xml:2:1-11:12
-MERGED from [:Library] G:\AndroidProject\Project\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-90:12
-MERGED from [com.google.android.material:material:1.1.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\e8aa87d87676852880d1f97ad7ef38e8\material-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.appcompat:appcompat:1.1.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\11dfd6d06d9be0d818168d855d44d649\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [com.github.bumptech.glide:glide:4.11.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\e737a9cf6c06b54fc3fc99d08644d9b2\jetified-glide-4.11.0\AndroidManifest.xml:2:1-12:12
-MERGED from [com.github.barteksc:pdfium-android:1.9.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\d316c4d57da88c47d16410f9ef6b00a4\jetified-pdfium-android-1.9.0\AndroidManifest.xml:2:1-11:12
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\96d4907ab927722e1dcd87f186178ab8\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\3e48eca6ba124b2256e60efe5ac303af\jetified-viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.fragment:fragment:1.1.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\f1537293877057659a66701b5ca8c61c\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.appcompat:appcompat-resources:1.1.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\e7ca9a8fe3351f92d7f62480aa8b0e09\jetified-appcompat-resources-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\d615232b82eca76cd4d5abb42a5ba9f5\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\a6d86ede27b0f4fa218a8f17dddd71f5\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\c01a1bc5b2ca70947cc3d76ae60b01ae\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.transition:transition:1.2.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\9a3baf1680d859601af406b30e5816d4\transition-1.2.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\7ab1b40cc9526ccd812b8777901b2ac6\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\05682694207dd68c8f9bdd05a04336a0\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\b2d74924575a9a1b4da0f7d77d93efb8\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\b821bf7ac742ffa0516f8125af015dac\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.loader:loader:1.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\693288e2e79e8a07a29ba1008599a46e\loader-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.activity:activity:1.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\2513a9d4acc9b58192e1854f9236d871\jetified-activity-1.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\3168c45a7a415784f80c445f15eb68c4\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\3882efbc90c4bd50b2a3ed75c3e45a15\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.customview:customview:1.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\4bbf229d07c7a5f9f0252c7ec1c0bac6\customview-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.media:media:1.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\ea41b0db64eda83237acc1ff6345782e\media-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\80ccbb0bee772d3eca15084380921b9e\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\9547c5470d8b6486a39176b56248b316\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.core:core:1.1.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\788dbcd7dcbb0d36dfe5349648c923e5\core-1.1.0\AndroidManifest.xml:17:1-26:12
-MERGED from [com.scwang.smartrefresh:SmartRefreshLayout:1.0.4-4] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\741e2d2b8c951780f9579b439749ca17\jetified-SmartRefreshLayout-1.0.4-4\AndroidManifest.xml:2:1-17:12
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\7750b94cc5550d110f421a347048952a\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\dff559a7f5b9340a1e85c06b55635114\jetified-gifdecoder-4.11.0\AndroidManifest.xml:2:1-11:12
-MERGED from [androidx.exifinterface:exifinterface:1.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\9f09ae04f8976477a93319f5419e103a\exifinterface-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.cardview:cardview:1.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\bcf3b54be321627d8a53382d43db34fa\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\9ee12cf364f78663e6075004cf7b5819\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\b3c73b1027cc9c0eecfb07ba0790209f\lifecycle-runtime-2.1.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\4bcaf56c0b429ab8139603d6f29c5c2d\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.savedstate:savedstate:1.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\cfd1f8229ca7de0763d93f359d44a4a2\jetified-savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\f1c128ccb5ac085421c0419cf582bc07\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.documentfile:documentfile:1.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\d7976adcdeaefd9ab1e660a51ea60008\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\997a85ffb57ee57076e5948054bfa369\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.print:print:1.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\cdd5516601e272be0f30d62d8a144fac\print-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\3db57cbad307f56cb8dc572bd9674e8d\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\c9d93fe018e085bb22a11d59ae991e7e\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.arch.core:core-runtime:2.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\3e2391860e760568fb3efadd90e3638e\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
-INJECTED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:2:1-239:12
-INJECTED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:2:1-239:12
-INJECTED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:2:1-239:12
+ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:2:1-237:12
+INJECTED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:2:1-237:12
+INJECTED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:2:1-237:12
+INJECTED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:2:1-237:12
+MERGED from [com.king.zxing:zxing-lite:1.1.9-androidx] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\ceb39037199cf349c80fb8c9828321d9\jetified-zxing-lite-1.1.9-androidx\AndroidManifest.xml:2:1-20:12
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\7319878a0378100275d97b7d8573cec3\constraintlayout-1.1.3\AndroidManifest.xml:2:1-11:12
+MERGED from [pub.devrel:easypermissions:3.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\9cfa3dd76c2e930e771a1ee5b42d3581\jetified-easypermissions-3.0.0\AndroidManifest.xml:2:1-19:12
+MERGED from [com.github.barteksc:android-pdf-viewer:3.2.0-beta.1] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\52cbb2e4e473c7de1cec798dafaf2eb3\jetified-android-pdf-viewer-3.2.0-beta.1\AndroidManifest.xml:2:1-11:12
+MERGED from [:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-90:12
+MERGED from [com.google.android.material:material:1.1.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\e8aa87d87676852880d1f97ad7ef38e8\material-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.1.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\11dfd6d06d9be0d818168d855d44d649\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.github.bumptech.glide:glide:4.11.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\e737a9cf6c06b54fc3fc99d08644d9b2\jetified-glide-4.11.0\AndroidManifest.xml:2:1-12:12
+MERGED from [com.github.barteksc:pdfium-android:1.9.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\b57df6fd75cd4f68814da5a8ba8eed88\jetified-pdfium-android-1.9.0\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\96d4907ab927722e1dcd87f186178ab8\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\3e48eca6ba124b2256e60efe5ac303af\jetified-viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.1.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\f1537293877057659a66701b5ca8c61c\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\e7ca9a8fe3351f92d7f62480aa8b0e09\jetified-appcompat-resources-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\d615232b82eca76cd4d5abb42a5ba9f5\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\a6d86ede27b0f4fa218a8f17dddd71f5\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\c01a1bc5b2ca70947cc3d76ae60b01ae\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.2.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\9a3baf1680d859601af406b30e5816d4\transition-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\7ab1b40cc9526ccd812b8777901b2ac6\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\05682694207dd68c8f9bdd05a04336a0\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\b2d74924575a9a1b4da0f7d77d93efb8\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\b821bf7ac742ffa0516f8125af015dac\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\693288e2e79e8a07a29ba1008599a46e\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\2513a9d4acc9b58192e1854f9236d871\jetified-activity-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\3168c45a7a415784f80c445f15eb68c4\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\3882efbc90c4bd50b2a3ed75c3e45a15\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\4bbf229d07c7a5f9f0252c7ec1c0bac6\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\ea41b0db64eda83237acc1ff6345782e\media-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\80ccbb0bee772d3eca15084380921b9e\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\9547c5470d8b6486a39176b56248b316\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.1.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\788dbcd7dcbb0d36dfe5349648c923e5\core-1.1.0\AndroidManifest.xml:17:1-26:12
+MERGED from [com.scwang.smartrefresh:SmartRefreshLayout:1.0.4-4] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\0d49cb25315aa5bf7e7e7631d39d39a3\jetified-SmartRefreshLayout-1.0.4-4\AndroidManifest.xml:2:1-17:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\7750b94cc5550d110f421a347048952a\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\dff559a7f5b9340a1e85c06b55635114\jetified-gifdecoder-4.11.0\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\9f09ae04f8976477a93319f5419e103a\exifinterface-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\bcf3b54be321627d8a53382d43db34fa\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\9ee12cf364f78663e6075004cf7b5819\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\b3c73b1027cc9c0eecfb07ba0790209f\lifecycle-runtime-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\4bcaf56c0b429ab8139603d6f29c5c2d\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\cfd1f8229ca7de0763d93f359d44a4a2\jetified-savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\f1c128ccb5ac085421c0419cf582bc07\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\d7976adcdeaefd9ab1e660a51ea60008\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\997a85ffb57ee57076e5948054bfa369\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\cdd5516601e272be0f30d62d8a144fac\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\3db57cbad307f56cb8dc572bd9674e8d\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\c9d93fe018e085bb22a11d59ae991e7e\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\3e2391860e760568fb3efadd90e3638e\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
+INJECTED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:2:1-237:12
+INJECTED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:2:1-237:12
+INJECTED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:2:1-237:12
 	package
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:4:5-25
-		INJECTED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml
-		INJECTED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:4:5-25
+		INJECTED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml
+		INJECTED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:2:1-239:12
-		INJECTED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml
+		INJECTED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:2:1-237:12
+		INJECTED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml
 	xmlns:tools
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:3:5-51
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:2:1-239:12
-		INJECTED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml
+		INJECTED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:2:1-237:12
+		INJECTED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission_group.LOCATION
-ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:6:5-73
+ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:6:5-73
 	android:name
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:6:22-70
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:6:22-70
 uses-permission#android.permission_group.CAMERA
-ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:7:5-71
+ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:7:5-71
 	android:name
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:7:22-68
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:7:22-68
 uses-permission#android.permission_group.STORAGE
-ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:8:5-72
+ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:8:5-72
 	android:name
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:8:22-69
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:8:22-69
 uses-permission#android.permission_group.PHONE
-ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:9:5-70
+ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:9:5-70
 	android:name
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:9:22-67
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:9:22-67
 uses-permission#android.permission_group.SENSORS
-ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:10:5-72
+ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:10:5-72
 	android:name
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:10:22-69
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:10:22-69
 uses-permission#android.permission_group.ACTIVITY_RECOGNITION
-ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:11:5-85
+ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:11:5-85
 	android:name
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:11:22-82
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:11:22-82
 uses-permission#android.permission.ACCESS_NOTIFICATION_POLICY
-ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:12:5-85
+ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:12:5-85
 	android:name
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:12:22-82
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:12:22-82
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:13:5-81
+ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:13:5-81
 	android:name
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:13:22-78
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:13:22-78
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:14:5-79
-MERGED from [:Library] G:\AndroidProject\Project\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:5-79
-MERGED from [:Library] G:\AndroidProject\Project\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:5-79
+ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:14:5-79
+MERGED from [:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:5-79
+MERGED from [:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:5-79
 	android:name
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:14:22-76
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:14:22-76
 uses-permission#android.permission.ACCESS_BACKGROUND_LOCATION
-ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:15:5-85
+ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:15:5-85
 	android:name
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:15:22-82
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:15:22-82
 uses-permission#android.permission.SYSTEM_ALERT_WINDOW
-ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:16:5-78
+ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:16:5-78
 	android:name
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:16:22-75
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:16:22-75
 uses-permission#android.permission.WAKE_LOCK
-ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:17:5-68
+ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:17:5-68
 	android:name
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:17:22-65
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:17:22-65
 uses-permission#android.permission.INTERNET
-ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:18:5-67
-MERGED from [com.king.zxing:zxing-lite:1.1.9-androidx] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\ceb39037199cf349c80fb8c9828321d9\jetified-zxing-lite-1.1.9-androidx\AndroidManifest.xml:12:5-67
-MERGED from [com.king.zxing:zxing-lite:1.1.9-androidx] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\ceb39037199cf349c80fb8c9828321d9\jetified-zxing-lite-1.1.9-androidx\AndroidManifest.xml:12:5-67
-MERGED from [:Library] G:\AndroidProject\Project\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:5-67
-MERGED from [:Library] G:\AndroidProject\Project\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:5-67
+ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:18:5-67
+MERGED from [com.king.zxing:zxing-lite:1.1.9-androidx] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\ceb39037199cf349c80fb8c9828321d9\jetified-zxing-lite-1.1.9-androidx\AndroidManifest.xml:12:5-67
+MERGED from [com.king.zxing:zxing-lite:1.1.9-androidx] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\ceb39037199cf349c80fb8c9828321d9\jetified-zxing-lite-1.1.9-androidx\AndroidManifest.xml:12:5-67
+MERGED from [:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:5-67
+MERGED from [:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:5-67
 	android:name
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:18:22-64
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:18:22-64
 uses-permission#android.permission.READ_PHONE_STATE
-ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:19:5-75
+ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:19:5-75
 	android:name
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:19:22-72
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:19:22-72
 uses-permission#android.permission.CHANGE_WIFI_STATE
-ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:20:5-76
+ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:20:5-76
 	android:name
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:20:22-73
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:20:22-73
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:21:5-76
-MERGED from [:Library] G:\AndroidProject\Project\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:5-76
-MERGED from [:Library] G:\AndroidProject\Project\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:5-76
+ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:21:5-76
+MERGED from [:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:5-76
+MERGED from [:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:5-76
 	android:name
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:21:22-73
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:21:22-73
 uses-feature#android.hardware.camera
-ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:23:5-60
+ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:23:5-60
 	android:name
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:23:19-57
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:23:19-57
 uses-feature#android.hardware.camera.autofocus
-ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:24:5-70
+ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:24:5-70
 	android:name
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:24:19-67
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:24:19-67
 application
-ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:26:5-238:19
-MERGED from [com.king.zxing:zxing-lite:1.1.9-androidx] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\ceb39037199cf349c80fb8c9828321d9\jetified-zxing-lite-1.1.9-androidx\AndroidManifest.xml:17:5-18:19
-MERGED from [com.king.zxing:zxing-lite:1.1.9-androidx] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\ceb39037199cf349c80fb8c9828321d9\jetified-zxing-lite-1.1.9-androidx\AndroidManifest.xml:17:5-18:19
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\7319878a0378100275d97b7d8573cec3\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\7319878a0378100275d97b7d8573cec3\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
-MERGED from [pub.devrel:easypermissions:3.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\9cfa3dd76c2e930e771a1ee5b42d3581\jetified-easypermissions-3.0.0\AndroidManifest.xml:11:5-17:19
-MERGED from [pub.devrel:easypermissions:3.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\9cfa3dd76c2e930e771a1ee5b42d3581\jetified-easypermissions-3.0.0\AndroidManifest.xml:11:5-17:19
-MERGED from [:Library] G:\AndroidProject\Project\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:27:5-88:19
-MERGED from [:Library] G:\AndroidProject\Project\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:27:5-88:19
-MERGED from [com.google.android.material:material:1.1.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\e8aa87d87676852880d1f97ad7ef38e8\material-1.1.0\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.material:material:1.1.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\e8aa87d87676852880d1f97ad7ef38e8\material-1.1.0\AndroidManifest.xml:22:5-20
-MERGED from [com.github.bumptech.glide:glide:4.11.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\e737a9cf6c06b54fc3fc99d08644d9b2\jetified-glide-4.11.0\AndroidManifest.xml:10:5-20
-MERGED from [com.github.bumptech.glide:glide:4.11.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\e737a9cf6c06b54fc3fc99d08644d9b2\jetified-glide-4.11.0\AndroidManifest.xml:10:5-20
-MERGED from [androidx.core:core:1.1.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\788dbcd7dcbb0d36dfe5349648c923e5\core-1.1.0\AndroidManifest.xml:24:5-89
-MERGED from [androidx.core:core:1.1.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\788dbcd7dcbb0d36dfe5349648c923e5\core-1.1.0\AndroidManifest.xml:24:5-89
-MERGED from [com.scwang.smartrefresh:SmartRefreshLayout:1.0.4-4] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\741e2d2b8c951780f9579b439749ca17\jetified-SmartRefreshLayout-1.0.4-4\AndroidManifest.xml:11:5-15:19
-MERGED from [com.scwang.smartrefresh:SmartRefreshLayout:1.0.4-4] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\741e2d2b8c951780f9579b439749ca17\jetified-SmartRefreshLayout-1.0.4-4\AndroidManifest.xml:11:5-15:19
-MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\dff559a7f5b9340a1e85c06b55635114\jetified-gifdecoder-4.11.0\AndroidManifest.xml:9:5-20
-MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\dff559a7f5b9340a1e85c06b55635114\jetified-gifdecoder-4.11.0\AndroidManifest.xml:9:5-20
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\9ee12cf364f78663e6075004cf7b5819\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\9ee12cf364f78663e6075004cf7b5819\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:26:5-236:19
+MERGED from [com.king.zxing:zxing-lite:1.1.9-androidx] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\ceb39037199cf349c80fb8c9828321d9\jetified-zxing-lite-1.1.9-androidx\AndroidManifest.xml:17:5-18:19
+MERGED from [com.king.zxing:zxing-lite:1.1.9-androidx] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\ceb39037199cf349c80fb8c9828321d9\jetified-zxing-lite-1.1.9-androidx\AndroidManifest.xml:17:5-18:19
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\7319878a0378100275d97b7d8573cec3\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\7319878a0378100275d97b7d8573cec3\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
+MERGED from [pub.devrel:easypermissions:3.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\9cfa3dd76c2e930e771a1ee5b42d3581\jetified-easypermissions-3.0.0\AndroidManifest.xml:11:5-17:19
+MERGED from [pub.devrel:easypermissions:3.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\9cfa3dd76c2e930e771a1ee5b42d3581\jetified-easypermissions-3.0.0\AndroidManifest.xml:11:5-17:19
+MERGED from [:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:27:5-88:19
+MERGED from [:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:27:5-88:19
+MERGED from [com.google.android.material:material:1.1.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\e8aa87d87676852880d1f97ad7ef38e8\material-1.1.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.1.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\e8aa87d87676852880d1f97ad7ef38e8\material-1.1.0\AndroidManifest.xml:22:5-20
+MERGED from [com.github.bumptech.glide:glide:4.11.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\e737a9cf6c06b54fc3fc99d08644d9b2\jetified-glide-4.11.0\AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.11.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\e737a9cf6c06b54fc3fc99d08644d9b2\jetified-glide-4.11.0\AndroidManifest.xml:10:5-20
+MERGED from [androidx.core:core:1.1.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\788dbcd7dcbb0d36dfe5349648c923e5\core-1.1.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.1.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\788dbcd7dcbb0d36dfe5349648c923e5\core-1.1.0\AndroidManifest.xml:24:5-89
+MERGED from [com.scwang.smartrefresh:SmartRefreshLayout:1.0.4-4] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\0d49cb25315aa5bf7e7e7631d39d39a3\jetified-SmartRefreshLayout-1.0.4-4\AndroidManifest.xml:11:5-15:19
+MERGED from [com.scwang.smartrefresh:SmartRefreshLayout:1.0.4-4] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\0d49cb25315aa5bf7e7e7631d39d39a3\jetified-SmartRefreshLayout-1.0.4-4\AndroidManifest.xml:11:5-15:19
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\dff559a7f5b9340a1e85c06b55635114\jetified-gifdecoder-4.11.0\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\dff559a7f5b9340a1e85c06b55635114\jetified-gifdecoder-4.11.0\AndroidManifest.xml:9:5-20
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\9ee12cf364f78663e6075004cf7b5819\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\9ee12cf364f78663e6075004cf7b5819\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
 	android:screenOrientation
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:32:9-47
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:32:9-47
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.1.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\788dbcd7dcbb0d36dfe5349648c923e5\core-1.1.0\AndroidManifest.xml:24:18-86
+		ADDED from [androidx.core:core:1.1.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\788dbcd7dcbb0d36dfe5349648c923e5\core-1.1.0\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:33:9-35
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:33:9-35
 	android:label
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:31:9-41
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:31:9-41
 	android:fullBackupContent
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:29:9-41
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:29:9-41
 	tools:targetApi
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:37:9-28
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:37:9-28
 	android:largeHeap
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:34:9-33
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:34:9-33
 	android:icon
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:30:9-45
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:30:9-45
 	android:allowBackup
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:28:9-35
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:28:9-35
 	android:theme
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:36:9-65
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:36:9-65
 	android:usesCleartextTraffic
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:35:9-44
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:35:9-44
 	android:name
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:27:9-62
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:27:9-62
 activity#hidden.edu.demo.DemoThreadPoolActivity
-ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:38:9-40:50
+ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:38:9-40:50
 	tools:ignore
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:40:13-47
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:40:13-47
 	android:name
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:39:13-66
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:39:13-66
 activity#hidden.edu.activity.StartActivity
-ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:52:9-63:20
+ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:52:9-63:20
 	android:screenOrientation
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:55:13-51
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:55:13-51
 	android:label
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:54:13-45
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:54:13-45
 	android:theme
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:56:13-47
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:56:13-47
 	android:name
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:53:13-61
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:53:13-61
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:57:13-62:29
+ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:57:13-62:29
 action#android.intent.action.MAIN
-ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:59:17-69
+ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:59:17-69
 	android:name
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:59:25-66
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:59:25-66
 category#android.intent.category.LAUNCHER
-ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:61:17-77
+ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:61:17-77
 	android:name
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:61:27-74
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:61:27-74
 activity#hidden.edu.activity.MainTabActivity
-ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:64:9-73:20
+ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:64:9-73:20
 	android:screenOrientation
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:67:13-49
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:67:13-49
 	android:label
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:66:13-45
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:66:13-45
 	tools:ignore
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:68:13-53
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:68:13-53
 	android:name
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:65:13-63
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:65:13-63
 intent-filter#action:name:android.intent.action.MAIN
-ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:69:13-72:29
+ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:69:13-72:29
 activity#hidden.edu.activity.SplashActivity
-ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:74:9-78:50
+ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:74:9-78:50
 	android:screenOrientation
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:77:13-51
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:77:13-51
 	android:label
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:76:13-45
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:76:13-45
 	android:theme
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:78:13-47
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:78:13-47
 	android:name
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:75:13-62
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:75:13-62
 activity#hidden.edu.activity.AboutActivity
-ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:79:9-82:56
+ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:79:9-82:56
 	android:screenOrientation
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:81:13-49
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:81:13-49
 	tools:ignore
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:82:13-53
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:82:13-53
 	android:name
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:80:13-61
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:80:13-61
 activity#hidden.edu.activity.SettingActivity
-ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:83:9-86:63
+ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:83:9-86:63
 	android:screenOrientation
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:85:13-51
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:85:13-51
 	android:windowSoftInputMode
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:86:13-60
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:86:13-60
 	android:name
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:84:13-63
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:84:13-63
 activity#hidden.edu.activity.UserActivity
-ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:87:9-90:63
+ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:87:9-90:63
 	android:screenOrientation
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:89:13-51
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:89:13-51
 	android:windowSoftInputMode
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:90:13-60
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:90:13-60
 	android:name
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:88:13-60
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:88:13-60
 activity#hidden.edu.activity.NaviActivity
-ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:91:9-93:63
+ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:91:9-93:63
 	android:screenOrientation
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:92:13-51
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:92:13-51
 	android:windowSoftInputMode
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:93:13-60
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:93:13-60
 	android:name
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:91:19-56
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:91:19-56
 activity#hidden.edu.activity.PdfViewActivity
-ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:94:9-97:63
+ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:94:9-97:63
 	android:screenOrientation
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:96:13-51
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:96:13-51
 	android:windowSoftInputMode
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:97:13-60
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:97:13-60
 	android:name
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:95:13-63
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:95:13-63
 activity#hidden.edu.activity.ScanActivity
-ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:98:9-102:56
+ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:98:9-102:56
 	android:screenOrientation
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:100:13-49
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:100:13-49
 	android:windowSoftInputMode
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:101:13-60
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:101:13-60
 	tools:ignore
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:102:13-53
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:102:13-53
 	android:name
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:99:13-60
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:99:13-60
 activity#hidden.edu.activity.QRCodeActivity
-ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:103:9-107:56
+ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:103:9-107:56
 	android:screenOrientation
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:105:13-49
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:105:13-49
 	android:windowSoftInputMode
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:106:13-60
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:106:13-60
 	tools:ignore
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:107:13-53
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:107:13-53
 	android:name
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:104:13-62
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:104:13-62
 activity#hidden.edu.demo.DemoMainActivity
-ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:108:9-112:50
+ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:108:9-112:50
 	android:screenOrientation
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:110:13-51
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:110:13-51
 	android:windowSoftInputMode
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:111:13-60
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:111:13-60
 	tools:ignore
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:112:13-47
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:112:13-47
 	android:name
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:109:13-60
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:109:13-60
 activity#hidden.edu.demo.DemoActivity
-ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:113:9-117:50
+ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:113:9-117:50
 	android:screenOrientation
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:115:13-51
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:115:13-51
 	android:windowSoftInputMode
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:116:13-60
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:116:13-60
 	tools:ignore
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:117:13-47
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:117:13-47
 	android:name
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:114:13-56
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:114:13-56
 activity#hidden.edu.demo.DemoListActivity
-ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:118:9-122:50
+ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:118:9-122:50
 	android:screenOrientation
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:120:13-51
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:120:13-51
 	android:windowSoftInputMode
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:121:13-60
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:121:13-60
 	tools:ignore
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:122:13-47
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:122:13-47
 	android:name
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:119:13-60
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:119:13-60
 activity#hidden.edu.demo.DemoRecyclerActivity
-ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:123:9-127:50
+ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:123:9-127:50
 	android:screenOrientation
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:125:13-51
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:125:13-51
 	android:windowSoftInputMode
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:126:13-60
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:126:13-60
 	tools:ignore
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:127:13-47
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:127:13-47
 	android:name
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:124:13-64
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:124:13-64
 activity#hidden.edu.demo.DemoHttpListActivity
-ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:128:9-132:50
+ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:128:9-132:50
 	android:screenOrientation
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:130:13-51
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:130:13-51
 	android:windowSoftInputMode
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:131:13-60
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:131:13-60
 	tools:ignore
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:132:13-47
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:132:13-47
 	android:name
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:129:13-64
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:129:13-64
 activity#hidden.edu.demo.DemoHttpRecyclerActivity
-ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:133:9-137:50
+ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:133:9-137:50
 	android:screenOrientation
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:135:13-51
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:135:13-51
 	android:windowSoftInputMode
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:136:13-60
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:136:13-60
 	tools:ignore
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:137:13-47
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:137:13-47
 	android:name
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:134:13-68
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:134:13-68
 activity#hidden.edu.demo.DemoFragmentActivity
-ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:138:9-143:50
+ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:138:9-143:50
 	android:screenOrientation
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:141:13-51
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:141:13-51
 	android:launchMode
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:140:13-43
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:140:13-43
 	android:windowSoftInputMode
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:142:13-60
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:142:13-60
 	tools:ignore
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:143:13-47
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:143:13-47
 	android:name
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:139:13-64
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:139:13-64
 activity#hidden.edu.demo.DemoTabActivity
-ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:144:9-148:50
+ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:144:9-148:50
 	android:screenOrientation
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:146:13-51
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:146:13-51
 	android:windowSoftInputMode
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:147:13-60
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:147:13-60
 	tools:ignore
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:148:13-47
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:148:13-47
 	android:name
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:145:13-59
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:145:13-59
 activity#hidden.edu.demo.DemoSQLActivity
-ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:149:9-153:50
+ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:149:9-153:50
 	android:screenOrientation
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:151:13-51
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:151:13-51
 	android:windowSoftInputMode
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:152:13-85
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:152:13-85
 	tools:ignore
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:153:13-47
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:153:13-47
 	android:name
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:150:13-59
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:150:13-59
 activity#hidden.edu.demo.DemoTimeRefresherActivity
-ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:154:9-158:50
+ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:154:9-158:50
 	android:screenOrientation
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:156:13-51
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:156:13-51
 	android:windowSoftInputMode
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:157:13-85
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:157:13-85
 	tools:ignore
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:158:13-47
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:158:13-47
 	android:name
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:155:13-69
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:155:13-69
 activity#hidden.edu.demo.DemoBroadcastReceiverActivity
-ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:159:9-163:50
+ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:159:9-163:50
 	android:screenOrientation
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:161:13-51
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:161:13-51
 	android:windowSoftInputMode
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:162:13-60
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:162:13-60
 	tools:ignore
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:163:13-47
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:163:13-47
 	android:name
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:160:13-73
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:160:13-73
 activity#hidden.edu.demo.DemoBottomWindow
-ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:164:9-169:50
+ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:164:9-169:50
 	android:screenOrientation
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:166:13-51
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:166:13-51
 	android:windowSoftInputMode
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:168:13-60
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:168:13-60
 	tools:ignore
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:169:13-47
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:169:13-47
 	android:theme
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:167:13-42
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:167:13-42
 	android:name
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:165:13-60
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:165:13-60
 activity#zuo.biao.library.ui.SelectPictureActivity
-ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:171:9-175:63
-MERGED from [:Library] G:\AndroidProject\Project\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:34:9-38:63
-MERGED from [:Library] G:\AndroidProject\Project\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:34:9-38:63
+ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:171:9-175:63
+MERGED from [:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:34:9-38:63
+MERGED from [:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:34:9-38:63
 	android:screenOrientation
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:173:13-51
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:173:13-51
 	android:windowSoftInputMode
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:175:13-60
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:175:13-60
 	android:theme
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:174:13-55
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:174:13-55
 	android:name
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:172:13-69
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:172:13-69
 activity#zuo.biao.library.ui.CutPictureActivity
-ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:176:9-180:63
-MERGED from [:Library] G:\AndroidProject\Project\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:39:9-43:63
-MERGED from [:Library] G:\AndroidProject\Project\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:39:9-43:63
+ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:176:9-180:63
+MERGED from [:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:39:9-43:63
+MERGED from [:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:39:9-43:63
 	android:screenOrientation
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:178:13-51
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:178:13-51
 	android:windowSoftInputMode
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:180:13-60
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:180:13-60
 	android:theme
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:179:13-42
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:179:13-42
 	android:name
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:177:13-66
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:177:13-66
 activity#zuo.biao.library.ui.WebViewActivity
-ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:181:9-186:56
-MERGED from [:Library] G:\AndroidProject\Project\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:44:9-48:88
-MERGED from [:Library] G:\AndroidProject\Project\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:44:9-48:88
+ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:181:9-186:56
+MERGED from [:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:44:9-48:88
+MERGED from [:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:44:9-48:88
 	android:screenOrientation
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:184:13-51
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:184:13-51
 	android:launchMode
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:183:13-43
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:183:13-43
 	android:windowSoftInputMode
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:185:13-85
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:185:13-85
 	tools:ignore
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:186:13-53
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:186:13-53
 	android:name
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:182:13-63
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:182:13-63
 activity#zuo.biao.library.ui.EditTextInfoActivity
-ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:187:9-190:86
-MERGED from [:Library] G:\AndroidProject\Project\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:49:9-52:86
-MERGED from [:Library] G:\AndroidProject\Project\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:49:9-52:86
+ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:187:9-190:86
+MERGED from [:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:49:9-52:86
+MERGED from [:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:49:9-52:86
 	android:screenOrientation
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:189:13-51
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:189:13-51
 	android:windowSoftInputMode
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:190:13-83
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:190:13-83
 	android:name
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:188:13-68
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:188:13-68
 activity#zuo.biao.library.ui.ServerSettingActivity
-ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:191:9-194:57
-MERGED from [:Library] G:\AndroidProject\Project\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:53:9-56:57
-MERGED from [:Library] G:\AndroidProject\Project\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:53:9-56:57
+ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:191:9-194:57
+MERGED from [:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:53:9-56:57
+MERGED from [:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:53:9-56:57
 	android:screenOrientation
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:193:13-51
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:193:13-51
 	android:windowSoftInputMode
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:194:13-54
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:194:13-54
 	android:name
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:192:13-69
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:192:13-69
 activity#zuo.biao.library.ui.TopMenuWindow
-ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:195:9-199:63
-MERGED from [:Library] G:\AndroidProject\Project\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:57:9-61:63
-MERGED from [:Library] G:\AndroidProject\Project\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:57:9-61:63
+ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:195:9-199:63
+MERGED from [:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:57:9-61:63
+MERGED from [:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:57:9-61:63
 	android:screenOrientation
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:197:13-51
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:197:13-51
 	android:windowSoftInputMode
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:199:13-60
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:199:13-60
 	android:theme
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:198:13-42
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:198:13-42
 	android:name
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:196:13-61
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:196:13-61
 activity#zuo.biao.library.ui.BottomMenuWindow
-ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:200:9-204:63
-MERGED from [:Library] G:\AndroidProject\Project\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:62:9-66:63
-MERGED from [:Library] G:\AndroidProject\Project\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:62:9-66:63
+ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:200:9-204:63
+MERGED from [:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:62:9-66:63
+MERGED from [:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:62:9-66:63
 	android:screenOrientation
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:202:13-51
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:202:13-51
 	android:windowSoftInputMode
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:204:13-60
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:204:13-60
 	android:theme
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:203:13-42
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:203:13-42
 	android:name
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:201:13-64
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:201:13-64
 activity#zuo.biao.library.ui.EditTextInfoWindow
-ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:205:9-209:89
-MERGED from [:Library] G:\AndroidProject\Project\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:67:9-71:89
-MERGED from [:Library] G:\AndroidProject\Project\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:67:9-71:89
+ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:205:9-209:89
+MERGED from [:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:67:9-71:89
+MERGED from [:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:67:9-71:89
 	android:screenOrientation
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:207:13-51
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:207:13-51
 	android:windowSoftInputMode
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:209:13-86
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:209:13-86
 	android:theme
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:208:13-42
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:208:13-42
 	android:name
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:206:13-66
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:206:13-66
 activity#zuo.biao.library.ui.PlacePickerWindow
-ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:210:9-214:63
-MERGED from [:Library] G:\AndroidProject\Project\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:72:9-76:63
-MERGED from [:Library] G:\AndroidProject\Project\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:72:9-76:63
+ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:210:9-214:63
+MERGED from [:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:72:9-76:63
+MERGED from [:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:72:9-76:63
 	android:screenOrientation
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:212:13-51
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:212:13-51
 	android:windowSoftInputMode
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:214:13-60
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:214:13-60
 	android:theme
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:213:13-42
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:213:13-42
 	android:name
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:211:13-65
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:211:13-65
 activity#zuo.biao.library.ui.DatePickerWindow
-ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:215:9-219:63
-MERGED from [:Library] G:\AndroidProject\Project\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:77:9-81:63
-MERGED from [:Library] G:\AndroidProject\Project\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:77:9-81:63
+ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:215:9-219:63
+MERGED from [:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:77:9-81:63
+MERGED from [:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:77:9-81:63
 	android:screenOrientation
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:217:13-51
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:217:13-51
 	android:windowSoftInputMode
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:219:13-60
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:219:13-60
 	android:theme
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:218:13-42
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:218:13-42
 	android:name
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:216:13-64
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:216:13-64
 activity#zuo.biao.library.ui.TimePickerWindow
-ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:220:9-224:63
-MERGED from [:Library] G:\AndroidProject\Project\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:82:9-86:63
-MERGED from [:Library] G:\AndroidProject\Project\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:82:9-86:63
+ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:220:9-224:63
+MERGED from [:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:82:9-86:63
+MERGED from [:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:82:9-86:63
 	android:screenOrientation
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:222:13-51
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:222:13-51
 	android:windowSoftInputMode
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:224:13-60
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:224:13-60
 	android:theme
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:223:13-42
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:223:13-42
 	android:name
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:221:13-64
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:221:13-64
 service#com.amap.api.location.APSService
-ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:226:9-68
+ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:226:9-68
 	android:name
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:226:18-65
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:226:18-65
 meta-data#com.amap.api.v2.apikey
-ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:228:9-230:64
+ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:228:9-230:64
 	android:value
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:230:13-61
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:230:13-61
 	android:name
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:229:13-50
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:229:13-50
 activity#com.amap.api.navi.AmapRouteActivity
-ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:233:9-235:77
+ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:232:9-234:77
 	android:configChanges
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:235:13-74
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:234:13-74
 	android:theme
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:234:13-60
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:233:13-60
 	android:name
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:233:19-69
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:232:19-69
 uses-sdk
-INJECTED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml
-INJECTED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml
-MERGED from [com.king.zxing:zxing-lite:1.1.9-androidx] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\ceb39037199cf349c80fb8c9828321d9\jetified-zxing-lite-1.1.9-androidx\AndroidManifest.xml:7:5-9:41
-MERGED from [com.king.zxing:zxing-lite:1.1.9-androidx] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\ceb39037199cf349c80fb8c9828321d9\jetified-zxing-lite-1.1.9-androidx\AndroidManifest.xml:7:5-9:41
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\7319878a0378100275d97b7d8573cec3\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\7319878a0378100275d97b7d8573cec3\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
-MERGED from [pub.devrel:easypermissions:3.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\9cfa3dd76c2e930e771a1ee5b42d3581\jetified-easypermissions-3.0.0\AndroidManifest.xml:7:5-9:41
-MERGED from [pub.devrel:easypermissions:3.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\9cfa3dd76c2e930e771a1ee5b42d3581\jetified-easypermissions-3.0.0\AndroidManifest.xml:7:5-9:41
-MERGED from [com.github.barteksc:android-pdf-viewer:3.2.0-beta.1] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\76446c964db3af8b1bd105c60b7599e2\jetified-android-pdf-viewer-3.2.0-beta.1\AndroidManifest.xml:7:5-9:41
-MERGED from [com.github.barteksc:android-pdf-viewer:3.2.0-beta.1] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\76446c964db3af8b1bd105c60b7599e2\jetified-android-pdf-viewer-3.2.0-beta.1\AndroidManifest.xml:7:5-9:41
-MERGED from [:Library] G:\AndroidProject\Project\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:6:5-8:41
-MERGED from [:Library] G:\AndroidProject\Project\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:6:5-8:41
-MERGED from [com.google.android.material:material:1.1.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\e8aa87d87676852880d1f97ad7ef38e8\material-1.1.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.material:material:1.1.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\e8aa87d87676852880d1f97ad7ef38e8\material-1.1.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat:1.1.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\11dfd6d06d9be0d818168d855d44d649\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat:1.1.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\11dfd6d06d9be0d818168d855d44d649\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [com.github.bumptech.glide:glide:4.11.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\e737a9cf6c06b54fc3fc99d08644d9b2\jetified-glide-4.11.0\AndroidManifest.xml:6:5-8:41
-MERGED from [com.github.bumptech.glide:glide:4.11.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\e737a9cf6c06b54fc3fc99d08644d9b2\jetified-glide-4.11.0\AndroidManifest.xml:6:5-8:41
-MERGED from [com.github.barteksc:pdfium-android:1.9.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\d316c4d57da88c47d16410f9ef6b00a4\jetified-pdfium-android-1.9.0\AndroidManifest.xml:7:5-9:41
-MERGED from [com.github.barteksc:pdfium-android:1.9.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\d316c4d57da88c47d16410f9ef6b00a4\jetified-pdfium-android-1.9.0\AndroidManifest.xml:7:5-9:41
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\96d4907ab927722e1dcd87f186178ab8\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\96d4907ab927722e1dcd87f186178ab8\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\3e48eca6ba124b2256e60efe5ac303af\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\3e48eca6ba124b2256e60efe5ac303af\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.1.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\f1537293877057659a66701b5ca8c61c\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.1.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\f1537293877057659a66701b5ca8c61c\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat-resources:1.1.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\e7ca9a8fe3351f92d7f62480aa8b0e09\jetified-appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat-resources:1.1.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\e7ca9a8fe3351f92d7f62480aa8b0e09\jetified-appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\d615232b82eca76cd4d5abb42a5ba9f5\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\d615232b82eca76cd4d5abb42a5ba9f5\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\a6d86ede27b0f4fa218a8f17dddd71f5\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\a6d86ede27b0f4fa218a8f17dddd71f5\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\c01a1bc5b2ca70947cc3d76ae60b01ae\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\c01a1bc5b2ca70947cc3d76ae60b01ae\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.transition:transition:1.2.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\9a3baf1680d859601af406b30e5816d4\transition-1.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.transition:transition:1.2.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\9a3baf1680d859601af406b30e5816d4\transition-1.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\7ab1b40cc9526ccd812b8777901b2ac6\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\7ab1b40cc9526ccd812b8777901b2ac6\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\05682694207dd68c8f9bdd05a04336a0\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\05682694207dd68c8f9bdd05a04336a0\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager:viewpager:1.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\b2d74924575a9a1b4da0f7d77d93efb8\viewpager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\b2d74924575a9a1b4da0f7d77d93efb8\viewpager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\b821bf7ac742ffa0516f8125af015dac\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\b821bf7ac742ffa0516f8125af015dac\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\693288e2e79e8a07a29ba1008599a46e\loader-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\693288e2e79e8a07a29ba1008599a46e\loader-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.activity:activity:1.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\2513a9d4acc9b58192e1854f9236d871\jetified-activity-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity:1.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\2513a9d4acc9b58192e1854f9236d871\jetified-activity-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\3168c45a7a415784f80c445f15eb68c4\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\3168c45a7a415784f80c445f15eb68c4\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\3882efbc90c4bd50b2a3ed75c3e45a15\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\3882efbc90c4bd50b2a3ed75c3e45a15\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\4bbf229d07c7a5f9f0252c7ec1c0bac6\customview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\4bbf229d07c7a5f9f0252c7ec1c0bac6\customview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.media:media:1.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\ea41b0db64eda83237acc1ff6345782e\media-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.media:media:1.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\ea41b0db64eda83237acc1ff6345782e\media-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\80ccbb0bee772d3eca15084380921b9e\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\80ccbb0bee772d3eca15084380921b9e\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\9547c5470d8b6486a39176b56248b316\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\9547c5470d8b6486a39176b56248b316\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.1.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\788dbcd7dcbb0d36dfe5349648c923e5\core-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.1.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\788dbcd7dcbb0d36dfe5349648c923e5\core-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [com.scwang.smartrefresh:SmartRefreshLayout:1.0.4-4] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\741e2d2b8c951780f9579b439749ca17\jetified-SmartRefreshLayout-1.0.4-4\AndroidManifest.xml:7:5-9:41
-MERGED from [com.scwang.smartrefresh:SmartRefreshLayout:1.0.4-4] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\741e2d2b8c951780f9579b439749ca17\jetified-SmartRefreshLayout-1.0.4-4\AndroidManifest.xml:7:5-9:41
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\7750b94cc5550d110f421a347048952a\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\7750b94cc5550d110f421a347048952a\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\dff559a7f5b9340a1e85c06b55635114\jetified-gifdecoder-4.11.0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\dff559a7f5b9340a1e85c06b55635114\jetified-gifdecoder-4.11.0\AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.exifinterface:exifinterface:1.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\9f09ae04f8976477a93319f5419e103a\exifinterface-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.exifinterface:exifinterface:1.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\9f09ae04f8976477a93319f5419e103a\exifinterface-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\bcf3b54be321627d8a53382d43db34fa\cardview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\bcf3b54be321627d8a53382d43db34fa\cardview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\9ee12cf364f78663e6075004cf7b5819\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\9ee12cf364f78663e6075004cf7b5819\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\b3c73b1027cc9c0eecfb07ba0790209f\lifecycle-runtime-2.1.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\b3c73b1027cc9c0eecfb07ba0790209f\lifecycle-runtime-2.1.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\4bcaf56c0b429ab8139603d6f29c5c2d\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\4bcaf56c0b429ab8139603d6f29c5c2d\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.savedstate:savedstate:1.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\cfd1f8229ca7de0763d93f359d44a4a2\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\cfd1f8229ca7de0763d93f359d44a4a2\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.interpolator:interpolator:1.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\f1c128ccb5ac085421c0419cf582bc07\interpolator-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\f1c128ccb5ac085421c0419cf582bc07\interpolator-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\d7976adcdeaefd9ab1e660a51ea60008\documentfile-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\d7976adcdeaefd9ab1e660a51ea60008\documentfile-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\997a85ffb57ee57076e5948054bfa369\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\997a85ffb57ee57076e5948054bfa369\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\cdd5516601e272be0f30d62d8a144fac\print-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\cdd5516601e272be0f30d62d8a144fac\print-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\3db57cbad307f56cb8dc572bd9674e8d\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\3db57cbad307f56cb8dc572bd9674e8d\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\c9d93fe018e085bb22a11d59ae991e7e\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\c9d93fe018e085bb22a11d59ae991e7e\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\3e2391860e760568fb3efadd90e3638e\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\3e2391860e760568fb3efadd90e3638e\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
-INJECTED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml
-INJECTED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml
+INJECTED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml
+INJECTED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml
+MERGED from [com.king.zxing:zxing-lite:1.1.9-androidx] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\ceb39037199cf349c80fb8c9828321d9\jetified-zxing-lite-1.1.9-androidx\AndroidManifest.xml:7:5-9:41
+MERGED from [com.king.zxing:zxing-lite:1.1.9-androidx] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\ceb39037199cf349c80fb8c9828321d9\jetified-zxing-lite-1.1.9-androidx\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\7319878a0378100275d97b7d8573cec3\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\7319878a0378100275d97b7d8573cec3\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
+MERGED from [pub.devrel:easypermissions:3.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\9cfa3dd76c2e930e771a1ee5b42d3581\jetified-easypermissions-3.0.0\AndroidManifest.xml:7:5-9:41
+MERGED from [pub.devrel:easypermissions:3.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\9cfa3dd76c2e930e771a1ee5b42d3581\jetified-easypermissions-3.0.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.barteksc:android-pdf-viewer:3.2.0-beta.1] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\52cbb2e4e473c7de1cec798dafaf2eb3\jetified-android-pdf-viewer-3.2.0-beta.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.barteksc:android-pdf-viewer:3.2.0-beta.1] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\52cbb2e4e473c7de1cec798dafaf2eb3\jetified-android-pdf-viewer-3.2.0-beta.1\AndroidManifest.xml:7:5-9:41
+MERGED from [:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:6:5-8:41
+MERGED from [:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.android.material:material:1.1.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\e8aa87d87676852880d1f97ad7ef38e8\material-1.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.1.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\e8aa87d87676852880d1f97ad7ef38e8\material-1.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.1.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\11dfd6d06d9be0d818168d855d44d649\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\11dfd6d06d9be0d818168d855d44d649\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.github.bumptech.glide:glide:4.11.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\e737a9cf6c06b54fc3fc99d08644d9b2\jetified-glide-4.11.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.11.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\e737a9cf6c06b54fc3fc99d08644d9b2\jetified-glide-4.11.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.barteksc:pdfium-android:1.9.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\b57df6fd75cd4f68814da5a8ba8eed88\jetified-pdfium-android-1.9.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.barteksc:pdfium-android:1.9.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\b57df6fd75cd4f68814da5a8ba8eed88\jetified-pdfium-android-1.9.0\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\96d4907ab927722e1dcd87f186178ab8\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\96d4907ab927722e1dcd87f186178ab8\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\3e48eca6ba124b2256e60efe5ac303af\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\3e48eca6ba124b2256e60efe5ac303af\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\f1537293877057659a66701b5ca8c61c\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\f1537293877057659a66701b5ca8c61c\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\e7ca9a8fe3351f92d7f62480aa8b0e09\jetified-appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\e7ca9a8fe3351f92d7f62480aa8b0e09\jetified-appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\d615232b82eca76cd4d5abb42a5ba9f5\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\d615232b82eca76cd4d5abb42a5ba9f5\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\a6d86ede27b0f4fa218a8f17dddd71f5\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\a6d86ede27b0f4fa218a8f17dddd71f5\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\c01a1bc5b2ca70947cc3d76ae60b01ae\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\c01a1bc5b2ca70947cc3d76ae60b01ae\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\9a3baf1680d859601af406b30e5816d4\transition-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\9a3baf1680d859601af406b30e5816d4\transition-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\7ab1b40cc9526ccd812b8777901b2ac6\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\7ab1b40cc9526ccd812b8777901b2ac6\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\05682694207dd68c8f9bdd05a04336a0\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\05682694207dd68c8f9bdd05a04336a0\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\b2d74924575a9a1b4da0f7d77d93efb8\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\b2d74924575a9a1b4da0f7d77d93efb8\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\b821bf7ac742ffa0516f8125af015dac\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\b821bf7ac742ffa0516f8125af015dac\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\693288e2e79e8a07a29ba1008599a46e\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\693288e2e79e8a07a29ba1008599a46e\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\2513a9d4acc9b58192e1854f9236d871\jetified-activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\2513a9d4acc9b58192e1854f9236d871\jetified-activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\3168c45a7a415784f80c445f15eb68c4\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\3168c45a7a415784f80c445f15eb68c4\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\3882efbc90c4bd50b2a3ed75c3e45a15\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\3882efbc90c4bd50b2a3ed75c3e45a15\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\4bbf229d07c7a5f9f0252c7ec1c0bac6\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\4bbf229d07c7a5f9f0252c7ec1c0bac6\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\ea41b0db64eda83237acc1ff6345782e\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\ea41b0db64eda83237acc1ff6345782e\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\80ccbb0bee772d3eca15084380921b9e\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\80ccbb0bee772d3eca15084380921b9e\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\9547c5470d8b6486a39176b56248b316\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\9547c5470d8b6486a39176b56248b316\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.1.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\788dbcd7dcbb0d36dfe5349648c923e5\core-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\788dbcd7dcbb0d36dfe5349648c923e5\core-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.scwang.smartrefresh:SmartRefreshLayout:1.0.4-4] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\0d49cb25315aa5bf7e7e7631d39d39a3\jetified-SmartRefreshLayout-1.0.4-4\AndroidManifest.xml:7:5-9:41
+MERGED from [com.scwang.smartrefresh:SmartRefreshLayout:1.0.4-4] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\0d49cb25315aa5bf7e7e7631d39d39a3\jetified-SmartRefreshLayout-1.0.4-4\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\7750b94cc5550d110f421a347048952a\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\7750b94cc5550d110f421a347048952a\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\dff559a7f5b9340a1e85c06b55635114\jetified-gifdecoder-4.11.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\dff559a7f5b9340a1e85c06b55635114\jetified-gifdecoder-4.11.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\9f09ae04f8976477a93319f5419e103a\exifinterface-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\9f09ae04f8976477a93319f5419e103a\exifinterface-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\bcf3b54be321627d8a53382d43db34fa\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\bcf3b54be321627d8a53382d43db34fa\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\9ee12cf364f78663e6075004cf7b5819\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\9ee12cf364f78663e6075004cf7b5819\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\b3c73b1027cc9c0eecfb07ba0790209f\lifecycle-runtime-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\b3c73b1027cc9c0eecfb07ba0790209f\lifecycle-runtime-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\4bcaf56c0b429ab8139603d6f29c5c2d\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\4bcaf56c0b429ab8139603d6f29c5c2d\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\cfd1f8229ca7de0763d93f359d44a4a2\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\cfd1f8229ca7de0763d93f359d44a4a2\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\f1c128ccb5ac085421c0419cf582bc07\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\f1c128ccb5ac085421c0419cf582bc07\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\d7976adcdeaefd9ab1e660a51ea60008\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\d7976adcdeaefd9ab1e660a51ea60008\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\997a85ffb57ee57076e5948054bfa369\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\997a85ffb57ee57076e5948054bfa369\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\cdd5516601e272be0f30d62d8a144fac\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\cdd5516601e272be0f30d62d8a144fac\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\3db57cbad307f56cb8dc572bd9674e8d\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\3db57cbad307f56cb8dc572bd9674e8d\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\c9d93fe018e085bb22a11d59ae991e7e\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\c9d93fe018e085bb22a11d59ae991e7e\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\3e2391860e760568fb3efadd90e3638e\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\3e2391860e760568fb3efadd90e3638e\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+INJECTED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml
+INJECTED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml
-		INJECTED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml
+		INJECTED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml
+		INJECTED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml
-		INJECTED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml
+		INJECTED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml
+		INJECTED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:47:13-49:54
+ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:47:13-49:54
 	android:resource
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:49:17-51
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:49:17-51
 	android:name
-		ADDED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:48:17-67
+		ADDED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:48:17-67
 uses-permission#android.permission.CAMERA
-ADDED from [com.king.zxing:zxing-lite:1.1.9-androidx] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\ceb39037199cf349c80fb8c9828321d9\jetified-zxing-lite-1.1.9-androidx\AndroidManifest.xml:11:5-65
-MERGED from [:Library] G:\AndroidProject\Project\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:5-65
-MERGED from [:Library] G:\AndroidProject\Project\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:5-65
+ADDED from [com.king.zxing:zxing-lite:1.1.9-androidx] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\ceb39037199cf349c80fb8c9828321d9\jetified-zxing-lite-1.1.9-androidx\AndroidManifest.xml:11:5-65
+MERGED from [:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:5-65
+MERGED from [:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:5-65
 	android:name
-		ADDED from [com.king.zxing:zxing-lite:1.1.9-androidx] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\ceb39037199cf349c80fb8c9828321d9\jetified-zxing-lite-1.1.9-androidx\AndroidManifest.xml:11:22-62
+		ADDED from [com.king.zxing:zxing-lite:1.1.9-androidx] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\ceb39037199cf349c80fb8c9828321d9\jetified-zxing-lite-1.1.9-androidx\AndroidManifest.xml:11:22-62
 uses-permission#android.permission.VIBRATE
-ADDED from [com.king.zxing:zxing-lite:1.1.9-androidx] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\ceb39037199cf349c80fb8c9828321d9\jetified-zxing-lite-1.1.9-androidx\AndroidManifest.xml:13:5-66
+ADDED from [com.king.zxing:zxing-lite:1.1.9-androidx] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\ceb39037199cf349c80fb8c9828321d9\jetified-zxing-lite-1.1.9-androidx\AndroidManifest.xml:13:5-66
 	android:name
-		ADDED from [com.king.zxing:zxing-lite:1.1.9-androidx] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\ceb39037199cf349c80fb8c9828321d9\jetified-zxing-lite-1.1.9-androidx\AndroidManifest.xml:13:22-63
+		ADDED from [com.king.zxing:zxing-lite:1.1.9-androidx] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\ceb39037199cf349c80fb8c9828321d9\jetified-zxing-lite-1.1.9-androidx\AndroidManifest.xml:13:22-63
 uses-permission#android.permission.FLASHLIGHT
-ADDED from [com.king.zxing:zxing-lite:1.1.9-androidx] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\ceb39037199cf349c80fb8c9828321d9\jetified-zxing-lite-1.1.9-androidx\AndroidManifest.xml:14:5-69
+ADDED from [com.king.zxing:zxing-lite:1.1.9-androidx] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\ceb39037199cf349c80fb8c9828321d9\jetified-zxing-lite-1.1.9-androidx\AndroidManifest.xml:14:5-69
 	android:name
-		ADDED from [com.king.zxing:zxing-lite:1.1.9-androidx] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\ceb39037199cf349c80fb8c9828321d9\jetified-zxing-lite-1.1.9-androidx\AndroidManifest.xml:14:22-66
+		ADDED from [com.king.zxing:zxing-lite:1.1.9-androidx] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\ceb39037199cf349c80fb8c9828321d9\jetified-zxing-lite-1.1.9-androidx\AndroidManifest.xml:14:22-66
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from [com.king.zxing:zxing-lite:1.1.9-androidx] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\ceb39037199cf349c80fb8c9828321d9\jetified-zxing-lite-1.1.9-androidx\AndroidManifest.xml:15:5-81
-MERGED from [:Library] G:\AndroidProject\Project\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:5-81
-MERGED from [:Library] G:\AndroidProject\Project\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:5-81
+ADDED from [com.king.zxing:zxing-lite:1.1.9-androidx] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\ceb39037199cf349c80fb8c9828321d9\jetified-zxing-lite-1.1.9-androidx\AndroidManifest.xml:15:5-81
+MERGED from [:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:5-81
+MERGED from [:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:5-81
 	android:name
-		ADDED from [com.king.zxing:zxing-lite:1.1.9-androidx] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\ceb39037199cf349c80fb8c9828321d9\jetified-zxing-lite-1.1.9-androidx\AndroidManifest.xml:15:22-78
+		ADDED from [com.king.zxing:zxing-lite:1.1.9-androidx] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\ceb39037199cf349c80fb8c9828321d9\jetified-zxing-lite-1.1.9-androidx\AndroidManifest.xml:15:22-78
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-IMPLIED from G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:2:1-239:12 reason: com.king.zxing requested WRITE_EXTERNAL_STORAGE
-MERGED from [:Library] G:\AndroidProject\Project\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:5-80
-MERGED from [:Library] G:\AndroidProject\Project\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:5-80
+IMPLIED from F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:2:1-237:12 reason: com.king.zxing requested WRITE_EXTERNAL_STORAGE
+MERGED from [:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:5-80
+MERGED from [:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:5-80
 activity#pub.devrel.easypermissions.AppSettingsDialogHolderActivity
-ADDED from [pub.devrel:easypermissions:3.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\9cfa3dd76c2e930e771a1ee5b42d3581\jetified-easypermissions-3.0.0\AndroidManifest.xml:12:9-16:66
+ADDED from [pub.devrel:easypermissions:3.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\9cfa3dd76c2e930e771a1ee5b42d3581\jetified-easypermissions-3.0.0\AndroidManifest.xml:12:9-16:66
 	android:label
-		ADDED from [pub.devrel:easypermissions:3.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\9cfa3dd76c2e930e771a1ee5b42d3581\jetified-easypermissions-3.0.0\AndroidManifest.xml:15:13-29
+		ADDED from [pub.devrel:easypermissions:3.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\9cfa3dd76c2e930e771a1ee5b42d3581\jetified-easypermissions-3.0.0\AndroidManifest.xml:15:13-29
 	android:exported
-		ADDED from [pub.devrel:easypermissions:3.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\9cfa3dd76c2e930e771a1ee5b42d3581\jetified-easypermissions-3.0.0\AndroidManifest.xml:14:13-37
+		ADDED from [pub.devrel:easypermissions:3.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\9cfa3dd76c2e930e771a1ee5b42d3581\jetified-easypermissions-3.0.0\AndroidManifest.xml:14:13-37
 	android:theme
-		ADDED from [pub.devrel:easypermissions:3.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\9cfa3dd76c2e930e771a1ee5b42d3581\jetified-easypermissions-3.0.0\AndroidManifest.xml:16:13-63
+		ADDED from [pub.devrel:easypermissions:3.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\9cfa3dd76c2e930e771a1ee5b42d3581\jetified-easypermissions-3.0.0\AndroidManifest.xml:16:13-63
 	android:name
-		ADDED from [pub.devrel:easypermissions:3.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\9cfa3dd76c2e930e771a1ee5b42d3581\jetified-easypermissions-3.0.0\AndroidManifest.xml:13:13-86
+		ADDED from [pub.devrel:easypermissions:3.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\9cfa3dd76c2e930e771a1ee5b42d3581\jetified-easypermissions-3.0.0\AndroidManifest.xml:13:13-86
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from [:Library] G:\AndroidProject\Project\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:5-79
+ADDED from [:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:5-79
 	android:name
-		ADDED from [:Library] G:\AndroidProject\Project\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:22-76
+		ADDED from [:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:22-76
 uses-permission#android.permission.CALL_PHONE
-ADDED from [:Library] G:\AndroidProject\Project\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:5-69
+ADDED from [:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:5-69
 	android:name
-		ADDED from [:Library] G:\AndroidProject\Project\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:22-66
+		ADDED from [:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:22-66
 uses-permission#android.permission.SEND_SMS
-ADDED from [:Library] G:\AndroidProject\Project\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:23:5-67
+ADDED from [:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:23:5-67
 	android:name
-		ADDED from [:Library] G:\AndroidProject\Project\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:23:22-64
+		ADDED from [:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:23:22-64
 meta-data#android.max_aspect
-ADDED from [:Library] G:\AndroidProject\Project\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:30:9-32:35
+ADDED from [:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:30:9-32:35
 	android:value
-		ADDED from [:Library] G:\AndroidProject\Project\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:32:13-32
+		ADDED from [:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:32:13-32
 	android:name
-		ADDED from [:Library] G:\AndroidProject\Project\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:31:13-46
+		ADDED from [:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:31:13-46
 activity#zuo.biao.library.base.BaseHttpRecyclerActivity
-ADDED from [:Library] G:\AndroidProject\Project\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:87:9-83
+ADDED from [:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:87:9-83
 	android:name
-		ADDED from [:Library] G:\AndroidProject\Project\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:87:19-80
+		ADDED from [:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:87:19-80

@@ -227,13 +227,11 @@
 
         <meta-data
             android:name="com.amap.api.v2.apikey"
-            android:value="b9813319913bb8b26063e2602557f2a4" />
-
+            android:value="4fe7a4a893e68a33825bbf8caa70ae49" />
 
         <activity android:name="com.amap.api.navi.AmapRouteActivity"
             android:theme="@android:style/Theme.NoTitleBar"
             android:configChanges="orientation|keyboardHidden|screenSize" />
-
 
     </application>
 </manifest>

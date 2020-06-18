@@ -6,487 +6,487 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="22"
-8-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml
+8-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="29" />
-9-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml
+9-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml
 10    <!-- 需要的权限和功能 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
 11    <uses-permission android:name="android.permission_group.LOCATION" />
-11-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:6:5-73
-11-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:6:22-70
+11-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:6:5-73
+11-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:6:22-70
 12    <uses-permission android:name="android.permission_group.CAMERA" />
-12-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:7:5-71
-12-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:7:22-68
+12-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:7:5-71
+12-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:7:22-68
 13    <uses-permission android:name="android.permission_group.STORAGE" />
-13-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:8:5-72
-13-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:8:22-69
+13-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:8:5-72
+13-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:8:22-69
 14    <uses-permission android:name="android.permission_group.PHONE" />
-14-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:9:5-70
-14-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:9:22-67
+14-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:9:5-70
+14-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:9:22-67
 15    <uses-permission android:name="android.permission_group.SENSORS" />
-15-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:10:5-72
-15-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:10:22-69
+15-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:10:5-72
+15-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:10:22-69
 16    <uses-permission android:name="android.permission_group.ACTIVITY_RECOGNITION" />
-16-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:11:5-85
-16-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:11:22-82
+16-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:11:5-85
+16-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:11:22-82
 17    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
-17-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:12:5-85
-17-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:12:22-82
+17-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:12:5-85
+17-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:12:22-82
 18    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-18-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:13:5-81
-18-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:13:22-78
+18-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:13:5-81
+18-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:13:22-78
 19    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-19-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:14:5-79
-19-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:14:22-76
+19-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:14:5-79
+19-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:14:22-76
 20    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
-20-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:15:5-85
-20-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:15:22-82
+20-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:15:5-85
+20-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:15:22-82
 21    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-21-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:16:5-78
-21-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:16:22-75
+21-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:16:5-78
+21-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:16:22-75
 22    <uses-permission android:name="android.permission.WAKE_LOCK" />
-22-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:17:5-68
-22-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:17:22-65
+22-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:17:5-68
+22-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:17:22-65
 23    <uses-permission android:name="android.permission.INTERNET" />
-23-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:18:5-67
-23-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:18:22-64
+23-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:18:5-67
+23-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:18:22-64
 24    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-24-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:19:5-75
-24-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:19:22-72
+24-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:19:5-75
+24-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:19:22-72
 25    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
-25-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:20:5-76
-25-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:20:22-73
+25-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:20:5-76
+25-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:20:22-73
 26    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-26-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:21:5-76
-26-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:21:22-73
+26-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:21:5-76
+26-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:21:22-73
 27
 28    <uses-feature android:name="android.hardware.camera" />
-28-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:23:5-60
-28-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:23:19-57
+28-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:23:5-60
+28-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:23:19-57
 29    <uses-feature android:name="android.hardware.camera.autofocus" />
-29-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:24:5-70
-29-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:24:19-67
+29-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:24:5-70
+29-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:24:19-67
 30
 31    <uses-permission android:name="android.permission.CAMERA" />
-31-->[com.king.zxing:zxing-lite:1.1.9-androidx] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\ceb39037199cf349c80fb8c9828321d9\jetified-zxing-lite-1.1.9-androidx\AndroidManifest.xml:11:5-65
-31-->[com.king.zxing:zxing-lite:1.1.9-androidx] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\ceb39037199cf349c80fb8c9828321d9\jetified-zxing-lite-1.1.9-androidx\AndroidManifest.xml:11:22-62
+31-->[com.king.zxing:zxing-lite:1.1.9-androidx] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\ceb39037199cf349c80fb8c9828321d9\jetified-zxing-lite-1.1.9-androidx\AndroidManifest.xml:11:5-65
+31-->[com.king.zxing:zxing-lite:1.1.9-androidx] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\ceb39037199cf349c80fb8c9828321d9\jetified-zxing-lite-1.1.9-androidx\AndroidManifest.xml:11:22-62
 32    <uses-permission android:name="android.permission.VIBRATE" />
-32-->[com.king.zxing:zxing-lite:1.1.9-androidx] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\ceb39037199cf349c80fb8c9828321d9\jetified-zxing-lite-1.1.9-androidx\AndroidManifest.xml:13:5-66
-32-->[com.king.zxing:zxing-lite:1.1.9-androidx] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\ceb39037199cf349c80fb8c9828321d9\jetified-zxing-lite-1.1.9-androidx\AndroidManifest.xml:13:22-63
+32-->[com.king.zxing:zxing-lite:1.1.9-androidx] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\ceb39037199cf349c80fb8c9828321d9\jetified-zxing-lite-1.1.9-androidx\AndroidManifest.xml:13:5-66
+32-->[com.king.zxing:zxing-lite:1.1.9-androidx] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\ceb39037199cf349c80fb8c9828321d9\jetified-zxing-lite-1.1.9-androidx\AndroidManifest.xml:13:22-63
 33    <uses-permission android:name="android.permission.FLASHLIGHT" />
-33-->[com.king.zxing:zxing-lite:1.1.9-androidx] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\ceb39037199cf349c80fb8c9828321d9\jetified-zxing-lite-1.1.9-androidx\AndroidManifest.xml:14:5-69
-33-->[com.king.zxing:zxing-lite:1.1.9-androidx] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\ceb39037199cf349c80fb8c9828321d9\jetified-zxing-lite-1.1.9-androidx\AndroidManifest.xml:14:22-66
+33-->[com.king.zxing:zxing-lite:1.1.9-androidx] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\ceb39037199cf349c80fb8c9828321d9\jetified-zxing-lite-1.1.9-androidx\AndroidManifest.xml:14:5-69
+33-->[com.king.zxing:zxing-lite:1.1.9-androidx] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\ceb39037199cf349c80fb8c9828321d9\jetified-zxing-lite-1.1.9-androidx\AndroidManifest.xml:14:22-66
 34    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-34-->[com.king.zxing:zxing-lite:1.1.9-androidx] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\ceb39037199cf349c80fb8c9828321d9\jetified-zxing-lite-1.1.9-androidx\AndroidManifest.xml:15:5-81
-34-->[com.king.zxing:zxing-lite:1.1.9-androidx] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\ceb39037199cf349c80fb8c9828321d9\jetified-zxing-lite-1.1.9-androidx\AndroidManifest.xml:15:22-78
+34-->[com.king.zxing:zxing-lite:1.1.9-androidx] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\ceb39037199cf349c80fb8c9828321d9\jetified-zxing-lite-1.1.9-androidx\AndroidManifest.xml:15:5-81
+34-->[com.king.zxing:zxing-lite:1.1.9-androidx] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\ceb39037199cf349c80fb8c9828321d9\jetified-zxing-lite-1.1.9-androidx\AndroidManifest.xml:15:22-78
 35    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 36    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-36-->[:Library] G:\AndroidProject\Project\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:5-79
-36-->[:Library] G:\AndroidProject\Project\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:22-76
+36-->[:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:5-79
+36-->[:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:22-76
 37    <uses-permission android:name="android.permission.CALL_PHONE" />
-37-->[:Library] G:\AndroidProject\Project\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:5-69
-37-->[:Library] G:\AndroidProject\Project\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:22-66
+37-->[:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:5-69
+37-->[:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:22-66
 38    <uses-permission android:name="android.permission.SEND_SMS" />
-38-->[:Library] G:\AndroidProject\Project\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:23:5-67
-38-->[:Library] G:\AndroidProject\Project\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:23:22-64
+38-->[:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:23:5-67
+38-->[:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:23:22-64
 39
 40    <application
-40-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:26:5-238:19
+40-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:26:5-236:19
 41        android:name="hidden.edu.application.DemoApplication"
-41-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:27:9-62
+41-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:27:9-62
 42        android:allowBackup="true"
-42-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:28:9-35
+42-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:28:9-35
 43        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-43-->[androidx.core:core:1.1.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\788dbcd7dcbb0d36dfe5349648c923e5\core-1.1.0\AndroidManifest.xml:24:18-86
+43-->[androidx.core:core:1.1.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\788dbcd7dcbb0d36dfe5349648c923e5\core-1.1.0\AndroidManifest.xml:24:18-86
 44        android:debuggable="true"
 45        android:fullBackupContent="true"
-45-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:29:9-41
+45-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:29:9-41
 46        android:icon="@drawable/ic_launcher"
-46-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:30:9-45
+46-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:30:9-45
 47        android:label="@string/app_name"
-47-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:31:9-41
+47-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:31:9-41
 48        android:largeHeap="true"
-48-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:34:9-33
+48-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:34:9-33
 49        android:screenOrientation="fullSensor"
-49-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:32:9-47
+49-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:32:9-47
 50        android:supportsRtl="true"
-50-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:33:9-35
+50-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:33:9-35
 51        android:testOnly="true"
 52        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-52-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:36:9-65
+52-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:36:9-65
 53        android:usesCleartextTraffic="true" >
-53-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:35:9-44
+53-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:35:9-44
 54        <activity android:name="hidden.edu.demo.DemoThreadPoolActivity" />
-54-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:38:9-40:50
-54-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:39:13-66
+54-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:38:9-40:50
+54-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:39:13-66
 55
 56        <provider
 57            android:name="androidx.core.content.FileProvider"
-57-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:43:13-62
+57-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:43:13-62
 58            android:authorities="hidden.edu.fileprovider"
-58-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:44:13-64
+58-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:44:13-64
 59            android:exported="false"
-59-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:45:13-37
+59-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:45:13-37
 60            android:grantUriPermissions="true" >
-60-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:46:13-47
+60-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:46:13-47
 61            <meta-data
-61-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:47:13-49:54
+61-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:47:13-49:54
 62                android:name="android.support.FILE_PROVIDER_PATHS"
-62-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:48:17-67
+62-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:48:17-67
 63                android:resource="@xml/file_paths" />
-63-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:49:17-51
+63-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:49:17-51
 64        </provider>
 65
 66        <activity
-66-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:52:9-63:20
+66-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:52:9-63:20
 67            android:name="hidden.edu.activity.StartActivity"
-67-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:53:13-61
+67-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:53:13-61
 68            android:label="@string/app_name"
-68-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:54:13-45
+68-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:54:13-45
 69            android:screenOrientation="fullSensor"
-69-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:55:13-51
+69-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:55:13-51
 70            android:theme="@style/SplashTheme" >
-70-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:56:13-47
+70-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:56:13-47
 71            <intent-filter>
-71-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:57:13-62:29
+71-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:57:13-62:29
 72
 73                <!-- 显示在通知中的都要公开 -->
 74                <action android:name="android.intent.action.MAIN" />
-74-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:59:17-69
-74-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:59:25-66
+74-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:59:17-69
+74-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:59:25-66
 75                <!-- 用以启动应用!无action不接受intent对象 -->
 76                <category android:name="android.intent.category.LAUNCHER" />
-76-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:61:17-77
-76-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:61:27-74
+76-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:61:17-77
+76-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:61:27-74
 77            </intent-filter>
 78        </activity>
 79        <activity
-79-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:64:9-73:20
+79-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:64:9-73:20
 80            android:name="hidden.edu.activity.MainTabActivity"
-80-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:65:13-63
+80-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:65:13-63
 81            android:label="@string/app_name"
-81-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:66:13-45
+81-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:66:13-45
 82            android:screenOrientation="portrait" >
-82-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:67:13-49
+82-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:67:13-49
 83            <intent-filter>
-83-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:69:13-72:29
+83-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:69:13-72:29
 84
 85                <!-- 主活动,接收大部分intent对象,notification需要! -->
 86                <action android:name="android.intent.action.MAIN" />
-86-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:59:17-69
-86-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:59:25-66
+86-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:59:17-69
+86-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:59:25-66
 87            </intent-filter>
 88        </activity>
 89        <activity
-89-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:74:9-78:50
+89-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:74:9-78:50
 90            android:name="hidden.edu.activity.SplashActivity"
-90-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:75:13-62
+90-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:75:13-62
 91            android:label="@string/app_name"
-91-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:76:13-45
+91-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:76:13-45
 92            android:screenOrientation="fullSensor"
-92-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:77:13-51
+92-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:77:13-51
 93            android:theme="@style/SplashTheme" />
-93-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:78:13-47
+93-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:78:13-47
 94        <activity
-94-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:79:9-82:56
+94-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:79:9-82:56
 95            android:name="hidden.edu.activity.AboutActivity"
-95-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:80:13-61
+95-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:80:13-61
 96            android:screenOrientation="portrait" />
-96-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:81:13-49
+96-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:81:13-49
 97        <activity
-97-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:83:9-86:63
+97-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:83:9-86:63
 98            android:name="hidden.edu.activity.SettingActivity"
-98-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:84:13-63
+98-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:84:13-63
 99            android:screenOrientation="fullSensor"
-99-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:85:13-51
+99-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:85:13-51
 100            android:windowSoftInputMode="stateAlwaysHidden" />
-100-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:86:13-60
+100-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:86:13-60
 101        <activity
-101-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:87:9-90:63
+101-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:87:9-90:63
 102            android:name="hidden.edu.activity.UserActivity"
-102-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:88:13-60
+102-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:88:13-60
 103            android:screenOrientation="fullSensor"
-103-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:89:13-51
+103-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:89:13-51
 104            android:windowSoftInputMode="stateAlwaysHidden" />
-104-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:90:13-60
+104-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:90:13-60
 105        <activity
-105-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:91:9-93:63
+105-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:91:9-93:63
 106            android:name="hidden.edu.activity.NaviActivity"
-106-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:91:19-56
+106-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:91:19-56
 107            android:screenOrientation="fullSensor"
-107-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:92:13-51
+107-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:92:13-51
 108            android:windowSoftInputMode="stateAlwaysHidden" />
-108-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:93:13-60
+108-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:93:13-60
 109        <activity
-109-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:94:9-97:63
+109-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:94:9-97:63
 110            android:name="hidden.edu.activity.PdfViewActivity"
-110-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:95:13-63
+110-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:95:13-63
 111            android:screenOrientation="fullSensor"
-111-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:96:13-51
+111-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:96:13-51
 112            android:windowSoftInputMode="stateAlwaysHidden" />
-112-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:97:13-60
+112-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:97:13-60
 113        <activity
-113-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:98:9-102:56
+113-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:98:9-102:56
 114            android:name="hidden.edu.activity.ScanActivity"
-114-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:99:13-60
+114-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:99:13-60
 115            android:screenOrientation="portrait"
-115-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:100:13-49
+115-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:100:13-49
 116            android:windowSoftInputMode="stateAlwaysHidden" />
-116-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:101:13-60
+116-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:101:13-60
 117        <activity
-117-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:103:9-107:56
+117-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:103:9-107:56
 118            android:name="hidden.edu.activity.QRCodeActivity"
-118-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:104:13-62
+118-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:104:13-62
 119            android:screenOrientation="portrait"
-119-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:105:13-49
+119-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:105:13-49
 120            android:windowSoftInputMode="stateAlwaysHidden" /> <!-- Demo <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
-120-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:106:13-60
+120-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:106:13-60
 121        <activity
-121-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:108:9-112:50
+121-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:108:9-112:50
 122            android:name="hidden.edu.demo.DemoMainActivity"
-122-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:109:13-60
+122-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:109:13-60
 123            android:screenOrientation="fullSensor"
-123-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:110:13-51
+123-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:110:13-51
 124            android:windowSoftInputMode="stateAlwaysHidden" />
-124-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:111:13-60
+124-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:111:13-60
 125        <activity
-125-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:113:9-117:50
+125-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:113:9-117:50
 126            android:name="hidden.edu.demo.DemoActivity"
-126-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:114:13-56
+126-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:114:13-56
 127            android:screenOrientation="fullSensor"
-127-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:115:13-51
+127-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:115:13-51
 128            android:windowSoftInputMode="stateAlwaysHidden" />
-128-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:116:13-60
+128-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:116:13-60
 129        <activity
-129-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:118:9-122:50
+129-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:118:9-122:50
 130            android:name="hidden.edu.demo.DemoListActivity"
-130-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:119:13-60
+130-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:119:13-60
 131            android:screenOrientation="fullSensor"
-131-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:120:13-51
+131-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:120:13-51
 132            android:windowSoftInputMode="stateAlwaysHidden" />
-132-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:121:13-60
+132-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:121:13-60
 133        <activity
-133-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:123:9-127:50
+133-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:123:9-127:50
 134            android:name="hidden.edu.demo.DemoRecyclerActivity"
-134-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:124:13-64
+134-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:124:13-64
 135            android:screenOrientation="fullSensor"
-135-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:125:13-51
+135-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:125:13-51
 136            android:windowSoftInputMode="stateAlwaysHidden" />
-136-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:126:13-60
+136-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:126:13-60
 137        <activity
-137-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:128:9-132:50
+137-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:128:9-132:50
 138            android:name="hidden.edu.demo.DemoHttpListActivity"
-138-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:129:13-64
+138-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:129:13-64
 139            android:screenOrientation="fullSensor"
-139-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:130:13-51
+139-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:130:13-51
 140            android:windowSoftInputMode="stateAlwaysHidden" />
-140-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:131:13-60
+140-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:131:13-60
 141        <activity
-141-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:133:9-137:50
+141-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:133:9-137:50
 142            android:name="hidden.edu.demo.DemoHttpRecyclerActivity"
-142-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:134:13-68
+142-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:134:13-68
 143            android:screenOrientation="fullSensor"
-143-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:135:13-51
+143-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:135:13-51
 144            android:windowSoftInputMode="stateAlwaysHidden" />
-144-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:136:13-60
+144-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:136:13-60
 145        <activity
-145-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:138:9-143:50
+145-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:138:9-143:50
 146            android:name="hidden.edu.demo.DemoFragmentActivity"
-146-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:139:13-64
+146-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:139:13-64
 147            android:launchMode="singleTop"
-147-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:140:13-43
+147-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:140:13-43
 148            android:screenOrientation="fullSensor"
-148-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:141:13-51
+148-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:141:13-51
 149            android:windowSoftInputMode="stateAlwaysHidden" />
-149-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:142:13-60
+149-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:142:13-60
 150        <activity
-150-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:144:9-148:50
+150-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:144:9-148:50
 151            android:name="hidden.edu.demo.DemoTabActivity"
-151-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:145:13-59
+151-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:145:13-59
 152            android:screenOrientation="fullSensor"
-152-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:146:13-51
+152-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:146:13-51
 153            android:windowSoftInputMode="stateAlwaysHidden" />
-153-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:147:13-60
+153-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:147:13-60
 154        <activity
-154-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:149:9-153:50
+154-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:149:9-153:50
 155            android:name="hidden.edu.demo.DemoSQLActivity"
-155-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:150:13-59
+155-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:150:13-59
 156            android:screenOrientation="fullSensor"
-156-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:151:13-51
+156-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:151:13-51
 157            android:windowSoftInputMode="stateHidden|adjustResize|adjustUnspecified" />
-157-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:152:13-85
+157-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:152:13-85
 158        <activity
-158-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:154:9-158:50
+158-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:154:9-158:50
 159            android:name="hidden.edu.demo.DemoTimeRefresherActivity"
-159-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:155:13-69
+159-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:155:13-69
 160            android:screenOrientation="fullSensor"
-160-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:156:13-51
+160-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:156:13-51
 161            android:windowSoftInputMode="stateHidden|adjustResize|adjustUnspecified" />
-161-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:157:13-85
+161-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:157:13-85
 162        <activity
-162-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:159:9-163:50
+162-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:159:9-163:50
 163            android:name="hidden.edu.demo.DemoBroadcastReceiverActivity"
-163-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:160:13-73
+163-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:160:13-73
 164            android:screenOrientation="fullSensor"
-164-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:161:13-51
+164-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:161:13-51
 165            android:windowSoftInputMode="stateAlwaysHidden" />
-165-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:162:13-60
+165-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:162:13-60
 166        <activity
-166-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:164:9-169:50
+166-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:164:9-169:50
 167            android:name="hidden.edu.demo.DemoBottomWindow"
-167-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:165:13-60
+167-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:165:13-60
 168            android:screenOrientation="fullSensor"
-168-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:166:13-51
+168-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:166:13-51
 169            android:theme="@style/Window"
-169-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:167:13-42
+169-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:167:13-42
 170            android:windowSoftInputMode="stateAlwaysHidden" /> <!-- Demo >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
-170-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:168:13-60
+170-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:168:13-60
 171        <!-- ZBLibrary <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
 172        <activity
-172-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:171:9-175:63
+172-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:171:9-175:63
 173            android:name="zuo.biao.library.ui.SelectPictureActivity"
-173-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:172:13-69
+173-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:172:13-69
 174            android:screenOrientation="fullSensor"
-174-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:173:13-51
+174-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:173:13-51
 175            android:theme="@style/WindowCompleteAlpha"
-175-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:174:13-55
+175-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:174:13-55
 176            android:windowSoftInputMode="stateAlwaysHidden" />
-176-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:175:13-60
+176-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:175:13-60
 177        <activity
-177-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:176:9-180:63
+177-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:176:9-180:63
 178            android:name="zuo.biao.library.ui.CutPictureActivity"
-178-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:177:13-66
+178-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:177:13-66
 179            android:screenOrientation="fullSensor"
-179-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:178:13-51
+179-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:178:13-51
 180            android:theme="@style/Window"
-180-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:179:13-42
+180-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:179:13-42
 181            android:windowSoftInputMode="stateAlwaysHidden" />
-181-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:180:13-60
+181-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:180:13-60
 182        <activity
-182-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:181:9-186:56
+182-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:181:9-186:56
 183            android:name="zuo.biao.library.ui.WebViewActivity"
-183-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:182:13-63
+183-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:182:13-63
 184            android:launchMode="singleTop"
-184-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:183:13-43
+184-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:183:13-43
 185            android:screenOrientation="fullSensor"
-185-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:184:13-51
+185-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:184:13-51
 186            android:windowSoftInputMode="stateHidden|adjustResize|adjustUnspecified" />
-186-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:185:13-85
+186-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:185:13-85
 187        <activity
-187-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:187:9-190:86
+187-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:187:9-190:86
 188            android:name="zuo.biao.library.ui.EditTextInfoActivity"
-188-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:188:13-68
+188-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:188:13-68
 189            android:screenOrientation="fullSensor"
-189-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:189:13-51
+189-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:189:13-51
 190            android:windowSoftInputMode="stateVisible|adjustPan|adjustUnspecified" />
-190-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:190:13-83
+190-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:190:13-83
 191        <activity
-191-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:191:9-194:57
+191-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:191:9-194:57
 192            android:name="zuo.biao.library.ui.ServerSettingActivity"
-192-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:192:13-69
+192-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:192:13-69
 193            android:screenOrientation="fullSensor"
-193-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:193:13-51
+193-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:193:13-51
 194            android:windowSoftInputMode="stateHidden" />
-194-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:194:13-54
+194-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:194:13-54
 195        <activity
-195-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:195:9-199:63
+195-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:195:9-199:63
 196            android:name="zuo.biao.library.ui.TopMenuWindow"
-196-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:196:13-61
+196-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:196:13-61
 197            android:screenOrientation="fullSensor"
-197-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:197:13-51
+197-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:197:13-51
 198            android:theme="@style/Window"
-198-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:198:13-42
+198-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:198:13-42
 199            android:windowSoftInputMode="stateAlwaysHidden" />
-199-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:199:13-60
+199-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:199:13-60
 200        <activity
-200-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:200:9-204:63
+200-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:200:9-204:63
 201            android:name="zuo.biao.library.ui.BottomMenuWindow"
-201-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:201:13-64
+201-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:201:13-64
 202            android:screenOrientation="fullSensor"
-202-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:202:13-51
+202-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:202:13-51
 203            android:theme="@style/Window"
-203-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:203:13-42
+203-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:203:13-42
 204            android:windowSoftInputMode="stateAlwaysHidden" />
-204-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:204:13-60
+204-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:204:13-60
 205        <activity
-205-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:205:9-209:89
+205-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:205:9-209:89
 206            android:name="zuo.biao.library.ui.EditTextInfoWindow"
-206-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:206:13-66
+206-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:206:13-66
 207            android:screenOrientation="fullSensor"
-207-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:207:13-51
+207-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:207:13-51
 208            android:theme="@style/Window"
-208-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:208:13-42
+208-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:208:13-42
 209            android:windowSoftInputMode="stateVisible|adjustResize|adjustUnspecified" />
-209-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:209:13-86
+209-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:209:13-86
 210        <activity
-210-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:210:9-214:63
+210-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:210:9-214:63
 211            android:name="zuo.biao.library.ui.PlacePickerWindow"
-211-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:211:13-65
+211-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:211:13-65
 212            android:screenOrientation="fullSensor"
-212-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:212:13-51
+212-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:212:13-51
 213            android:theme="@style/Window"
-213-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:213:13-42
+213-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:213:13-42
 214            android:windowSoftInputMode="stateAlwaysHidden" />
-214-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:214:13-60
+214-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:214:13-60
 215        <activity
-215-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:215:9-219:63
+215-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:215:9-219:63
 216            android:name="zuo.biao.library.ui.DatePickerWindow"
-216-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:216:13-64
+216-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:216:13-64
 217            android:screenOrientation="fullSensor"
-217-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:217:13-51
+217-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:217:13-51
 218            android:theme="@style/Window"
-218-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:218:13-42
+218-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:218:13-42
 219            android:windowSoftInputMode="stateAlwaysHidden" />
-219-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:219:13-60
+219-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:219:13-60
 220        <activity
-220-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:220:9-224:63
+220-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:220:9-224:63
 221            android:name="zuo.biao.library.ui.TimePickerWindow"
-221-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:221:13-64
+221-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:221:13-64
 222            android:screenOrientation="fullSensor"
-222-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:222:13-51
+222-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:222:13-51
 223            android:theme="@style/Window"
-223-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:223:13-42
+223-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:223:13-42
 224            android:windowSoftInputMode="stateAlwaysHidden" />
-224-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:224:13-60
+224-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:224:13-60
 225
 226        <service android:name="com.amap.api.location.APSService" />
-226-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:226:9-68
-226-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:226:18-65
+226-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:226:9-68
+226-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:226:18-65
 227
 228        <meta-data
-228-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:228:9-230:64
+228-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:228:9-230:64
 229            android:name="com.amap.api.v2.apikey"
-229-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:229:13-50
-230            android:value="b9813319913bb8b26063e2602557f2a4" />
-230-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:230:13-61
+229-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:229:13-50
+230            android:value="4fe7a4a893e68a33825bbf8caa70ae49" />
+230-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:230:13-61
 231
 232        <activity
-232-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:233:9-235:77
+232-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:232:9-234:77
 233            android:name="com.amap.api.navi.AmapRouteActivity"
-233-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:233:19-69
+233-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:232:19-69
 234            android:configChanges="orientation|keyboardHidden|screenSize"
-234-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:235:13-74
+234-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:234:13-74
 235            android:theme="@android:style/Theme.NoTitleBar" />
-235-->G:\AndroidProject\Project\HiddenTale\app\src\main\AndroidManifest.xml:234:13-60
+235-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:233:13-60
 236        <activity
-236-->[pub.devrel:easypermissions:3.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\9cfa3dd76c2e930e771a1ee5b42d3581\jetified-easypermissions-3.0.0\AndroidManifest.xml:12:9-16:66
+236-->[pub.devrel:easypermissions:3.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\9cfa3dd76c2e930e771a1ee5b42d3581\jetified-easypermissions-3.0.0\AndroidManifest.xml:12:9-16:66
 237            android:name="pub.devrel.easypermissions.AppSettingsDialogHolderActivity"
-237-->[pub.devrel:easypermissions:3.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\9cfa3dd76c2e930e771a1ee5b42d3581\jetified-easypermissions-3.0.0\AndroidManifest.xml:13:13-86
+237-->[pub.devrel:easypermissions:3.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\9cfa3dd76c2e930e771a1ee5b42d3581\jetified-easypermissions-3.0.0\AndroidManifest.xml:13:13-86
 238            android:exported="false"
-238-->[pub.devrel:easypermissions:3.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\9cfa3dd76c2e930e771a1ee5b42d3581\jetified-easypermissions-3.0.0\AndroidManifest.xml:14:13-37
+238-->[pub.devrel:easypermissions:3.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\9cfa3dd76c2e930e771a1ee5b42d3581\jetified-easypermissions-3.0.0\AndroidManifest.xml:14:13-37
 239            android:label=""
-239-->[pub.devrel:easypermissions:3.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\9cfa3dd76c2e930e771a1ee5b42d3581\jetified-easypermissions-3.0.0\AndroidManifest.xml:15:13-29
+239-->[pub.devrel:easypermissions:3.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\9cfa3dd76c2e930e771a1ee5b42d3581\jetified-easypermissions-3.0.0\AndroidManifest.xml:15:13-29
 240            android:theme="@style/EasyPermissions.Transparent" /> <!-- 更好的适配全面屏 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
-240-->[pub.devrel:easypermissions:3.0.0] G:\AndroidLocal\.gradle\caches\transforms-2\files-2.1\9cfa3dd76c2e930e771a1ee5b42d3581\jetified-easypermissions-3.0.0\AndroidManifest.xml:16:13-63
+240-->[pub.devrel:easypermissions:3.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\9cfa3dd76c2e930e771a1ee5b42d3581\jetified-easypermissions-3.0.0\AndroidManifest.xml:16:13-63
 241        <meta-data
-241-->[:Library] G:\AndroidProject\Project\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:30:9-32:35
+241-->[:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:30:9-32:35
 242            android:name="android.max_aspect"
-242-->[:Library] G:\AndroidProject\Project\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:31:13-46
+242-->[:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:31:13-46
 243            android:value="2.1" />
-243-->[:Library] G:\AndroidProject\Project\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:32:13-32
+243-->[:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:32:13-32
 244
 245        <activity android:name="zuo.biao.library.base.BaseHttpRecyclerActivity" />
-245-->[:Library] G:\AndroidProject\Project\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:87:9-83
-245-->[:Library] G:\AndroidProject\Project\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:87:19-80
+245-->[:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:87:9-83
+245-->[:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:87:19-80
 246    </application>
 247
 248</manifest>

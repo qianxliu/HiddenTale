@@ -1,14 +1,14 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.barteksc:android-pdf-viewer:3.2.0-beta.1@aar">
     <CLASSES>
-      <root url="jar://G:/AndroidLocal/.gradle/caches/transforms-2/files-2.1/76446c964db3af8b1bd105c60b7599e2/jetified-android-pdf-viewer-3.2.0-beta.1/jars/classes.jar!/" />
-      <root url="file://G:/AndroidLocal/.gradle/caches/transforms-2/files-2.1/76446c964db3af8b1bd105c60b7599e2/jetified-android-pdf-viewer-3.2.0-beta.1/res" />
+      <root url="jar://F:/AndroidLocal/Gradle/caches/transforms-2/files-2.1/52cbb2e4e473c7de1cec798dafaf2eb3/jetified-android-pdf-viewer-3.2.0-beta.1/jars/classes.jar!/" />
+      <root url="file://F:/AndroidLocal/Gradle/caches/transforms-2/files-2.1/52cbb2e4e473c7de1cec798dafaf2eb3/jetified-android-pdf-viewer-3.2.0-beta.1/res" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://G:/AndroidLocal/.gradle/caches/modules-2/files-2.1/com.github.barteksc/android-pdf-viewer/3.2.0-beta.1/8322e12dd5d5c9d5f83c9f16ebf0c5357c30f879/android-pdf-viewer-3.2.0-beta.1-javadoc.jar!/" />
+      <root url="jar://F:/AndroidLocal/Gradle/caches/modules-2/files-2.1/com.github.barteksc/android-pdf-viewer/3.2.0-beta.1/8322e12dd5d5c9d5f83c9f16ebf0c5357c30f879/android-pdf-viewer-3.2.0-beta.1-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://G:/AndroidLocal/.gradle/caches/modules-2/files-2.1/com.github.barteksc/android-pdf-viewer/3.2.0-beta.1/ac07c6cc1b51d315622c04347d7fccfbc5c982ff/android-pdf-viewer-3.2.0-beta.1-sources.jar!/" />
+      <root url="jar://F:/AndroidLocal/Gradle/caches/modules-2/files-2.1/com.github.barteksc/android-pdf-viewer/3.2.0-beta.1/ac07c6cc1b51d315622c04347d7fccfbc5c982ff/android-pdf-viewer-3.2.0-beta.1-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

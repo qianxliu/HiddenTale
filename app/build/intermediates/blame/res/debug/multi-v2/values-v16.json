@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "G:\\AndroidProject\\Project\\HiddenTale\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
+            "outputFile": "F:\\AndroidProject\\HiddenTale\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
             "map": [
                 {
-                    "source": "G:\\AndroidLocal\\.gradle\\caches\\transforms-2\\files-2.1\\788dbcd7dcbb0d36dfe5349648c923e5\\core-1.1.0\\res\\values-v16\\values-v16.xml",
+                    "source": "F:\\AndroidLocal\\Gradle\\caches\\transforms-2\\files-2.1\\788dbcd7dcbb0d36dfe5349648c923e5\\core-1.1.0\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "G:\\AndroidLocal\\.gradle\\caches\\transforms-2\\files-2.1\\11dfd6d06d9be0d818168d855d44d649\\appcompat-1.1.0\\res\\values-v16\\values-v16.xml",
+                    "source": "F:\\AndroidLocal\\Gradle\\caches\\transforms-2\\files-2.1\\11dfd6d06d9be0d818168d855d44d649\\appcompat-1.1.0\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

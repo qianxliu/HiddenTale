@@ -15,8 +15,8 @@
   </component>
   <component name="AutomaticModuleUnloader">
     <loaded-modules>
-      <module name="app" />
       <module name="Library" />
+      <module name="app" />
     </loaded-modules>
   </component>
   <component name="ChangeListManager">
@@ -29,7 +29,7 @@
   <component name="CompilerWorkspaceConfiguration">
     <option name="PARALLEL_COMPILATION" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="API_22" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="af968b78" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -73,9 +73,10 @@
   <component name="PropertiesComponent">
     <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="af968b78" />
     <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-05-08T10:23:22.569Z" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SelectDeploymentTargetsDialog.selectedDevices" value="af968b78" />
     <property name="android.sdk.path" value="G:/AndroidLocal/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/libs/AMap3DMap_7.4.0_AMapNavi_7.4.0_AMapSearch_7.3.0_AMapLocation_4.9.0_20200416.jar!/assets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Suggestions" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.44162437" />
