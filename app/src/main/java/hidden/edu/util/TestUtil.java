@@ -104,34 +104,48 @@ public class TestUtil {
             "文化",
             "文化",
             "文化",
-            "学府",
-            "学府",
+            "高校故事",
+            "高校故事",
+            "珍贵档案故事",
+            "珍贵档案故事",
+            "珍贵档案故事",
+            "珍贵档案故事",
     };
 
     private static String[] TIMES = {
-            "唐代",
-            "唐代",
             "秦代",
             "唐代",
+            //3
             "唐代",
             "唐代",
             "唐代",
             "唐代",
+            "唐代",
+            //8
+            "唐代",
+            //9
             "西周",
             //10
             "西周",
+            //11
             "现代",
             "现代",
             "现代",
             "现代",
             "现代",
+            //16
             "未来",
             "未来",
+            //18
+            "档案",
+            "档案",
+            "档案",
+            "档案",
     };
     private static String[] NAMES = {
+            "杜虎符",
             "大秦景教流行中国碑",
             "鎏金舞马衔杯纹银壶",
-            "杜虎符",
             "镂空飞鸟葡萄纹银香囊",
             "唐三彩骆驼载乐俑",
             //6
@@ -150,15 +164,20 @@ public class TestUtil {
             //16
             "西北大学",
             "西安交通大学",
+            //18
+            "西安辛亥档案揭秘",
+            "安康机场作为抗战前线的历史",
+            "清代陕西紫阳贡茶信票",
+            "珍藏在西安市档案馆中的谍战故事",
     };
     /**
      * 图片地址，仅供测试用
      */
     private static String[] URLS = {
-            "https://cdn.shuge.org/uploads/2017/12/jing-jiao-liu-xing-zhong-guo-bei06-640x350.jpg",
-            "http://www.ctaoci.com/Upload/news/200783084715_11878856862507434727823175673.jpg",
             //杜虎符
             "http://upload.art.ifeng.com/2017/1228/1514426877471.jpg",
+            "https://cdn.shuge.org/uploads/2017/12/jing-jiao-liu-xing-zhong-guo-bei06-640x350.jpg",
+            "http://www.ctaoci.com/Upload/news/200783084715_11878856862507434727823175673.jpg",
             "http://wenyi.gmw.cn/attachement/jpg/site2/20190724/f44d3075892a1ea201ba32.jpg",
             "http://art.people.com.cn/NMediaFile/2013/0916/MAIN201309160832000497991621947.jpg",
             "http://a1.att.hudong.com/80/32/01200000027621134374321610400_s.jpg",
@@ -182,6 +201,13 @@ public class TestUtil {
             "http://www.nwu.edu.cn/images/img_main_bar2_logo.png",
             //17
             "http://www.xjtu.edu.cn/img/logo_pic99.png",
+            //18
+            "https://git.nwu.edu.cn/2018104171/pdf/raw/master/21.png",
+            "http://sxakjc.com/storage/app/media/zou-jin-an-kang/zoujin4.png",
+            //20
+            "https://www.ziyanghong.com/export/sites/default/tea/tribute/.content/images/2016111417574149.jpg_752293428.jpg",
+            //21
+            "https://git.nwu.edu.cn/2018104171/pdf/raw/master/20.png",
     };
 
     public static String getPicture(int index) {

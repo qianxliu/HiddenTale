@@ -16,6 +16,7 @@ package zuo.biao.library.interfaces;
 
 import android.content.pm.PackageManager;
 
+import java.io.IOException;
 import java.net.MalformedURLException;
 
 /*Activity和Fragment的公共逻辑接口
@@ -48,7 +49,7 @@ public interface Presenter {
 	 * Event事件方法(只要存在事件监听代码就是)
 	 * @must Activity-在子类onCreate方法内初始化View(setContentView)后调用；Fragment-在子类onCreateView方法内初始化View后调用
 	 */
-	void initEvent() throws MalformedURLException;
+	void initEvent() throws MalformedURLException, IOException;
 
 
 	/*

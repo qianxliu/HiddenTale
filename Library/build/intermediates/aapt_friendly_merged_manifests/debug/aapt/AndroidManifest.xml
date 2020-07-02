@@ -5,7 +5,7 @@
     android:versionName="0.1.0" > <!-- 复制粘贴到你的工程的AndroidManifest.xml内对应位置 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
     <uses-sdk
         android:minSdkVersion="22"
-        android:targetSdkVersion="29" />
+        android:targetSdkVersion="30" />
 
     <!-- 复制粘贴到你的工程的AndroidManifest.xml内对应位置 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
 

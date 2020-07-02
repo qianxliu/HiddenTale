@@ -22,9 +22,8 @@ public class DownloadUtil {
     private static final String TAG = "DownloadUtil";
 
 
-    public static File downLoadFile(AppCompatActivity context, String name, String suffix, String httpUrl) {
-        final String fileName = name + StringUtil.getTrimedString(suffix);
-        final File file = new File(DataKeeper.fileRootPath + fileName);
+    public static File downLoadFile(AppCompatActivity context, String name, String httpUrl) {
+        final File file = new File(DataKeeper.fileRootPath + name);
         try {
             //httpUrl = StringUtil.getCorrectUrl(httpUrl);
             if (httpUrl.endsWith("/")) {

@@ -6,7 +6,7 @@
 6    <uses-sdk
 7        android:minSdkVersion="22"
 7-->F:\AndroidProject\HiddenTale\Library\src\main\AndroidManifest.xml
-8        android:targetSdkVersion="29" />
+8        android:targetSdkVersion="30" />
 8-->F:\AndroidProject\HiddenTale\Library\src\main\AndroidManifest.xml
 9
 10    <!-- 复制粘贴到你的工程的AndroidManifest.xml内对应位置 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->

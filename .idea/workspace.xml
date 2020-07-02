@@ -46,7 +46,23 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="HiddenTale" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="HiddenTale" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="HiddenTale" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="android" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -66,7 +82,6 @@
   </component>
   <component name="ProjectId" id="1bL4hfWKiybTfP9x5NxdRSC3KJR" />
   <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
@@ -75,13 +90,13 @@
     <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-05-08T10:23:22.569Z" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SelectDeploymentTargetsDialog.selectedDevices" value="af968b78" />
-    <property name="android.sdk.path" value="G:/AndroidLocal/Sdk" />
+    <property name="android.sdk.path" value="F:/AndroidLocal" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Suggestions" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.44162437" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.VCS" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
     <property name="show.do.not.copy.http.proxy.settings.to.gradle" value="false" />
   </component>
   <component name="PsdUISettings">
@@ -162,25 +177,6 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HiddenTale [androidDependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="androidDependencies" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
     <configuration name="HiddenTale [buildDependents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -238,6 +234,25 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="HiddenTale [signingReport]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="signingReport" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="HiddenTale [sourceSets]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -259,19 +274,19 @@
     </configuration>
     <list>
       <item itemvalue="Android App.app" />
-      <item itemvalue="Gradle.HiddenTale [androidDependencies]" />
       <item itemvalue="Gradle.HiddenTale [build]" />
       <item itemvalue="Gradle.HiddenTale [buildDependents]" />
       <item itemvalue="Gradle.HiddenTale [cleanBuildCache]" />
       <item itemvalue="Gradle.HiddenTale [sourceSets]" />
+      <item itemvalue="Gradle.HiddenTale [signingReport]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.HiddenTale [signingReport]" />
         <item itemvalue="Gradle.HiddenTale [buildDependents]" />
         <item itemvalue="Gradle.HiddenTale [build]" />
         <item itemvalue="Gradle.HiddenTale [cleanBuildCache]" />
         <item itemvalue="Gradle.HiddenTale [sourceSets]" />
-        <item itemvalue="Gradle.HiddenTale [androidDependencies]" />
       </list>
     </recent_temporary>
   </component>
@@ -292,58 +307,74 @@
     <module name="HiddenTale" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="200" y="130" key="#PSD" timestamp="1590768079079">
+    <state x="200" y="130" key="#PSD" timestamp="1593575978263">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="200" y="130" key="#PSD/0.30.1366.738@0.30.1366.738" timestamp="1590768079079" />
+    <state x="200" y="130" key="#PSD/0.30.1366.738@0.30.1366.738" timestamp="1593575978263" />
+    <state x="488" y="107" key="#com.intellij.ide.util.MemberChooser" timestamp="1593679007679">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="488" y="107" key="#com.intellij.ide.util.MemberChooser/0.30.1366.738@0.30.1366.738" timestamp="1593679007679" />
+    <state x="363" y="126" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1593574410414">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="363" y="126" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.30.1366.738@0.30.1366.738" timestamp="1593574410414" />
+    <state x="263" y="153" key="AndroidCreateResourceDirectoryDialog" timestamp="1593591950971">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="263" y="153" key="AndroidCreateResourceDirectoryDialog/0.30.1366.738@0.30.1366.738" timestamp="1593591950971" />
     <state width="555" height="466" key="DebuggerActiveHint" timestamp="1590765454554">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state width="555" height="466" key="DebuggerActiveHint/0.30.1366.738@0.30.1366.738" timestamp="1590765454554" />
-    <state x="463" y="139" key="FileChooserDialogImpl" timestamp="1590933972838">
+    <state x="712" y="132" key="FileChooserDialogImpl" timestamp="1593576890136">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="463" y="139" key="FileChooserDialogImpl/0.30.1366.738@0.30.1366.738" timestamp="1590933972838" />
-    <state width="712" height="102" key="GridCell.Tab.0.bottom" timestamp="1590936404330">
+    <state x="712" y="132" key="FileChooserDialogImpl/0.30.1366.738@0.30.1366.738" timestamp="1593576890136" />
+    <state width="905" height="140" key="GridCell.Tab.0.bottom" timestamp="1593679725020">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state width="712" height="102" key="GridCell.Tab.0.bottom/0.30.1366.738@0.30.1366.738" timestamp="1590936404330" />
-    <state width="712" height="102" key="GridCell.Tab.0.center" timestamp="1590936404329">
+    <state width="905" height="140" key="GridCell.Tab.0.bottom/0.30.1366.738@0.30.1366.738" timestamp="1593679725020" />
+    <state width="905" height="140" key="GridCell.Tab.0.center" timestamp="1593679725020">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state width="712" height="102" key="GridCell.Tab.0.center/0.30.1366.738@0.30.1366.738" timestamp="1590936404329" />
-    <state width="712" height="102" key="GridCell.Tab.0.left" timestamp="1590936404328">
+    <state width="905" height="140" key="GridCell.Tab.0.center/0.30.1366.738@0.30.1366.738" timestamp="1593679725020" />
+    <state width="905" height="140" key="GridCell.Tab.0.left" timestamp="1593679725020">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state width="712" height="102" key="GridCell.Tab.0.left/0.30.1366.738@0.30.1366.738" timestamp="1590936404328" />
-    <state width="712" height="102" key="GridCell.Tab.0.right" timestamp="1590936404329">
+    <state width="905" height="140" key="GridCell.Tab.0.left/0.30.1366.738@0.30.1366.738" timestamp="1593679725020" />
+    <state width="905" height="140" key="GridCell.Tab.0.right" timestamp="1593679725020">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state width="712" height="102" key="GridCell.Tab.0.right/0.30.1366.738@0.30.1366.738" timestamp="1590936404329" />
-    <state width="1129" height="206" key="GridCell.Tab.1.bottom" timestamp="1590766732581">
+    <state width="905" height="140" key="GridCell.Tab.0.right/0.30.1366.738@0.30.1366.738" timestamp="1593679725020" />
+    <state width="661" height="226" key="GridCell.Tab.1.bottom" timestamp="1593601997059">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state width="1129" height="206" key="GridCell.Tab.1.bottom/0.30.1366.738@0.30.1366.738" timestamp="1590766732581" />
-    <state width="1129" height="206" key="GridCell.Tab.1.center" timestamp="1590766732581">
+    <state width="661" height="226" key="GridCell.Tab.1.bottom/0.30.1366.738@0.30.1366.738" timestamp="1593601997059" />
+    <state width="661" height="226" key="GridCell.Tab.1.center" timestamp="1593601997059">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state width="1129" height="206" key="GridCell.Tab.1.center/0.30.1366.738@0.30.1366.738" timestamp="1590766732581" />
-    <state width="1129" height="206" key="GridCell.Tab.1.left" timestamp="1590766732581">
+    <state width="661" height="226" key="GridCell.Tab.1.center/0.30.1366.738@0.30.1366.738" timestamp="1593601997059" />
+    <state width="661" height="226" key="GridCell.Tab.1.left" timestamp="1593601997059">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state width="1129" height="206" key="GridCell.Tab.1.left/0.30.1366.738@0.30.1366.738" timestamp="1590766732581" />
-    <state width="1129" height="206" key="GridCell.Tab.1.right" timestamp="1590766732581">
+    <state width="661" height="226" key="GridCell.Tab.1.left/0.30.1366.738@0.30.1366.738" timestamp="1593601997059" />
+    <state width="661" height="226" key="GridCell.Tab.1.right" timestamp="1593601997059">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state width="1129" height="206" key="GridCell.Tab.1.right/0.30.1366.738@0.30.1366.738" timestamp="1590766732581" />
-    <state x="93" y="51" key="SettingsEditor" timestamp="1590920901454">
+    <state width="661" height="226" key="GridCell.Tab.1.right/0.30.1366.738@0.30.1366.738" timestamp="1593601997059" />
+    <state x="93" y="51" key="SettingsEditor" timestamp="1593577015532">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="93" y="51" key="SettingsEditor/0.30.1366.738@0.30.1366.738" timestamp="1590920901454" />
-    <state x="363" y="222" key="com.intellij.ide.util.TipDialog" timestamp="1590933411194">
+    <state x="93" y="51" key="SettingsEditor/0.30.1366.738@0.30.1366.738" timestamp="1593577015532" />
+    <state x="363" y="222" key="com.intellij.ide.util.TipDialog" timestamp="1593674138100">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="363" y="222" key="com.intellij.ide.util.TipDialog/0.30.1366.738@0.30.1366.738" timestamp="1590933411194" />
+    <state x="363" y="222" key="com.intellij.ide.util.TipDialog/0.30.1366.738@0.30.1366.738" timestamp="1593674138100" />
+    <state x="380" y="132" width="606" height="534" key="find.popup" timestamp="1593590079015">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="380" y="132" width="606" height="534" key="find.popup/0.30.1366.738@0.30.1366.738" timestamp="1593590079015" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

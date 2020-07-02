@@ -197,8 +197,12 @@ public class MyRecyclerFragment extends BaseHttpRecyclerFragment<User, UserView,
             "https://git.nwu.edu.cn/2018104171/pdf/raw/master/13.pdf",
             "https://git.nwu.edu.cn/2018104171/pdf/raw/master/14.pdf",
             "https://git.nwu.edu.cn/2018104171/pdf/raw/master/15.pdf",
-            "",
-            "",
+            "https://git.nwu.edu.cn/2018104171/pdf/raw/master/16.pdf",
+            "https://git.nwu.edu.cn/2018104171/pdf/raw/master/17.pdf",
+            "https://git.nwu.edu.cn/2018104171/pdf/raw/master/18.pdf",
+            "https://git.nwu.edu.cn/2018104171/pdf/raw/master/19.pdf",
+            "https://git.nwu.edu.cn/2018104171/pdf/raw/master/20.pdf",
+            "https://git.nwu.edu.cn/2018104171/pdf/raw/master/21.pdf",
     };
 
 
@@ -206,8 +210,6 @@ public class MyRecyclerFragment extends BaseHttpRecyclerFragment<User, UserView,
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         if (position % URLS.length > -1) {
             toActivity(PdfViewActivity.createIntent(context, URLS[position % URLS.length], String.valueOf(position + 1)));
-            if (position % URLS.length > 14)
-                showShortToast("“" + getUserList().get(position % URLS.length).getName() + "”期待你的补充!");
         }
     }
 

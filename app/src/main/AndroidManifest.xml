@@ -29,11 +29,11 @@
         android:fullBackupContent="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:screenOrientation="fullSensor"
         android:supportsRtl="true"
-        android:largeHeap="true"
-        android:usesCleartextTraffic="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:usesCleartextTraffic="true"
         tools:targetApi="m">
         <activity
             android:name="hidden.edu.demo.DemoThreadPoolActivity"
@@ -88,7 +88,8 @@
             android:name="hidden.edu.activity.UserActivity"
             android:screenOrientation="fullSensor"
             android:windowSoftInputMode="stateAlwaysHidden" />
-        <activity android:name=".activity.NaviActivity"
+        <activity
+            android:name=".activity.NaviActivity"
             android:screenOrientation="fullSensor"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
@@ -223,15 +224,19 @@
             android:theme="@style/Window"
             android:windowSoftInputMode="stateAlwaysHidden" />
 
+        <service
+            android:name="hidden.edu.service.MusicService"
+            android:exported="false" />
+
         <service android:name="com.amap.api.location.APSService" />
 
         <meta-data
             android:name="com.amap.api.v2.apikey"
-            android:value="4fe7a4a893e68a33825bbf8caa70ae49" />
+            android:value="b9813319913bb8b26063e2602557f2a4" />
 
-        <activity android:name="com.amap.api.navi.AmapRouteActivity"
-            android:theme="@android:style/Theme.NoTitleBar"
-            android:configChanges="orientation|keyboardHidden|screenSize" />
-
+        <activity
+            android:name="com.amap.api.navi.AmapRouteActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.NoTitleBar" />
     </application>
 </manifest>

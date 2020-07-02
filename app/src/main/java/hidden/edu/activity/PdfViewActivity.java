@@ -1,6 +1,7 @@
 package hidden.edu.activity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.StrictMode;
 import android.view.View;
@@ -8,16 +9,18 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.github.barteksc.pdfviewer.PDFView;
+import com.github.barteksc.pdfviewer.listener.OnLoadCompleteListener;
 import com.github.barteksc.pdfviewer.util.FitPolicy;
 
 import java.io.File;
 
 import hidden.edu.R;
+import hidden.edu.service.MusicService;
 import zuo.biao.library.base.BaseActivity;
 import zuo.biao.library.util.DataKeeper;
 import zuo.biao.library.util.DownloadUtil;
 
-public class PdfViewActivity extends BaseActivity {
+public class PdfViewActivity extends BaseActivity implements OnLoadCompleteListener {
 
 
     public static Intent createIntent(AppCompatActivity context, String name, String no) {
@@ -29,6 +32,7 @@ public class PdfViewActivity extends BaseActivity {
 
     private String name;
     private String id;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,6 +47,7 @@ public class PdfViewActivity extends BaseActivity {
         id = intent.getStringExtra(INTENT_ID);
 
         initData();
+
 
         initEvent();
 
@@ -61,24 +66,23 @@ public class PdfViewActivity extends BaseActivity {
 
     @Override
     public void initEvent() {
+
+
+        String n;
+        File file;
+
+
         PDFView pdfView = findViewById(R.id.pdfView);
         //File pdfFile = new File(getCacheDir() + "/testthreepdf/" + "testing.pdf");
         //Uri path = Uri.fromFile(pdfFile);
         //pdfView.fromUri(path).load();
         pdfView.setVisibility(View.VISIBLE);
 
-        String n = null;
-        File file = null;
-        try {
-            n = "klfskjkf" + id;
-            file = new File(DataKeeper.tempPath + n);
-            if (!file.exists()) {
-                file = DownloadUtil.downLoadFile(this, "/temp/" + n, "", name);
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
+        n = "klfskjkf" + id;
+        file = new File(DataKeeper.tempPath + n);
+        if (!file.exists()) {
+            file = DownloadUtil.downLoadFile(this, "/temp/" + n, name);
         }
-
 
         pdfView.fromFile(file)
                 .pageFitPolicy(FitPolicy.WIDTH)
@@ -113,7 +117,54 @@ public class PdfViewActivity extends BaseActivity {
                 .pageFitPolicy(FitPolicy.WIDTH)
                 // fit each page to the view, else smaller pages are scaled relative to largest page.
                 .fitEachPage(true)
+                .onLoad(this)
                 .load();
     }
+
+    @Override
+    public void loadComplete(int nbPages) {
+        String n;
+        File file;
+        int flag = 1;
+        if (Integer.parseInt(id) != 1) {
+            if (Integer.parseInt(id) < 9)
+                flag = 2;
+            else if (Integer.parseInt(id) < 11)
+                flag = 3;
+            else if (Integer.parseInt(id) < 16)
+                flag = 4;
+            else if (Integer.parseInt(id) < 18)
+                flag = 5;
+            else if (Integer.parseInt(id) < 22)
+                flag = 6;
+        }
+
+        n = "mklkajg" + flag;
+        file = new File(DataKeeper.tempPath + n);
+        if (!file.exists()) {
+            String url = null;
+            if (Integer.parseInt(id) == 1) {
+                url = "http://git.nwu.edu.cn/2018104171/pdf/raw/master/qin.aac"; // your URL here
+            } else {
+                if (Integer.parseInt(id) < 9)
+                    url = "http://git.nwu.edu.cn/2018104171/pdf/raw/master/tang.aac";
+                else if (Integer.parseInt(id) < 11)
+                    url = "http://git.nwu.edu.cn/2018104171/pdf/raw/master/zhou.aac";
+                else if (Integer.parseInt(id) < 16)
+                    url = "http://git.nwu.edu.cn/2018104171/pdf/raw/master/xian.aac";
+                else if (Integer.parseInt(id) < 18)
+                    url = "http://git.nwu.edu.cn/2018104171/pdf/raw/master/wei.mp3";
+                else if (Integer.parseInt(id) < 22)
+                    url = "http://git.nwu.edu.cn/2018104171/pdf/raw/master/dang.aac";
+            }
+            assert url != null;
+            file = DownloadUtil.downLoadFile(this, "/temp/" + n, url);
+        }
+
+        Intent intent = new Intent(this, MusicService.class);
+        intent.putExtra(MusicService.FILE_PATH, Uri.parse(file.getAbsolutePath()));
+        startService(intent);
+    }
 }
+
 

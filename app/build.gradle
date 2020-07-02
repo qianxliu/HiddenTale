@@ -9,12 +9,12 @@ android {
         //png优化，正式发布时改动
         aaptOptions.cruncherEnabled = false
     }
-    compileSdkVersion 29
-    buildToolsVersion '29.0.3'
+    compileSdkVersion 30
+    buildToolsVersion '30.0.0'
     defaultConfig {
         versionCode buildDateTime
         minSdkVersion 22
-        targetSdkVersion 29
+        targetSdkVersion 30
         versionCode 1
         multiDexEnabled true
         applicationId = 'hidden.edu'
