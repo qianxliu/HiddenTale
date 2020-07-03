@@ -4,7 +4,7 @@
             "outputFile": "F:\\AndroidProject\\HiddenTale\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v19\\values-v19.xml",
             "map": [
                 {
-                    "source": "F:\\AndroidLocal\\Gradle\\caches\\transforms-2\\files-2.1\\0501de15119edf163c202343b6dfd2df\\jetified-zxing-lite-1.1.9-androidx\\res\\values-v19\\values-v19.xml",
+                    "source": "F:\\AndroidLocal\\Gradle\\caches\\transforms-2\\files-2.1\\70fdaddb2b49805435be492705986f28\\jetified-zxing-lite-1.1.9-androidx\\res\\values-v19\\values-v19.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

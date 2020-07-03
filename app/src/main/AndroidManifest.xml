@@ -20,6 +20,7 @@
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
+
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
 
@@ -30,11 +31,12 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
         android:screenOrientation="fullSensor"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         android:usesCleartextTraffic="true"
-        tools:targetApi="m">
+        tools:targetApi="n">
         <activity
             android:name="hidden.edu.demo.DemoThreadPoolActivity"
             tools:ignore="InnerclassSeparator" />
@@ -50,46 +52,30 @@
         </provider>
 
         <activity
-            android:name="hidden.edu.activity.StartActivity"
-            android:label="@string/app_name"
-            android:screenOrientation="fullSensor"
-            android:theme="@style/SplashTheme">
-            <intent-filter>
-                <!--显示在通知中的都要公开-->
-                <action android:name="android.intent.action.MAIN" />
-                <!--用以启动应用!无action不接受intent对象-->
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name="hidden.edu.activity.MainTabActivity"
-            android:label="@string/app_name"
+            android:name="hidden.edu.activity.SplashActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity">
             <intent-filter>
-                <!--主活动,接收大部分intent对象,notification需要!-->
+                <!-- 程序主入口 -->
                 <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="hidden.edu.activity.SplashActivity"
-            android:label="@string/app_name"
-            android:screenOrientation="fullSensor"
-            android:theme="@style/SplashTheme" />
+
         <activity
             android:name="hidden.edu.activity.AboutActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="hidden.edu.activity.MainTabActivity"
+            android:screenOrientation="fullSensor"
+            android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
             android:name="hidden.edu.activity.SettingActivity"
             android:screenOrientation="fullSensor"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
             android:name="hidden.edu.activity.UserActivity"
-            android:screenOrientation="fullSensor"
-            android:windowSoftInputMode="stateAlwaysHidden" />
-        <activity
-            android:name=".activity.NaviActivity"
             android:screenOrientation="fullSensor"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
@@ -223,10 +209,6 @@
             android:screenOrientation="fullSensor"
             android:theme="@style/Window"
             android:windowSoftInputMode="stateAlwaysHidden" />
-
-        <service
-            android:name="hidden.edu.service.MusicService"
-            android:exported="false" />
 
         <service android:name="com.amap.api.location.APSService" />
 

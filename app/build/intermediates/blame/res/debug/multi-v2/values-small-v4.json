@@ -4,7 +4,7 @@
             "outputFile": "F:\\AndroidProject\\HiddenTale\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-small-v4\\values-small-v4.xml",
             "map": [
                 {
-                    "source": "F:\\AndroidLocal\\Gradle\\caches\\transforms-2\\files-2.1\\081958b85be993b26123dd5b1125e07f\\material-1.1.0\\res\\values-small-v4\\values-small-v4.xml",
+                    "source": "F:\\AndroidLocal\\Gradle\\caches\\transforms-2\\files-2.1\\03fc2f0f12fb938210f2b6d040cddf10\\material-1.1.0\\res\\values-small-v4\\values-small-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

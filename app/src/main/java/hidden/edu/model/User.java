@@ -1,17 +1,3 @@
-/*Copyright ©2015 TommyLemon(https://github.com/TommyLemon)
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.*/
-
 package hidden.edu.model;
 
 import zuo.biao.library.base.BaseModel;
@@ -62,12 +48,12 @@ public class User extends BaseModel {
      * <br>  android studio: 右键菜单 > Generate > Getter and Setter
      */
 
-	public int getSex() {
-		return sex;
-	}
-	public void setSex(int sex) {
-		this.sex = sex;
-	}
+    public int getSex() {
+        return sex;
+    }
+    public void setSex(int sex) {
+        this.sex = sex;
+    }
     public String getHead() {
         return head;
     }
@@ -129,5 +115,4 @@ public class User extends BaseModel {
     protected boolean isCorrect() {//根据自己的需求决定，也可以直接 return true
         return id > 0;// && StringUtil.isNotEmpty(phone, true);
     }
-
 }

@@ -4606,7 +4606,8 @@ int styleable ViewfinderView_scannerLineHeight 20
 int styleable ViewfinderView_scannerLineMoveDistance 21
 int styleable ViewfinderView_showResultPoint 22
 int xml file_paths 0x7f130000
-int xml standalone_badge 0x7f130001
-int xml standalone_badge_gravity_bottom_end 0x7f130002
-int xml standalone_badge_gravity_bottom_start 0x7f130003
-int xml standalone_badge_gravity_top_start 0x7f130004
+int xml network_security_config 0x7f130001
+int xml standalone_badge 0x7f130002
+int xml standalone_badge_gravity_bottom_end 0x7f130003
+int xml standalone_badge_gravity_bottom_start 0x7f130004
+int xml standalone_badge_gravity_top_start 0x7f130005

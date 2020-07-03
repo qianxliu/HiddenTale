@@ -1,4 +1,6 @@
 apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
 
 android {
     compileSdkVersion 30
@@ -28,7 +30,6 @@ android {
 }
 
 dependencies {
-    //TODO 如果这些依赖和你项目中的依赖有冲突，则需要统一版本号，或者删除重复的依赖
     api 'com.squareup.okhttp3:okhttp:4.7.2'
     api 'com.alibaba:fastjson:1.2.71'
     api 'com.github.bumptech.glide:glide:4.11.0'

@@ -182,7 +182,6 @@ public abstract class BaseHttpRecyclerActivity<T, VH extends RecyclerView.ViewHo
 
     /**
      * 处理Http请求结果
-     *
      * @param requestCode = -page {@link #getListAsync(int)}
      * @param resultJson
      * @param e

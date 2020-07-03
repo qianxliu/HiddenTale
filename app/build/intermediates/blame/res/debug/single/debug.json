@@ -164,6 +164,10 @@
         "source": "F:\\AndroidProject\\HiddenTale\\app\\src\\main\\res\\drawable-hdpi\\ic_map_18dp.png"
     },
     {
+        "merged": "F:\\AndroidProject\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\xml_network_security_config.xml.flat",
+        "source": "F:\\AndroidProject\\HiddenTale\\app\\src\\main\\res\\xml\\network_security_config.xml"
+    },
+    {
         "merged": "F:\\AndroidProject\\HiddenTale\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_grade_18dp.png.flat",
         "source": "F:\\AndroidProject\\HiddenTale\\app\\src\\main\\res\\drawable-hdpi\\ic_grade_18dp.png"
     },
