@@ -34,11 +34,13 @@ import org.jetbrains.annotations.NotNull;
 
 import hidden.edu.R;
 import hidden.edu.model.User;
-import zuo.biao.library.base.BaseModel;
-import zuo.biao.library.base.BaseView;
-import zuo.biao.library.ui.WebViewActivity;
-import zuo.biao.library.util.CommonUtil;
-import zuo.biao.library.util.StringUtil;
+import qian.xin.library.base.BaseModel;
+import qian.xin.library.base.BaseView;
+import qian.xin.library.ui.WebViewActivity;
+import qian.xin.library.util.CommonUtil;
+import qian.xin.library.util.StringUtil;
+
+import static hidden.edu.model.User.ARCHIVE;
 
 /*
  * 用户View
@@ -108,7 +110,7 @@ public class UserView extends BaseView<User> implements OnClickListener {
 
         switch (data.getSex()) {
             case User.TREASURE:
-                tvUserViewSex.setBackgroundResource(R.drawable.circle_yellow);
+                tvUserViewSex.setBackgroundResource(R.drawable.circle_white);
                 tvUserViewSex.setText("宝");
                 tvUserViewSex.setTextColor(R.drawable.texture3);
                 break;
@@ -120,6 +122,11 @@ public class UserView extends BaseView<User> implements OnClickListener {
             case User.SCHOOL:
                 tvUserViewSex.setBackgroundResource(R.drawable.circle_blue);
                 tvUserViewSex.setText("校");
+                tvUserViewSex.setTextColor(R.drawable.texture1);
+                break;
+            case User.ARCHIVE:
+                tvUserViewSex.setBackgroundResource(R.drawable.circle_yellow);
+                tvUserViewSex.setText("档");
                 tvUserViewSex.setTextColor(R.drawable.texture1);
                 break;
         }

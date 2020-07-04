@@ -4,7 +4,7 @@
     android:background="@drawable/to_alpha"
     android:gravity="center" >
 
-    <zuo.biao.library.ui.SquareRelativeLayout
+    <qian.xin.library.ui.SquareRelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
 
@@ -18,7 +18,7 @@
             android:id="@+id/ivGridItemCheck"
             style="@style/wrap_wrap"
             android:visibility="gone" />
-    </zuo.biao.library.ui.SquareRelativeLayout>
+    </qian.xin.library.ui.SquareRelativeLayout>
 
     <TextView
         android:id="@+id/tvGridItemName"

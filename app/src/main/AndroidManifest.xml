@@ -68,7 +68,7 @@
             tools:ignore="LockedOrientationActivity" />
         <activity
             android:name="hidden.edu.activity.MainTabActivity"
-            android:screenOrientation="fullSensor"
+            android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
             android:name="hidden.edu.activity.SettingActivity"
@@ -156,56 +156,56 @@
             tools:ignore="InnerclassSeparator" /> <!-- Demo >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
         <!-- ZBLibrary <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
         <activity
-            android:name="zuo.biao.library.ui.SelectPictureActivity"
+            android:name="qian.xin.library.ui.SelectPictureActivity"
             android:screenOrientation="fullSensor"
             android:theme="@style/WindowCompleteAlpha"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name="zuo.biao.library.ui.CutPictureActivity"
+            android:name="qian.xin.library.ui.CutPictureActivity"
             android:screenOrientation="fullSensor"
             android:theme="@style/Window"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name="zuo.biao.library.ui.WebViewActivity"
+            android:name="qian.xin.library.ui.WebViewActivity"
             android:launchMode="singleTop"
             android:screenOrientation="fullSensor"
             android:windowSoftInputMode="stateHidden|adjustResize|adjustUnspecified"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name="zuo.biao.library.ui.EditTextInfoActivity"
+            android:name="qian.xin.library.ui.EditTextInfoActivity"
             android:screenOrientation="fullSensor"
             android:windowSoftInputMode="stateVisible|adjustPan|adjustUnspecified" />
         <activity
-            android:name="zuo.biao.library.ui.ServerSettingActivity"
+            android:name="qian.xin.library.ui.ServerSettingActivity"
             android:screenOrientation="fullSensor"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name="zuo.biao.library.ui.TopMenuWindow"
+            android:name="qian.xin.library.ui.TopMenuWindow"
             android:screenOrientation="fullSensor"
             android:theme="@style/Window"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name="zuo.biao.library.ui.BottomMenuWindow"
+            android:name="qian.xin.library.ui.BottomMenuWindow"
             android:screenOrientation="fullSensor"
             android:theme="@style/Window"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name="zuo.biao.library.ui.EditTextInfoWindow"
+            android:name="qian.xin.library.ui.EditTextInfoWindow"
             android:screenOrientation="fullSensor"
             android:theme="@style/Window"
             android:windowSoftInputMode="stateVisible|adjustResize|adjustUnspecified" />
         <activity
-            android:name="zuo.biao.library.ui.PlacePickerWindow"
+            android:name="qian.xin.library.ui.PlacePickerWindow"
             android:screenOrientation="fullSensor"
             android:theme="@style/Window"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name="zuo.biao.library.ui.DatePickerWindow"
+            android:name="qian.xin.library.ui.DatePickerWindow"
             android:screenOrientation="fullSensor"
             android:theme="@style/Window"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name="zuo.biao.library.ui.TimePickerWindow"
+            android:name="qian.xin.library.ui.TimePickerWindow"
             android:screenOrientation="fullSensor"
             android:theme="@style/Window"
             android:windowSoftInputMode="stateAlwaysHidden" />

@@ -30,9 +30,9 @@ import java.util.List;
 
 import hidden.edu.R;
 import hidden.edu.manager.SQLHelper;
-import zuo.biao.library.base.BaseActivity;
-import zuo.biao.library.interfaces.OnBottomDragListener;
-import zuo.biao.library.util.StringUtil;
+import qian.xin.library.base.BaseActivity;
+import qian.xin.library.interfaces.OnBottomDragListener;
+import qian.xin.library.util.StringUtil;
 
 /*
   使用方法：复制>粘贴>改名>改代码

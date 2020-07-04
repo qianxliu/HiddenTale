@@ -29,10 +29,10 @@ import org.jetbrains.annotations.NotNull;
 import java.util.ArrayList;
 
 import hidden.edu.R;
-import zuo.biao.library.base.BaseTabFragment;
-import zuo.biao.library.ui.PlacePickerWindow;
-import zuo.biao.library.util.PlaceUtil;
-import zuo.biao.library.util.StringUtil;
+import qian.xin.library.base.BaseTabFragment;
+import qian.xin.library.ui.PlacePickerWindow;
+import qian.xin.library.util.PlaceUtil;
+import qian.xin.library.util.StringUtil;
 
 /*
   使用方法：复制>粘贴>改名>改代码

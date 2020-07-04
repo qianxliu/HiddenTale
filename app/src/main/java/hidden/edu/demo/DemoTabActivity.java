@@ -25,9 +25,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 import hidden.edu.R;
-import zuo.biao.library.base.BaseTabActivity;
-import zuo.biao.library.interfaces.OnBottomDragListener;
-import zuo.biao.library.ui.WebViewActivity;
+import qian.xin.library.base.BaseTabActivity;
+import qian.xin.library.interfaces.OnBottomDragListener;
+import qian.xin.library.ui.WebViewActivity;
 
 /*
   使用方法：复制>粘贴>改名>改代码

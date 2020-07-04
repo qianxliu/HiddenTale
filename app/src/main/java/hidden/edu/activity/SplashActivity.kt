@@ -5,8 +5,8 @@ import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
 import hidden.edu.R
 import hidden.edu.activity.MainTabActivity.Companion.createIntent
-import zuo.biao.library.util.DataKeeper
-import zuo.biao.library.util.SettingUtil
+import qian.xin.library.util.DataKeeper
+import qian.xin.library.util.SettingUtil
 
 /**
  * 闪屏activity，保证点击桌面应用图标后无延时响应

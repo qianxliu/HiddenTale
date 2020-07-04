@@ -1,11 +1,9 @@
 package hidden.edu.model;
 
-import zuo.biao.library.base.BaseModel;
+import qian.xin.library.base.BaseModel;
 
 /**
  * 用户类
- *
- * @author Lemon
  */
 public class User extends BaseModel {
 
@@ -14,6 +12,7 @@ public class User extends BaseModel {
     public static final int TREASURE = 0;
     public static final int THEME = 1;
     public static final int SCHOOL = 2;
+    public static final int ARCHIVE = 3;
 
     private int sex; //性别
     private String head; //头像

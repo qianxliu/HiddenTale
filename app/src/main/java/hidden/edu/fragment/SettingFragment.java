@@ -26,9 +26,9 @@ import org.jetbrains.annotations.NotNull;
 import hidden.edu.R;
 import hidden.edu.activity.AboutActivity;
 import hidden.edu.activity.SettingActivity;
-import zuo.biao.library.base.BaseFragment;
-import zuo.biao.library.ui.AlertDialog;
-import zuo.biao.library.ui.AlertDialog.OnDialogButtonClickListener;
+import qian.xin.library.base.BaseFragment;
+import qian.xin.library.ui.AlertDialog;
+import qian.xin.library.ui.AlertDialog.OnDialogButtonClickListener;
 
 /*
  * 设置fragment

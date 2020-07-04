@@ -17,11 +17,11 @@ import hidden.edu.adapter.UserAdapter;
 import hidden.edu.model.User;
 import hidden.edu.util.HttpRequest;
 import hidden.edu.view.UserView;
-import zuo.biao.library.base.BaseHttpRecyclerFragment;
-import zuo.biao.library.interfaces.AdapterCallBack;
-import zuo.biao.library.interfaces.CacheCallBack;
-import zuo.biao.library.util.DataKeeper;
-import zuo.biao.library.util.JSON;
+import qian.xin.library.base.BaseHttpRecyclerFragment;
+import qian.xin.library.interfaces.AdapterCallBack;
+import qian.xin.library.interfaces.CacheCallBack;
+import qian.xin.library.util.DataKeeper;
+import qian.xin.library.util.JSON;
 
 import static hidden.edu.util.TestUtil.getUserList;
 

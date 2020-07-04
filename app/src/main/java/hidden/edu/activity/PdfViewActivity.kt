@@ -7,14 +7,14 @@ import android.os.Bundle
 import android.os.StrictMode
 import android.os.StrictMode.ThreadPolicy
 import android.view.View
+import com.github.barteksc.pdfviewer.BuildConfig
 import com.github.barteksc.pdfviewer.PDFView
 import com.github.barteksc.pdfviewer.util.FitPolicy
-import hidden.edu.BuildConfig
 import hidden.edu.R
-import zuo.biao.library.base.BaseActivity
-import zuo.biao.library.interfaces.Presenter
-import zuo.biao.library.util.DataKeeper
-import zuo.biao.library.util.DownloadUtil
+import qian.xin.library.base.BaseActivity
+import qian.xin.library.interfaces.Presenter
+import qian.xin.library.util.DataKeeper
+import qian.xin.library.util.DownloadUtil
 import java.io.File
 
 class PdfViewActivity : BaseActivity() {
@@ -29,6 +29,7 @@ class PdfViewActivity : BaseActivity() {
         intent = getIntent()
         name = intent.getStringExtra(Presenter.INTENT_TITLE)
         id = intent.getStringExtra(Presenter.INTENT_ID)
+        initPdf()
         initData()
         initEvent()
         initView()
@@ -37,15 +38,15 @@ class PdfViewActivity : BaseActivity() {
     override fun initView() {}
     override fun initData() {}
     override fun initEvent() {
-        var n: String
-        var file: File
+        val s: String
+        var f: File
         var flag = 1
         if (id!!.toInt() != 1) {
             if (id!!.toInt() < 9) flag = 2 else if (id!!.toInt() < 11) flag = 3 else if (id!!.toInt() < 16) flag = 4 else if (id!!.toInt() < 18) flag = 5 else if (id!!.toInt() < 22) flag = 6
         }
-        n = "mklkajg$flag"
-        file = File(DataKeeper.tempPath + n)
-        if (!file.exists()) {
+        s = "mklkajg$flag"
+        f = File(DataKeeper.tempPath + s)
+        if (!f.exists()) {
             var url: String? = null
             //!! !null 非空
             if (id!!.toInt() == 1) {
@@ -56,31 +57,37 @@ class PdfViewActivity : BaseActivity() {
             if (BuildConfig.DEBUG && url == null) {
                 error("Assertion failed")
             }
-            file = DownloadUtil.downLoadFile(this, "/temp/$n", url)
+            f = DownloadUtil.downLoadFile("/temp/$s", url)
         }
+        try {
+            MainTabActivity.mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC)
+            MainTabActivity.mediaPlayer.setDataSource(f.absolutePath)
+            MainTabActivity.mediaPlayer.isLooping = true // Set looping
+            MainTabActivity.mediaPlayer.prepare() // might take long! (for buffering, etc)
+            MainTabActivity.mediaPlayer.start()
+        } catch (e: Exception) {
+            e.printStackTrace()
+            showShortToast("未联网！！！")
+        }
+    }
 
+    private fun initPdf() {
+        var file: File
         /*
         Intent intent = new Intent(PdfViewActivity.this, MusicService.class);
         intent.putExtra("path", file.getAbsolutePath());
         MusicService.enqueueWork(context, intent);
          */
-        val finalFile = file
-        MainTabActivity.mediaPlayer = MediaPlayer()
-        MainTabActivity.mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC)
-        MainTabActivity.mediaPlayer.setDataSource(finalFile.absolutePath)
-        MainTabActivity.mediaPlayer.prepare() // might take long! (for buffering, etc)
-        MainTabActivity.mediaPlayer.isLooping = true // Set looping
-        MainTabActivity.mediaPlayer.start()
 
         val pdfView = findViewById<PDFView>(R.id.pdfView)
         //File pdfFile = new File(getCacheDir() + "/testthreepdf/" + "testing.pdf");
         //Uri path = Uri.fromFile(pdfFile);
         //pdfView.fromUri(path).load();
         pdfView.visibility = View.VISIBLE
-        n = "klfskjkf$id"
+        val n = "klfskjkf$id"
         file = File(DataKeeper.tempPath + n)
         if (!file.exists()) {
-            file = DownloadUtil.downLoadFile(this, "/temp/$n", name)
+            file = DownloadUtil.downLoadFile("/temp/$n", name)
         }
         pdfView.fromFile(file)
                 .pageFitPolicy(FitPolicy.WIDTH)
@@ -112,16 +119,22 @@ class PdfViewActivity : BaseActivity() {
     override fun onDestroy() {
         MainTabActivity.mediaPlayer.release()
         MainTabActivity.mediaPlayer = MediaPlayer()
-        Thread(Runnable {
+        (Runnable {
             if (!MainTabActivity.mainFile.exists()) {
-                MainTabActivity.mainFile = DownloadUtil.downLoadFile(context, "/temp/" + "mainFile", "https://git.nwu.edu.cn/2018104171/pdf/raw/master/main.mp3")
+                MainTabActivity.mainFile = DownloadUtil.downLoadFile("/temp/" + "mainFile", "https://git.nwu.edu.cn/2018104171/pdf/raw/master/main.mp3")
             }
-            MainTabActivity.mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC)
-            MainTabActivity.mediaPlayer.setDataSource(MainTabActivity.mainFile.absolutePath)
-            MainTabActivity.mediaPlayer.prepare() // might take long! (for buffering, etc)
-            MainTabActivity.mediaPlayer.isLooping = true // Set looping
-            MainTabActivity.mediaPlayer.start()
-        }).start()
+            try {
+                MainTabActivity.mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC)
+                MainTabActivity.mediaPlayer.setDataSource(MainTabActivity.mainFile.absolutePath)
+                MainTabActivity.mediaPlayer.isLooping = true // Set looping
+                MainTabActivity.mediaPlayer.prepare()
+                MainTabActivity.mediaPlayer.start()
+            } catch (e: Exception) {
+                e.printStackTrace()
+                showShortToast("未联网！！！")
+            }
+        }).run()
+
         super.onDestroy()
     }
 

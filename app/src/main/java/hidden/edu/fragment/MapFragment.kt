@@ -1,6 +1,5 @@
 package hidden.edu.fragment
 
-import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import com.amap.api.maps.AMap.*
 import com.amap.api.maps.AMapException
@@ -16,13 +15,10 @@ import com.amap.api.services.poisearch.PoiResult
 import hidden.edu.R
 import hidden.edu.activity.PdfViewActivity.Companion.createIntent
 import hidden.edu.util.TestUtil
-import zuo.biao.library.base.BaseActivity
-import zuo.biao.library.ui.AlertDialog
-import zuo.biao.library.ui.AlertDialog.OnDialogButtonClickListener
-import zuo.biao.library.util.CommonUtil
-import zuo.biao.library.util.DataKeeper
-import java.io.ByteArrayOutputStream
-import java.io.IOException
+import qian.xin.library.base.BaseActivity
+import qian.xin.library.ui.AlertDialog
+import qian.xin.library.ui.AlertDialog.OnDialogButtonClickListener
+import qian.xin.library.util.CommonUtil
 
 class MapFragment : MapFragmentBase(), OnDialogButtonClickListener {
     private var naviLatLng: NaviLatLng? = null
@@ -102,12 +98,8 @@ class MapFragment : MapFragmentBase(), OnDialogButtonClickListener {
             true
         }
         val listener = OnInfoWindowClickListener { marker: Marker ->
-            if (marker.zIndex < latLng.size - 1) {
+            if (marker.zIndex < latLng.size + 1) {
                 CommonUtil.toActivity(activity, createIntent(activity as BaseActivity, MyRecyclerFragment.URLS[marker.zIndex.toInt()], (marker.zIndex.toInt() + 1).toString()))
-                caculate()
-            } else if (marker.zIndex < latLng.size + 1) {
-                CommonUtil.toActivity(activity, createIntent(activity as BaseActivity, MyRecyclerFragment.URLS[marker.zIndex.toInt()], (marker.zIndex.toInt() + 1).toString()))
-                CommonUtil.showShortToast(activity, marker.title + "期待你的补充!")
                 caculate()
             }
         }
@@ -154,38 +146,6 @@ class MapFragment : MapFragmentBase(), OnDialogButtonClickListener {
         }
     }
 
-    fun onShot() {
-        /*
-         * 对地图进行截屏
-         */
-        aMap!!.getMapScreenShot(object : OnMapScreenShotListener {
-            override fun onMapScreenShot(bitmap: Bitmap) {}
-            override fun onMapScreenShot(bitmap: Bitmap, status: Int) {
-                val baos = ByteArrayOutputStream()
-                val b = bitmap.compress(Bitmap.CompressFormat.PNG, 100, baos)
-                DataKeeper.storeFile(baos.toByteArray(), ".png", DataKeeper.TYPE_FILE_SHOT)
-                try {
-                    baos.flush()
-                } catch (e: IOException) {
-                    e.printStackTrace()
-                }
-                try {
-                    baos.close()
-                } catch (e: IOException) {
-                    e.printStackTrace()
-                }
-                val buffer = StringBuilder()
-                if (b) buffer.append("截屏成功 ") else {
-                    buffer.append("截屏失败 ")
-                }
-                if (status != 0) buffer.append("地图渲染完成，截屏无网格") else {
-                    buffer.append("地图未渲染完成，截屏有网格")
-                }
-                CommonUtil.showShortToast(activity, buffer.toString())
-            }
-        })
-    }
-
     override fun onPoiSearched(poiResult: PoiResult, i: Int) {}
     override fun onPoiItemSearched(poiItem: PoiItem, i: Int) {}
 
@@ -213,11 +173,11 @@ class MapFragment : MapFragmentBase(), OnDialogButtonClickListener {
                 LatLng(34.128889, 109.228452),  //16
                 LatLng(34.248333, 108.927083),
                 LatLng(34.246207, 108.98378),
-                LatLng(34.149169,108.904904),
-                LatLng(34.30448,108.948038),
-                LatLng(34.30448,108.948038),
-                LatLng(34.149169,108.904904)
-                )
+                LatLng(34.149169, 108.904904),
+                LatLng(34.30448, 108.948038),
+                LatLng(34.30448, 108.948038),
+                LatLng(34.149169, 108.904904)
+        )
         private val BRIEFS = arrayOf(
                 "中外文明相互交融的见证\n",
                 "唐王朝盛极而衰的挽歌\n",

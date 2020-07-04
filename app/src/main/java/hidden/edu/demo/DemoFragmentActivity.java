@@ -20,8 +20,8 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 
 import hidden.edu.R;
-import zuo.biao.library.base.BaseActivity;
-import zuo.biao.library.interfaces.OnBottomDragListener;
+import qian.xin.library.base.BaseActivity;
+import qian.xin.library.interfaces.OnBottomDragListener;
 
 /*
   使用方法：复制>粘贴>改名>改代码

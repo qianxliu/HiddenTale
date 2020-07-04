@@ -20,8 +20,8 @@ import android.util.Log;
 
 import hidden.edu.manager.DataManager;
 import hidden.edu.model.User;
-import zuo.biao.library.base.BaseApplication;
-import zuo.biao.library.util.StringUtil;
+import qian.xin.library.base.BaseApplication;
+import qian.xin.library.util.StringUtil;
 
 /**
  * Application

@@ -25,9 +25,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.bumptech.glide.Glide;
 
 import hidden.edu.R;
-import zuo.biao.library.base.BaseView;
-import zuo.biao.library.model.Entry;
-import zuo.biao.library.util.StringUtil;
+import qian.xin.library.base.BaseView;
+import qian.xin.library.model.Entry;
+import qian.xin.library.util.StringUtil;
 /*
   使用方法：复制>粘贴>改名>改代码
  */

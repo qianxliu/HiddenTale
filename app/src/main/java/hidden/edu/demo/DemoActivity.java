@@ -21,11 +21,9 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.widget.TextView;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import hidden.edu.R;
-import zuo.biao.library.base.BaseActivity;
-import zuo.biao.library.interfaces.OnBottomDragListener;
+import qian.xin.library.base.BaseActivity;
+import qian.xin.library.interfaces.OnBottomDragListener;
 
 /*
  * activity示例

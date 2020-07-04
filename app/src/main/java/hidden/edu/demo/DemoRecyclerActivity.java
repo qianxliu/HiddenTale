@@ -28,10 +28,10 @@ import java.util.Objects;
 
 import hidden.edu.R;
 import hidden.edu.util.TestUtil;
-import zuo.biao.library.base.BaseRecyclerActivity;
-import zuo.biao.library.interfaces.AdapterCallBack;
-import zuo.biao.library.interfaces.OnBottomDragListener;
-import zuo.biao.library.model.Entry;
+import qian.xin.library.base.BaseRecyclerActivity;
+import qian.xin.library.interfaces.AdapterCallBack;
+import qian.xin.library.interfaces.OnBottomDragListener;
+import qian.xin.library.model.Entry;
 
 /*
   使用方法：复制>粘贴>改名>改代码

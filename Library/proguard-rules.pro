@@ -140,4 +140,4 @@
 
 
 # 需要忽略混淆的javabean的包名或者类
--keep class zuo.biao.library.* { ; }
+-keep class qian.xin.library.* { ; }

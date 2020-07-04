@@ -28,9 +28,9 @@ import java.util.List;
 
 import hidden.edu.R;
 import hidden.edu.activity.UserActivity;
-import zuo.biao.library.base.BaseListFragment;
-import zuo.biao.library.interfaces.AdapterCallBack;
-import zuo.biao.library.model.Entry;
+import qian.xin.library.base.BaseListFragment;
+import qian.xin.library.interfaces.AdapterCallBack;
+import qian.xin.library.model.Entry;
 
 /**
  * 列表Fragment示例

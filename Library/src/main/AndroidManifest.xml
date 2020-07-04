@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="zuo.biao.library">
+    package="qian.xin.library">
 
     <!-- 复制粘贴到你的工程的AndroidManifest.xml内对应位置 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
 
@@ -25,59 +25,48 @@
         <meta-data android:name="android.max_aspect" android:value="2.1" />
 
         <activity
-            android:name="zuo.biao.library.ui.SelectPictureActivity"
+            android:name="qian.xin.library.ui.SelectPictureActivity"
             android:screenOrientation="fullSensor"
             android:theme="@style/WindowCompleteAlpha"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name="zuo.biao.library.ui.CutPictureActivity"
+            android:name="qian.xin.library.ui.CutPictureActivity"
             android:screenOrientation="fullSensor"
             android:theme="@style/Window"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name="zuo.biao.library.ui.WebViewActivity"
+            android:name="qian.xin.library.ui.WebViewActivity"
             android:launchMode="singleTop"
             android:screenOrientation="fullSensor"
             android:windowSoftInputMode="stateHidden|adjustResize|adjustUnspecified" />
         <activity
-            android:name="zuo.biao.library.ui.EditTextInfoActivity"
+            android:name="qian.xin.library.ui.EditTextInfoActivity"
             android:screenOrientation="fullSensor"
             android:windowSoftInputMode="stateVisible|adjustPan|adjustUnspecified" />
         <activity
-            android:name="zuo.biao.library.ui.ServerSettingActivity"
+            android:name="qian.xin.library.ui.ServerSettingActivity"
             android:screenOrientation="fullSensor"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name="zuo.biao.library.ui.TopMenuWindow"
+            android:name="qian.xin.library.ui.TopMenuWindow"
             android:screenOrientation="fullSensor"
             android:theme="@style/Window"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name="zuo.biao.library.ui.BottomMenuWindow"
-            android:theme="@style/Window"
-            android:screenOrientation="fullSensor"
-            android:windowSoftInputMode="stateAlwaysHidden" />
-        <activity
-            android:name="zuo.biao.library.ui.EditTextInfoWindow"
+            android:name="qian.xin.library.ui.EditTextInfoWindow"
             android:theme="@style/Window"
             android:screenOrientation="fullSensor"
             android:windowSoftInputMode="stateVisible|adjustResize|adjustUnspecified" />
         <activity
-            android:name="zuo.biao.library.ui.PlacePickerWindow"
+            android:name="qian.xin.library.ui.PlacePickerWindow"
             android:screenOrientation="fullSensor"
             android:theme="@style/Window"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name="zuo.biao.library.ui.DatePickerWindow"
+            android:name="qian.xin.library.ui.TimePickerWindow"
             android:screenOrientation="fullSensor"
             android:theme="@style/Window"
             android:windowSoftInputMode="stateAlwaysHidden" />
-        <activity
-            android:name="zuo.biao.library.ui.TimePickerWindow"
-            android:screenOrientation="fullSensor"
-            android:theme="@style/Window"
-            android:windowSoftInputMode="stateAlwaysHidden" />
-        <activity android:name=".base.BaseHttpRecyclerActivity" />
 
     </application>
 

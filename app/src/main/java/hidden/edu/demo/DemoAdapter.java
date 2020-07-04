@@ -18,8 +18,8 @@ import android.view.ViewGroup;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import zuo.biao.library.base.BaseAdapter;
-import zuo.biao.library.model.Entry;
+import qian.xin.library.base.BaseAdapter;
+import qian.xin.library.model.Entry;
 
 /* 使用方法：复制>粘贴>改名>改代码 */
 

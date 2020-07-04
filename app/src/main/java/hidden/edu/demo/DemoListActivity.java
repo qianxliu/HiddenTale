@@ -29,11 +29,11 @@ import java.util.Objects;
 
 import hidden.edu.R;
 import hidden.edu.util.TestUtil;
-import zuo.biao.library.base.BaseListActivity;
-import zuo.biao.library.interfaces.AdapterCallBack;
-import zuo.biao.library.interfaces.OnBottomDragListener;
-import zuo.biao.library.model.Entry;
-import zuo.biao.library.ui.GridAdapter;
+import qian.xin.library.base.BaseListActivity;
+import qian.xin.library.interfaces.AdapterCallBack;
+import qian.xin.library.interfaces.OnBottomDragListener;
+import qian.xin.library.model.Entry;
+import qian.xin.library.ui.GridAdapter;
 
 /*
   使用方法：复制>粘贴>改名>改代码
@@ -162,7 +162,7 @@ public class DemoListActivity extends BaseListActivity<Entry<String, String>, Gr
     public void initEvent() {//必须在onCreate方法内调用
         super.initEvent();
 
-        //如果adapter类型是zuo.biao.library.base.BaseAdapter，这两句就不用写了
+        //如果adapter类型是qian.xin.library.base.BaseAdapter，这两句就不用写了
         lvBaseList.setOnItemClickListener(this);
         lvBaseList.setOnItemLongClickListener(this);
     }

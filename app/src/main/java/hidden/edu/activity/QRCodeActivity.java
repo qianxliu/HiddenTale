@@ -27,12 +27,12 @@ import com.king.zxing.util.CodeUtils;
 
 import hidden.edu.R;
 import hidden.edu.model.User;
-import zuo.biao.library.base.BaseActivity;
-import zuo.biao.library.interfaces.OnBottomDragListener;
-import zuo.biao.library.manager.CacheManager;
-import zuo.biao.library.util.JSON;
-import zuo.biao.library.util.Log;
-import zuo.biao.library.util.StringUtil;
+import qian.xin.library.base.BaseActivity;
+import qian.xin.library.interfaces.OnBottomDragListener;
+import qian.xin.library.manager.CacheManager;
+import qian.xin.library.util.JSON;
+import qian.xin.library.util.Log;
+import qian.xin.library.util.StringUtil;
 
 /**
  * 二维码界面Activity

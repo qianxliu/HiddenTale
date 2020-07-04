@@ -21,11 +21,11 @@ import android.widget.FrameLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import zuo.biao.library.base.BaseView;
+import qian.xin.library.base.BaseView;
 
 //import hidden.edu.activity.UserActivity;
 
-/**
+/*
  * BaseView布局类，可直接写在layout文件内
  *
  * @param <T>

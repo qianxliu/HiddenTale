@@ -19,8 +19,8 @@ import android.content.Intent;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import zuo.biao.library.base.BaseBroadcastReceiver;
-import zuo.biao.library.util.Log;
+import qian.xin.library.base.BaseBroadcastReceiver;
+import qian.xin.library.util.Log;
 /* 使用方法：复制>粘贴>改名>改代码 */
 
 /**

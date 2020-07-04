@@ -10,7 +10,6 @@ import android.content.Context
 import android.content.Intent
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
-import android.media.AudioManager
 import android.media.MediaPlayer
 import android.os.Build
 import android.os.Bundle
@@ -24,12 +23,11 @@ import hidden.edu.fragment.MapFragment
 import hidden.edu.fragment.MyRecyclerFragment
 import hidden.edu.fragment.SettingFragment
 import pub.devrel.easypermissions.EasyPermissions
-import zuo.biao.library.base.BaseBottomTabActivity
-import zuo.biao.library.interfaces.OnBottomDragListener
-import zuo.biao.library.manager.SystemBarTintManager
-import zuo.biao.library.ui.BottomMenuWindow
-import zuo.biao.library.util.DataKeeper
-import zuo.biao.library.util.DownloadUtil
+import qian.xin.library.base.BaseBottomTabActivity
+import qian.xin.library.interfaces.OnBottomDragListener
+import qian.xin.library.manager.SystemBarTintManager
+import qian.xin.library.ui.BottomMenuWindow
+import qian.xin.library.util.DataKeeper
 import java.io.File
 
 /*
@@ -68,7 +66,7 @@ class MainTabActivity : BaseBottomTabActivity(), OnBottomDragListener, View.OnCl
 
     //启动方法<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
     private fun permission() {
-        val PERMISSION_STORAGE_MSG = "请授予权限，否则影响部分使用功能"
+        val MSG = "请授予权限，否则影响部分使用功能"
         val perms: Array<String> = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
             arrayOf(
                     Manifest.permission.ACCESS_NOTIFICATION_POLICY,
@@ -109,7 +107,7 @@ class MainTabActivity : BaseBottomTabActivity(), OnBottomDragListener, View.OnCl
         }
         if (!EasyPermissions.hasPermissions(this, *perms)) {
             // Do not have permissions, request them now
-            EasyPermissions.requestPermissions(this, PERMISSION_STORAGE_MSG, 10001, *perms)
+            EasyPermissions.requestPermissions(this, MSG, 10001, *perms)
         }
     }
 
@@ -196,6 +194,7 @@ class MainTabActivity : BaseBottomTabActivity(), OnBottomDragListener, View.OnCl
             e.printStackTrace()
         }
 
+        /*
         Thread(Runnable {
             if (!mainFile.exists()) {
                 mainFile = DownloadUtil.downLoadFile(context, "/temp/" + "mainFile", "https://git.nwu.edu.cn/2018104171/pdf/raw/master/main.mp3")
@@ -206,7 +205,7 @@ class MainTabActivity : BaseBottomTabActivity(), OnBottomDragListener, View.OnCl
             mediaPlayer.isLooping = true // Set looping
             mediaPlayer.start()
         })
-
+*/
 
         //findView(R.id.drawer).setOnItemClickListener(this);
         navigationView!!.setNavigationItemSelectedListener { item: MenuItem ->

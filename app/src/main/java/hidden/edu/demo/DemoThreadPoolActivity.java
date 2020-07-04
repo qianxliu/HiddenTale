@@ -13,8 +13,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.util.concurrent.atomic.AtomicInteger;
 
 import hidden.edu.R;
-import zuo.biao.library.base.BaseActivity;
-import zuo.biao.library.util.thread.pool.ThreadPoolProxyFactory;
+import qian.xin.library.base.BaseActivity;
+import qian.xin.library.util.thread.pool.ThreadPoolProxyFactory;
 /*
  * ThreadPoolProxy DEMO
  *  默认代理两种线程池，也可自行扩展

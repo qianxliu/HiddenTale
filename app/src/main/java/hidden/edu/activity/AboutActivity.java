@@ -1,17 +1,3 @@
-/*Copyright ©2015 TommyLemon(https://github.com/TommyLemon)
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.*/
-
 package hidden.edu.activity;
 
 import android.annotation.SuppressLint;
@@ -36,11 +22,11 @@ import hidden.edu.R;
 import hidden.edu.application.DemoApplication;
 import hidden.edu.util.Constant;
 import hidden.edu.util.HttpRequest;
-import zuo.biao.library.base.BaseActivity;
-import zuo.biao.library.interfaces.OnBottomDragListener;
-import zuo.biao.library.ui.WebViewActivity;
-import zuo.biao.library.util.CommonUtil;
-import zuo.biao.library.util.SettingUtil;
+import qian.xin.library.base.BaseActivity;
+import qian.xin.library.interfaces.OnBottomDragListener;
+import qian.xin.library.ui.WebViewActivity;
+import qian.xin.library.util.CommonUtil;
+import qian.xin.library.util.SettingUtil;
 
 /**
  * 关于界面

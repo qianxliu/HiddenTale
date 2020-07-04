@@ -23,8 +23,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import hidden.edu.R;
 import hidden.edu.activity.UserActivity;
-import zuo.biao.library.base.BaseViewBottomWindow;
-import zuo.biao.library.model.Entry;
+import qian.xin.library.base.BaseViewBottomWindow;
+import qian.xin.library.model.Entry;
 
 /* 使用方法：复制>粘贴>改名>改代码 */
 

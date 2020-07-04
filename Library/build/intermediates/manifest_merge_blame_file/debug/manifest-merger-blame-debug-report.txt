@@ -1,6 +1,6 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="zuo.biao.library"
+3    package="qian.xin.library"
 4    android:versionCode="1"
 5    android:versionName="0.1.0" > <!-- 复制粘贴到你的工程的AndroidManifest.xml内对应位置 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
 6    <uses-sdk
@@ -45,7 +45,7 @@
 25    <!-- CommonUtil等类的部分功能需要，不需要的功能对应的权限可不复制粘贴 >>>>>> -->
 26    <!-- 需要的权限 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
 27    <application android:label="@string/app_name" >
-27-->F:\AndroidProject\HiddenTale\Library\src\main\AndroidManifest.xml:21:5-82:19
+27-->F:\AndroidProject\HiddenTale\Library\src\main\AndroidManifest.xml:21:5-71:19
 27-->F:\AndroidProject\HiddenTale\Library\src\main\AndroidManifest.xml:22:9-41
 28
 29        <!-- 更好的适配全面屏 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
@@ -58,7 +58,7 @@
 33
 34        <activity
 34-->F:\AndroidProject\HiddenTale\Library\src\main\AndroidManifest.xml:27:9-31:63
-35            android:name="zuo.biao.library.ui.SelectPictureActivity"
+35            android:name="qian.xin.library.ui.SelectPictureActivity"
 35-->F:\AndroidProject\HiddenTale\Library\src\main\AndroidManifest.xml:28:13-69
 36            android:screenOrientation="fullSensor"
 36-->F:\AndroidProject\HiddenTale\Library\src\main\AndroidManifest.xml:29:13-51
@@ -68,7 +68,7 @@
 38-->F:\AndroidProject\HiddenTale\Library\src\main\AndroidManifest.xml:31:13-60
 39        <activity
 39-->F:\AndroidProject\HiddenTale\Library\src\main\AndroidManifest.xml:32:9-36:63
-40            android:name="zuo.biao.library.ui.CutPictureActivity"
+40            android:name="qian.xin.library.ui.CutPictureActivity"
 40-->F:\AndroidProject\HiddenTale\Library\src\main\AndroidManifest.xml:33:13-66
 41            android:screenOrientation="fullSensor"
 41-->F:\AndroidProject\HiddenTale\Library\src\main\AndroidManifest.xml:34:13-51
@@ -78,7 +78,7 @@
 43-->F:\AndroidProject\HiddenTale\Library\src\main\AndroidManifest.xml:36:13-60
 44        <activity
 44-->F:\AndroidProject\HiddenTale\Library\src\main\AndroidManifest.xml:37:9-41:88
-45            android:name="zuo.biao.library.ui.WebViewActivity"
+45            android:name="qian.xin.library.ui.WebViewActivity"
 45-->F:\AndroidProject\HiddenTale\Library\src\main\AndroidManifest.xml:38:13-63
 46            android:launchMode="singleTop"
 46-->F:\AndroidProject\HiddenTale\Library\src\main\AndroidManifest.xml:39:13-43
@@ -88,7 +88,7 @@
 48-->F:\AndroidProject\HiddenTale\Library\src\main\AndroidManifest.xml:41:13-85
 49        <activity
 49-->F:\AndroidProject\HiddenTale\Library\src\main\AndroidManifest.xml:42:9-45:86
-50            android:name="zuo.biao.library.ui.EditTextInfoActivity"
+50            android:name="qian.xin.library.ui.EditTextInfoActivity"
 50-->F:\AndroidProject\HiddenTale\Library\src\main\AndroidManifest.xml:43:13-68
 51            android:screenOrientation="fullSensor"
 51-->F:\AndroidProject\HiddenTale\Library\src\main\AndroidManifest.xml:44:13-51
@@ -96,7 +96,7 @@
 52-->F:\AndroidProject\HiddenTale\Library\src\main\AndroidManifest.xml:45:13-83
 53        <activity
 53-->F:\AndroidProject\HiddenTale\Library\src\main\AndroidManifest.xml:46:9-49:57
-54            android:name="zuo.biao.library.ui.ServerSettingActivity"
+54            android:name="qian.xin.library.ui.ServerSettingActivity"
 54-->F:\AndroidProject\HiddenTale\Library\src\main\AndroidManifest.xml:47:13-69
 55            android:screenOrientation="fullSensor"
 55-->F:\AndroidProject\HiddenTale\Library\src\main\AndroidManifest.xml:48:13-51
@@ -104,7 +104,7 @@
 56-->F:\AndroidProject\HiddenTale\Library\src\main\AndroidManifest.xml:49:13-54
 57        <activity
 57-->F:\AndroidProject\HiddenTale\Library\src\main\AndroidManifest.xml:50:9-54:63
-58            android:name="zuo.biao.library.ui.TopMenuWindow"
+58            android:name="qian.xin.library.ui.TopMenuWindow"
 58-->F:\AndroidProject\HiddenTale\Library\src\main\AndroidManifest.xml:51:13-61
 59            android:screenOrientation="fullSensor"
 59-->F:\AndroidProject\HiddenTale\Library\src\main\AndroidManifest.xml:52:13-51
@@ -113,58 +113,35 @@
 61            android:windowSoftInputMode="stateAlwaysHidden" />
 61-->F:\AndroidProject\HiddenTale\Library\src\main\AndroidManifest.xml:54:13-60
 62        <activity
-62-->F:\AndroidProject\HiddenTale\Library\src\main\AndroidManifest.xml:55:9-59:63
-63            android:name="zuo.biao.library.ui.BottomMenuWindow"
-63-->F:\AndroidProject\HiddenTale\Library\src\main\AndroidManifest.xml:56:13-64
+62-->F:\AndroidProject\HiddenTale\Library\src\main\AndroidManifest.xml:55:9-59:89
+63            android:name="qian.xin.library.ui.EditTextInfoWindow"
+63-->F:\AndroidProject\HiddenTale\Library\src\main\AndroidManifest.xml:56:13-66
 64            android:screenOrientation="fullSensor"
 64-->F:\AndroidProject\HiddenTale\Library\src\main\AndroidManifest.xml:58:13-51
 65            android:theme="@style/Window"
 65-->F:\AndroidProject\HiddenTale\Library\src\main\AndroidManifest.xml:57:13-42
-66            android:windowSoftInputMode="stateAlwaysHidden" />
-66-->F:\AndroidProject\HiddenTale\Library\src\main\AndroidManifest.xml:59:13-60
+66            android:windowSoftInputMode="stateVisible|adjustResize|adjustUnspecified" />
+66-->F:\AndroidProject\HiddenTale\Library\src\main\AndroidManifest.xml:59:13-86
 67        <activity
-67-->F:\AndroidProject\HiddenTale\Library\src\main\AndroidManifest.xml:60:9-64:89
-68            android:name="zuo.biao.library.ui.EditTextInfoWindow"
-68-->F:\AndroidProject\HiddenTale\Library\src\main\AndroidManifest.xml:61:13-66
+67-->F:\AndroidProject\HiddenTale\Library\src\main\AndroidManifest.xml:60:9-64:63
+68            android:name="qian.xin.library.ui.PlacePickerWindow"
+68-->F:\AndroidProject\HiddenTale\Library\src\main\AndroidManifest.xml:61:13-65
 69            android:screenOrientation="fullSensor"
-69-->F:\AndroidProject\HiddenTale\Library\src\main\AndroidManifest.xml:63:13-51
+69-->F:\AndroidProject\HiddenTale\Library\src\main\AndroidManifest.xml:62:13-51
 70            android:theme="@style/Window"
-70-->F:\AndroidProject\HiddenTale\Library\src\main\AndroidManifest.xml:62:13-42
-71            android:windowSoftInputMode="stateVisible|adjustResize|adjustUnspecified" />
-71-->F:\AndroidProject\HiddenTale\Library\src\main\AndroidManifest.xml:64:13-86
+70-->F:\AndroidProject\HiddenTale\Library\src\main\AndroidManifest.xml:63:13-42
+71            android:windowSoftInputMode="stateAlwaysHidden" />
+71-->F:\AndroidProject\HiddenTale\Library\src\main\AndroidManifest.xml:64:13-60
 72        <activity
 72-->F:\AndroidProject\HiddenTale\Library\src\main\AndroidManifest.xml:65:9-69:63
-73            android:name="zuo.biao.library.ui.PlacePickerWindow"
-73-->F:\AndroidProject\HiddenTale\Library\src\main\AndroidManifest.xml:66:13-65
+73            android:name="qian.xin.library.ui.TimePickerWindow"
+73-->F:\AndroidProject\HiddenTale\Library\src\main\AndroidManifest.xml:66:13-64
 74            android:screenOrientation="fullSensor"
 74-->F:\AndroidProject\HiddenTale\Library\src\main\AndroidManifest.xml:67:13-51
 75            android:theme="@style/Window"
 75-->F:\AndroidProject\HiddenTale\Library\src\main\AndroidManifest.xml:68:13-42
 76            android:windowSoftInputMode="stateAlwaysHidden" />
 76-->F:\AndroidProject\HiddenTale\Library\src\main\AndroidManifest.xml:69:13-60
-77        <activity
-77-->F:\AndroidProject\HiddenTale\Library\src\main\AndroidManifest.xml:70:9-74:63
-78            android:name="zuo.biao.library.ui.DatePickerWindow"
-78-->F:\AndroidProject\HiddenTale\Library\src\main\AndroidManifest.xml:71:13-64
-79            android:screenOrientation="fullSensor"
-79-->F:\AndroidProject\HiddenTale\Library\src\main\AndroidManifest.xml:72:13-51
-80            android:theme="@style/Window"
-80-->F:\AndroidProject\HiddenTale\Library\src\main\AndroidManifest.xml:73:13-42
-81            android:windowSoftInputMode="stateAlwaysHidden" />
-81-->F:\AndroidProject\HiddenTale\Library\src\main\AndroidManifest.xml:74:13-60
-82        <activity
-82-->F:\AndroidProject\HiddenTale\Library\src\main\AndroidManifest.xml:75:9-79:63
-83            android:name="zuo.biao.library.ui.TimePickerWindow"
-83-->F:\AndroidProject\HiddenTale\Library\src\main\AndroidManifest.xml:76:13-64
-84            android:screenOrientation="fullSensor"
-84-->F:\AndroidProject\HiddenTale\Library\src\main\AndroidManifest.xml:77:13-51
-85            android:theme="@style/Window"
-85-->F:\AndroidProject\HiddenTale\Library\src\main\AndroidManifest.xml:78:13-42
-86            android:windowSoftInputMode="stateAlwaysHidden" />
-86-->F:\AndroidProject\HiddenTale\Library\src\main\AndroidManifest.xml:79:13-60
-87        <activity android:name="zuo.biao.library.base.BaseHttpRecyclerActivity" />
-87-->F:\AndroidProject\HiddenTale\Library\src\main\AndroidManifest.xml:80:9-67
-87-->F:\AndroidProject\HiddenTale\Library\src\main\AndroidManifest.xml:80:19-64
-88    </application>
-89
-90</manifest>
+77    </application>
+78
+79</manifest>

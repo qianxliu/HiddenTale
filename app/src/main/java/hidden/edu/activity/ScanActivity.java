@@ -25,10 +25,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.king.zxing.CaptureActivity;
 
 import hidden.edu.R;
-import zuo.biao.library.interfaces.ActivityPresenter;
-import zuo.biao.library.util.CommonUtil;
+import qian.xin.library.interfaces.ActivityPresenter;
+import qian.xin.library.util.CommonUtil;
 
-/**
+/*
  * 扫描二维码Activity
  *
  * @author Lemon

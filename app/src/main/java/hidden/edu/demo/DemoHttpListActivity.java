@@ -31,10 +31,10 @@ import hidden.edu.adapter.UserAdapter;
 import hidden.edu.model.User;
 import hidden.edu.util.HttpRequest;
 import hidden.edu.util.TestUtil;
-import zuo.biao.library.base.BaseHttpListActivity;
-import zuo.biao.library.interfaces.AdapterCallBack;
-import zuo.biao.library.interfaces.OnBottomDragListener;
-import zuo.biao.library.util.JSON;
+import qian.xin.library.base.BaseHttpListActivity;
+import qian.xin.library.interfaces.AdapterCallBack;
+import qian.xin.library.interfaces.OnBottomDragListener;
+import qian.xin.library.util.JSON;
 /* 使用方法：复制>粘贴>改名>改代码 */
 
 /*

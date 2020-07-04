@@ -16,6 +16,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="af968b78" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -36,8 +37,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin File" />
         <option value="Class" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -49,6 +50,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="F:/AndroidLocal" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/java/hidden/edu/model" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.44162437" />
@@ -58,6 +60,18 @@
   <component name="PsdUISettings">
     <option name="MODULE_TAB" value="Properties" />
     <option name="LAST_EDITED_BUILD_TYPE" value="release" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\AndroidProject\HiddenTale\app\src\main\java\hidden\edu\model" />
+      <recent name="F:\AndroidProject\HiddenTale\Library\src\main\java\qian\xin\library\base" />
+      <recent name="F:\AndroidProject\HiddenTale\app\src\main\java\hidden\edu\view" />
+      <recent name="F:\AndroidProject\HiddenTale\app\src\main\java\hidden\edu\util" />
+      <recent name="F:\AndroidProject\HiddenTale\app\src\main\java\hidden\edu\manager" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\AndroidProject\HiddenTale\Library\src\main\java\qian\xin\library\ui" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
@@ -140,45 +154,57 @@
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="137" y="53" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.30.1366.738@0.30.1366.738" timestamp="1593765736365" />
-    <state x="474" y="114" key="#com.intellij.ide.util.MemberChooser" timestamp="1593772958319">
+    <state x="474" y="114" key="#com.intellij.ide.util.MemberChooser" timestamp="1593874673340">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="474" y="114" key="#com.intellij.ide.util.MemberChooser/0.30.1366.738@0.30.1366.738" timestamp="1593772958319" />
-    <state x="413" y="145" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1593776866390">
+    <state x="474" y="114" key="#com.intellij.ide.util.MemberChooser/0.30.1366.738@0.30.1366.738" timestamp="1593874673340" />
+    <state x="413" y="145" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1593869537359">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="413" y="145" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.30.1366.738@0.30.1366.738" timestamp="1593776866390" />
+    <state x="413" y="145" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.30.1366.738@0.30.1366.738" timestamp="1593869537359" />
     <state x="413" y="145" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1593771924588">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="413" y="145" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.30.1366.738@0.30.1366.738" timestamp="1593771924588" />
-    <state width="1306" height="137" key="GridCell.Tab.0.bottom" timestamp="1593775596881">
+    <state width="1323" height="181" key="GridCell.Tab.0.bottom" timestamp="1593874266363">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state width="1306" height="137" key="GridCell.Tab.0.bottom/0.30.1366.738@0.30.1366.738" timestamp="1593775596881" />
-    <state width="1306" height="137" key="GridCell.Tab.0.center" timestamp="1593775596881">
+    <state width="1323" height="181" key="GridCell.Tab.0.bottom/0.30.1366.738@0.30.1366.738" timestamp="1593874266363" />
+    <state width="1323" height="181" key="GridCell.Tab.0.center" timestamp="1593874266363">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state width="1306" height="137" key="GridCell.Tab.0.center/0.30.1366.738@0.30.1366.738" timestamp="1593775596881" />
-    <state width="1306" height="137" key="GridCell.Tab.0.left" timestamp="1593775596880">
+    <state width="1323" height="181" key="GridCell.Tab.0.center/0.30.1366.738@0.30.1366.738" timestamp="1593874266363" />
+    <state width="1323" height="181" key="GridCell.Tab.0.left" timestamp="1593874266363">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state width="1306" height="137" key="GridCell.Tab.0.left/0.30.1366.738@0.30.1366.738" timestamp="1593775596880" />
-    <state width="1306" height="137" key="GridCell.Tab.0.right" timestamp="1593775596881">
+    <state width="1323" height="181" key="GridCell.Tab.0.left/0.30.1366.738@0.30.1366.738" timestamp="1593874266363" />
+    <state width="1323" height="181" key="GridCell.Tab.0.right" timestamp="1593874266363">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state width="1306" height="137" key="GridCell.Tab.0.right/0.30.1366.738@0.30.1366.738" timestamp="1593775596881" />
+    <state width="1323" height="181" key="GridCell.Tab.0.right/0.30.1366.738@0.30.1366.738" timestamp="1593874266363" />
     <state x="184" y="41" key="SettingsEditor" timestamp="1593768932965">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="184" y="41" key="SettingsEditor/0.30.1366.738@0.30.1366.738" timestamp="1593768932965" />
-    <state x="378" y="222" key="com.intellij.ide.util.TipDialog" timestamp="1593774845114">
+    <state x="233" y="146" key="caller.chooser.dialog" timestamp="1593869245142">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="378" y="222" key="com.intellij.ide.util.TipDialog/0.30.1366.738@0.30.1366.738" timestamp="1593774845114" />
-    <state x="389" y="30" key="refactoring.ChangeSignatureDialog" timestamp="1593772455323">
+    <state x="233" y="146" key="caller.chooser.dialog/0.30.1366.738@0.30.1366.738" timestamp="1593869245142" />
+    <state x="378" y="222" key="com.intellij.ide.util.TipDialog" timestamp="1593826598959">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="389" y="30" key="refactoring.ChangeSignatureDialog/0.30.1366.738@0.30.1366.738" timestamp="1593772455323" />
+    <state x="378" y="222" key="com.intellij.ide.util.TipDialog/0.30.1366.738@0.30.1366.738" timestamp="1593826598959" />
+    <state x="315" y="98" width="736" height="602" key="find.popup" timestamp="1593874551282">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="315" y="98" width="736" height="602" key="find.popup/0.30.1366.738@0.30.1366.738" timestamp="1593874551282" />
+    <state x="389" y="30" key="refactoring.ChangeSignatureDialog" timestamp="1593866836597">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="389" y="30" key="refactoring.ChangeSignatureDialog/0.30.1366.738@0.30.1366.738" timestamp="1593866836597" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1593868689053">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.30.1366.738@0.30.1366.738" timestamp="1593868689053" />
   </component>
 </project>

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "applicationId": "zuo.biao.library",
+  "applicationId": "qian.xin.library",
   "variantType": "LIBRARY",
   "elements": [
     {
@@ -19,7 +19,7 @@
       },
       "path": "AndroidManifest.xml",
       "properties": {
-        "packageId": "zuo.biao.library",
+        "packageId": "qian.xin.library",
         "split": ""
       }
     }

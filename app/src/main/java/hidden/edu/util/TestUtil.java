@@ -52,6 +52,8 @@ public class TestUtil {
                 user.setSex(1);
             else if (i < 17)
                 user.setSex(2);
+            else if (i < 21)
+                user.setSex(3);
             user.setHead(URLS[index]);
             user.setName(NAMES[index]);
             user.setTime(TIMES[index]);

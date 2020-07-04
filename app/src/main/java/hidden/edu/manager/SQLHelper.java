@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
-import zuo.biao.library.util.Log;
+import qian.xin.library.util.Log;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -12,7 +12,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import static zuo.biao.library.util.StringUtil.*;
+import static qian.xin.library.util.StringUtil.*;
 
 /**
  * SQLite数据库Helper

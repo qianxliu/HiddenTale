@@ -31,10 +31,10 @@ import hidden.edu.adapter.UserAdapter;
 import hidden.edu.model.User;
 import hidden.edu.util.HttpRequest;
 import hidden.edu.util.TestUtil;
-import zuo.biao.library.base.BaseHttpListFragment;
-import zuo.biao.library.interfaces.AdapterCallBack;
-import zuo.biao.library.interfaces.CacheCallBack;
-import zuo.biao.library.util.JSON;
+import qian.xin.library.base.BaseHttpListFragment;
+import qian.xin.library.interfaces.AdapterCallBack;
+import qian.xin.library.interfaces.CacheCallBack;
+import qian.xin.library.util.JSON;
 
 /*用户列表界面fragment
  * @author Lemon
