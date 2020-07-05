@@ -17,6 +17,9 @@ import android.os.Bundle
 import android.view.KeyEvent
 import android.view.MenuItem
 import android.view.View
+import android.widget.ImageView
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.google.android.material.navigation.NavigationView
 import com.liulishuo.filedownloader.BaseDownloadTask
@@ -25,16 +28,16 @@ import com.liulishuo.filedownloader.FileDownloader
 import hidden.edu.R
 import hidden.edu.fragment.MapFragment
 import hidden.edu.fragment.MyRecyclerFragment
-import hidden.edu.fragment.MyRecyclerFragment.URLS
 import hidden.edu.fragment.SettingFragment
 import pub.devrel.easypermissions.EasyPermissions
 import qian.xin.library.base.BaseBottomTabActivity
 import qian.xin.library.interfaces.OnBottomDragListener
 import qian.xin.library.manager.SystemBarTintManager
 import qian.xin.library.ui.BottomMenuWindow
-import qian.xin.library.util.CommonUtil.isNetWorkConnected
+import qian.xin.library.util.CommonUtil
 import qian.xin.library.util.DataKeeper
 import java.io.File
+import kotlin.system.exitProcess
 
 /*
  * 应用主页
@@ -42,7 +45,7 @@ import java.io.File
  * @author Lemon
  * @use MainTabActivity.createIntent(...)
  */
-class MainTabActivity : BaseBottomTabActivity(), OnBottomDragListener, View.OnClickListener {
+class MainTabActivity : BaseBottomTabActivity(), OnBottomDragListener, View.OnClickListener, EasyPermissions.PermissionCallbacks {
     private var currentPos = 0
 
     /*
@@ -60,10 +63,39 @@ class MainTabActivity : BaseBottomTabActivity(), OnBottomDragListener, View.OnCl
     private View llAboutContactUs;
     */
     private var navigationView: NavigationView? = null
+
+    private var imageView: ImageView? = null
+
+    //private var navigationHeader : LinearLayout? = null
     private var channelID = "3"
     private var channelName = "channel_name"
     private val mSmallIconId = R.drawable.ic_launcher
     private val mLargeIconId = R.drawable.ic_launcher
+    override fun onPermissionsDenied(requestCode: Int, perms: MutableList<String>) {
+        /*
+        val perms: Array<String> = arrayOf(
+                Manifest.permission.BIND_NOTIFICATION_LISTENER_SERVICE,
+                Manifest.permission.ACCESS_LOCATION_EXTRA_COMMANDS,
+                Manifest.permission.ACCESS_FINE_LOCATION,
+                Manifest.permission.ACCESS_WIFI_STATE,
+                Manifest.permission.ACCESS_NETWORK_STATE,
+                Manifest.permission.ACCESS_COARSE_LOCATION,
+                Manifest.permission.READ_EXTERNAL_STORAGE,
+                Manifest.permission.WRITE_EXTERNAL_STORAGE,
+                Manifest.permission.INTERNET,
+                Manifest.permission.CHANGE_WIFI_STATE,
+                Manifest.permission.ACCESS_WIFI_STATE)
+        if (!EasyPermissions.hasPermissions(this, *perms)) {
+            EasyPermissions.requestPermissions(this.activity, "请授予必要权限！", 10005, *perms)
+        }
+
+         */
+    }
+
+    override fun onPermissionsGranted(requestCode: Int, perms: MutableList<String>) {
+
+    }
+
     override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<String>, grantResults: IntArray) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
         // Forward results to EasyPermissions
@@ -80,36 +112,28 @@ class MainTabActivity : BaseBottomTabActivity(), OnBottomDragListener, View.OnCl
                     Manifest.permission.FOREGROUND_SERVICE,
                     Manifest.permission.ACCESS_LOCATION_EXTRA_COMMANDS,
                     Manifest.permission.ACCESS_FINE_LOCATION,
-                    Manifest.permission.VIBRATE,
-                    Manifest.permission.MODIFY_PHONE_STATE,
-                    Manifest.permission.CAMERA,
                     Manifest.permission.ACCESS_WIFI_STATE,
                     Manifest.permission.ACCESS_NETWORK_STATE,
                     Manifest.permission.ACCESS_COARSE_LOCATION,
                     Manifest.permission.READ_EXTERNAL_STORAGE,
                     Manifest.permission.WRITE_EXTERNAL_STORAGE,
-                    Manifest.permission.SYSTEM_ALERT_WINDOW,
                     Manifest.permission.INTERNET,
                     Manifest.permission.CHANGE_WIFI_STATE,
-                    Manifest.permission.ACCESS_WIFI_STATE,
-                    Manifest.permission.READ_PHONE_STATE)
+                    Manifest.permission.ACCESS_WIFI_STATE
+                    )
         } else {
             arrayOf(
                     Manifest.permission.ACCESS_LOCATION_EXTRA_COMMANDS,
                     Manifest.permission.ACCESS_FINE_LOCATION,
-                    Manifest.permission.VIBRATE,
-                    Manifest.permission.MODIFY_PHONE_STATE,
-                    Manifest.permission.CAMERA,
                     Manifest.permission.ACCESS_WIFI_STATE,
                     Manifest.permission.ACCESS_NETWORK_STATE,
                     Manifest.permission.ACCESS_COARSE_LOCATION,
                     Manifest.permission.READ_EXTERNAL_STORAGE,
                     Manifest.permission.WRITE_EXTERNAL_STORAGE,
-                    Manifest.permission.SYSTEM_ALERT_WINDOW,
                     Manifest.permission.INTERNET,
                     Manifest.permission.CHANGE_WIFI_STATE,
-                    Manifest.permission.ACCESS_WIFI_STATE,
-                    Manifest.permission.READ_PHONE_STATE)
+                    Manifest.permission.ACCESS_WIFI_STATE
+                    )
         }
         if (!EasyPermissions.hasPermissions(this, *perms)) {
             // Do not have permissions, request them now
@@ -138,6 +162,8 @@ class MainTabActivity : BaseBottomTabActivity(), OnBottomDragListener, View.OnCl
         super.initView()
         exitAnim = R.anim.bottom_push_out
         navigationView = findViewById(R.id.nav_view)
+        imageView = findViewById(R.id.splash)
+        //navigationHeader = findViewById(R.id.nav_header)
     }
 
     private fun setTintColor(position: Int) {
@@ -149,8 +175,9 @@ class MainTabActivity : BaseBottomTabActivity(), OnBottomDragListener, View.OnCl
         }
 
 
-        //navigationView.setBackgroundResource(TOPBAR_COLOR_RESIDS[position]);
-
+        navigationView?.setBackgroundResource(TOPBAR_COLOR_RESIDS[position])
+        imageView?.setBackgroundResource(TOPBAR_COLOR_RESIDS[position])
+        //navigationHeader?.setBackgroundResource(TOPBAR_COLOR_RESIDS[position]);
         /*
         settingAbout.setBackgroundResource(TOPBAR_COLOR_RESIDS[position]);
         settingLogout.setBackgroundResource(TOPBAR_COLOR_RESIDS[position]);
@@ -191,6 +218,7 @@ class MainTabActivity : BaseBottomTabActivity(), OnBottomDragListener, View.OnCl
 
     // Data数据区(存在数据获取或处理代码，但不存在事件监听代码)>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
     // Event事件区(只要存在事件监听代码就是)<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+    @SuppressLint("ShowToast")
     override fun initEvent() { // 必须调用
         super.initEvent()
         permission()
@@ -216,18 +244,17 @@ class MainTabActivity : BaseBottomTabActivity(), OnBottomDragListener, View.OnCl
                     selectFragment(currentPos)
                 }
                 R.id.nav_skin -> toActivity(BottomMenuWindow.createIntent(context, TOPBAR_COLOR_NAMES)
-                        .putExtra(BottomMenuWindow.INTENT_TITLE, "选择颜色"), REQUEST_TO_BOTTOM_MENU, false)
+                        .putExtra(BottomMenuWindow.INTENT_TITLE, "选择颜色（启动背景也会更改哦(*^_^*)）"), REQUEST_TO_BOTTOM_MENU, false)
             }
             false
         }
 
-        if (!isNetWorkConnected(context)) {
-            showShortToast("未联网！请联网加载音频和Pdf资源……")
+        if (!CommonUtil.isNetWorkConnected(this)) {
+            Toast.makeText(this, "未联网！请联网加载音频和Pdf资源……", Toast.LENGTH_LONG)
         } else {
             //Must add!
-            FileDownloader.setup(context)
-
-            for ((index, value) in URLS.withIndex()) {
+            FileDownloader.setup(this)
+            for ((index, value) in MyRecyclerFragment.URLS.withIndex()) {
                 if (!File(DataKeeper.tempPath + "klfskjkf$index").exists()) {
                     FileDownloader.getImpl().create(value)
                             .setPath(DataKeeper.tempPath + "klfskjkf$index", false)
@@ -235,8 +262,20 @@ class MainTabActivity : BaseBottomTabActivity(), OnBottomDragListener, View.OnCl
                 }
             }
 
+            if (mainFile.exists()) {
+                //Must add for init
+                try {
+                    mediaPlayer = MediaPlayer()
+                    mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC)
 
-            if (!mainFile.exists()) {
+                    mediaPlayer.setDataSource(mainFile.absolutePath)
+                    mediaPlayer.isLooping = true // Set looping
+                    mediaPlayer.prepare() // might take long! (for buffering, etc)
+                    mediaPlayer.start()
+                } catch (e: java.lang.Exception) {
+                    e.printStackTrace()
+                }
+            } else {
                 FileDownloader.getImpl().create("https://git.nwu.edu.cn/2018104171/pdf/raw/master/main.mp3")
                         .setPath(mainFile.absolutePath, false)
                         .setListener(object : FileDownloadListener() {
@@ -259,16 +298,9 @@ class MainTabActivity : BaseBottomTabActivity(), OnBottomDragListener, View.OnCl
                             override fun error(task: BaseDownloadTask, e: Throwable) {}
                             override fun warn(task: BaseDownloadTask) {}
                         }).start()
-            } else {
-                //Must add for init
-                mediaPlayer = MediaPlayer()
-                mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC)
-                mediaPlayer.setDataSource(mainFile.absolutePath)
-                mediaPlayer.isLooping = true // Set looping
-                mediaPlayer.prepare() // might take long! (for buffering, etc)
-                mediaPlayer.start()
             }
         }
+
     }
 
     // This snippet hides the system bars.
@@ -310,15 +342,17 @@ class MainTabActivity : BaseBottomTabActivity(), OnBottomDragListener, View.OnCl
 
     //双击手机返回键退出<<<<<<<<<<<<<<<<<<<<<
     private var firstTime: Long = 0 //第一次返回按钮计时
+
+    @SuppressLint("ShowToast")
     override fun onKeyUp(keyCode: Int, event: KeyEvent): Boolean {
         if (keyCode == KeyEvent.KEYCODE_BACK) {
             val secondTime = System.currentTimeMillis()
             if (secondTime - firstTime > 2000) {
-                showShortToast("再按一次退出")
+                CommonUtil.showShortToast(this, "再按一次退出")
                 firstTime = secondTime
             } else { //完全退出
                 moveTaskToBack(false) //应用退到后台
-                System.exit(0)
+                exitProcess(0)
             }
             return true
         }
@@ -389,16 +423,16 @@ class MainTabActivity : BaseBottomTabActivity(), OnBottomDragListener, View.OnCl
         get() = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
 
     companion object {
-        val TOPBAR_COLOR_NAMES = arrayOf("红色", "蓝色", "绿色", "黄色", "木纹", "书幅", "羊皮卷")
-        val TOPBAR_COLOR_RESIDS = intArrayOf(R.color.red, R.color.blue, R.color.green, R.color.act_yellow, R.drawable.texture1, R.drawable.texture3, R.drawable.texture2)
-        var mediaPlayer = MediaPlayer()
+        val TOPBAR_COLOR_NAMES = arrayOf("纯白", "蓝色", "黄色", "木纹", "书幅", "羊皮卷")
+        val TOPBAR_COLOR_RESIDS = intArrayOf(R.color.white, R.color.blue, R.color.act_yellow, R.drawable.texture1, R.drawable.texture3, R.drawable.texture2)
+        lateinit var mediaPlayer: MediaPlayer
         var mainFile = File(DataKeeper.tempPath + "mainFile")
 
         /*
      * 启动这个Activity的Intent
      */
-        fun createIntent(context: Context?): Intent {
-            return Intent(context, MainTabActivity::class.java)
+        fun createIntent(activity: AppCompatActivity): Intent {
+            return Intent(activity, MainTabActivity::class.java)
         }
 
         private const val REQUEST_TO_BOTTOM_MENU = 31

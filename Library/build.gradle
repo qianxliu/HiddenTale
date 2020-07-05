@@ -16,8 +16,13 @@ android {
             consumerProguardFiles 'proguard-android.txt'
         }
         debug {
+            //压缩优化
+            zipAlignEnabled true
+            // shrinkResources
+            //shrinkResources true
             //混淆
-            consumerProguardFiles 'proguard-android.txt'
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
     useLibrary 'org.apache.http.legacy'

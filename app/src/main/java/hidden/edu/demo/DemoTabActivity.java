@@ -28,6 +28,7 @@ import hidden.edu.R;
 import qian.xin.library.base.BaseTabActivity;
 import qian.xin.library.interfaces.OnBottomDragListener;
 import qian.xin.library.ui.WebViewActivity;
+import qian.xin.library.util.CommonUtil;
 
 /*
   使用方法：复制>粘贴>改名>改代码
@@ -79,7 +80,7 @@ public class DemoTabActivity extends BaseTabActivity implements OnClickListener,
         super.initView();
 
         //示例代码<<<<<<<<
-        addTopRightButton(newTopRightImageView(context, R.drawable.add_small)).setOnClickListener(v -> showShortToast("添加"));
+        addTopRightButton(newTopRightImageView(context, R.drawable.add_small)).setOnClickListener(v -> CommonUtil.showShortToast(getActivity(),"添加"));
         //示例代码>>>>>>>>
     }
 
@@ -160,7 +161,7 @@ public class DemoTabActivity extends BaseTabActivity implements OnClickListener,
     public void onTabSelected(TextView tvTab, int position, int id) {
         super.onTabSelected(tvTab, position, id);
         //示例代码<<<<<<<<<<<<<<<<<<
-        showShortToast("onTabSelected  position = " + position);
+        CommonUtil.showShortToast(getActivity(),"onTabSelected  position = " + position);
         //示例代码>>>>>>>>>>>>>>>>>>
     }
 

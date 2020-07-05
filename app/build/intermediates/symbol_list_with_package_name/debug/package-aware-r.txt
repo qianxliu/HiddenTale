@@ -1921,7 +1921,6 @@ id info
 id invisible
 id italic
 id item_touch_helper_previous_elevation
-id ivAboutGesture
 id ivAboutQRCode
 id ivBaseTabReturn
 id ivCameraScanLight
@@ -1963,8 +1962,8 @@ id llAboutComment
 id llAboutContactUs
 id llAboutDeveloper
 id llAboutShare
+id llAboutUpdate
 id llAboutWeibo
-id llAboutZBLibraryMainActivity
 id llBaseTabTabContainer
 id llBaseTabTopRightButtonContainer
 id llBaseViewBottomWindowContainer
@@ -2050,13 +2049,12 @@ id mtrl_picker_text_input_range_end
 id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id multiply
-id myZoomInIntersectionView
 id nav_explorer
 id nav_find
+id nav_header
 id nav_setting
 id nav_skin
 id nav_view
-id navi_view
 id navigation_header_container
 id never
 id noScroll
@@ -2133,6 +2131,7 @@ id snackbar_text
 id snap
 id snapMargins
 id spacer
+id splash
 id split_action_bar
 id spread
 id spread_inside
@@ -2327,7 +2326,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout about_activity
-layout activity_navi
+layout activity_splash
 layout alert_dialog
 layout base_http_list_fragment
 layout base_http_recycler_fragment

@@ -5,7 +5,7 @@ import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
 import hidden.edu.R
 import hidden.edu.activity.MainTabActivity.Companion.createIntent
-import qian.xin.library.util.DataKeeper
+import qian.xin.library.util.DataKeeper.init
 import qian.xin.library.util.SettingUtil
 
 /**
@@ -17,12 +17,13 @@ class SplashActivity : AppCompatActivity() {
         if (!SettingUtil.isSplash) {
             startActivity(createIntent(this))
             finish()
-        }
-        Handler().postDelayed({
-            DataKeeper.init(this.application)
-            startActivity(createIntent(this))
-            finish()
-        }, 500)
+        } else
+            Handler().postDelayed({
+                init(this.application)
+                setContentView(R.layout.activity_splash)
+                startActivity(createIntent(this))
+                finish()
+            }, 500)
     }
 
     override fun finish() {

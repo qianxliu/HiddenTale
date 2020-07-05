@@ -71,7 +71,7 @@ public final class SettingUtil {
 
     public static boolean isOnTestMode = false;//测试模式
     public static boolean isFirstStart = true;//第一次打开应用
-    public static boolean isSplash = false;//是否Splash
+    public static boolean isSplash = true;//是否Splash
 
     //开启缓存
     //开启预加载

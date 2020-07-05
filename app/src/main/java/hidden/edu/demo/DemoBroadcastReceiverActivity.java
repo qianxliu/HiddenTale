@@ -24,13 +24,14 @@ import hidden.edu.R;
 import qian.xin.library.base.BaseActivity;
 import qian.xin.library.base.BaseBroadcastReceiver;
 import qian.xin.library.interfaces.OnBottomDragListener;
+import qian.xin.library.util.CommonUtil;
 import qian.xin.library.util.Log;
 
 /*
   使用方法：复制>粘贴>改名>改代码
  */
 
-/**
+/*
  * 使用BroadcastReceiver的Activity示例
  *
  * @author Lemon
@@ -119,7 +120,7 @@ public class DemoBroadcastReceiverActivity extends BaseActivity implements OnBot
                 if (intent != null && intent.hasExtra(STATE)) {
                     Log.i(TAG, "baseBroadcastReceiver.onReceive intent.getIntExtra(STATE, 0) = "
                             + intent.getIntExtra(STATE, 0));
-                    showShortToast("baseBroadcastReceiver\n" + (intent.getIntExtra(STATE, 0) == 1
+                    CommonUtil.showShortToast(this.context,"baseBroadcastReceiver\n" + (intent.getIntExtra(STATE, 0) == 1
                             ? "已插入耳机" : "请插入耳机"));
                 }
             }
@@ -138,7 +139,7 @@ public class DemoBroadcastReceiverActivity extends BaseActivity implements OnBot
                 .register(isConnected -> {
                     Log.i(TAG, "demoHeadsetConnectionReceiver.onHeadsetConnectionChanged" +
                             " isConnected = " + isConnected);
-                    showShortToast("demoHeadsetConnectionReceiver\n"
+                    CommonUtil.showShortToast(this.context,"demoHeadsetConnectionReceiver\n"
                             + (isConnected ? "已插入耳机" : "请插入耳机"));
                 });
         //外部类BaseBroadcastReceiver子类使用示例 >>>>>>>>>>>>>>
@@ -215,7 +216,7 @@ public class DemoBroadcastReceiverActivity extends BaseActivity implements OnBot
             if (intent != null && intent.hasExtra(STATE)) {
                 Log.i(TAG, "demoBroadcastReceiver.onReceive intent.getIntExtra(STATE, 0) = "
                         + intent.getIntExtra(STATE, 0));
-                showShortToast("demoBroadcastReceiver\n" + (intent.getIntExtra(STATE, 0) == 1
+                CommonUtil.showShortToast(this.context,"demoBroadcastReceiver\n" + (intent.getIntExtra(STATE, 0) == 1
                         ? "已插入耳机" : "请插入耳机"));
             }
         }

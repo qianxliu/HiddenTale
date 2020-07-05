@@ -14,6 +14,7 @@ limitations under the License.*/
 
 package qian.xin.library.ui;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -27,6 +28,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import qian.xin.library.R;
 import qian.xin.library.base.BaseActivity;
 import qian.xin.library.interfaces.OnBottomDragListener;
+import qian.xin.library.util.CommonUtil;
 import qian.xin.library.util.DataKeeper;
 import qian.xin.library.util.SettingUtil;
 import qian.xin.library.util.StringUtil;
@@ -164,6 +166,7 @@ public class ServerSettingActivity extends BaseActivity implements OnClickListen
             "正式服务器", "测试服务器"
     };
 
+    @SuppressLint("SetTextI18n")
     @Override
     public void initData() {//必须调用
 
@@ -172,7 +175,7 @@ public class ServerSettingActivity extends BaseActivity implements OnClickListen
         etServerSettingTest.setText(StringUtil.getNoBlankString(testAddress));
 
         tvServerSettingNormalName.setText(SERVER_NAMES[0]
-                + (SettingUtil.isOnTestMode == false ? "[正在使用]" : ""));
+                + (!SettingUtil.isOnTestMode ? "[正在使用]" : ""));
         tvServerSettingTestName.setText(SERVER_NAMES[1]
                 + (SettingUtil.isOnTestMode ? "[正在使用]" : ""));
     }
@@ -189,8 +192,8 @@ public class ServerSettingActivity extends BaseActivity implements OnClickListen
             SettingUtil.putBoolean(SettingUtil.KEY_IS_ON_TEST_MODE, isTest);
             DataKeeper.save(sharedPreferencesPath, pathMode, isTest ? testKey : normalKey
                     , StringUtil.getNoBlankString(isTest ? etServerSettingTest : etServerSettingNormal));
-            showShortToast("已保存并切换至" + SERVER_NAMES[SettingUtil.isOnTestMode ? 1 : 0]
-                    + "，请不要退出登录。重启后生效");
+            CommonUtil.showShortToast(this,"已保存并切换至" + SERVER_NAMES[SettingUtil.isOnTestMode ? 1 : 0]
+                    + "，请不要退出应用。重启后生效");
         }
         setResult(RESULT_OK, new Intent().putExtra(isTest ? RESULT_TEST_ADDRESS : RESULT_NORMAL_ADDRESS
                 , StringUtil.getNoBlankString(isTest ? etServerSettingTest : etServerSettingNormal)));

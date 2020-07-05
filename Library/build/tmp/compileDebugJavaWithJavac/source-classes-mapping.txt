@@ -145,9 +145,6 @@ qian/xin/library/interfaces/FragmentPresenter.java
  qian.xin.library.interfaces.FragmentPresenter
 qian/xin/library/base/BaseRecyclerActivity.java
  qian.xin.library.base.BaseRecyclerActivity
- qian.xin.library.base.BaseRecyclerActivity$1
- qian.xin.library.base.BaseRecyclerActivity$2
- qian.xin.library.base.BaseRecyclerActivity$2$1
 qian/xin/library/manager/Cache.java
  qian.xin.library.manager.Cache
 qian/xin/library/interfaces/Presenter.java
@@ -235,6 +232,3 @@ qian/xin/library/ui/MaxWidthWrapLayout.java
  qian.xin.library.ui.MaxWidthWrapLayout
 qian/xin/library/base/BaseListActivity.java
  qian.xin.library.base.BaseListActivity
- qian.xin.library.base.BaseListActivity$1
- qian.xin.library.base.BaseListActivity$2
- qian.xin.library.base.BaseListActivity$2$1

@@ -29,6 +29,7 @@ import hidden.edu.activity.SettingActivity;
 import qian.xin.library.base.BaseFragment;
 import qian.xin.library.ui.AlertDialog;
 import qian.xin.library.ui.AlertDialog.OnDialogButtonClickListener;
+import qian.xin.library.util.CommonUtil;
 
 /*
  * 设置fragment
@@ -127,7 +128,7 @@ public class SettingFragment extends BaseFragment implements OnClickListener, On
     public void onClick(View v) {//直接调用不会显示v被点击效果
         switch (v.getId()) {
             case R.id.ivSettingHead:
-                showShortToast("onClick  ivSettingHead");
+                CommonUtil.showShortToast(getActivity(),"onClick  ivSettingHead");
                 break;
             case R.id.llSettingSetting:
                 toActivity(SettingActivity.createIntent(context));
@@ -136,7 +137,7 @@ public class SettingFragment extends BaseFragment implements OnClickListener, On
                 toActivity(AboutActivity.createIntent(context));
                 break;
             case R.id.llSettingLogout:
-                new AlertDialog(context, "退出登录", "确定退出登录？", true, 0, this).show();
+                new AlertDialog(context, "退出应用", "确定退出应用？", true, 0, this).show();
                 break;
             default:
                 break;

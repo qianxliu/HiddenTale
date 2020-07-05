@@ -102,7 +102,7 @@ public class SelectPictureActivity extends BaseActivity implements OnClickListen
      */
     public void selectPicFromCamera() {
         if (!CommonUtil.isExitsSdcard()) {
-            showShortToast("SD卡不存在，不能拍照");
+            CommonUtil.showShortToast(this,"SD卡不存在，不能拍照");
             return;
         }
 

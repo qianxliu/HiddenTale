@@ -37,12 +37,12 @@ android {
         }
         debug {
             //压缩优化
-            //zipAlignEnabled true
+            zipAlignEnabled true
             // shrinkResources
-            //shrinkResources true
+            shrinkResources true
             //混淆
-            //minifyEnabled true
-            //proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
     compileOptions {

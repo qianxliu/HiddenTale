@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_explorer"
+            android:icon="@drawable/earth_light"
+            android:title="@string/explorer" />
+        <item
+            android:id="@+id/nav_find"
+            android:icon="@drawable/search_light"
+            android:title="@string/find" />
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/setting_light"
+            android:title="@string/setting" />
+        <item
+            android:id="@+id/nav_skin"
+            android:icon="@drawable/edit_light"
+            android:title="@string/nav_skin" />
+    </group>
+</menu>

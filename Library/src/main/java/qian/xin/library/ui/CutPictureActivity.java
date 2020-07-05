@@ -112,7 +112,7 @@ public class CutPictureActivity extends BaseActivity {
         if (!StringUtil.isNotEmpty(originalPicturePath, true) || (cuttedWidth <= 0)) {
             Log.e(TAG, "onCreate  StringUtil.isNotEmpty(originalPicturePath, true)" +
                     " == false || cuttedWidth <= 0 >> finish(); return;");
-            showShortToast("图片不存在，请先选择图片");
+            CommonUtil.showShortToast(this.context, "图片不存在，请先选择图片");
             finish();
             return;
         }

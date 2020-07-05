@@ -17,7 +17,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.king.zxing.util.CodeUtils;
 
-import hidden.edu.demo.DemoMainActivity;
 import hidden.edu.R;
 import hidden.edu.application.DemoApplication;
 import hidden.edu.util.Constant;
@@ -65,18 +64,18 @@ public class AboutActivity extends BaseActivity implements OnClickListener, OnLo
         //功能归类分区方法，必须调用>>>>>>>>>>
 
         if (SettingUtil.isOnTestMode) {
-            showShortToast("测试服务器\n" + HttpRequest.URL_BASE);
+            CommonUtil.showShortToast(this, "测试服务器\n" + HttpRequest.URL_BASE);
         }
 
 
         //仅测试用
-        HttpRequest.translate("library", 0, (requestCode, resultJson, e) -> showShortToast("测试Http请求:翻译library结果为\n" + resultJson));
+        HttpRequest.translate("library", 0, (requestCode, resultJson, e) -> CommonUtil.showShortToast(this, "测试Http请求:翻译library结果为\n" + resultJson));
 
     }
 
     //UI显示区(操作UI，但不存在数据获取或处理代码，也不存在事件监听代码)<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
-    private ImageView ivAboutGesture;
+    //private ImageView ivAboutGesture;
 
     private TextView tvAboutAppInfo;
 
@@ -85,13 +84,14 @@ public class AboutActivity extends BaseActivity implements OnClickListener, OnLo
     @Override
     public void initView() {
 
-        ivAboutGesture = findView(R.id.ivAboutGesture);
-        ivAboutGesture.setVisibility(SettingUtil.isFirstStart ? View.VISIBLE : View.GONE);
+        //ivAboutGesture = findView(R.id.ivAboutGesture);
+        //ivAboutGesture.setVisibility(SettingUtil.isFirstStart ? View.VISIBLE : View.GONE);
 
+        /*
         if (SettingUtil.isFirstStart) {
             ivAboutGesture.setImageResource(R.drawable.gesture_left);
         }
-
+         */
         tvAboutAppInfo = findView(R.id.tvAboutAppInfo);
 
         ivAboutQRCode = findView(R.id.ivAboutQRCode, this);
@@ -133,7 +133,7 @@ public class AboutActivity extends BaseActivity implements OnClickListener, OnLo
      */
     private void downloadApp() {
         toActivity(WebViewActivity.createIntent(context, "下载中心", Constant.APP_DOWNLOAD_WEBSITE));
-        //showShortToast("应用未上线!");
+        //CommonUtil.showShortToast("应用未上线!");
 
         /*
          showProgressDialog("正在下载...");
@@ -153,10 +153,9 @@ public class AboutActivity extends BaseActivity implements OnClickListener, OnLo
     @Override
     public void initEvent() {
 
-        //findView(R.id.llAboutMainTabActivity).setOnClickListener(this);
-        findView(R.id.llAboutZBLibraryMainActivity).setOnClickListener(this);
+        //findView(R.id.llAboutZBLibraryMainActivity).setOnClickListener(this);
 
-        //findView(R.id.llAboutUpdate).setOnClickListener(this);
+        findView(R.id.llAboutUpdate).setOnClickListener(this);
         findView(R.id.llAboutShare).setOnClickListener(this);
         findView(R.id.llAboutComment).setOnClickListener(this);
 
@@ -169,9 +168,9 @@ public class AboutActivity extends BaseActivity implements OnClickListener, OnLo
     @Override
     public void onDragBottom(boolean rightToLeft) {
         if (rightToLeft) {
-            toActivity(WebViewActivity.createIntent(context, "博客", Constant.APP_OFFICIAL_BLOG));
+            toActivity(WebViewActivity.createIntent(context, "工程", Constant.APP_OFFICIAL_BLOG));
 
-            ivAboutGesture.setImageResource(R.drawable.gesture_right);
+            //ivAboutGesture.setImageResource(R.drawable.gesture_right);
             return;
         }
 
@@ -197,30 +196,32 @@ public class AboutActivity extends BaseActivity implements OnClickListener, OnLo
                 finish();
                 break;
             */
+
+            /*
             case R.id.llAboutZBLibraryMainActivity:
 
                 startActivity(DemoMainActivity.createIntent(context));
                 overridePendingTransition(R.anim.bottom_push_in, R.anim.hold);
                 break;
-/*
+*/
             case R.id.llAboutUpdate:
                 toActivity(WebViewActivity.createIntent(context, "更新日志", Constant.UPDATE_LOG_WEBSITE));
                 break;
 
- */
             case R.id.llAboutShare:
                 CommonUtil.shareInfo(context, getString(R.string.share_app) + "\n 点击链接直接查看长安宝藏\n" + Constant.APP_DEVELOPER_WEBSITE);
                 break;
             case R.id.llAboutComment:
-                showShortToast("应用未上线不能查看");
+                CommonUtil.showShortToast(this, "应用未上线不能查看");
                 startActivity(new Intent(Intent.ACTION_VIEW).setData(Uri.parse("market://details?id=" + getPackageName())));
                 break;
 
             case R.id.llAboutDeveloper:
                 toActivity(WebViewActivity.createIntent(context, "开发者", Constant.APP_DEVELOPER_WEBSITE));
                 break;
+
             case R.id.llAboutWeibo:
-                toActivity(WebViewActivity.createIntent(context, "博客", Constant.APP_OFFICIAL_BLOG));
+                toActivity(WebViewActivity.createIntent(context, "工程", Constant.APP_OFFICIAL_BLOG));
                 break;
             case R.id.llAboutContactUs:
                 CommonUtil.sendEmail(context, Constant.APP_OFFICIAL_EMAIL);

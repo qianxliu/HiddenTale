@@ -30,23 +30,25 @@ import qian.xin.library.interfaces.AdapterCallBack;
 import qian.xin.library.interfaces.CacheCallBack;
 import qian.xin.library.interfaces.OnStopLoadListener;
 import qian.xin.library.manager.CacheManager;
+import qian.xin.library.util.CommonUtil;
 import qian.xin.library.util.Log;
 import qian.xin.library.util.SettingUtil;
 import qian.xin.library.util.StringUtil;
 
 
-/**基础列表Activity
- * @author Lemon
- * @param <T> 数据模型(model/JavaBean)类
+/*
+ * 基础列表Activity
+ *
+ * @param <T>  数据模型(model/JavaBean)类
  * @param <LV> AbsListView的子类（ListView,GridView等）
- * @param <A> 管理LV的Adapter
+ * @param <A>  管理LV的Adapter
+ * @author Lemon
  * @see #lvBaseList
  * @see #initCache
  * @see #initView
  * @see #getListAsync
  * @see #onRefresh
- * @see
- *   <pre>
+ * @see <pre>
  *       基础使用：<br />
  *       extends BaseListActivity 并在子类onCreate中调用onRefresh(...), 具体参考.DemoListActivity
  *       <br /><br />
@@ -61,434 +63,435 @@ import qian.xin.library.util.StringUtil;
  *   </pre>
  */
 public abstract class BaseListActivity<T, LV extends AbsListView, A extends ListAdapter>
-		extends BaseActivity implements OnItemClickListener, OnItemLongClickListener {
-	private static final String TAG = "BaseListActivity";
+        extends BaseActivity implements OnItemClickListener, OnItemLongClickListener {
+    private static final String TAG = "BaseListActivity";
 
 
+    //UI显示区(操作UI，但不存在数据获取或处理代码，也不存在事件监听代码)<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+    /*
+     * 显示列表的ListView
+     *
+     * @warn 只使用lvBaseList为显示列表数据的AbsListView(ListView, GridView等)，不要在子类中改变它
+     */
+    protected LV lvBaseList;
+    /*
+     * 管理LV的Item的Adapter
+     */
+    protected A adapter;
+
+    /*
+     * 如果在子类中调用(即super.initView());则view必须含有initView中初始化用到的id且id对应的View的类型全部相同；
+     * 否则必须在子类initView中重写这个类中initView内的代码(所有id替换成可用id)
+     */
+    @Override
+    public void initView() {//必须调用
+
+        lvBaseList = findView(R.id.lvBaseList);
+    }
+
+    /*
+     * 设置adapter
+     *
+     * @param adapter
+     */
+    public void setAdapter(A adapter) {
+        if (adapter instanceof BaseAdapter) {
+            ((BaseAdapter) adapter).setOnItemClickListener(this);
+            ((BaseAdapter) adapter).setOnItemLongClickListener(this);
+        }
+        this.adapter = adapter;
+        lvBaseList.setAdapter(adapter);
+    }
+
+    /*
+     * 刷新列表数据（已在UI线程中），一般需求建议直接调用setList(List<T> l, AdapterCallBack<A> callBack)
+     *
+     * @param list
+     */
+    public abstract void setList(List<T> list);
+
+    /*
+     * 显示列表（已在UI线程中）
+     *
+     * @param callBack
+     */
+    public void setList(AdapterCallBack<A> callBack) {
+        if (adapter == null) {
+            setAdapter(callBack.createAdapter());
+        }
+        callBack.refreshAdapter();
+    }
 
 
-
-	//UI显示区(操作UI，但不存在数据获取或处理代码，也不存在事件监听代码)<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-
-	/**
-	 * 显示列表的ListView
-	 * @warn 只使用lvBaseList为显示列表数据的AbsListView(ListView,GridView等)，不要在子类中改变它
-	 */
-	protected LV lvBaseList;
-	/**
-	 * 管理LV的Item的Adapter
-	 */
-	protected A adapter;
-	/**
-	 * 如果在子类中调用(即super.initView());则view必须含有initView中初始化用到的id且id对应的View的类型全部相同；
-	 * 否则必须在子类initView中重写这个类中initView内的代码(所有id替换成可用id)
-	 */
-	@Override
-	public void initView() {//必须调用
-
-		lvBaseList = findView(R.id.lvBaseList);
-	}
-
-	/**设置adapter
-	 * @param adapter
-	 */
-	public void setAdapter(A adapter) {
-		if (adapter instanceof BaseAdapter) {
-			((qian.xin.library.base.BaseAdapter) adapter).setOnItemClickListener(this);
-			((qian.xin.library.base.BaseAdapter) adapter).setOnItemLongClickListener(this);
-		}
-		this.adapter = adapter;
-		lvBaseList.setAdapter(adapter);
-	}
-
-	/**刷新列表数据（已在UI线程中），一般需求建议直接调用setList(List<T> l, AdapterCallBack<A> callBack)
-	 * @param list
-	 */
-	public abstract void setList(List<T> list);
-
-	/**显示列表（已在UI线程中）
-	 * @param callBack
-	 */
-	public void setList(AdapterCallBack<A> callBack) {
-		if (adapter == null) {
-			setAdapter(callBack.createAdapter());
-		}
-		callBack.refreshAdapter();
-	}
+    //UI显示区(操作UI，但不存在数据获取或处理代码，也不存在事件监听代码)>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
-	//UI显示区(操作UI，但不存在数据获取或处理代码，也不存在事件监听代码)>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    //Data数据区(存在数据获取或处理代码，但不存在事件监听代码)<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+    private boolean isToSaveCache;
+    private boolean isToLoadCache;
+
+    @Override
+    public void initData() {//必须调用
+
+        isToSaveCache = SettingUtil.cache && cacheCallBack != null && cacheCallBack.getCacheClass() != null;
+        isToLoadCache = isToSaveCache && StringUtil.isNotEmpty(cacheCallBack.getCacheGroup(), true);
+    }
+
+    /*
+     * 获取列表，在非UI线程中
+     *
+     * @param page 在onLoadSucceed中传回来保证一致性
+     * @must 获取成功后调用onLoadSucceed
+     */
+    public abstract void getListAsync(int page);
 
 
+    public void loadData(int page) {
+        loadData(page, isToLoadCache);
+    }
 
+    /*
+     * 列表首页页码。有些服务器设置为1，即列表页码从1开始
+     */
+    public static final int PAGE_NUM_0 = 0;
 
+    /*
+     * 数据列表
+     */
+    private List<T> list;
+    /*
+     * 正在加载
+     */
+    protected boolean isLoading = false;
+    /*
+     * 还有更多可加载数据
+     */
+    protected boolean isHaveMore = true;
+    /*
+     * 加载页码，每页对应一定数量的数据
+     */
+    private int page;
+    private int loadCacheStart;
 
+    /*
+     * 加载数据，用getListAsync方法发请求获取数据
+     *
+     * @param page_
+     * @param isCache
+     */
+    private void loadData(int page_, final boolean isCache) {
+        if (isLoading) {
+            Log.w(TAG, "loadData  isLoading >> return;");
+            return;
+        }
+        isLoading = true;
+        isSucceed = false;
 
+        if (page_ <= PAGE_NUM_0) {
+            page_ = PAGE_NUM_0;
+            isHaveMore = true;
+            loadCacheStart = 0;//使用则可像网络正常情况下的重载，不使用则在网络异常情况下不重载（导致重载后加载数据下移）
+        } else {
+            if (!isHaveMore) {
+                stopLoadData(page_);
+                return;
+            }
+            loadCacheStart = list == null ? 0 : list.size();
+        }
+        this.page = page_;
+        Log.i(TAG, "loadData  page_ = " + page_ + "; isCache = " + isCache + "; isHaveMore = " + "; loadCacheStart = " + loadCacheStart);
 
-
-
-
-	//Data数据区(存在数据获取或处理代码，但不存在事件监听代码)<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-
-	private boolean isToSaveCache;
-	private boolean isToLoadCache;
-	@Override
-	public void initData() {//必须调用
-
-		isToSaveCache = SettingUtil.cache && cacheCallBack != null && cacheCallBack.getCacheClass() != null;
-		isToLoadCache = isToSaveCache && StringUtil.isNotEmpty(cacheCallBack.getCacheGroup(), true);
-	}
-
-	/**
-	 * 获取列表，在非UI线程中
-	 * @must 获取成功后调用onLoadSucceed
-	 * @param page 在onLoadSucceed中传回来保证一致性
-	 */
-	public abstract void getListAsync(int page);
-
-
-
-	public void loadData(int page) {
-		loadData(page, isToLoadCache);
-	}
-
-	/**
-	 * 列表首页页码。有些服务器设置为1，即列表页码从1开始
-	 */
-	public static final int PAGE_NUM_0 = 0;
-
-	/**
-	 * 数据列表
-	 */
-	private List<T> list;
-	/**
-	 * 正在加载
-	 */
-	protected boolean isLoading = false;
-	/**
-	 * 还有更多可加载数据
-	 */
-	protected boolean isHaveMore = true;
-	/**
-	 * 加载页码，每页对应一定数量的数据
-	 */
-	private int page;
-	private int loadCacheStart;
-	/**加载数据，用getListAsync方法发请求获取数据
-	 * @param page_
-	 * @param isCache
-	 */
-	private void loadData(int page_, final boolean isCache) {
-		if (isLoading) {
-			Log.w(TAG, "loadData  isLoading >> return;");
-			return;
-		}
-		isLoading = true;
-		isSucceed = false;
-
-		if (page_ <= PAGE_NUM_0) {
-			page_ = PAGE_NUM_0;
-			isHaveMore = true;
-			loadCacheStart = 0;//使用则可像网络正常情况下的重载，不使用则在网络异常情况下不重载（导致重载后加载数据下移）
-		} else {
-			if (isHaveMore == false) {
-				stopLoadData(page_);
-				return;
-			}
-			loadCacheStart = list == null ? 0 : list.size();
-		}
-		this.page = page_;
-		Log.i(TAG, "loadData  page_ = " + page_ + "; isCache = " + isCache + "; isHaveMore = " + "; loadCacheStart = " + loadCacheStart);
-
-		runThread(TAG + "loadData", new Runnable() {
-
-			@Override
-			public void run() {
-				if (!isCache) {//从网络获取数据
-					getListAsync(page);
-				} else {//从缓存获取数据
-					onLoadSucceed(page, CacheManager.getInstance().getList(cacheCallBack.getCacheClass()
-							, cacheCallBack.getCacheGroup(), loadCacheStart, cacheCallBack.getCacheCount()),
-							true);
-					if (page <= PAGE_NUM_0) {
-						isLoading = false;//stopLoadeData在其它线程isLoading = false;后这个线程里还是true
-						loadData(page, false);
-					}
+        runThread(TAG + "loadData", () -> {
+			if (!isCache) {//从网络获取数据
+				getListAsync(page);
+			} else {//从缓存获取数据
+				onLoadSucceed(page, CacheManager.getInstance().getList(cacheCallBack.getCacheClass()
+						, cacheCallBack.getCacheGroup(), loadCacheStart, cacheCallBack.getCacheCount()),
+						true);
+				if (page <= PAGE_NUM_0) {
+					isLoading = false;//stopLoadeData在其它线程isLoading = false;后这个线程里还是true
+					loadData(page, false);
 				}
 			}
 		});
-	}
+    }
 
-	/**停止加载数据
-	 * isCache = false;
-	 * @param page
-	 */
-	public synchronized void stopLoadData(int page) {
-		stopLoadData(page, false);
-	}
-	/**停止加载数据
-	 * @param page
-	 * @param isCache
-	 */
-	private synchronized void stopLoadData(int page, boolean isCache) {
-		Log.i(TAG, "stopLoadData  isCache = " + isCache);
-		isLoading = false;
-		dismissProgressDialog();
+    /*
+     * 停止加载数据
+     * isCache = false;
+     *
+     * @param page
+     */
+    public synchronized void stopLoadData(int page) {
+        stopLoadData(page, false);
+    }
 
-		if (isCache) {
-			Log.d(TAG, "stopLoadData  isCache >> return;");
-			return;
-		}
+    /*
+     * 停止加载数据
+     *
+     * @param page
+     * @param isCache
+     */
+    private synchronized void stopLoadData(int page, boolean isCache) {
+        Log.i(TAG, "stopLoadData  isCache = " + isCache);
+        isLoading = false;
+        dismissProgressDialog();
 
-		if (onStopLoadListener == null) {
-			Log.w(TAG, "stopLoadData  onStopLoadListener == null >> return;");
-			return;
-		}
-		onStopLoadListener.onStopRefresh();
-		if (page > PAGE_NUM_0) {
-			onStopLoadListener.onStopLoadMore(isHaveMore);
-		}
-	}
+        if (isCache) {
+            Log.d(TAG, "stopLoadData  isCache >> return;");
+            return;
+        }
 
-
-
-	private boolean isSucceed = false;
-	/**处理列表
-	 * @param page
-	 * @param newList 新数据列表
-	 * @param isCache
-	 * @return
-	 * @return
-	 */
-	public synchronized void handleList(int page, List<T> newList, boolean isCache) {
-		if (newList == null) {
-			newList = new ArrayList<T>();
-		}
-		isSucceed = ! newList.isEmpty();
-		Log.i(TAG, "\n\n<<<<<<<<<<<<<<<<<\n handleList  newList.size = " + newList.size() + "; isCache = " + isCache
-				+ "; page = " + page + "; isSucceed = " + isSucceed);
-
-		if (page <= PAGE_NUM_0) {
-			Log.i(TAG, "handleList  page <= PAGE_NUM_0 >>>>  ");
-			saveCacheStart = 0;
-			list = new ArrayList<T>(newList);
-			if (isCache == false && list.isEmpty() == false) {
-				Log.i(TAG, "handleList  isCache == false && list.isEmpty() == false >>  isToLoadCache = false;");
-				isToLoadCache = false;
-			}
-		} else {
-			Log.i(TAG, "handleList  page > PAGE_NUM_0 >>>>  ");
-			if (list == null) {
-				list = new ArrayList<T>();
-			}
-			saveCacheStart = list.size();
-			isHaveMore = ! newList.isEmpty();
-			if (isHaveMore) {
-				list.addAll(newList);
-			}
-		}
-
-		Log.i(TAG, "handleList  list.size = " + list.size() + "; isHaveMore = " + isHaveMore
-				+ "; isToLoadCache = " + isToLoadCache + "; saveCacheStart = " + saveCacheStart
-				+ "\n>>>>>>>>>>>>>>>>>>\n\n");
-	}
+        if (onStopLoadListener == null) {
+            Log.w(TAG, "stopLoadData  onStopLoadListener == null >> return;");
+            return;
+        }
+        onStopLoadListener.onStopRefresh();
+        if (page > PAGE_NUM_0) {
+            onStopLoadListener.onStopLoadMore(isHaveMore);
+        }
+    }
 
 
+    private boolean isSucceed = false;
 
-	/**加载成功
-	 * isCache = false;
-	 * @param page
-	 * @param newList
-	 */
-	public synchronized void onLoadSucceed(final int page, final List<T> newList) {
-		onLoadSucceed(page, newList, false);
-	}
-	/**加载成功
-	 * @param page
-	 * @param newList
-	 * @param isCache newList是否为缓存
-	 */
-	private synchronized void onLoadSucceed(final int page, final List<T> newList, final boolean isCache) {
-		runThread(TAG + "onLoadSucceed", new Runnable() {
-			@Override
-			public void run() {
-				Log.i(TAG, "onLoadSucceed  page = " + page + "; isCache = " + isCache + " >> handleList...");
-				handleList(page, newList, isCache);
+    /*
+     * 处理列表
+     *
+     * @param page
+     * @param newList 新数据列表
+     * @param isCache
+     * @return
+     */
+    public synchronized void handleList(int page, List<T> newList, boolean isCache) {
+        if (newList == null) {
+            newList = new ArrayList<>();
+        }
+        isSucceed = !newList.isEmpty();
+        Log.i(TAG, "\n\n<<<<<<<<<<<<<<<<<\n handleList  newList.size = " + newList.size() + "; isCache = " + isCache
+                + "; page = " + page + "; isSucceed = " + isSucceed);
 
-				runUiThread(new Runnable() {
+        if (page <= PAGE_NUM_0) {
+            Log.i(TAG, "handleList  page <= PAGE_NUM_0 >>>>  ");
+            saveCacheStart = 0;
+            list = new ArrayList<>(newList);
+            if (!isCache && !list.isEmpty()) {
+                Log.i(TAG, "handleList  isCache == false && list.isEmpty() == false >>  isToLoadCache = false;");
+                isToLoadCache = false;
+            }
+        } else {
+            Log.i(TAG, "handleList  page > PAGE_NUM_0 >>>>  ");
+            if (list == null) {
+                list = new ArrayList<>();
+            }
+            saveCacheStart = list.size();
+            isHaveMore = !newList.isEmpty();
+            if (isHaveMore) {
+                list.addAll(newList);
+            }
+        }
 
-					@Override
-					public void run() {
-						stopLoadData(page, isCache);
-						setList(list);
-					}
-				});
+        Log.i(TAG, "handleList  list.size = " + list.size() + "; isHaveMore = " + isHaveMore
+                + "; isToLoadCache = " + isToLoadCache + "; saveCacheStart = " + saveCacheStart
+                + "\n>>>>>>>>>>>>>>>>>>\n\n");
+    }
 
-				if (isToSaveCache && isCache == false) {
-					saveCache(newList);
-				}
+
+    /*
+     * 加载成功
+     * isCache = false;
+     *
+     * @param page
+     * @param newList
+     */
+    public synchronized void onLoadSucceed(final int page, final List<T> newList) {
+        onLoadSucceed(page, newList, false);
+    }
+
+    /*
+     * 加载成功
+     *
+     * @param page
+     * @param newList
+     * @param isCache newList是否为缓存
+     */
+    private synchronized void onLoadSucceed(final int page, final List<T> newList, final boolean isCache) {
+        runThread(TAG + "onLoadSucceed", () -> {
+			Log.i(TAG, "onLoadSucceed  page = " + page + "; isCache = " + isCache + " >> handleList...");
+			handleList(page, newList, isCache);
+
+			runUiThread(() -> {
+				stopLoadData(page, isCache);
+				setList(list);
+			});
+
+			if (isToSaveCache && !isCache) {
+				saveCache(newList);
 			}
 		});
-	}
+    }
 
-	/**加载失败
-	 * @param page
-	 * @param e
-	 */
-	public synchronized void onLoadFailed(int page, Exception e) {
-		Log.e(TAG, "onLoadFailed page = " + page + "; e = " + (e == null ? null : e.getMessage()));
-		stopLoadData(page);
-		showShortToast(R.string.get_failed);
-	}
-
-
-
-
-	//缓存<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-	//	/**
-	//	 * 获取缓存每页数量
-	//	 * @return > 0 ？缓存 : 不缓存
-	//	 */
-	//	public int getCacheCount() {
-	//		//让给服务器返回每页数量为count的数据，不行的话在子类重写 Math.max(10, newList == null ? 0 : newList.size());
-	//		return CacheManager.MAX_PAGE_SIZE;
-	//	}
-
-	private int saveCacheStart;
-	/**保存缓存
-	 * @param newList
-	 */
-	public synchronized void saveCache(List<T> newList) {
-		if (cacheCallBack == null || newList == null || newList.isEmpty()) {
-			Log.e(TAG, "saveCache  cacheCallBack == null || newList == null || newList.isEmpty() >> return;");
-			return;
-		}
-
-		LinkedHashMap<String, T> map = new LinkedHashMap<String, T>();
-		for (T data : newList) {
-			if (data != null) {
-				map.put(cacheCallBack.getCacheId(data), data);//map.put(null, data);不会崩溃
-			}
-		}
-
-		CacheManager.getInstance().saveList(cacheCallBack.getCacheClass(), cacheCallBack.getCacheGroup()
-				, map, saveCacheStart, cacheCallBack.getCacheCount());
-	}
-	//缓存>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    /*
+     * 加载失败
+     *
+     * @param page
+     * @param e
+     */
+    public synchronized void onLoadFailed(int page, Exception e) {
+        Log.e(TAG, "onLoadFailed page = " + page + "; e = " + (e == null ? null : e.getMessage()));
+        stopLoadData(page);
+        CommonUtil.showShortToast(this,context.getString(R.string.get_failed));
+    }
 
 
+    //缓存<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+    //	/*
+    //	 * 获取缓存每页数量
+    //	 * @return > 0 ？缓存 : 不缓存
+    //	 */
+    //	public int getCacheCount() {
+    //		//让给服务器返回每页数量为count的数据，不行的话在子类重写 Math.max(10, newList == null ? 0 : newList.size());
+    //		return CacheManager.MAX_PAGE_SIZE;
+    //	}
 
-	//Data数据区(存在数据获取或处理代码，但不存在事件监听代码)>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    private int saveCacheStart;
 
+    /*
+     * 保存缓存
+     *
+     * @param newList
+     */
+    public synchronized void saveCache(List<T> newList) {
+        if (cacheCallBack == null || newList == null || newList.isEmpty()) {
+            Log.e(TAG, "saveCache  cacheCallBack == null || newList == null || newList.isEmpty() >> return;");
+            return;
+        }
 
+        LinkedHashMap<String, T> map = new LinkedHashMap<>();
+        for (T data : newList) {
+            if (data != null) {
+                map.put(cacheCallBack.getCacheId(data), data);//map.put(null, data);不会崩溃
+            }
+        }
 
-
-
-
-
-
-
-
-	//Event事件区(只要存在事件监听代码就是)<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-
-	@Override
-	public void initEvent() {
-
-	}
-
-
-	private OnStopLoadListener onStopLoadListener;
-	/**设置停止加载监听
-	 * @param onStopLoadListener
-	 */
-	protected void setOnStopLoadListener(OnStopLoadListener onStopLoadListener) {
-		this.onStopLoadListener = onStopLoadListener;
-	}
-
-
-	private CacheCallBack<T> cacheCallBack;
-	/**初始化缓存
-	 * @warn 在initData前使用才有效
-	 * @param cacheCallBack
-	 */
-	protected void initCache(CacheCallBack<T> cacheCallBack) {
-		this.cacheCallBack = cacheCallBack;
-	}
+        CacheManager.getInstance().saveList(cacheCallBack.getCacheClass(), cacheCallBack.getCacheGroup()
+                , map, saveCacheStart, cacheCallBack.getCacheCount());
+    }
+    //缓存>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
-	/**刷新（从头加载）
-	 * @must 在子类onCreate中调用，建议放在最后
-	 */
-	public void onRefresh() {
-		loadData(PAGE_NUM_0);
-	}
-	/**加载更多
-	 */
-	public void onLoadMore() {
-		if (isSucceed == false && page <= PAGE_NUM_0) {
-			Log.w(TAG, "onLoadMore  isSucceed == false && page <= PAGE_NUM_0 >> return;");
-			return;
-		}
-		loadData(page + (isSucceed ? 1 : 0));
-	}
+    //Data数据区(存在数据获取或处理代码，但不存在事件监听代码)>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
+    //Event事件区(只要存在事件监听代码就是)<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
-	/**重写后可自定义对这个事件的处理
-	 * @param parent
-	 * @param view
-	 * @param position
-	 * @param id
-	 */
-	@Override
-	public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-	}
-	/**重写后可自定义对这个事件的处理，如果要在长按后不触发onItemClick，则需要 return true;
-	 * @param parent
-	 * @param view
-	 * @param position
-	 * @param id
-	 */
-	@Override
-	public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
-		return false;
-	}
+    @Override
+    public void initEvent() {
+
+    }
 
 
-	//生命周期、onActivityResult<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+    private OnStopLoadListener onStopLoadListener;
 
-	@Override
-	protected void onDestroy() {
-		isLoading = false;
-		isHaveMore = false;
-		isToSaveCache = false;
-		isToLoadCache = false;
-
-		super.onDestroy();
-
-		lvBaseList = null;
-		list = null;
-
-		onStopLoadListener = null;
-		cacheCallBack = null;
-	}
-
-	//生命周期、onActivityResult>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    /*
+     * 设置停止加载监听
+     *
+     * @param onStopLoadListener
+     */
+    protected void setOnStopLoadListener(OnStopLoadListener onStopLoadListener) {
+        this.onStopLoadListener = onStopLoadListener;
+    }
 
 
-	//Event事件区(只要存在事件监听代码就是)>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    private CacheCallBack<T> cacheCallBack;
+
+    /*
+     * 初始化缓存
+     *
+     * @param cacheCallBack
+     * @warn 在initData前使用才有效
+     */
+    protected void initCache(CacheCallBack<T> cacheCallBack) {
+        this.cacheCallBack = cacheCallBack;
+    }
 
 
+    /*
+     * 刷新（从头加载）
+     *
+     * @must 在子类onCreate中调用，建议放在最后
+     */
+    public void onRefresh() {
+        loadData(PAGE_NUM_0);
+    }
+
+    /*
+     * 加载更多
+     */
+    public void onLoadMore() {
+        if (!isSucceed && page <= PAGE_NUM_0) {
+            Log.w(TAG, "onLoadMore  isSucceed == false && page <= PAGE_NUM_0 >> return;");
+            return;
+        }
+        loadData(page + (isSucceed ? 1 : 0));
+    }
 
 
+    /*
+     * 重写后可自定义对这个事件的处理
+     *
+     * @param parent
+     * @param view
+     * @param position
+     * @param id
+     */
+    @Override
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+    }
+
+    /*
+     * 重写后可自定义对这个事件的处理，如果要在长按后不触发onItemClick，则需要 return true;
+     *
+     * @param parent
+     * @param view
+     * @param position
+     * @param id
+     */
+    @Override
+    public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+        return false;
+    }
 
 
+    //生命周期、onActivityResult<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+    @Override
+    protected void onDestroy() {
+        isLoading = false;
+        isHaveMore = false;
+        isToSaveCache = false;
+        isToLoadCache = false;
+
+        super.onDestroy();
+
+        lvBaseList = null;
+        list = null;
+
+        onStopLoadListener = null;
+        cacheCallBack = null;
+    }
+
+    //生命周期、onActivityResult>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
-	//内部类,尽量少用<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+    //Event事件区(只要存在事件监听代码就是)>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
+    //内部类,尽量少用<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
-	//内部类,尽量少用>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+    //内部类,尽量少用>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 }

@@ -57,24 +57,6 @@ public class CommonUtil {
 
     public CommonUtil() {/* 不能实例化**/}
 
-    //电话<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-
-    /*
-     * 打电话
-     *
-     * @param context
-     * @param phone
-     */
-    public static void call(Activity context, String phone) {
-        if (StringUtil.isNotEmpty(phone, true)) {
-            Uri uri = Uri.parse("tel:" + phone.trim());
-            Intent intent = new Intent(Intent.ACTION_CALL, uri);
-            toActivity(context, intent);
-            return;
-        }
-        showShortToast(context, "请先选择号码哦~");
-    }
-
     //电话>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
     //信息<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
@@ -88,8 +70,8 @@ public class CommonUtil {
     public static void toMessageChat(Activity context, List<String> phoneList) {
         if (context == null || phoneList == null || phoneList.size() <= 0) {
             Log.e(TAG, "sendMessage context == null || phoneList == null || phoneList.size() <= 0 " +
-                    ">> showShortToast(context, 请先选择号码哦~); return; ");
-            showShortToast(context, "请先选择号码哦~");
+                    ">> CommonUtil.showShortToast(context, 请先选择号码哦~); return; ");
+            CommonUtil.showShortToast(context, "请先选择号码哦~");
             return;
         }
 
@@ -324,7 +306,7 @@ public class CommonUtil {
         try {
             showShortToast(context, context.getResources().getString(stringResId));
         } catch (Exception e) {
-            Log.e(TAG, "showShortToast  context.getResources().getString(resId) >>  catch (Exception e) {" + e.getMessage());
+            Log.e(TAG, "CommonUtil.showShortToast  context.getResources().getString(resId) >>  catch (Exception e) {" + e.getMessage());
         }
     }
 

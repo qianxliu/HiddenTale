@@ -96,12 +96,17 @@ class PdfViewActivity : BaseActivity() {
                     }).start()
         } else {
             //Must add for init
-            mediaPlayer = MediaPlayer()
-            mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC)
-            mediaPlayer.setDataSource(file.absolutePath)
-            mediaPlayer.isLooping = true // Set looping
-            mediaPlayer.prepare() // might take long! (for buffering, etc)
-            mediaPlayer.start()
+            try {
+                mediaPlayer = MediaPlayer()
+                mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC)
+                mediaPlayer.setDataSource(file.absolutePath)
+                mediaPlayer.isLooping = true // Set looping
+                mediaPlayer.prepare() // might take long! (for buffering, etc)
+                mediaPlayer.start()
+            } catch (e: java.lang.Exception) {
+                e.printStackTrace()
+            }
+
         }
     }
 
@@ -126,7 +131,33 @@ class PdfViewActivity : BaseActivity() {
         val n = "klfskjkf$i"
         file = File(DataKeeper.tempPath + n)
 
-        if (!file.exists()) {
+        if (file.exists()) {
+            pdfView.fromFile(file)
+                    .pageFitPolicy(FitPolicy.WIDTH)
+                    .enableSwipe(true) //pdf文档翻页是否是水平翻页，默认是左右滑动翻页
+                    .swipeHorizontal(false) //
+                    .enableDoubletap(true) //设置默认显示第0页
+                    .defaultPage(0) //允许在当前页面上绘制一些内容，通常在屏幕中间可见。
+                    //             .onDraw(onDrawListener)
+                    //                // 允许在每一页上单独绘制一个页面。只调用可见页面
+                    //                .onDrawAll(onDrawListener)
+                    //设置加载监听
+                    //设置页面滑动监听
+                    //                .onPageScroll(onPageScrollListener)
+                    //                .onError(onErrorListener)
+                    // 首次提交文档后调用。
+                    //                .onRender(onRenderListener)
+                    // 渲染风格（就像注释，颜色或表单）
+                    .enableAnnotationRendering(true)
+                    .password(null)
+                    .scrollHandle(null) // 改善低分辨率屏幕上的渲染
+                    .enableAntialiasing(true) // 页面间的间距。定义间距颜色，设置背景视图
+                    .spacing(0) // add dynamic spacing to fit each page on its own on the screen
+                    .autoSpacing(false) // mode to fit pages in the view
+                    .pageFitPolicy(FitPolicy.WIDTH) // fit each page to the view, else smaller pages are scaled relative to largest page.
+                    .fitEachPage(true)
+                    .load()
+        } else {
             FileDownloader.getImpl().create(name)
                     .setPath(file.absolutePath, false)
                     .setListener(object : FileDownloadListener() {
@@ -167,32 +198,6 @@ class PdfViewActivity : BaseActivity() {
                         override fun error(task: BaseDownloadTask, e: Throwable) {}
                         override fun warn(task: BaseDownloadTask) {}
                     }).start()
-        } else {
-            pdfView.fromFile(file)
-                    .pageFitPolicy(FitPolicy.WIDTH)
-                    .enableSwipe(true) //pdf文档翻页是否是水平翻页，默认是左右滑动翻页
-                    .swipeHorizontal(false) //
-                    .enableDoubletap(true) //设置默认显示第0页
-                    .defaultPage(0) //允许在当前页面上绘制一些内容，通常在屏幕中间可见。
-                    //             .onDraw(onDrawListener)
-                    //                // 允许在每一页上单独绘制一个页面。只调用可见页面
-                    //                .onDrawAll(onDrawListener)
-                    //设置加载监听
-                    //设置页面滑动监听
-                    //                .onPageScroll(onPageScrollListener)
-                    //                .onError(onErrorListener)
-                    // 首次提交文档后调用。
-                    //                .onRender(onRenderListener)
-                    // 渲染风格（就像注释，颜色或表单）
-                    .enableAnnotationRendering(true)
-                    .password(null)
-                    .scrollHandle(null) // 改善低分辨率屏幕上的渲染
-                    .enableAntialiasing(true) // 页面间的间距。定义间距颜色，设置背景视图
-                    .spacing(0) // add dynamic spacing to fit each page on its own on the screen
-                    .autoSpacing(false) // mode to fit pages in the view
-                    .pageFitPolicy(FitPolicy.WIDTH) // fit each page to the view, else smaller pages are scaled relative to largest page.
-                    .fitEachPage(true)
-                    .load()
         }
     }
 
@@ -208,10 +213,33 @@ class PdfViewActivity : BaseActivity() {
         if (mainFile.exists()) {
             mediaPlayer = MediaPlayer()
             mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC)
-            mediaPlayer.setDataSource(MainTabActivity.mainFile.absolutePath)
+            mediaPlayer.setDataSource(mainFile.absolutePath)
             mediaPlayer.prepare() // might take long! (for buffering, etc)
             mediaPlayer.isLooping = true // Set looping
             mediaPlayer.start()
+        } else {
+            FileDownloader.getImpl().create("https://git.nwu.edu.cn/2018104171/pdf/raw/master/main.mp3")
+                    .setPath(mainFile.absolutePath, false)
+                    .setListener(object : FileDownloadListener() {
+                        override fun pending(task: BaseDownloadTask, soFarBytes: Int, totalBytes: Int) {}
+                        override fun connected(task: BaseDownloadTask, etag: String, isContinue: Boolean, soFarBytes: Int, totalBytes: Int) {}
+                        override fun progress(task: BaseDownloadTask, soFarBytes: Int, totalBytes: Int) {}
+                        override fun blockComplete(task: BaseDownloadTask) {}
+                        override fun retry(task: BaseDownloadTask, ex: Throwable, retryingTimes: Int, soFarBytes: Int) {}
+                        override fun completed(task: BaseDownloadTask) {
+                            //Must add for init
+                            mediaPlayer = MediaPlayer()
+                            mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC)
+                            mediaPlayer.setDataSource(mainFile.absolutePath)
+                            mediaPlayer.isLooping = true // Set looping
+                            mediaPlayer.prepare() // might take long! (for buffering, etc)
+                            mediaPlayer.start()
+                        }
+
+                        override fun paused(task: BaseDownloadTask, soFarBytes: Int, totalBytes: Int) {}
+                        override fun error(task: BaseDownloadTask, e: Throwable) {}
+                        override fun warn(task: BaseDownloadTask) {}
+                    }).start()
         }
         super.onDestroy()
     }

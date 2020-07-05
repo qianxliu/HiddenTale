@@ -29,6 +29,7 @@ import qian.xin.library.base.BaseActivity;
 import qian.xin.library.interfaces.OnBottomDragListener;
 import qian.xin.library.manager.TimeRefresher;
 import qian.xin.library.manager.TimeRefresher.OnTimeRefreshListener;
+import qian.xin.library.util.CommonUtil;
 import qian.xin.library.util.StringUtil;
 
 /*
@@ -126,7 +127,7 @@ public class DemoTimeRefresherActivity extends BaseActivity
 
     @Override
     public void onTimerStart() {
-        showShortToast("start");
+        CommonUtil.showShortToast(getActivity(),"start");
     }
 
     private int count = 0;
@@ -142,7 +143,7 @@ public class DemoTimeRefresherActivity extends BaseActivity
 
     @Override
     public void onTimerStop() {
-        showShortToast("stop");
+        CommonUtil.showShortToast(getActivity(),"stop");
     }
 
     @Override

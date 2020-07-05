@@ -312,24 +312,6 @@ public abstract class BaseView<T> extends RecyclerView.ViewHolder {
 
 
     //show short toast 方法<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-
-    /*
-     * 快捷显示short toast方法，需要long toast就用 Toast.makeText(string, Toast.LENGTH_LONG).show(); ---不常用所以这个类里不写
-     *
-     * @param stringResId
-     */
-    public void showShortToast(int stringResId) {
-        CommonUtil.showShortToast(context, stringResId);
-    }
-
-    /*
-     * 快捷显示short toast方法，需要long toast就用 Toast.makeText(string, Toast.LENGTH_LONG).show(); ---不常用所以这个类里不写
-     *
-     * @param string
-     */
-    public void showShortToast(String string) {
-        CommonUtil.showShortToast(context, string);
-    }
     //show short toast 方法>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 

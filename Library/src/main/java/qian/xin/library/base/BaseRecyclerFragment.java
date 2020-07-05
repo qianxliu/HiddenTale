@@ -39,6 +39,7 @@ import qian.xin.library.interfaces.AdapterCallBack;
 import qian.xin.library.interfaces.CacheCallBack;
 import qian.xin.library.interfaces.OnStopLoadListener;
 import qian.xin.library.manager.CacheManager;
+import qian.xin.library.util.CommonUtil;
 import qian.xin.library.util.Log;
 import qian.xin.library.util.SettingUtil;
 import qian.xin.library.util.StringUtil;
@@ -384,7 +385,7 @@ public abstract class BaseRecyclerFragment<T, VH extends ViewHolder, A extends A
     public synchronized void onLoadFailed(int page, Exception e) {
         Log.e(TAG, "onLoadFailed page = " + page + "; e = " + (e == null ? null : e.getMessage()));
         stopLoadData(page);
-        showShortToast(R.string.get_failed);
+        CommonUtil.showShortToast(context, context.getString(R.string.get_failed));
     }
 
 

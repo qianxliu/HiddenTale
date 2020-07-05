@@ -46,6 +46,7 @@ import qian.xin.library.R;
 import qian.xin.library.interfaces.ActivityPresenter;
 import qian.xin.library.interfaces.OnBottomDragListener;
 import qian.xin.library.manager.ThreadManager;
+import qian.xin.library.util.CommonUtil;
 import qian.xin.library.util.Log;
 import qian.xin.library.util.ScreenUtil;
 import qian.xin.library.util.StringUtil;
@@ -386,47 +387,6 @@ public abstract class BaseActivity extends AppCompatActivity implements Activity
     //启动新Activity方法>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
-    //show short toast 方法<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-
-    /*
-     * 快捷显示short toast方法，需要long toast就用 Toast.makeText(string, Toast.LENGTH_LONG).show(); ---不常用所以这个类里不写
-     *
-     * @param stringResId
-     */
-    public void showShortToast(int stringResId) {
-        try {
-            showShortToast(context.getResources().getString(stringResId));
-        } catch (Exception e) {
-            Log.e(TAG, "showShortToast  context.getResources().getString(resId)" +
-                    " >>  catch (Exception e) {" + e.getMessage());
-        }
-    }
-
-    /*
-     * 快捷显示short toast方法，需要long toast就用 Toast.makeText(string, Toast.LENGTH_LONG).show(); ---不常用所以这个类里不写
-     *
-     * @param string
-     */
-    public void showShortToast(String string) {
-        showShortToast(false);
-    }
-
-    /*
-     * 快捷显示short toast方法，需要long toast就用 Toast.makeText(string, Toast.LENGTH_LONG).show(); ---不常用所以这个类里不写
-     *
-     * @param string
-     * @param isForceDismissProgressDialog
-     */
-    public void showShortToast(final boolean isForceDismissProgressDialog) {
-        runUiThread(() -> {
-            if (isForceDismissProgressDialog) {
-                dismissProgressDialog();
-            }
-        });
-    }
-    //show short toast 方法>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
-
     //运行线程 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
     /*
@@ -526,9 +486,10 @@ public abstract class BaseActivity extends AppCompatActivity implements Activity
     /*
      * 一般用于对不支持的数据的处理，比如onCreate中获取到不能接受的id(id<=0)可以这样处理
      */
+
     public void finishWithError(String error) {
-        showShortToast(error);
         enterAnim = exitAnim = R.anim.null_anim;
+        CommonUtil.showShortToast(this.getActivity(), error);
         finish();
     }
 
@@ -585,6 +546,7 @@ public abstract class BaseActivity extends AppCompatActivity implements Activity
 
         isAlive = false;
         isRunning = false;
+
         super.onDestroy();
 
         inflater = null;

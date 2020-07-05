@@ -1,16 +1,3 @@
-/*Copyright ©2015 TommyLemon(https://github.com/TommyLemon)
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.*/
 package hidden.edu.activity
 
 import android.content.Intent
@@ -26,6 +13,7 @@ import qian.xin.library.interfaces.OnBottomDragListener
 import qian.xin.library.interfaces.OnHttpResponseListener
 import qian.xin.library.manager.CacheManager
 import qian.xin.library.ui.BottomMenuView
+import qian.xin.library.util.CommonUtil
 import qian.xin.library.util.JSON
 import qian.xin.library.util.Log
 
@@ -141,7 +129,7 @@ class UserActivity : BaseActivity(), View.OnClickListener, OnBottomDragListener,
      """.trimIndent())
         }
         if (!BaseModel.isCorrect(user) && e != null) {
-            showShortToast(R.string.get_failed)
+            CommonUtil.showShortToast(this, context.getString(R.string.get_failed))
         } else {
             setUser(user)
         }
@@ -156,7 +144,7 @@ class UserActivity : BaseActivity(), View.OnClickListener, OnBottomDragListener,
     //
     //	@Override
     //	public void onHttpError(int requestCode, Exception e) {
-    //		showShortToast(R.string.get_failed);
+    //		CommonUtil.showShortToast(context.getString(R.string.get_failed));
     //	}
     //	//对应HttpRequest.getUser(userId, 0, new OnHttpResponseListenerImpl(UserActivity.this)); >>>>
     //系统自带监听方法<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<

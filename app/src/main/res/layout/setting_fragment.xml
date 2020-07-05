@@ -72,7 +72,7 @@
                 <TextView
                     style="@style/content_item_lf_tv"
                     android:layout_weight="1"
-                    android:text="退出登录"
+                    android:text="退出应用"
                     tools:ignore="HardcodedText" />
 
                 <ImageView style="@style/content_item_rt_img"

@@ -14,6 +14,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 import hidden.edu.R;
 import qian.xin.library.base.BaseActivity;
+import qian.xin.library.util.CommonUtil;
 import qian.xin.library.util.thread.pool.ThreadPoolProxyFactory;
 /*
  * ThreadPoolProxy DEMO
@@ -177,15 +178,15 @@ public class DemoThreadPoolActivity extends BaseActivity implements View.OnClick
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btnDemoThreadPoolDefault:
-                showShortToast("请求中");
+                CommonUtil.showShortToast(getActivity(),"请求中");
                 initDefaultPool();
                 break;
             case R.id.btnDemoThreadPoolCache:
-                showShortToast("请求中");
+                CommonUtil.showShortToast(getActivity(),"请求中");
                 initCachePool();
                 break;
             case R.id.btnDemoThreadPoolSingle:
-                showShortToast("请求中");
+                CommonUtil.showShortToast(getActivity(),"请求中");
                 initSinglePool();
                 break;
         }

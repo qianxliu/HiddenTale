@@ -170,8 +170,8 @@ public class DemoMainActivity extends BaseActivity implements OnClickListener, O
                     , DataKeeper.imagePath, "photo" + System.currentTimeMillis(), 200)
                     , REQUEST_TO_CUT_PICTURE);
         } else {
-            Log.e(TAG, "cutPicture  StringUtil.isFilePath(path) == false >> showShortToast(找不到图片);return;");
-            showShortToast("找不到图片");
+            Log.e(TAG, "cutPicture  StringUtil.isFilePath(path) == false >> CommonUtil.showShortToast(找不到图片);return;");
+            CommonUtil.showShortToast(getActivity(),"找不到图片");
         }
     }
 
@@ -185,8 +185,8 @@ public class DemoMainActivity extends BaseActivity implements OnClickListener, O
             svDemoMain.smoothScrollTo(0, 0);
             Glide.with(context).load(path).into(ivDemoMainHead);
         } else {
-            Log.e(TAG, "setPicture  StringUtil.isFilePath(path) == false >> showShortToast(找不到图片);return;");
-            showShortToast("找不到图片");
+            Log.e(TAG, "setPicture  StringUtil.isFilePath(path) == false >> CommonUtil.showShortToast(找不到图片);return;");
+            CommonUtil.showShortToast(getActivity(),"找不到图片");
         }
     }
 
@@ -307,7 +307,7 @@ public class DemoMainActivity extends BaseActivity implements OnClickListener, O
                 if (v.getId() == R.id.llDemoMainServerSettingActivity) {
                     long time = System.currentTimeMillis() - touchDownTime;
                     if (time < 5000 || time > 8000) {
-                        showShortToast("请长按5-8秒");
+                        CommonUtil.showShortToast(getActivity(),"请长按5-8秒");
                     } else {
                         toActivity(ServerSettingActivity.createIntent(context
                                 , SettingUtil.getServerAddress(false), SettingUtil.getServerAddress(true)
@@ -475,7 +475,7 @@ public class DemoMainActivity extends BaseActivity implements OnClickListener, O
                 break;
             case REQUEST_TO_DEMO_BOTTOM_WINDOW:
                 if (data != null) {
-                    showShortToast(data.getStringExtra(DemoBottomWindow.RESULT_DATA));
+                    CommonUtil.showShortToast(getActivity(), data.getStringExtra(DemoBottomWindow.RESULT_DATA));
                 }
                 break;
 
@@ -510,7 +510,7 @@ public class DemoMainActivity extends BaseActivity implements OnClickListener, O
                         for (String s : placeList) {
                             place.append(StringUtil.getTrimedString(s));
                         }
-                        showShortToast("选择的地区为: " + place);
+                        CommonUtil.showShortToast(getActivity(), "选择的地区为: " + place);
                     }
                 }
                 break;
@@ -524,7 +524,7 @@ public class DemoMainActivity extends BaseActivity implements OnClickListener, O
                             selectedDate[i] = list.get(i);
                         }
 
-                        showShortToast("选择的日期为" + selectedDate[0] + "-" + (selectedDate[1] + 1) + "-" + selectedDate[2]);
+                        CommonUtil.showShortToast(getActivity(), "选择的日期为" + selectedDate[0] + "-" + (selectedDate[1] + 1) + "-" + selectedDate[2]);
                     }
                 }
                 break;
@@ -542,7 +542,7 @@ public class DemoMainActivity extends BaseActivity implements OnClickListener, O
                         if (minute.length() < 2) {
                             minute = "0" + minute;
                         }
-                        showShortToast("选择的时间为" + selectedTime[0] + ":" + minute);
+                        CommonUtil.showShortToast(getActivity(), "选择的时间为" + selectedTime[0] + ":" + minute);
                     }
                 }
                 break;

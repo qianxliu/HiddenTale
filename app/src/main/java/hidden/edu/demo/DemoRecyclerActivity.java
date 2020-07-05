@@ -32,6 +32,7 @@ import qian.xin.library.base.BaseRecyclerActivity;
 import qian.xin.library.interfaces.AdapterCallBack;
 import qian.xin.library.interfaces.OnBottomDragListener;
 import qian.xin.library.model.Entry;
+import qian.xin.library.util.CommonUtil;
 
 /*
   使用方法：复制>粘贴>改名>改代码
@@ -125,7 +126,7 @@ public class DemoRecyclerActivity
 
         Objects.requireNonNull(tvBaseTitle).setText("" + Objects.requireNonNull(rvBaseRecycler.getLayoutManager()).getClass().getSimpleName());
 
-        showShortToast("range = " + range);
+        CommonUtil.showShortToast(getActivity(),"range = " + range);
 
         //示例代码>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
     }
@@ -175,12 +176,12 @@ public class DemoRecyclerActivity
     //示例代码：ItemView点击和长按事件处理 <<<<<<<<<<<<<<<<<<<
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        showShortToast("点击了 " + position);
+        CommonUtil.showShortToast(getActivity(),"点击了 " + position);
     }
 
     @Override
     public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
-        showShortToast("长按了 " + position);
+        CommonUtil.showShortToast(getActivity(),"长按了 " + position);
         return true;
     }
     //示例代码：ItemView点击和长按事件处理 >>>>>>>>>>>>>>>>>>>

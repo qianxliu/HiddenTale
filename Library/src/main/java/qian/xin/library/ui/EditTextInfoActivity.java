@@ -41,6 +41,7 @@ import java.util.Objects;
 import qian.xin.library.R;
 import qian.xin.library.base.BaseActivity;
 import qian.xin.library.interfaces.OnBottomDragListener;
+import qian.xin.library.util.CommonUtil;
 import qian.xin.library.util.EditTextUtil;
 
 import static qian.xin.library.util.StringUtil.getCurrentString;
@@ -270,7 +271,7 @@ public class EditTextInfoActivity extends BaseActivity implements OnBottomDragLi
     private void saveAndExit() {
         String editedValue = getTrimedString(etEditTextInfo);
         if (editedValue.equals("" + getIntent().getStringExtra(INTENT_VALUE))) {
-            showShortToast("内容没有改变哦~");
+            CommonUtil.showShortToast(context, "内容没有改变哦~");
         } else {
             intent = new Intent();
             intent.putExtra(RESULT_TYPE, getIntent().getIntExtra(INTENT_TYPE, -1));

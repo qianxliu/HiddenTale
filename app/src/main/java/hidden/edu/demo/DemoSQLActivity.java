@@ -32,6 +32,7 @@ import hidden.edu.R;
 import hidden.edu.manager.SQLHelper;
 import qian.xin.library.base.BaseActivity;
 import qian.xin.library.interfaces.OnBottomDragListener;
+import qian.xin.library.util.CommonUtil;
 import qian.xin.library.util.StringUtil;
 
 /*
@@ -71,7 +72,7 @@ public class DemoSQLActivity extends BaseActivity implements OnClickListener, On
         initEvent();
         //功能归类分区方法，必须调用>>>>>>>>>>
 
-        showShortToast("点击[重置]按钮会恢复数据");
+        CommonUtil.showShortToast(getActivity(),"点击[重置]按钮会恢复数据");
     }
 
 

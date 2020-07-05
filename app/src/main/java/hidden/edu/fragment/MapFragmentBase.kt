@@ -179,15 +179,6 @@ abstract class MapFragmentBase : Fragment(), LocationSource, AMapLocationListene
         }
     }
 
-    private fun showResultOnMap(list: List<MultiPointItem>) {
-        val overlayOptions = MultiPointOverlayOptions()
-        //overlayOptions.icon(BitmapDescriptorFactory.fromResource(R.drawable.p12));
-        overlayOptions.anchor(0.5f, 0.5f)
-        val multiPointOverlay = aMap!!.addMultiPointOverlay(overlayOptions)
-        multiPointOverlay.setItems(list)
-        aMap!!.setOnMultiPointClickListener { pointItem: MultiPointItem? -> false }
-    }
-
     override fun activate(listener: OnLocationChangedListener) {
         mListener = listener
         if (mlocationClient == null) {
@@ -198,7 +189,7 @@ abstract class MapFragmentBase : Fragment(), LocationSource, AMapLocationListene
             mlocationClient!!.setLocationListener(this)
             //设置为高精度定位模式
             mLocationOption.locationMode = AMapLocationClientOption.AMapLocationMode.Hight_Accuracy
-            mLocationOption.interval = 2
+            mLocationOption.interval = 2000
             mlocationClient!!.setLocationOption(mLocationOption)
             // 此方法为每隔固定时间会发起一次定位请求，为了减少电量消耗或网络流量消耗，
             // 注意设置合适的定位时间的间隔（最小间隔支持为2000ms），并且在合适时间调用stopLocation()方法来取消定位请求

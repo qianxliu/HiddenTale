@@ -1,5 +1,6 @@
 package hidden.edu.fragment
 
+import android.annotation.SuppressLint
 import android.graphics.BitmapFactory
 import com.amap.api.maps.AMap.*
 import com.amap.api.maps.AMapException
@@ -49,9 +50,11 @@ class MapFragment : MapFragmentBase(), OnDialogButtonClickListener {
         }
     }
 
+    @SuppressLint("ShowToast")
     @Throws(AMapException::class)
     override fun init() {
         super.init()
+
         aMap!!.setOnMapClickListener { v: LatLng ->
             val markerOptions = MarkerOptions()
             markerOptions.position(LatLng(v.latitude, v.longitude)).setFlat(false).zIndex(-2f)

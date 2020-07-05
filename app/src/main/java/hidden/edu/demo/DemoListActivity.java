@@ -34,6 +34,7 @@ import qian.xin.library.interfaces.AdapterCallBack;
 import qian.xin.library.interfaces.OnBottomDragListener;
 import qian.xin.library.model.Entry;
 import qian.xin.library.ui.GridAdapter;
+import qian.xin.library.util.CommonUtil;
 
 /*
   使用方法：复制>粘贴>改名>改代码
@@ -129,7 +130,7 @@ public class DemoListActivity extends BaseListActivity<Entry<String, String>, Gr
 
         Objects.requireNonNull(tvBaseTitle).setText("" + lvBaseList.getClass().getSimpleName());
 
-        showShortToast("range = " + range);
+        CommonUtil.showShortToast(getActivity(), "range = " + range);
 
         //示例代码>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
     }
@@ -189,14 +190,14 @@ public class DemoListActivity extends BaseListActivity<Entry<String, String>, Gr
         //				}
         //				//如果lvBaseList有headerView或footerView >>>>>>>>>>>>>>>
 
-        showShortToast("选择了 " + adapter.getItem(position).getValue());
+        CommonUtil.showShortToast(getActivity(), "选择了 " + adapter.getItem(position).getValue());
         setResult(RESULT_OK, new Intent().putExtra(RESULT_CLICKED_ITEM, position));
         finish();
     }
 
     @Override
     public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
-        showShortToast("长按了 " + position);
+        CommonUtil.showShortToast(getActivity(), "长按了 " + position);
         return true;
     }
     //示例代码：ItemView点击和长按事件处理 >>>>>>>>>>>>>>>>>>>

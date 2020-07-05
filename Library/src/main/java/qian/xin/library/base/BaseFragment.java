@@ -294,40 +294,6 @@ public abstract class BaseFragment extends Fragment implements FragmentPresenter
         });
     }
     //启动Activity>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
-
-    //show short toast<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-
-    /**
-     * 快捷显示short toast方法，需要long toast就用 Toast.makeText(string, Toast.LENGTH_LONG).show(); ---不常用所以这个类里不写
-     */
-    public void showShortToast(int stringResId) {
-        if (!isAlive()) {
-            Log.w(TAG, "showProgressDialog  isAlive() == false >> return;");
-        }
-        //this.showShortToast(stringResId);
-
-    }
-
-    /**
-     * 快捷显示short toast方法，需要long toast就用 Toast.makeText(string, Toast.LENGTH_LONG).show(); ---不常用所以这个类里不写
-     */
-    public void showShortToast(String string) {
-        if (!isAlive()) {
-            Log.w(TAG, "showProgressDialog  isAlive() == false >> return;");
-        }
-        //this.showShortToast(string);
-    }
-
-    /**
-     * 快捷显示short toast方法，需要long toast就用 Toast.makeText(string, Toast.LENGTH_LONG).show(); ---不常用所以这个类里不写
-     */
-    public void showShortToast(String string, boolean isForceDismissProgressDialog) {
-        if (!isAlive()) {
-            Log.w(TAG, "showProgressDialog  isAlive() == false >> return;");
-        }
-        //this.showShortToast(string, isForceDismissProgressDialog);
-    }
     //show short toast>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 

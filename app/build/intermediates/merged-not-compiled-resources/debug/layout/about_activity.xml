@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/llSettingAbout"
+    style="@style/activity_page"
+    android:background="@drawable/texture3">
+
+    <LinearLayout
+        style="@style/ll_vertical_match_match"
+        android:baselineAligned="false">
+
+        <RelativeLayout
+            android:id="@id/llSettingAbout"
+            style="@style/topbar_bg"
+            android:background="@drawable/texture2">
+
+            <ImageButton
+                style="@style/topbar_return_img"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                style="@style/topbar_title"
+                android:layout_centerHorizontal="true"
+                android:text="关于"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                style="@style/topbar_right_btn"
+                android:text="博客"
+                tools:ignore="HardcodedText" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/match_match"
+            android:layout_weight="0"
+            tools:ignore="InefficientWeight">
+
+            <ScrollView style="@style/match_match">
+
+                <LinearLayout style="@style/ll_vertical_match_match">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="15dp"
+                        app:srcCompat="@drawable/ic_launcher"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:id="@+id/tvAboutAppInfo"
+                        style="@style/text_big_black"
+                        android:layout_marginBottom="30dp"
+                        tools:ignore="HardcodedText" />
+
+                    <View style="@style/divider_horizontal_1px" />
+
+                    <!--
+                    <LinearLayout
+                        android:id="@+id/llAboutZBLibraryMainActivity"
+                        style="@style/content_item_white"
+                        tools:ignore="UseCompoundDrawables"
+                        android:background="@drawable/texture3"
+                        >
+
+                        <TextView
+                            style="@style/content_item_lf_tv"
+                            android:layout_weight="1"
+                            android:text="@string/library" />
+
+                        <ImageView
+                            style="@style/content_item_rt_img"
+                            android:padding="0dp"
+                            tools:ignore="ContentDescription" />
+                    </LinearLayout>
+
+                    <View
+                        style="@style/divider_horizontal_1px"
+                        android:layout_marginBottom="@dimen/item_padding_bottom" />
+                -->
+                    <LinearLayout
+                        android:id="@+id/llAboutUpdate"
+                        style="@style/content_item_white"
+                        android:background="@drawable/texture3"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <TextView
+                            style="@style/content_item_lf_tv"
+                            android:layout_weight="1"
+                            android:text="@string/update_diary" />
+
+                        <ImageView
+                            style="@style/content_item_rt_img"
+                            android:padding="0dp"
+                            tools:ignore="ContentDescription" />
+                    </LinearLayout>
+
+                    <View
+                        style="@style/divider_horizontal_1px"
+                        android:layout_marginBottom="@dimen/item_padding_bottom" />
+
+                    <LinearLayout
+                        android:id="@+id/llAboutShare"
+                        style="@style/content_item_white"
+                        android:background="@drawable/texture3"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <TextView
+                            style="@style/content_item_lf_tv"
+                            android:layout_weight="1"
+                            android:text="@string/share" />
+
+                        <ImageView
+                            style="@style/content_item_rt_img"
+                            android:padding="0dp"
+                            tools:ignore="ContentDescription" />
+                    </LinearLayout>
+
+                    <View style="@style/divider_horizontal_1px" />
+
+                    <LinearLayout
+                        android:id="@+id/llAboutComment"
+                        style="@style/content_item_white"
+                        android:background="@drawable/texture3"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <TextView
+                            style="@style/content_item_lf_tv"
+                            android:layout_weight="1"
+                            android:text="@string/_5" />
+
+                        <ImageView
+                            style="@style/content_item_rt_img"
+                            android:padding="0dp"
+                            tools:ignore="ContentDescription" />
+                    </LinearLayout>
+
+                    <View
+                        style="@style/divider_horizontal_1px"
+                        android:layout_marginBottom="@dimen/item_padding_bottom" />
+
+                    <LinearLayout
+                        android:id="@+id/llAboutDeveloper"
+                        style="@style/content_item_white"
+                        android:background="@drawable/texture3">
+
+                        <TextView
+                            style="@style/content_item_lf_tv"
+                            android:text="@string/developer" />
+
+                        <TextView
+                            style="@style/content_item_rt_tv"
+                            android:layout_weight="1"
+                            android:text="@string/neteraxe" />
+
+                        <ImageView
+                            style="@style/content_item_rt_img"
+                            android:padding="0dp"
+                            tools:ignore="ContentDescription" />
+                    </LinearLayout>
+
+
+                    <View style="@style/divider_horizontal_1px" />
+
+                    <LinearLayout
+                        android:id="@+id/llAboutWeibo"
+                        style="@style/content_item_white"
+                        android:background="@drawable/texture3">
+
+                        <TextView
+                            style="@style/content_item_lf_tv"
+                            android:layout_weight="1"
+                            android:text="@string/blog" />
+
+                        <TextView
+                            style="@style/content_item_rt_tv"
+                            android:layout_weight="1"
+                            android:text="@string/Blog" />
+
+                        <ImageView
+                            style="@style/content_item_rt_img"
+                            android:padding="0dp"
+                            tools:ignore="ContentDescription" />
+                    </LinearLayout>
+
+                    <View style="@style/divider_horizontal_1px" />
+
+                    <LinearLayout
+                        android:id="@+id/llAboutContactUs"
+                        style="@style/content_item_white"
+                        android:background="@drawable/texture3">
+
+                        <TextView
+                            style="@style/content_item_lf_tv"
+                            android:text="@string/contract_us" />
+
+                        <TextView
+                            style="@style/content_item_rt_tv"
+                            android:layout_weight="1"
+                            android:text="@string/neteraxe_126_com" />
+
+                        <ImageView
+                            style="@style/content_item_rt_img"
+                            android:padding="0dp"
+                            tools:ignore="ContentDescription" />
+                    </LinearLayout>
+
+                    <View
+                        style="@style/divider_horizontal_1px"
+                        android:layout_marginBottom="@dimen/item_padding_bottom" />
+
+                    <ImageView
+                        android:id="@+id/ivAboutQRCode"
+                        android:layout_width="@dimen/qrcode_size"
+                        android:layout_height="@dimen/qrcode_size"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="@dimen/item_padding_bottom"
+                        android:background="@color/white"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        style="@style/text_middle"
+                        android:layout_marginBottom="180dp"
+                        android:lineSpacingMultiplier="1.2"
+                        android:text="@string/QR_download" />
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!--
+    <ImageButton
+        android:id="@+id/ivAboutGesture"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/alpha_6"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/gesture_left"
+        tools:ignore="ContentDescription" />
+    -->
+</FrameLayout>

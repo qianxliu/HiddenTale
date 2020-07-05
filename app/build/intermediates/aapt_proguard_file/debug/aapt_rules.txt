@@ -1,0 +1,142 @@
+-keep class androidx.core.app.CoreComponentFactory { <init>(); }
+-keep class androidx.core.content.FileProvider { <init>(); }
+-keep class com.amap.api.location.APSService { <init>(); }
+-keep class com.amap.api.navi.AmapRouteActivity { <init>(); }
+-keep class com.liulishuo.filedownloader.services.FileDownloadService$SeparateProcessService { <init>(); }
+-keep class com.liulishuo.filedownloader.services.FileDownloadService$SharedMainProcessService { <init>(); }
+-keep class hidden.edu.activity.AboutActivity { <init>(); }
+-keep class hidden.edu.activity.MainTabActivity { <init>(); }
+-keep class hidden.edu.activity.PdfViewActivity { <init>(); }
+-keep class hidden.edu.activity.QRCodeActivity { <init>(); }
+-keep class hidden.edu.activity.ScanActivity { <init>(); }
+-keep class hidden.edu.activity.SettingActivity { <init>(); }
+-keep class hidden.edu.activity.SplashActivity { <init>(); }
+-keep class hidden.edu.activity.UserActivity { <init>(); }
+-keep class hidden.edu.application.DemoApplication { <init>(); }
+-keep class hidden.edu.demo.DemoActivity { <init>(); }
+-keep class hidden.edu.demo.DemoBottomWindow { <init>(); }
+-keep class hidden.edu.demo.DemoBroadcastReceiverActivity { <init>(); }
+-keep class hidden.edu.demo.DemoFragmentActivity { <init>(); }
+-keep class hidden.edu.demo.DemoHttpListActivity { <init>(); }
+-keep class hidden.edu.demo.DemoHttpRecyclerActivity { <init>(); }
+-keep class hidden.edu.demo.DemoListActivity { <init>(); }
+-keep class hidden.edu.demo.DemoMainActivity { <init>(); }
+-keep class hidden.edu.demo.DemoRecyclerActivity { <init>(); }
+-keep class hidden.edu.demo.DemoSQLActivity { <init>(); }
+-keep class hidden.edu.demo.DemoTabActivity { <init>(); }
+-keep class hidden.edu.demo.DemoThreadPoolActivity { <init>(); }
+-keep class hidden.edu.demo.DemoTimeRefresherActivity { <init>(); }
+-keep class pub.devrel.easypermissions.AppSettingsDialogHolderActivity { <init>(); }
+-keep class qian.xin.library.ui.BottomMenuWindow { <init>(); }
+-keep class qian.xin.library.ui.CutPictureActivity { <init>(); }
+-keep class qian.xin.library.ui.DatePickerWindow { <init>(); }
+-keep class qian.xin.library.ui.EditTextInfoActivity { <init>(); }
+-keep class qian.xin.library.ui.EditTextInfoWindow { <init>(); }
+-keep class qian.xin.library.ui.PlacePickerWindow { <init>(); }
+-keep class qian.xin.library.ui.SelectPictureActivity { <init>(); }
+-keep class qian.xin.library.ui.ServerSettingActivity { <init>(); }
+-keep class qian.xin.library.ui.TimePickerWindow { <init>(); }
+-keep class qian.xin.library.ui.TopMenuWindow { <init>(); }
+-keep class qian.xin.library.ui.WebViewActivity { <init>(); }
+-keep class android.widget.Space { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.app.AlertController$RecycleListView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.view.menu.ActionMenuItemView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.view.menu.ExpandedMenuView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.view.menu.ListMenuItemView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.ActionBarContainer { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.ActionBarContextView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.ActionBarOverlayLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.ActionMenuView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.ActivityChooserView$InnerLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.AlertDialogLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.ButtonBarLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.ContentFrameLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.DialogTitle { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.FitWindowsFrameLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.FitWindowsLinearLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.SearchView$SearchAutoComplete { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.Toolbar { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.ViewStubCompat { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.cardview.widget.CardView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.coordinatorlayout.widget.CoordinatorLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.core.widget.DrawerLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.core.widget.NestedScrollView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.drawerlayout.widget.DrawerLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.recyclerview.widget.RecyclerView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.amap.api.maps.MapView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.github.barteksc.pdfviewer.PDFView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.appbar.MaterialToolbar { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.button.MaterialButton { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.chip.Chip { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.chip.ChipGroup { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.datepicker.MaterialCalendarGridView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.internal.BaselineLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.internal.CheckableImageButton { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.internal.NavigationMenuItemView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.internal.NavigationMenuView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.navigation.NavigationView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.snackbar.Snackbar$SnackbarLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.snackbar.SnackbarContentLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.textfield.TextInputEditText { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.textfield.TextInputLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.textview.MaterialTextView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.king.zxing.ViewfinderView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.scwang.smartrefresh.layout.SmartRefreshLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.scwang.smartrefresh.layout.footer.ClassicsFooter { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.scwang.smartrefresh.layout.header.ClassicsHeader { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.zxing.view.ViewfinderView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class qian.xin.library.ui.SquareLinearLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class qian.xin.library.ui.SquareRelativeLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keepclassmembers class * { *** onForwardClick(android.view.View); }
+
+-keepclassmembers class * { *** onReturnClick(android.view.View); }
+

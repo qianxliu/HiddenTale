@@ -163,39 +163,39 @@ public class TestUtil {
      */
     private static String[] URLS = {
             //杜虎符
-            "http://upload.art.ifeng.com/2017/1228/1514426877471.jpg",
-            "https://cdn.shuge.org/uploads/2017/12/jing-jiao-liu-xing-zhong-guo-bei06-640x350.jpg",
-            "http://www.ctaoci.com/Upload/news/200783084715_11878856862507434727823175673.jpg",
-            "http://wenyi.gmw.cn/attachement/jpg/site2/20190724/f44d3075892a1ea201ba32.jpg",
-            "http://art.people.com.cn/NMediaFile/2013/0916/MAIN201309160832000497991621947.jpg",
-            "http://a1.att.hudong.com/80/32/01200000027621134374321610400_s.jpg",
+            "https://git.nwu.edu.cn/2018104171/pdf/raw/master/1.png",
+            "https://git.nwu.edu.cn/2018104171/pdf/raw/master/2.png",
+            "https://git.nwu.edu.cn/2018104171/pdf/raw/master/3.png",
+            "https://git.nwu.edu.cn/2018104171/pdf/raw/master/4.png",
+            "https://git.nwu.edu.cn/2018104171/pdf/raw/master/5.png",
+            "https://git.nwu.edu.cn/2018104171/pdf/raw/master/6.png",
             //7
-            "http://a2.att.hudong.com/73/25/01300001216886130513252197445.jpg",
-            "https://static.chiphell.com/forum/201810/06/174231pf04s2fl057alys2.jpg",
-            "http://a2.att.hudong.com/16/15/01100000000022123973156672788.jpg",
+            "https://git.nwu.edu.cn/2018104171/pdf/raw/master/7.png",
+            "https://git.nwu.edu.cn/2018104171/pdf/raw/master/8.png",
+            "https://git.nwu.edu.cn/2018104171/pdf/raw/master/9.png",
             //10
-            "http://a4.att.hudong.com/02/82/01300000332400125360820176081.jpg",
+            "https://git.nwu.edu.cn/2018104171/pdf/raw/master/10.png",
             //11
-            "https://youimg1.c-ctrip.com/target/100j13000000uene1075E.jpg",
+            "https://git.nwu.edu.cn/2018104171/pdf/raw/master/11.png",
             //12
-            "http://s3.lvjs.com.cn/uploads/pc/place2/2016-07-06/edf45a19-2b4a-4a97-8e7b-8ee039e7daa0_555_370.jpg",
+            "https://git.nwu.edu.cn/2018104171/pdf/raw/master/12.png",
             //13
-            "https://ss2.meipian.me/users/3167963/41c8abdab62f47288f6933982d17ede0.jpg",
+            "https://git.nwu.edu.cn/2018104171/pdf/raw/master/13.png",
             //14
-            "http://www.sanqinyou.com/uploadfiles/2010-02-26/midd20100226_112029_890.jpg",
+            "https://git.nwu.edu.cn/2018104171/pdf/raw/master/14.png",
             //15
-            "https://cdn.moji002.com/images/simgs/2019/09/29/15697379170.75931200.1075_android.jpg",
+            "https://git.nwu.edu.cn/2018104171/pdf/raw/master/15.png",
             //16
-            "http://www.nwu.edu.cn/images/img_main_bar2_logo.png",
+            "https://git.nwu.edu.cn/2018104171/pdf/raw/master/16.png",
             //17
-            "http://www.xjtu.edu.cn/img/logo_pic99.png",
+            "https://git.nwu.edu.cn/2018104171/pdf/raw/master/17.png",
             //18
-            "https://git.nwu.edu.cn/2018104171/pdf/raw/master/21.png",
-            "http://sxakjc.com/storage/app/media/zou-jin-an-kang/zoujin4.png",
+            "https://git.nwu.edu.cn/2018104171/pdf/raw/master/18.png",
+            "https://git.nwu.edu.cn/2018104171/pdf/raw/master/19.png",
             //20
-            "https://www.ziyanghong.com/export/sites/default/tea/tribute/.content/images/2016111417574149.jpg_752293428.jpg",
-            //21
             "https://git.nwu.edu.cn/2018104171/pdf/raw/master/20.png",
+            //21
+            "https://git.nwu.edu.cn/2018104171/pdf/raw/master/21.png",
     };
 
     public static String getPicture(int index) {

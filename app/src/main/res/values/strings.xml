@@ -7,13 +7,13 @@
     <string name="library">Library</string>
     <string name="update_diary">更新日志</string>
     <string name="_5">赏5星好评</string>
-    <string name="blog">博客</string>
+    <string name="blog">工程</string>
     <string name="contract_us">联系我们</string>
     <string name="neteraxe_126_com">neteraxe@126.com</string>
     <string name="QR_download">扫一扫二维码 下载长安宝藏</string>
     <string name="HangZhou">西安</string>
     <string name="Choose">筛选</string>
-    <string name="Blog">https://neterace.gitee.io</string>
+    <string name="Blog">HiddenTale</string>
     <string name="httprecycler">HttpRecycler</string>
     <string name="title">标题</string>
     <string name="httplist">HttpList</string>

@@ -72,7 +72,7 @@ class DataManager private constructor(private val context: Context) {
         }
 
     /**
-     * 获取最后一次登录的用户的手机号
+     * 获取最后一次应用的用户的手机号
      */
     val lastUserPhone: String?
         get() {
@@ -81,7 +81,7 @@ class DataManager private constructor(private val context: Context) {
         }
 
     /**
-     * 获取最后一次登录的用户
+     * 获取最后一次应用的用户
      */
     private val lastUser: User?
         get() {
@@ -103,7 +103,7 @@ class DataManager private constructor(private val context: Context) {
     }
 
     /**
-     * 保存当前用户,只在登录或注销时调用
+     * 保存当前用户,只在应用或注销时调用
      *
      * @param user user == null >> user = new User();
      */

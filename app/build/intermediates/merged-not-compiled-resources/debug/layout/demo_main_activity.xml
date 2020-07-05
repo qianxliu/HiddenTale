@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/activity_page"
+    android:baselineAligned="false"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlDemoMainTopbar"
+        style="@style/topbar_bg">
+
+        <Button
+            style="@style/topbar_return_tv"
+            android:text="@string/page_return" />
+
+        <TextView
+            style="@style/topbar_title"
+            android:layout_centerHorizontal="true"
+            android:text="@string/library" />
+
+        <ImageButton
+            style="@style/topbar_right_btn"
+            app:srcCompat="@drawable/menu"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/svDemoMain"
+        style="@style/ll_vertical_match_match">
+
+        <LinearLayout style="@style/ll_vertical_match_match">
+
+            <ImageView
+                android:id="@+id/ivDemoMainHead"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_margin="@dimen/item_distance"
+                android:background="@color/alpha_3"
+                android:scaleType="centerCrop"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/tvDemoMainHeadName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_remind_tv_height"
+                android:gravity="center"
+                android:text="可点击 选择图片 或 裁剪图片 更改"
+                android:textColor="@color/gray_1"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                style="@style/text_big"
+                android:paddingTop="30dp"
+                android:paddingBottom="6dp"
+                android:text="Dialog"
+                tools:ignore="HardcodedText" />
+
+            <View style="@style/divider_horizontal_1px" />
+
+            <TextView
+                android:id="@+id/llDemoMainAlertDialog"
+                style="@style/content_item_white"
+                android:drawableEnd="@drawable/forward2_light"
+                android:text="AlertDialog"
+                tools:ignore="HardcodedText" />
+
+            <View style="@style/divider_horizontal_1px" />
+
+            <TextView
+                android:id="@+id/llDemoMainItemDialog"
+                style="@style/content_item_white"
+                android:drawableEnd="@drawable/forward2_light"
+                android:text="ItemDialog"
+                tools:ignore="HardcodedText" />
+
+
+            <View style="@style/divider_horizontal_1px" />
+
+            <TextView
+                style="@style/text_big"
+                android:paddingTop="30dp"
+                android:paddingBottom="6dp"
+                android:text="Activity"
+                tools:ignore="HardcodedText" />
+
+            <View style="@style/divider_horizontal_1px" />
+
+            <TextView
+                android:id="@+id/llDemoMainScanActivity"
+                style="@style/content_item_white"
+                android:drawableEnd="@drawable/forward2_light"
+                android:text="ScanActivity"
+                tools:ignore="HardcodedText" />
+
+            <View style="@style/divider_horizontal_1px" />
+
+            <TextView
+                android:id="@+id/llDemoMainSelectPictureActivity"
+                style="@style/content_item_white"
+                android:drawableEnd="@drawable/forward2_light"
+                android:text="SelectPictureActivity"
+                tools:ignore="HardcodedText" />
+
+            <View style="@style/divider_horizontal_1px" />
+
+            <TextView
+                android:id="@+id/llDemoMainCutPictureActivity"
+                style="@style/content_item_white"
+                android:drawableEnd="@drawable/forward2_light"
+                android:text="CutPictureActivity"
+                tools:ignore="HardcodedText" />
+
+            <View style="@style/divider_horizontal_1px" />
+
+            <TextView
+                android:id="@+id/llDemoMainWebViewActivity"
+                style="@style/content_item_white"
+                android:drawableEnd="@drawable/forward2_light"
+                android:text="@string/webviewactivity"
+                tools:ignore="HardcodedText" />
+
+
+            <View style="@style/divider_horizontal_1px" />
+
+            <TextView
+                android:id="@+id/llDemoMainEditTextInfoActivity"
+                style="@style/content_item_white"
+                android:drawableEnd="@drawable/forward2_light"
+                android:text="EditTextInfoActivity"
+                tools:ignore="HardcodedText" />
+
+            <View style="@style/divider_horizontal_1px" />
+
+            <TextView
+                android:id="@+id/llDemoMainServerSettingActivity"
+                style="@style/content_item_white"
+                android:drawableEnd="@drawable/forward2_light"
+                android:text="ServerSettingActivity"
+                tools:ignore="HardcodedText" />
+
+            <View
+                style="@style/divider_horizontal_1px"
+                android:layout_marginBottom="15dp" />
+
+            <TextView
+                android:id="@+id/llDemoMainDemoActivity"
+                style="@style/content_item_white"
+                android:drawableEnd="@drawable/forward2_light"
+                android:text="DemoActivity"
+                tools:ignore="HardcodedText" />
+
+            <View style="@style/divider_horizontal_1px" />
+
+            <TextView
+                android:id="@+id/llDemoMainDemoListActivity"
+                style="@style/content_item_white"
+                android:drawableEnd="@drawable/forward2_light"
+                android:text="DemoListActivity"
+                tools:ignore="HardcodedText" />
+
+            <View style="@style/divider_horizontal_1px" />
+
+            <TextView
+                android:id="@+id/llDemoMainDemoRecyclerActivity"
+                style="@style/content_item_white"
+                android:drawableEnd="@drawable/forward2_light"
+                android:text="DemoRecyclerActivity"
+                tools:ignore="HardcodedText" />
+
+            <View style="@style/divider_horizontal_1px" />
+
+
+            <TextView
+                android:id="@+id/llDemoMainDemoHttpListActivity"
+                style="@style/content_item_white"
+                android:drawableEnd="@drawable/forward2_light"
+                android:text="DemoHttpListActivity"
+                tools:ignore="HardcodedText" />
+
+            <View style="@style/divider_horizontal_1px" />
+
+            <TextView
+                android:id="@+id/llDemoMainDemoHttpRecyclerActivity"
+                style="@style/content_item_white"
+                android:drawableEnd="@drawable/forward2_light"
+                android:text="DemoHttpRecyclerActivity"
+                tools:ignore="HardcodedText" />
+
+
+            <View style="@style/divider_horizontal_1px" />
+
+            <TextView
+                android:id="@+id/llDemoMainDemoFragmentActivity"
+                style="@style/content_item_white"
+                android:drawableEnd="@drawable/forward2_light"
+                android:text="DemoFragmentActivity"
+                tools:ignore="HardcodedText" />
+
+            <View style="@style/divider_horizontal_1px" />
+
+            <TextView
+                android:id="@+id/llDemoMainDemoTabActivity"
+                style="@style/content_item_white"
+                android:drawableEnd="@drawable/forward2_light"
+                android:text="DemoTabActivity"
+                tools:ignore="HardcodedText" />
+
+            <View style="@style/divider_horizontal_1px" />
+
+            <TextView
+                android:id="@+id/llDemoMainDemoSQLActivity"
+                style="@style/content_item_white"
+                android:drawableEnd="@drawable/forward2_light"
+                android:text="DemoSQLActivity"
+                tools:ignore="HardcodedText" />
+
+            <View style="@style/divider_horizontal_1px" />
+
+            <TextView
+                android:id="@+id/llDemoMainDemoTimeRefresherActivity"
+                style="@style/content_item_white"
+                android:drawableEnd="@drawable/forward2_light"
+                android:text="DemoTimeRefresherActivity"
+                tools:ignore="HardcodedText" />
+
+            <View style="@style/divider_horizontal_1px" />
+
+            <TextView
+                android:id="@+id/llDemoMainDemoBroadcastReceiverActivity"
+                style="@style/content_item_white"
+                android:drawableEnd="@drawable/forward2_light"
+                android:text="DemoBroadcastReceiverActivity"
+                tools:ignore="HardcodedText" />
+
+            <View style="@style/divider_horizontal_1px" />
+
+            <TextView
+                android:id="@+id/llDemoMainDemoThreadPoolActivity"
+                style="@style/content_item_white"
+                android:drawableEnd="@drawable/forward2_light"
+                android:text="DemoThreadPoolActivity"
+                tools:ignore="HardcodedText" />
+
+            <View style="@style/divider_horizontal_1px" />
+
+            <TextView
+                style="@style/text_big"
+                android:paddingTop="30dp"
+                android:paddingBottom="6dp"
+                android:text="Window"
+                tools:ignore="HardcodedText" />
+
+            <View style="@style/divider_horizontal_1px" />
+
+            <TextView
+                android:id="@+id/llDemoMainDemoBottomWindow"
+                style="@style/content_item_white"
+                android:drawableEnd="@drawable/forward2_light"
+                android:text="DemoBottomWindow"
+                tools:ignore="HardcodedText" />
+
+            <View style="@style/divider_horizontal_1px" />
+
+            <TextView
+                android:id="@+id/llDemoMainTopMenuWindow"
+                style="@style/content_item_white"
+                android:drawableEnd="@drawable/forward2_light"
+                android:text="TopMenuWindow"
+                tools:ignore="HardcodedText" />
+
+            <View style="@style/divider_horizontal_1px" />
+
+            <TextView
+                android:id="@+id/llDemoMainBottomMenuWindow"
+                style="@style/content_item_white"
+                android:drawableEnd="@drawable/forward2_light"
+                android:text="BottomMenuWindow"
+                tools:ignore="HardcodedText" />
+
+            <View style="@style/divider_horizontal_1px" />
+
+            <TextView
+                android:id="@+id/llDemoMainEditTextInfoWindow"
+                style="@style/content_item_white"
+                android:drawableEnd="@drawable/forward2_light"
+                android:text="EditTextInfoWindow"
+                tools:ignore="HardcodedText" />
+
+            <View style="@style/divider_horizontal_1px" />
+
+            <TextView
+                android:id="@+id/llDemoMainPlacePickerWindow"
+                style="@style/content_item_white"
+                android:drawableEnd="@drawable/forward2_light"
+                android:text="PlacePickerWindow"
+                tools:ignore="HardcodedText" />
+
+            <View style="@style/divider_horizontal_1px" />
+
+            <TextView
+                android:id="@+id/llDemoMainDatePickerWindow"
+                style="@style/content_item_white"
+                android:drawableEnd="@drawable/forward2_light"
+                android:text="DatePickerWindow"
+                tools:ignore="HardcodedText" />
+
+            <View style="@style/divider_horizontal_1px" />
+
+            <TextView
+                android:id="@+id/llDemoMainTimePickerWindow"
+                style="@style/content_item_white"
+                android:drawableEnd="@drawable/forward2_light"
+                android:text="TimePickerWindow"
+                tools:ignore="HardcodedText" />
+
+            <View style="@style/divider_horizontal_1px" />
+
+            <View
+                style="@style/divider_horizontal_1px"
+                android:layout_marginBottom="30dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
