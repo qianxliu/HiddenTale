@@ -166,7 +166,7 @@ public class MyRecyclerFragment extends BaseHttpRecyclerFragment<User, UserView,
         DataKeeper.init(this.context.getApplication());
     }
 
-    static String[] URLS = {
+    public static String[] URLS = {
             "https://git.nwu.edu.cn/2018104171/pdf/raw/master/1.pdf",
             "https://git.nwu.edu.cn/2018104171/pdf/raw/master/2.pdf",
             "https://git.nwu.edu.cn/2018104171/pdf/raw/master/3.pdf",

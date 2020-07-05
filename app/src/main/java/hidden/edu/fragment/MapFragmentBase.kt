@@ -58,8 +58,8 @@ abstract class MapFragmentBase : Fragment(), LocationSource, AMapLocationListene
             aMap = mapView?.map
             // 设置定位监听
             aMap?.setLocationSource(this)
-            aMap?.setMapType(AMap.MAP_TYPE_NORMAL)
-            aMap?.setMyLocationEnabled(true)
+            aMap?.mapType = AMap.MAP_TYPE_NORMAL
+            aMap?.isMyLocationEnabled = true
             aMap?.setCustomMapStyle(
                     CustomMapStyleOptions()
                             .setEnable(true)
@@ -71,7 +71,7 @@ abstract class MapFragmentBase : Fragment(), LocationSource, AMapLocationListene
             val myLocationStyle = MyLocationStyle()
             myLocationStyle.interval(2)
             myLocationStyle.myLocationType(MyLocationStyle.LOCATION_TYPE_MAP_ROTATE)
-            aMap?.setMyLocationStyle(myLocationStyle)
+            aMap?.myLocationStyle = myLocationStyle
             val uiSettings = mapView!!.map.uiSettings
             // 设置默认定位按钮是否显示
             uiSettings.isMyLocationButtonEnabled = true

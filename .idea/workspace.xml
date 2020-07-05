@@ -8,6 +8,7 @@
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+    <option name="TOOL_WINDOW_REGEXP_FILTER" value="false" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="956ecd40-512a-4727-9f75-6f257a478699" name="Default Changelist" comment="" />
@@ -54,6 +55,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.44162437" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="show.do.not.copy.http.proxy.settings.to.gradle" value="false" />
   </component>
@@ -142,10 +144,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="200" y="130" key="#PSD" timestamp="1593768661100">
+    <state x="200" y="130" key="#PSD" timestamp="1593913437082">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="200" y="130" key="#PSD/0.30.1366.738@0.30.1366.738" timestamp="1593768661100" />
+    <state x="200" y="130" key="#PSD/0.30.1366.738@0.30.1366.738" timestamp="1593913437082" />
     <state x="402" y="42" key="#app" timestamp="1593767336919">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
@@ -166,22 +168,26 @@
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="413" y="145" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.30.1366.738@0.30.1366.738" timestamp="1593771924588" />
-    <state width="1323" height="181" key="GridCell.Tab.0.bottom" timestamp="1593874266363">
+    <state x="440" y="250" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1593918954510">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state width="1323" height="181" key="GridCell.Tab.0.bottom/0.30.1366.738@0.30.1366.738" timestamp="1593874266363" />
-    <state width="1323" height="181" key="GridCell.Tab.0.center" timestamp="1593874266363">
+    <state x="440" y="250" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.30.1366.738@0.30.1366.738" timestamp="1593918954510" />
+    <state width="1323" height="181" key="GridCell.Tab.0.bottom" timestamp="1593919253164">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state width="1323" height="181" key="GridCell.Tab.0.center/0.30.1366.738@0.30.1366.738" timestamp="1593874266363" />
-    <state width="1323" height="181" key="GridCell.Tab.0.left" timestamp="1593874266363">
+    <state width="1323" height="181" key="GridCell.Tab.0.bottom/0.30.1366.738@0.30.1366.738" timestamp="1593919253164" />
+    <state width="1323" height="181" key="GridCell.Tab.0.center" timestamp="1593919253164">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state width="1323" height="181" key="GridCell.Tab.0.left/0.30.1366.738@0.30.1366.738" timestamp="1593874266363" />
-    <state width="1323" height="181" key="GridCell.Tab.0.right" timestamp="1593874266363">
+    <state width="1323" height="181" key="GridCell.Tab.0.center/0.30.1366.738@0.30.1366.738" timestamp="1593919253164" />
+    <state width="1323" height="181" key="GridCell.Tab.0.left" timestamp="1593919253163">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state width="1323" height="181" key="GridCell.Tab.0.right/0.30.1366.738@0.30.1366.738" timestamp="1593874266363" />
+    <state width="1323" height="181" key="GridCell.Tab.0.left/0.30.1366.738@0.30.1366.738" timestamp="1593919253163" />
+    <state width="1323" height="181" key="GridCell.Tab.0.right" timestamp="1593919253164">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state width="1323" height="181" key="GridCell.Tab.0.right/0.30.1366.738@0.30.1366.738" timestamp="1593919253164" />
     <state x="184" y="41" key="SettingsEditor" timestamp="1593768932965">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
@@ -190,18 +196,18 @@
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="233" y="146" key="caller.chooser.dialog/0.30.1366.738@0.30.1366.738" timestamp="1593869245142" />
-    <state x="378" y="222" key="com.intellij.ide.util.TipDialog" timestamp="1593826598959">
+    <state x="378" y="222" key="com.intellij.ide.util.TipDialog" timestamp="1593906206536">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="378" y="222" key="com.intellij.ide.util.TipDialog/0.30.1366.738@0.30.1366.738" timestamp="1593826598959" />
+    <state x="378" y="222" key="com.intellij.ide.util.TipDialog/0.30.1366.738@0.30.1366.738" timestamp="1593906206536" />
     <state x="315" y="98" width="736" height="602" key="find.popup" timestamp="1593874551282">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="315" y="98" width="736" height="602" key="find.popup/0.30.1366.738@0.30.1366.738" timestamp="1593874551282" />
-    <state x="389" y="30" key="refactoring.ChangeSignatureDialog" timestamp="1593866836597">
+    <state x="389" y="30" key="refactoring.ChangeSignatureDialog" timestamp="1593916736758">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="389" y="30" key="refactoring.ChangeSignatureDialog/0.30.1366.738@0.30.1366.738" timestamp="1593866836597" />
+    <state x="389" y="30" key="refactoring.ChangeSignatureDialog/0.30.1366.738@0.30.1366.738" timestamp="1593916736758" />
     <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1593868689053">
       <screen x="0" y="30" width="1366" height="738" />
     </state>

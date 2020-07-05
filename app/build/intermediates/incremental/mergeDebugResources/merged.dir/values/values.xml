@@ -999,6 +999,8 @@
     <string name="close_succeed">关闭成功</string>
     <string name="closing">正在关闭，请稍后……</string>
     <string name="contract_us">联系我们</string>
+    <string name="default_filedownloader_notification_content">FileDownloader is running.</string>
+    <string name="default_filedownloader_notification_title">FileDownloader</string>
     <string name="delete_failed">删除失败，请检查网络后重试</string>
     <string name="delete_succeed">删除成功</string>
     <string name="deleting">正在删除，请稍后……</string>

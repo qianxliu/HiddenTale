@@ -1,67 +1,65 @@
 hidden/edu/demo/DemoHeadsetConnectionReceiver.java
  hidden.edu.demo.DemoHeadsetConnectionReceiver
  hidden.edu.demo.DemoHeadsetConnectionReceiver$OnHeadsetConnectionChangedListener
+hidden/edu/manager/SQLHelper.java
+ hidden.edu.manager.SQLHelper
+hidden/edu/view/BaseViewLayout.java
+ hidden.edu.view.BaseViewLayout
+hidden/edu/demo/DemoAdapter.java
+ hidden.edu.demo.DemoAdapter
+hidden/edu/demo/DemoComplexAdapter.java
+ hidden.edu.demo.DemoComplexAdapter
+hidden/edu/demo/DemoComplexView.java
+ hidden.edu.demo.DemoComplexView
+hidden/edu/util/TestUtil.java
+ hidden.edu.util.TestUtil
+hidden/edu/fragment/package-info.java
+ hidden.edu.fragment.package-info
+hidden/edu/demo/DemoView.java
+ hidden.edu.demo.DemoView
+hidden/edu/application/DemoApplication.java
+ hidden.edu.application.DemoApplication
+hidden/edu/model/User.java
+ hidden.edu.model.User
+hidden/edu/BuildConfig.java
+ hidden.edu.BuildConfig
+hidden/edu/demo/package-info.java
+ hidden.edu.demo.package-info
+hidden/edu/view/UserViewLayout.java
+ hidden.edu.view.UserViewLayout
+hidden/edu/fragment/UserListFragment.java
+ hidden.edu.fragment.UserListFragment
+ hidden.edu.fragment.UserListFragment$1
 hidden/edu/demo/DemoFragmentActivity.java
  hidden.edu.demo.DemoFragmentActivity
 hidden/edu/demo/DemoThreadPoolActivity.java
  hidden.edu.demo.DemoThreadPoolActivity
  hidden.edu.demo.DemoThreadPoolActivity$1
-hidden/edu/demo/DemoBroadcastReceiverActivity.java
- hidden.edu.demo.DemoBroadcastReceiverActivity
- hidden.edu.demo.DemoBroadcastReceiverActivity$1
- hidden.edu.demo.DemoBroadcastReceiverActivity$DemoBroadcastReceiver
-hidden/edu/demo/DemoComplexAdapter.java
- hidden.edu.demo.DemoComplexAdapter
-hidden/edu/demo/DemoRecyclerActivity.java
- hidden.edu.demo.DemoRecyclerActivity
- hidden.edu.demo.DemoRecyclerActivity$1
-hidden/edu/util/TestUtil.java
- hidden.edu.util.TestUtil
-hidden/edu/fragment/package-info.java
- hidden.edu.fragment.package-info
-hidden/edu/demo/DemoTabActivity.java
- hidden.edu.demo.DemoTabActivity
-hidden/edu/view/UserView.java
- hidden.edu.view.UserView
- hidden.edu.view.UserView$1
-hidden/edu/model/User.java
- hidden.edu.model.User
-hidden/edu/demo/DemoListFragment.java
- hidden.edu.demo.DemoListFragment
- hidden.edu.demo.DemoListFragment$1
-hidden/edu/demo/DemoTabFragment.java
- hidden.edu.demo.DemoTabFragment
-hidden/edu/view/UserViewLayout.java
- hidden.edu.view.UserViewLayout
-hidden/edu/demo/package-info.java
- hidden.edu.demo.package-info
-hidden/edu/demo/DemoFragment.java
- hidden.edu.demo.DemoFragment
-hidden/edu/demo/DemoListActivity.java
- hidden.edu.demo.DemoListActivity
- hidden.edu.demo.DemoListActivity$1
-hidden/edu/view/BaseViewLayout.java
- hidden.edu.view.BaseViewLayout
-hidden/edu/activity/QRCodeActivity.java
- hidden.edu.activity.QRCodeActivity
-hidden/edu/demo/DemoComplexView.java
- hidden.edu.demo.DemoComplexView
-hidden/edu/fragment/UserListFragment.java
- hidden.edu.fragment.UserListFragment
- hidden.edu.fragment.UserListFragment$1
 hidden/edu/demo/DemoHttpListActivity.java
  hidden.edu.demo.DemoHttpListActivity
  hidden.edu.demo.DemoHttpListActivity$1
+hidden/edu/fragment/MyRecyclerFragment.java
+ hidden.edu.fragment.MyRecyclerFragment
+ hidden.edu.fragment.MyRecyclerFragment$1
+hidden/edu/demo/DemoRecyclerActivity.java
+ hidden.edu.demo.DemoRecyclerActivity
+ hidden.edu.demo.DemoRecyclerActivity$1
+hidden/edu/demo/DemoTabActivity.java
+ hidden.edu.demo.DemoTabActivity
 hidden/edu/demo/DemoTimeRefresherActivity.java
  hidden.edu.demo.DemoTimeRefresherActivity
 hidden/edu/activity/ScanActivity.java
  hidden.edu.activity.ScanActivity
+hidden/edu/view/UserView.java
+ hidden.edu.view.UserView
+ hidden.edu.view.UserView$1
 hidden/edu/activity/AboutActivity.java
  hidden.edu.activity.AboutActivity
 hidden/edu/demo/DemoBottomWindow.java
  hidden.edu.demo.DemoBottomWindow
-hidden/edu/BuildConfig.java
- hidden.edu.BuildConfig
+hidden/edu/demo/DemoListFragment.java
+ hidden.edu.demo.DemoListFragment
+ hidden.edu.demo.DemoListFragment$1
 hidden/edu/demo/DemoMainActivity.java
  hidden.edu.demo.DemoMainActivity
 hidden/edu/demo/DemoActivity.java
@@ -69,18 +67,20 @@ hidden/edu/demo/DemoActivity.java
 hidden/edu/demo/DemoHttpRecyclerActivity.java
  hidden.edu.demo.DemoHttpRecyclerActivity
  hidden.edu.demo.DemoHttpRecyclerActivity$1
-hidden/edu/demo/DemoView.java
- hidden.edu.demo.DemoView
+hidden/edu/demo/DemoTabFragment.java
+ hidden.edu.demo.DemoTabFragment
 hidden/edu/fragment/SettingFragment.java
  hidden.edu.fragment.SettingFragment
-hidden/edu/demo/DemoAdapter.java
- hidden.edu.demo.DemoAdapter
-hidden/edu/application/DemoApplication.java
- hidden.edu.application.DemoApplication
+hidden/edu/demo/DemoFragment.java
+ hidden.edu.demo.DemoFragment
 hidden/edu/demo/DemoSQLActivity.java
  hidden.edu.demo.DemoSQLActivity
-hidden/edu/manager/SQLHelper.java
- hidden.edu.manager.SQLHelper
-hidden/edu/fragment/MyRecyclerFragment.java
- hidden.edu.fragment.MyRecyclerFragment
- hidden.edu.fragment.MyRecyclerFragment$1
+hidden/edu/demo/DemoListActivity.java
+ hidden.edu.demo.DemoListActivity
+ hidden.edu.demo.DemoListActivity$1
+hidden/edu/activity/QRCodeActivity.java
+ hidden.edu.activity.QRCodeActivity
+hidden/edu/demo/DemoBroadcastReceiverActivity.java
+ hidden.edu.demo.DemoBroadcastReceiverActivity
+ hidden.edu.demo.DemoBroadcastReceiverActivity$1
+ hidden.edu.demo.DemoBroadcastReceiverActivity$DemoBroadcastReceiver

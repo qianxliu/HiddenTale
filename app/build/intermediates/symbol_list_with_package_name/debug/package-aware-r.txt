@@ -2529,6 +2529,8 @@ string close_failed
 string close_succeed
 string closing
 string contract_us
+string default_filedownloader_notification_content
+string default_filedownloader_notification_title
 string delete_failed
 string delete_succeed
 string deleting

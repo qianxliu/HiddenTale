@@ -20,6 +20,7 @@ MERGED from [:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\e8c41026d6e5dc3069707eaff54ede07\constraintlayout-1.1.3\AndroidManifest.xml:2:1-11:12
 MERGED from [pub.devrel:easypermissions:3.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\b7e20a5308cbdfad9f0411c597fc55dd\jetified-easypermissions-3.0.0\AndroidManifest.xml:2:1-19:12
 MERGED from [com.github.barteksc:android-pdf-viewer:3.2.0-beta.1] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\ca9023e6fa1cf6c0e7ddcbc6f92efe34\jetified-android-pdf-viewer-3.2.0-beta.1\AndroidManifest.xml:2:1-11:12
+MERGED from [com.liulishuo.filedownloader:library:1.7.7] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\eb1b806bbb4faaef238e6b43ce3c472c\jetified-library-1.7.7\AndroidManifest.xml:2:1-18:12
 MERGED from [com.google.android.material:material:1.1.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\03fc2f0f12fb938210f2b6d040cddf10\material-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\ca472a7b3f459083c73ef20315dfd3aa\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.github.bumptech.glide:glide:4.11.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\dbd966de2db0dcd4142b16c5d37a0360\jetified-glide-4.11.0\AndroidManifest.xml:2:1-12:12
@@ -170,6 +171,8 @@ MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] F:\AndroidLocal\G
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\e8c41026d6e5dc3069707eaff54ede07\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
 MERGED from [pub.devrel:easypermissions:3.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\b7e20a5308cbdfad9f0411c597fc55dd\jetified-easypermissions-3.0.0\AndroidManifest.xml:11:5-17:19
 MERGED from [pub.devrel:easypermissions:3.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\b7e20a5308cbdfad9f0411c597fc55dd\jetified-easypermissions-3.0.0\AndroidManifest.xml:11:5-17:19
+MERGED from [com.liulishuo.filedownloader:library:1.7.7] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\eb1b806bbb4faaef238e6b43ce3c472c\jetified-library-1.7.7\AndroidManifest.xml:11:5-16:19
+MERGED from [com.liulishuo.filedownloader:library:1.7.7] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\eb1b806bbb4faaef238e6b43ce3c472c\jetified-library-1.7.7\AndroidManifest.xml:11:5-16:19
 MERGED from [com.google.android.material:material:1.1.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\03fc2f0f12fb938210f2b6d040cddf10\material-1.1.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.1.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\03fc2f0f12fb938210f2b6d040cddf10\material-1.1.0\AndroidManifest.xml:22:5-20
 MERGED from [com.github.bumptech.glide:glide:4.11.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\dbd966de2db0dcd4142b16c5d37a0360\jetified-glide-4.11.0\AndroidManifest.xml:10:5-20
@@ -574,6 +577,8 @@ MERGED from [pub.devrel:easypermissions:3.0.0] F:\AndroidLocal\Gradle\caches\tra
 MERGED from [pub.devrel:easypermissions:3.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\b7e20a5308cbdfad9f0411c597fc55dd\jetified-easypermissions-3.0.0\AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.barteksc:android-pdf-viewer:3.2.0-beta.1] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\ca9023e6fa1cf6c0e7ddcbc6f92efe34\jetified-android-pdf-viewer-3.2.0-beta.1\AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.barteksc:android-pdf-viewer:3.2.0-beta.1] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\ca9023e6fa1cf6c0e7ddcbc6f92efe34\jetified-android-pdf-viewer-3.2.0-beta.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.liulishuo.filedownloader:library:1.7.7] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\eb1b806bbb4faaef238e6b43ce3c472c\jetified-library-1.7.7\AndroidManifest.xml:6:5-43
+MERGED from [com.liulishuo.filedownloader:library:1.7.7] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\eb1b806bbb4faaef238e6b43ce3c472c\jetified-library-1.7.7\AndroidManifest.xml:6:5-43
 MERGED from [com.google.android.material:material:1.1.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\03fc2f0f12fb938210f2b6d040cddf10\material-1.1.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.1.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\03fc2f0f12fb938210f2b6d040cddf10\material-1.1.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.1.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\ca472a7b3f459083c73ef20315dfd3aa\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
@@ -724,3 +729,17 @@ ADDED from [pub.devrel:easypermissions:3.0.0] F:\AndroidLocal\Gradle\caches\tran
 		ADDED from [pub.devrel:easypermissions:3.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\b7e20a5308cbdfad9f0411c597fc55dd\jetified-easypermissions-3.0.0\AndroidManifest.xml:16:13-63
 	android:name
 		ADDED from [pub.devrel:easypermissions:3.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\b7e20a5308cbdfad9f0411c597fc55dd\jetified-easypermissions-3.0.0\AndroidManifest.xml:13:13-86
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from [com.liulishuo.filedownloader:library:1.7.7] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\eb1b806bbb4faaef238e6b43ce3c472c\jetified-library-1.7.7\AndroidManifest.xml:9:5-77
+	android:name
+		ADDED from [com.liulishuo.filedownloader:library:1.7.7] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\eb1b806bbb4faaef238e6b43ce3c472c\jetified-library-1.7.7\AndroidManifest.xml:9:22-74
+service#com.liulishuo.filedownloader.services.FileDownloadService$SharedMainProcessService
+ADDED from [com.liulishuo.filedownloader:library:1.7.7] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\eb1b806bbb4faaef238e6b43ce3c472c\jetified-library-1.7.7\AndroidManifest.xml:12:9-118
+	android:name
+		ADDED from [com.liulishuo.filedownloader:library:1.7.7] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\eb1b806bbb4faaef238e6b43ce3c472c\jetified-library-1.7.7\AndroidManifest.xml:12:18-115
+service#com.liulishuo.filedownloader.services.FileDownloadService$SeparateProcessService
+ADDED from [com.liulishuo.filedownloader:library:1.7.7] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\eb1b806bbb4faaef238e6b43ce3c472c\jetified-library-1.7.7\AndroidManifest.xml:13:9-15:49
+	android:process
+		ADDED from [com.liulishuo.filedownloader:library:1.7.7] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\eb1b806bbb4faaef238e6b43ce3c472c\jetified-library-1.7.7\AndroidManifest.xml:15:13-46
+	android:name
+		ADDED from [com.liulishuo.filedownloader:library:1.7.7] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\eb1b806bbb4faaef238e6b43ce3c472c\jetified-library-1.7.7\AndroidManifest.xml:14:13-108

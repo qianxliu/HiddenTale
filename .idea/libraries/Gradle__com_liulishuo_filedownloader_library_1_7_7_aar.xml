@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.liulishuo.filedownloader:library:1.7.7@aar">
+    <CLASSES>
+      <root url="jar://F:/AndroidLocal/Gradle/caches/transforms-2/files-2.1/eb1b806bbb4faaef238e6b43ce3c472c/jetified-library-1.7.7/jars/classes.jar!/" />
+      <root url="file://F:/AndroidLocal/Gradle/caches/transforms-2/files-2.1/eb1b806bbb4faaef238e6b43ce3c472c/jetified-library-1.7.7/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://F:/AndroidLocal/Gradle/caches/modules-2/files-2.1/com.liulishuo.filedownloader/library/1.7.7/45033a5addbf5f10cbf1959811db894d6f6775ca/library-1.7.7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

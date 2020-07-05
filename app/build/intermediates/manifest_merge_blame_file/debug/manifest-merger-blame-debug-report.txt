@@ -85,34 +85,36 @@
 37    <uses-permission android:name="android.permission.CALL_PHONE" />
 37-->[:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:5-69
 37-->[:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:22-66
-38    <uses-permission android:name="android.permission.SEND_SMS" />
+38    <uses-permission android:name="android.permission.SEND_SMS" /> <!-- To allow starting foreground services on Android P+ - https://developer.android.com/preview/behavior-changes#fg-svc -->
 38-->[:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:23:5-67
 38-->[:Library] F:\AndroidProject\HiddenTale\Library\build\intermediates\library_manifest\debug\AndroidManifest.xml:23:22-64
-39
-40    <application
-40-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:27:5-223:19
-41        android:name="hidden.edu.application.DemoApplication"
-41-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:28:9-62
-42        android:allowBackup="true"
-42-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:29:9-35
-43        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-43-->[androidx.core:core:1.1.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\ce8960b3005ce442dcd4f0383d5e1d1a\core-1.1.0\AndroidManifest.xml:24:18-86
-44        android:debuggable="true"
-45        android:fullBackupContent="true"
-45-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:30:9-41
-46        android:icon="@drawable/ic_launcher"
-46-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:31:9-45
-47        android:label="@string/app_name"
-47-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:32:9-41
-48        android:largeHeap="true"
-48-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:33:9-33
-49        android:networkSecurityConfig="@xml/network_security_config"
-49-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:34:9-69
-50        android:screenOrientation="fullSensor"
-50-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:35:9-47
-51        android:supportsRtl="true"
-51-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:36:9-35
-52        android:testOnly="true"
+39    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+39-->[com.liulishuo.filedownloader:library:1.7.7] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\eb1b806bbb4faaef238e6b43ce3c472c\jetified-library-1.7.7\AndroidManifest.xml:9:5-77
+39-->[com.liulishuo.filedownloader:library:1.7.7] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\eb1b806bbb4faaef238e6b43ce3c472c\jetified-library-1.7.7\AndroidManifest.xml:9:22-74
+40
+41    <application
+41-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:27:5-223:19
+42        android:name="hidden.edu.application.DemoApplication"
+42-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:28:9-62
+43        android:allowBackup="true"
+43-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:29:9-35
+44        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+44-->[androidx.core:core:1.1.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\ce8960b3005ce442dcd4f0383d5e1d1a\core-1.1.0\AndroidManifest.xml:24:18-86
+45        android:debuggable="true"
+46        android:fullBackupContent="true"
+46-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:30:9-41
+47        android:icon="@drawable/ic_launcher"
+47-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:31:9-45
+48        android:label="@string/app_name"
+48-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:32:9-41
+49        android:largeHeap="true"
+49-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:33:9-33
+50        android:networkSecurityConfig="@xml/network_security_config"
+50-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:34:9-69
+51        android:screenOrientation="fullSensor"
+51-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:35:9-47
+52        android:supportsRtl="true"
+52-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:36:9-35
 53        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
 53-->F:\AndroidProject\HiddenTale\app\src\main\AndroidManifest.xml:37:9-65
 54        android:usesCleartextTraffic="true" >
@@ -456,6 +458,16 @@
 228-->[pub.devrel:easypermissions:3.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\b7e20a5308cbdfad9f0411c597fc55dd\jetified-easypermissions-3.0.0\AndroidManifest.xml:15:13-29
 229            android:theme="@style/EasyPermissions.Transparent" />
 229-->[pub.devrel:easypermissions:3.0.0] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\b7e20a5308cbdfad9f0411c597fc55dd\jetified-easypermissions-3.0.0\AndroidManifest.xml:16:13-63
-230    </application>
-231
-232</manifest>
+230
+231        <service android:name="com.liulishuo.filedownloader.services.FileDownloadService$SharedMainProcessService" />
+231-->[com.liulishuo.filedownloader:library:1.7.7] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\eb1b806bbb4faaef238e6b43ce3c472c\jetified-library-1.7.7\AndroidManifest.xml:12:9-118
+231-->[com.liulishuo.filedownloader:library:1.7.7] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\eb1b806bbb4faaef238e6b43ce3c472c\jetified-library-1.7.7\AndroidManifest.xml:12:18-115
+232        <service
+232-->[com.liulishuo.filedownloader:library:1.7.7] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\eb1b806bbb4faaef238e6b43ce3c472c\jetified-library-1.7.7\AndroidManifest.xml:13:9-15:49
+233            android:name="com.liulishuo.filedownloader.services.FileDownloadService$SeparateProcessService"
+233-->[com.liulishuo.filedownloader:library:1.7.7] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\eb1b806bbb4faaef238e6b43ce3c472c\jetified-library-1.7.7\AndroidManifest.xml:14:13-108
+234            android:process=":filedownloader" />
+234-->[com.liulishuo.filedownloader:library:1.7.7] F:\AndroidLocal\Gradle\caches\transforms-2\files-2.1\eb1b806bbb4faaef238e6b43ce3c472c\jetified-library-1.7.7\AndroidManifest.xml:15:13-46
+235    </application>
+236
+237</manifest>

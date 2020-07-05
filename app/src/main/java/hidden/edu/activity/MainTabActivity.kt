@@ -10,6 +10,7 @@ import android.content.Context
 import android.content.Intent
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
+import android.media.AudioManager
 import android.media.MediaPlayer
 import android.os.Build
 import android.os.Bundle
@@ -18,15 +19,20 @@ import android.view.MenuItem
 import android.view.View
 import androidx.fragment.app.Fragment
 import com.google.android.material.navigation.NavigationView
+import com.liulishuo.filedownloader.BaseDownloadTask
+import com.liulishuo.filedownloader.FileDownloadListener
+import com.liulishuo.filedownloader.FileDownloader
 import hidden.edu.R
 import hidden.edu.fragment.MapFragment
 import hidden.edu.fragment.MyRecyclerFragment
+import hidden.edu.fragment.MyRecyclerFragment.URLS
 import hidden.edu.fragment.SettingFragment
 import pub.devrel.easypermissions.EasyPermissions
 import qian.xin.library.base.BaseBottomTabActivity
 import qian.xin.library.interfaces.OnBottomDragListener
 import qian.xin.library.manager.SystemBarTintManager
 import qian.xin.library.ui.BottomMenuWindow
+import qian.xin.library.util.CommonUtil.isNetWorkConnected
 import qian.xin.library.util.DataKeeper
 import java.io.File
 
@@ -194,19 +200,6 @@ class MainTabActivity : BaseBottomTabActivity(), OnBottomDragListener, View.OnCl
             e.printStackTrace()
         }
 
-        /*
-        Thread(Runnable {
-            if (!mainFile.exists()) {
-                mainFile = DownloadUtil.downLoadFile(context, "/temp/" + "mainFile", "https://git.nwu.edu.cn/2018104171/pdf/raw/master/main.mp3")
-            }
-            mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC)
-            mediaPlayer.setDataSource(mainFile.absolutePath)
-            mediaPlayer.prepare() // might take long! (for buffering, etc)
-            mediaPlayer.isLooping = true // Set looping
-            mediaPlayer.start()
-        })
-*/
-
         //findView(R.id.drawer).setOnItemClickListener(this);
         navigationView!!.setNavigationItemSelectedListener { item: MenuItem ->
             when (item.itemId) {
@@ -226,6 +219,55 @@ class MainTabActivity : BaseBottomTabActivity(), OnBottomDragListener, View.OnCl
                         .putExtra(BottomMenuWindow.INTENT_TITLE, "选择颜色"), REQUEST_TO_BOTTOM_MENU, false)
             }
             false
+        }
+
+        if (!isNetWorkConnected(context)) {
+            showShortToast("未联网！请联网加载音频和Pdf资源……")
+        } else {
+            //Must add!
+            FileDownloader.setup(context)
+
+            for ((index, value) in URLS.withIndex()) {
+                if (!File(DataKeeper.tempPath + "klfskjkf$index").exists()) {
+                    FileDownloader.getImpl().create(value)
+                            .setPath(DataKeeper.tempPath + "klfskjkf$index", false)
+                            .start()
+                }
+            }
+
+
+            if (!mainFile.exists()) {
+                FileDownloader.getImpl().create("https://git.nwu.edu.cn/2018104171/pdf/raw/master/main.mp3")
+                        .setPath(mainFile.absolutePath, false)
+                        .setListener(object : FileDownloadListener() {
+                            override fun pending(task: BaseDownloadTask, soFarBytes: Int, totalBytes: Int) {}
+                            override fun connected(task: BaseDownloadTask, etag: String, isContinue: Boolean, soFarBytes: Int, totalBytes: Int) {}
+                            override fun progress(task: BaseDownloadTask, soFarBytes: Int, totalBytes: Int) {}
+                            override fun blockComplete(task: BaseDownloadTask) {}
+                            override fun retry(task: BaseDownloadTask, ex: Throwable, retryingTimes: Int, soFarBytes: Int) {}
+                            override fun completed(task: BaseDownloadTask) {
+                                //Must add for init
+                                mediaPlayer = MediaPlayer()
+                                mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC)
+                                mediaPlayer.setDataSource(mainFile.absolutePath)
+                                mediaPlayer.isLooping = true // Set looping
+                                mediaPlayer.prepare() // might take long! (for buffering, etc)
+                                mediaPlayer.start()
+                            }
+
+                            override fun paused(task: BaseDownloadTask, soFarBytes: Int, totalBytes: Int) {}
+                            override fun error(task: BaseDownloadTask, e: Throwable) {}
+                            override fun warn(task: BaseDownloadTask) {}
+                        }).start()
+            } else {
+                //Must add for init
+                mediaPlayer = MediaPlayer()
+                mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC)
+                mediaPlayer.setDataSource(mainFile.absolutePath)
+                mediaPlayer.isLooping = true // Set looping
+                mediaPlayer.prepare() // might take long! (for buffering, etc)
+                mediaPlayer.start()
+            }
         }
     }
 
