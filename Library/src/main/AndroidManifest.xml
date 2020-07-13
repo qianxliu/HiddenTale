@@ -35,7 +35,7 @@
             android:theme="@style/Window"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name="qian.xin.library.ui.WebViewActivity"
+            android:name="qian.xin.library.qian.xin.library.ui.WebViewActivity"
             android:launchMode="singleTop"
             android:screenOrientation="fullSensor"
             android:windowSoftInputMode="stateHidden|adjustResize|adjustUnspecified" />

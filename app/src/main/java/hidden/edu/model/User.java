@@ -2,7 +2,7 @@ package hidden.edu.model;
 
 import qian.xin.library.base.BaseModel;
 
-/**
+/*
  * 用户类
  */
 public class User extends BaseModel {
@@ -23,7 +23,7 @@ public class User extends BaseModel {
     private String phone;
     private boolean starred; //星标
 
-    /**
+    /*
      * 默认构造方法，JSON等解析时必须要有
      */
     public User() {
@@ -41,7 +41,7 @@ public class User extends BaseModel {
     }
 
 
-    /**
+    /*
      * 以下getter和setter可以自动生成
      * <br>  eclipse: 右键菜单 > Source > Generate Getters and Setters
      * <br>  android studio: 右键菜单 > Generate > Getter and Setter

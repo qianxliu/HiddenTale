@@ -5,7 +5,7 @@ import java.util.List;
 
 import hidden.edu.model.User;
 
-/**
+/*
  * 仅测试用，图片地址可能会失效
  *
  * @author Lemon
@@ -16,7 +16,7 @@ public class TestUtil {
         return getUserList(0);
     }
 
-    /**
+    /*
      * @param page 页码
      */
     private static List<User> getUserList(int page) {
@@ -158,7 +158,7 @@ public class TestUtil {
             "清代陕西紫阳贡茶信票",
             "珍藏在西安市档案馆中的谍战故事",
     };
-    /**
+    /*
      * 图片地址，仅供测试用
      */
     private static String[] URLS = {

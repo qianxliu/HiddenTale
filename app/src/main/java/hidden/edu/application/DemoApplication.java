@@ -23,7 +23,7 @@ import hidden.edu.model.User;
 import qian.xin.library.base.BaseApplication;
 import qian.xin.library.util.StringUtil;
 
-/**
+/*
  * Application
  *
  * @author Lemon
@@ -45,7 +45,7 @@ public class DemoApplication extends BaseApplication {
     }
 
 
-    /**
+    /*
      * 获取当前用户id
      */
     public static long getCurrentUserId() {
@@ -54,7 +54,7 @@ public class DemoApplication extends BaseApplication {
         return currentUser == null ? 0 : currentUser.getId();
     }
 
-    /**
+    /*
      * 获取当前用户phone
      */
     public String getCurrentUserPhone() {
@@ -92,7 +92,7 @@ public class DemoApplication extends BaseApplication {
         DataManager.getInstance().saveCurrentUser(currentUser);
     }
 
-    /**
+    /*
      * 判断是否为当前用户
      */
     public boolean isCurrentUser(long userId) {

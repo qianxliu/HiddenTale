@@ -5,5 +5,4 @@
     <item android:drawable="@drawable/btn_blue_pressed_shape" android:state_enabled="false"/>
     <item android:drawable="@drawable/btn_blue_normal_shape"/>
     <!-- 默认状态只能放最下方，否则其它状态会无效！ -->
-
 </selector>

@@ -1,17 +1,3 @@
-/*Copyright ©2015 TommyLemon(https://github.com/TommyLemon)
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.*/
-
 package qian.xin.library.base;
 
 import android.view.View;
@@ -76,10 +62,6 @@ public abstract class BaseHttpListActivity<T, LV extends AbsListView, A extends 
 	public void setAdapter(A adapter) {
 		if (adapter instanceof BaseAdapter) {
 			((BaseAdapter) adapter).setOnLoadListener(new OnLoadListener() {
-				@Override
-				public void onRefresh() {
-					srlBaseHttpList.autoRefresh();
-				}
 
 				@Override
 				public void onLoadMore() {
@@ -169,28 +151,20 @@ public abstract class BaseHttpListActivity<T, LV extends AbsListView, A extends 
 
 	@Override
 	public void onStopRefresh() {
-		runUiThread(new Runnable() {
-
-			@Override
-			public void run() {
-				srlBaseHttpList.finishRefresh();
-				srlBaseHttpList.setLoadmoreFinished(false);
-			}
+		runUiThread(() -> {
+			srlBaseHttpList.finishRefresh();
+			srlBaseHttpList.setLoadmoreFinished(false);
 		});
 	}
 	@Override
 	public void onStopLoadMore(final boolean isHaveMore) {
-		runUiThread(new Runnable() {
-
-			@Override
-			public void run() {
-				if (isHaveMore) {
-					srlBaseHttpList.finishLoadmore();
-				} else {
-					srlBaseHttpList.finishLoadmoreWithNoMoreData();
-				}
-				srlBaseHttpList.setLoadmoreFinished(! isHaveMore);
+		runUiThread(() -> {
+			if (isHaveMore) {
+				srlBaseHttpList.finishLoadmore();
+			} else {
+				srlBaseHttpList.finishLoadmoreWithNoMoreData();
 			}
+			srlBaseHttpList.setLoadmoreFinished(! isHaveMore);
 		});
 	}
 
@@ -201,19 +175,15 @@ public abstract class BaseHttpListActivity<T, LV extends AbsListView, A extends 
 	 */
 	@Override
 	public void onHttpResponse(final int requestCode, final String resultJson, final Exception e) {
-		runThread(TAG + "onHttpResponse", new Runnable() {
-
-			@Override
-			public void run() {
-				int page = 0;
-				if (requestCode > 0) {
-					Log.w(TAG, "requestCode > 0, 应该用BaseListFragment#getListAsync(int page)中的page的负数作为requestCode!");
-				} else {
-					page = - requestCode;
-				}
-
-				onResponse(page, parseArray(resultJson), e);
+		runThread(TAG + "onHttpResponse", () -> {
+			int page = 0;
+			if (requestCode > 0) {
+				Log.w(TAG, "requestCode > 0, 应该用BaseListFragment#getListAsync(int page)中的page的负数作为requestCode!");
+			} else {
+				page = - requestCode;
 			}
+
+			onResponse(page, parseArray(resultJson), e);
 		});
 	}
 

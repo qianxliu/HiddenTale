@@ -18,12 +18,23 @@ android {
         debug {
             //压缩优化
             zipAlignEnabled true
-            // shrinkResources
-            //shrinkResources true
-            //混淆
-            minifyEnabled true
+            //minifyEnabled true // 无用代码剔除及代码压缩，并默认混淆
+            //shrinkResource true // 冗余资源剔除，需要和minifyEnabled true配合使用
+            /*
+            等同
+            removeUnusedCode true  //剔除无用代码
+            obfuscate true   //混淆
+            optimizeCode true  //优化代码
+             */
+            /*
+            removeUnusedCode true
+            removeUnusedResources true
+            obfuscate false // <-- 不混淆
+            optimizeCode true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            */
         }
+
     }
     useLibrary 'org.apache.http.legacy'
     productFlavors {

@@ -12,10 +12,10 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.*/
 
-/**
+/*
  * UI显示类所在包
  */
-/**
+/*
  * @author Lemon
  */
 package qian.xin.library.ui;

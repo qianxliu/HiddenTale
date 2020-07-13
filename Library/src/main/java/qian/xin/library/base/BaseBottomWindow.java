@@ -36,7 +36,6 @@ public abstract class BaseBottomWindow extends BaseActivity {
     public static final String INTENT_ITEM_IDS = "INTENT_ITEM_IDS";
 
     public static final String RESULT_TITLE = "RESULT_TITLE";
-    public static final String RESULT_ITEM = "RESULT_ITEM";
     public static final String RESULT_ITEM_ID = "RESULT_ITEM_ID";
 
 
@@ -44,7 +43,7 @@ public abstract class BaseBottomWindow extends BaseActivity {
 
     //protected View vBaseBottomWindowRoot;//子Activity全局背景View
 
-    /**
+    /*
      * 如果在子类中调用(即super.initView());则view必须含有initView中初始化用到的id(非@Nullable标记)且id对应的View的类型全部相同；
      * 否则必须在子类initView中重写这个类中initView内的代码(所有id替换成可用id)
      */
@@ -56,7 +55,7 @@ public abstract class BaseBottomWindow extends BaseActivity {
 		vBaseBottomWindowRoot = findView(R.id.vBaseBottomWindowRoot);
 
 		vBaseBottomWindowRoot.startAnimation(AnimationUtils.loadAnimation(context, R.anim.bottom_window_enter));
-		 **/
+		 */
     }
 
     //UI显示区(操作UI，但不存在数据获取或处理代码，也不存在事件监听代码)>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -69,7 +68,7 @@ public abstract class BaseBottomWindow extends BaseActivity {
 
     }
 
-    /**
+    /*
      * 设置需要返回的结果
      */
     protected abstract void setResult();
@@ -114,7 +113,7 @@ public abstract class BaseBottomWindow extends BaseActivity {
 
     private boolean isExit = false;
 
-    /**
+    /*
      * 带动画退出,并使退出事件只响应一次
      */
     @Override

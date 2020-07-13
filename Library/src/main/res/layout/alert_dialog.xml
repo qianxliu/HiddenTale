@@ -45,10 +45,10 @@
             android:layout_weight="1"
             android:background="@drawable/to_alpha"
             android:padding="@dimen/item_distance"
-            android:text="取消"
+            android:text="@string/exit"
             android:textColor="@color/gray_3"
             android:visibility="visible"
-            tools:ignore="HardcodedText" />
+            />
 
         <View style="@style/divider_vertical_1px" />
 
@@ -59,8 +59,8 @@
             android:layout_weight="1"
             android:background="@drawable/to_alpha"
             android:padding="@dimen/item_distance"
-            android:text="确定"
-            tools:ignore="HardcodedText" />
+            android:text="@string/confirm"
+            />
     </LinearLayout>
 
 </LinearLayout>

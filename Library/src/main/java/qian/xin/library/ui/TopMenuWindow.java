@@ -55,7 +55,7 @@ public class TopMenuWindow extends AppCompatActivity implements OnItemClickListe
      * @return
      */
     public static Intent createIntent(AppCompatActivity context, String[] names) {
-        return createIntent(context, names, new ArrayList<Integer>());
+        return createIntent(context, names, new ArrayList<>());
     }
 
     /*
@@ -131,14 +131,10 @@ public class TopMenuWindow extends AppCompatActivity implements OnItemClickListe
     public static final String INTENT_NAMES = "INTENT_NAMES";
     public static final String INTENT_INTENTCODES = "INTENT_INTENTCODES";
 
-    public static final String RESULT_NAME = "RESULT_NAME";
     public static final String RESULT_POSITION = "RESULT_POSITION";
     public static final String RESULT_INTENT_CODE = "RESULT_INTENT_CODE";
 
-    private ArrayList<String> nameList = null;
     private ArrayList<Integer> intentCodeList = null;
-    private ArrayAdapter<String> adapter;
-    private ListView lvTopMenu;
     private View llTopMenuWindowBg;
 
     private void init() {
@@ -152,17 +148,18 @@ public class TopMenuWindow extends AppCompatActivity implements OnItemClickListe
         if (intentCodes == null || intentCodes.length <= 0) {
             intentCodeList = intent.getIntegerArrayListExtra(INTENT_INTENTCODES);
         } else {
-            intentCodeList = new ArrayList<Integer>();
+            intentCodeList = new ArrayList<>();
             for (int code : intentCodes) {
                 intentCodeList.add(code);
             }
         }
 
         String[] menuItems = intent.getStringArrayExtra(INTENT_NAMES);
+        ArrayList<String> nameList;
         if (menuItems == null || menuItems.length <= 0) {
             nameList = intent.getStringArrayListExtra(INTENT_NAMES);
         } else {
-            nameList = new ArrayList<String>(Arrays.asList(menuItems));
+            nameList = new ArrayList<>(Arrays.asList(menuItems));
         }
 
         if (nameList == null || nameList.size() <= 0) {
@@ -171,9 +168,9 @@ public class TopMenuWindow extends AppCompatActivity implements OnItemClickListe
             return;
         }
 
-        adapter = new ArrayAdapter<String>(this, R.layout.top_menu_list_item, R.id.tvTopMenuListItem, nameList);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, R.layout.top_menu_list_item, R.id.tvTopMenuListItem, nameList);
 
-        lvTopMenu = findViewById(R.id.lvTopMenuWindowMenu);
+        ListView lvTopMenu = findViewById(R.id.lvTopMenuWindowMenu);
         lvTopMenu.setAdapter(adapter);
         lvTopMenu.setOnItemClickListener(this);
     }
@@ -205,7 +202,7 @@ public class TopMenuWindow extends AppCompatActivity implements OnItemClickListe
 
     @Override
     public void finish() {
-        if (isAlive == false) {
+        if (!isAlive) {
             Log.e(TAG, "finish  isAlive == false >> return;");
             return;
         }

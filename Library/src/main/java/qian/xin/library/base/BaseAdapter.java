@@ -22,7 +22,7 @@ import qian.xin.library.interfaces.OnLoadListener;
 import qian.xin.library.util.SettingUtil;
 
 
-/**
+/*
  * 基础Adapter，基于SmartRefreshLayout的BaseRecyclerAdapter修改
  * <br> 适用于几乎所有列表、表格，包括：
  * <br> 1.RecyclerView及其子类
@@ -42,35 +42,28 @@ public abstract class BaseAdapter<T, BV extends BaseView<T>> extends RecyclerVie
 
     private BaseView.OnViewClickListener onViewClickListener;
 
-    public BaseAdapter<T, BV> setOnViewClickListener(BaseView.OnViewClickListener onViewClickListener) {
-        this.onViewClickListener = onViewClickListener;
-        return this;
-    }
-
     private AdapterView.OnItemClickListener onItemClickListener;
 
-    public BaseAdapter<T, BV> setOnItemClickListener(AdapterView.OnItemClickListener onItemClickListener) {
+    public void setOnItemClickListener(AdapterView.OnItemClickListener onItemClickListener) {
         this.onItemClickListener = onItemClickListener;
-        return this;
     }
 
     private AdapterView.OnItemLongClickListener onItemLongClickListener;
 
-    public BaseAdapter<T, BV> setOnItemLongClickListener(AdapterView.OnItemLongClickListener onItemLongClickListener) {
+    public void setOnItemLongClickListener(AdapterView.OnItemLongClickListener onItemLongClickListener) {
         this.onItemLongClickListener = onItemLongClickListener;
-        return this;
     }
 
 
-    /**
+    /*
      * 管理整个界面的Activity实例
      */
     public AppCompatActivity context;
-    /**
+    /*
      * 布局解释器,用来实例化列表的item的界面
      */
     public LayoutInflater inflater;
-    /**
+    /*
      * 资源获取器，用于获取res目录下的文件及文件中的内容等
      */
     public Resources resources;
@@ -96,7 +89,7 @@ public abstract class BaseAdapter<T, BV extends BaseView<T>> extends RecyclerVie
         this.onLoadListener = onLoadListener;
     }
 
-    /**
+    /*
      * 预加载提前数。
      * <br > = 0 - 列表滚到底部(最后一个Item View显示)时加载更多
      * <br > < 0 - 禁用加载更多
@@ -125,7 +118,7 @@ public abstract class BaseAdapter<T, BV extends BaseView<T>> extends RecyclerVie
         }
     }
 
-    /**
+    /*
      * 已选中项的位置，一般可在onItemClick回调中：
      * <br /> adapter.selectedPosition = position;
      * <br /> adapter.notifyListDataSetChanged();
@@ -143,7 +136,7 @@ public abstract class BaseAdapter<T, BV extends BaseView<T>> extends RecyclerVie
     }
 
 
-    /**
+    /*
      * 传进来的数据列表
      */
     protected List<T> list;
@@ -152,7 +145,7 @@ public abstract class BaseAdapter<T, BV extends BaseView<T>> extends RecyclerVie
         return list;
     }
 
-    /**
+    /*
      * 刷新列表
      */
     public synchronized void refresh(List<T> list) {
@@ -215,22 +208,13 @@ public abstract class BaseAdapter<T, BV extends BaseView<T>> extends RecyclerVie
         mDataSetObservable.unregisterObserver(observer);
     }
 
-    /**
+    /*
      * Notifies the attached observers that the underlying data has been changed
      * and any View reflecting the data set should refresh itself.
      */
     public void notifyListDataSetChanged() {
         notifyDataSetChanged(); //仅对 RecyclerView 有效
         mDataSetObservable.notifyChanged();
-    }
-
-    /**
-     * Notifies the attached observers that the underlying data is no longer valid
-     * or available. Once invoked this adapter is no longer valid and should
-     * not report further data set changes.
-     */
-    public void notifyDataSetInvalidated() {
-        mDataSetObservable.notifyInvalidated();
     }
 
     public boolean areAllItemsEnabled() {
@@ -270,7 +254,7 @@ public abstract class BaseAdapter<T, BV extends BaseView<T>> extends RecyclerVie
         return list == null ? 0 : list.size();
     }
 
-    /**
+    /*
      * 获取item数据
      */
     @Override

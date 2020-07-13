@@ -202,8 +202,6 @@ public class CutPictureActivity extends BaseActivity {
 
     //类相关监听<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
-    public static final int REQUEST_CODE_CAMERA = 18;
-    public static final int REQUEST_CODE_LOCAL = 19;
     public static final int REQUEST_CUT_PHOTO = 20;
 
     public static final String RESULT_PICTURE_PATH = "RESULT_PICTURE_PATH";

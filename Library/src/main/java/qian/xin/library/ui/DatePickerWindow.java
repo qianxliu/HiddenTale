@@ -53,7 +53,6 @@ public class DatePickerWindow extends BaseViewBottomWindow<List<Entry<Integer, S
     public static final String INTENT_MAX_DATE = "INTENT_MAX_DATE";
     public static final String INTENT_DEFAULT_DATE = "INTENT_DEFAULT_DATE";
 
-    public static final String RESULT_DATE = "RESULT_DATE";
     public static final String RESULT_TIME_IN_MILLIS = "RESULT_TIME_IN_MILLIS";
     public static final String RESULT_DATE_DETAIL_LIST = "RESULT_DATE_DETAIL_LIST";
 
@@ -129,7 +128,7 @@ public class DatePickerWindow extends BaseViewBottomWindow<List<Entry<Integer, S
     private void setPickerView(final int tabPosition) {
         runThread(TAG + "setPickerView", () -> {
 
-            final ArrayList<Integer> selectedItemList = new ArrayList<Integer>();
+            final ArrayList<Integer> selectedItemList = new ArrayList<>();
             for (GridPickerConfig gpcb : configList) {
                 selectedItemList.add(parseInt(StringUtil.getNumber(gpcb.getSelectedItemName())));
             }

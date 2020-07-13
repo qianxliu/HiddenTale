@@ -37,12 +37,22 @@ android {
         }
         debug {
             //压缩优化
-            zipAlignEnabled true
-            // shrinkResources
-            shrinkResources true
-            //混淆
-            minifyEnabled true
+            //zipAlignEnabled true
+            //minifyEnabled true // 无用代码剔除及代码压缩，并默认混淆
+            //shrinkResource true // 冗余资源剔除，需要和minifyEnabled true配合使用
+            /*
+            等同
+            removeUnusedCode true  //剔除无用代码
+            obfuscate true   //混淆
+            optimizeCode true  //优化代码
+             */
+            /*
+            removeUnusedCode true
+            removeUnusedResources true
+            obfuscate false // <-- 不混淆
+            optimizeCode true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            */
         }
     }
     compileOptions {
@@ -64,12 +74,13 @@ android {
 }
 
 dependencies {
-    api fileTree(include: ['*.jar'], dir: 'libs')
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
     implementation 'pub.devrel:easypermissions:3.0.0'
     implementation 'com.github.barteksc:android-pdf-viewer:3.2.0-beta.1'
     implementation 'com.liulishuo.filedownloader:library:1.7.7'
     testImplementation 'junit:junit:4.13'
-    api "com.king.zxing:zxing-lite:1.1.9-androidx"
+    implementation "com.king.zxing:zxing-lite:1.1.9-androidx"
+
     implementation project(':Library')
 }

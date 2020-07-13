@@ -24,7 +24,7 @@ import android.util.DisplayMetrics;
 public class ScreenUtil {
 	//	private static final String TAG = "SceenUtil";
 
-	private ScreenUtil() {/* 不能实例化**/}
+	private ScreenUtil() {/* 不能实例化*/}
 
 
 	public static int[] screenSize;
@@ -51,9 +51,6 @@ public class ScreenUtil {
 	
 	public static int getScreenWidth(Context context){
 		return getScreenSize(context)[0];
-	}
-	public static int getScreenHeight(Context context){
-		return getScreenSize(context)[1];
 	}
 
 

@@ -42,7 +42,7 @@ public class SettingFragment extends BaseFragment implements OnClickListener, On
 
     //与Activity通信<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
-    /**
+    /*
      * 创建一个Fragment实例
      */
     public static SettingFragment createInstance() {

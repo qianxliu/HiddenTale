@@ -165,21 +165,15 @@ public class EditTextInfoActivity extends BaseActivity implements OnBottomDragLi
     //Data数据区(存在数据获取或处理代码，但不存在事件监听代码)<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
     public static final int TYPE_NICK = EditTextInfoWindow.TYPE_NICK;
-    public static final int TYPE_NAME = EditTextInfoWindow.TYPE_NAME;
 
     public static final int TYPE_PHONE = EditTextInfoWindow.TYPE_PHONE;
     public static final int TYPE_WEBSITE = EditTextInfoWindow.TYPE_WEBSITE;
     public static final int TYPE_EMAIL = EditTextInfoWindow.TYPE_EMAIL;
-    public static final int TYPE_FAX = EditTextInfoWindow.TYPE_FAX;
 
-    public static final int TYPE_USUALADDRESS = EditTextInfoWindow.TYPE_USUALADDRESS;
     public static final int TYPE_MAILADDRESS = EditTextInfoWindow.TYPE_MAILADDRESS;
-    public static final int TYPE_SCHOOL = EditTextInfoWindow.TYPE_SCHOOL;
-    public static final int TYPE_COMPANY = EditTextInfoWindow.TYPE_COMPANY;
 
     public static final int TYPE_PROFESSION = EditTextInfoWindow.TYPE_PROFESSION;
     public static final int TYPE_NOTE = EditTextInfoWindow.TYPE_NOTE;
-    //	public static final int TYPE_OTHER = EditTextInfoWindow.TYPE_OTHER;
 
     public static final String INTENT_TYPE = EditTextInfoWindow.INTENT_TYPE;
     public static final String INTENT_KEY = EditTextInfoWindow.INTENT_KEY;

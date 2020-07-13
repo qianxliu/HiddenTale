@@ -16,7 +16,7 @@ package qian.xin.library.base;
 
 import java.io.Serializable;
 
-/**基础Model，继承它可以省去部分代码，也可以不继承
+/* 基础Model，继承它可以省去部分代码，也可以不继承
  * *isCorrect可以用于BaseModel子类的数据校验
  * *implements Serializable 是为了网络传输字节流转换
  * @author Lemon

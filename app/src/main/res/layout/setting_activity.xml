@@ -13,18 +13,19 @@
         <ImageButton
             style="@style/topbar_return_img"
             tools:ignore="ContentDescription"
+            android:onClick="finish"
             />
 
         <TextView
             style="@style/topbar_title"
             android:layout_centerHorizontal="true"
-            android:text="设置"
-            tools:ignore="HardcodedText" />
+            android:text="@string/setting"
+            />
 
         <Button
             style="@style/topbar_right_btn"
-            android:text="恢复默认"
-            tools:ignore="HardcodedText" />
+            android:text="@string/RESTORE_DEFAULT"
+            />
     </RelativeLayout>
 
     <TextView
@@ -62,8 +63,8 @@
                         style="@style/content_item_lf_tv"
                         android:layout_width="0dp"
                         android:layout_weight="1"
-                        android:text="缓存"
-                        tools:ignore="HardcodedText" />
+                        android:text="@string/cache"
+                        />
 
                     <ImageView
                         android:id="@+id/ivSettingCache"
@@ -84,8 +85,8 @@
                         style="@style/content_item_lf_tv"
                         android:layout_width="0dp"
                         android:layout_weight="1"
-                        android:text="预加载"
-                        tools:ignore="HardcodedText" />
+                        android:text="@string/preload"
+                        />
 
                     <ImageView
                         android:id="@+id/ivSettingPreload"
@@ -107,9 +108,9 @@
                     <TextView
                         style="@style/content_item_lf_tv"
                         android:layout_weight="1"
-                        android:text="声音"
+                        android:text="@string/sound"
                         android:layout_width="0dp"
-                        tools:ignore="HardcodedText" />
+                        />
 
                     <ImageView
                         android:id="@+id/ivSettingVoice"
@@ -130,8 +131,8 @@
                         style="@style/content_item_lf_tv"
                         android:layout_width="0dp"
                         android:layout_weight="1"
-                        android:text="振动"
-                        tools:ignore="HardcodedText" />
+                        android:text="@string/vibration"
+                        />
 
                     <ImageView
                         android:id="@+id/ivSettingVibrate"
@@ -152,8 +153,8 @@
                         style="@style/content_item_lf_tv"
                         android:layout_width="0dp"
                         android:layout_weight="1"
-                        android:text="夜间免打扰(22:00-6:00)"
-                        tools:ignore="HardcodedText" />
+                        android:text="@string/_22_00_6_00"
+                        />
 
                     <ImageView
                         android:id="@+id/ivSettingNoDisturb"
@@ -177,8 +178,8 @@
                         style="@style/content_item_lf_tv"
                         android:layout_width="0dp"
                         android:layout_weight="1"
-                        android:text="测试模式"
-                        tools:ignore="HardcodedText" />
+                        android:text="@string/TEST_MODE"
+                        />
 
                     <ImageView
                         android:id="@+id/ivSettingTestMode"
@@ -199,8 +200,8 @@
                         style="@style/content_item_lf_tv"
                         android:layout_width="0dp"
                         android:layout_weight="1"
-                        android:text="第一次启动应用"
-                        tools:ignore="HardcodedText" />
+                        android:text="@string/FIRST_LAUNCHER"
+                        />
 
                     <ImageView
                         android:id="@+id/ivSettingFirstStart"
@@ -221,8 +222,8 @@
                         style="@style/content_item_lf_tv"
                         android:layout_width="0dp"
                         android:layout_weight="1"
-                        android:text="显示启动“长安宝藏”界面"
-                        tools:ignore="HardcodedText" />
+                        android:text="@string/DISPLAY_SPLASH"
+                        />
 
                     <ImageView
                         android:id="@+id/ivSettingDirect"

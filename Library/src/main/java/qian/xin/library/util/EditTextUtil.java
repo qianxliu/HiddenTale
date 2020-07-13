@@ -1,17 +1,3 @@
-/*Copyright ©2015 TommyLemon(https://github.com/TommyLemon)
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.*/
-
 package qian.xin.library.util;
 
 import android.content.Context;
@@ -74,17 +60,6 @@ public class EditTextUtil {
     }
 
     /*
-     * 显示输入法
-     *
-     * @param context
-     * @param et
-     * @param toGetWindowTokenView(为null时toGetWindowTokenView = et) 包含et的父View，键盘根据toGetWindowTokenView的位置来弹出/隐藏
-     */
-    public static void showKeyboard(AppCompatActivity context, EditText et, View toGetWindowTokenView) {
-        showKeyboard(context, et, toGetWindowTokenView, true);
-    }
-
-    /*
      * 显示/隐藏输入法
      *
      * @param context
@@ -137,43 +112,6 @@ public class EditTextUtil {
     public final static int TYPE_PHONE = 3;
     public final static int TYPE_MAIL = 4;
 
-    private static ColorStateList oringinalHintColor;
-
-    /*
-     * 判断edittext输入文字是否合法
-     *
-     * @param context
-     * @param et
-     * @return
-     */
-    public static boolean isInputedCorrect(AppCompatActivity context, EditText et) {
-        return isInputedCorrect(context, et, TYPE_NOT_ALLOWED_EMPTY, null);
-    }
-
-    /*
-     * 判断edittext输入文字是否合法
-     *
-     * @param context
-     * @param et
-     * @param errorRemind
-     * @return
-     */
-    public static boolean isInputedCorrect(AppCompatActivity context, EditText et, String errorRemind) {
-        return isInputedCorrect(context, et, TYPE_NOT_ALLOWED_EMPTY, errorRemind);
-    }
-
-    /*
-     * 判断edittext输入文字是否合法
-     *
-     * @param context
-     * @param et
-     * @param type
-     * @return
-     */
-    public static boolean isInputedCorrect(AppCompatActivity context, EditText et, int type) {
-        return isInputedCorrect(context, et, type, null);
-    }
-
     /*
      * 判断edittext输入文字是否合法
      *
@@ -219,7 +157,7 @@ public class EditTextUtil {
             Log.e(TAG, "isInputedCorrect context == null || et == null >> return false;");
             return false;
         }
-        oringinalHintColor = et.getHintTextColors();
+        ColorStateList oringinalHintColor = et.getHintTextColors();
 
         String inputed = getTrimedString(et);
         switch (type) {

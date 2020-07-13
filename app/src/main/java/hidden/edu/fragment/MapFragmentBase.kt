@@ -30,7 +30,7 @@ abstract class MapFragmentBase : Fragment(), LocationSource, AMapLocationListene
     var aMap: AMap? = null
     private var mPoiSearch: PoiSearch? = null
 
-    /**
+    /*
      * 定位监听
      */
     private var mListener: OnLocationChangedListener? = null
@@ -109,7 +109,7 @@ abstract class MapFragmentBase : Fragment(), LocationSource, AMapLocationListene
         }
     }
 
-    /**
+    /*
      * 方法必须重写
      */
     override fun onResume() {
@@ -117,7 +117,7 @@ abstract class MapFragmentBase : Fragment(), LocationSource, AMapLocationListene
         mapView!!.onResume()
     }
 
-    /**
+    /*
      * 方法必须重写
      */
     override fun onPause() {
@@ -126,7 +126,7 @@ abstract class MapFragmentBase : Fragment(), LocationSource, AMapLocationListene
         //deactivate();
     }
 
-    /**
+    /*
      * 方法必须重写
      */
     override fun onSaveInstanceState(outState: Bundle) {
@@ -139,10 +139,8 @@ abstract class MapFragmentBase : Fragment(), LocationSource, AMapLocationListene
     }
 
     override fun onLocationChanged(amapLocation: AMapLocation) {
-//		TrickerUtils.showToast(getActivity(), amapLocation.getAddress());
         if (mListener != null) {
             try {
-//				mLocationErrText.setVisibility(View.GONE);
                 mListener!!.onLocationChanged(amapLocation) // 显示系统小蓝点
             } catch (e: Exception) {
                 e.printStackTrace()
@@ -208,7 +206,7 @@ abstract class MapFragmentBase : Fragment(), LocationSource, AMapLocationListene
         mlocationClient = null
     }
 
-    /**
+    /*
      * 方法必须重写
      */
     override fun onDestroy() {

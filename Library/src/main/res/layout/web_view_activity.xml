@@ -4,11 +4,12 @@
     android:id="@+id/llWebView"
     style="@style/activity_page" >
 
-    <RelativeLayout style="@style/topbar_bg" >
+    <RelativeLayout style="@style/topbar_bg"
+        android:id="@+id/web_layout">
 
         <ImageButton
-            android:id="@+id/imageView1"
             style="@style/topbar_return_img"
+            android:onClick="finish"
             tools:ignore="ContentDescription" />
 
         <TextView

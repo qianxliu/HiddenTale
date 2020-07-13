@@ -19,7 +19,7 @@ import com.alibaba.fastjson.JSONObject;
 
 import java.util.List;
 
-/**
+/*
  * 阿里FastJSON封装类 防止解析时异常
  *
  * @author Lemon
@@ -27,7 +27,7 @@ import java.util.List;
 public class JSON {
     private static final String TAG = "JSON";
 
-    /**
+    /*
      * 判断json格式是否正确
      *
      * @param s
@@ -39,7 +39,7 @@ public class JSON {
 				&& !s.equals("{}") && !s.equals("") && !s.equals("[null]") && !s.equals("{null}") && !s.equals("null");
 	}
 
-    /**
+    /*
      * 获取有效的json
      *
      * @return
@@ -48,14 +48,14 @@ public class JSON {
         return isJsonCorrect(json) ? json : "";
     }
 
-    /**
+    /*
      * @return
      */
     public static JSONObject parseObject(Object obj) {
         return parseObject(toJSONString(obj));
     }
 
-    /**
+    /*
      * json转JSONObject
      *
      * @param json
@@ -70,7 +70,7 @@ public class JSON {
         return null;
     }
 
-    /**
+    /*
      * JSONObject转实体类
      *
      * @param object
@@ -81,7 +81,7 @@ public class JSON {
         return parseObject(toJSONString(object), clazz);
     }
 
-    /**
+    /*
      * json转实体类
      *
      * @param json
@@ -97,7 +97,7 @@ public class JSON {
         return null;
     }
 
-    /**
+    /*
      * @param obj
      * @return
      */
@@ -113,7 +113,7 @@ public class JSON {
         return null;
     }
 
-    /**
+    /*
      * @param json
      * @return
      */
@@ -126,7 +126,7 @@ public class JSON {
         return null;
     }
 
-    /**
+    /*
      * @param json
      * @param clazz
      * @return
@@ -138,65 +138,6 @@ public class JSON {
             Log.e(TAG, "parseArray  catch \n" + e.getMessage());
         }
         return null;
-    }
-
-    /**
-     * 格式化，显示更好看
-     *
-     * @param object
-     * @return
-     */
-    public static String format(Object object) {
-        try {
-            return com.alibaba.fastjson.JSON.toJSONString(object, true);
-        } catch (Exception e) {
-            Log.e(TAG, "format  catch \n" + e.getMessage());
-        }
-        return null;
-    }
-
-    /**
-     * 判断是否为JSONObject
-     *
-     * @param obj instanceof String ? parseObject
-     * @return
-     */
-    public static boolean isJSONObject(Object obj) {
-        if (obj instanceof JSONObject) {
-            return true;
-        }
-        if (obj instanceof String) {
-            try {
-                JSONObject json = parseObject((String) obj);
-                return json != null && json.isEmpty() == false;
-            } catch (Exception e) {
-                Log.e(TAG, "isJSONObject  catch \n" + e.getMessage());
-            }
-        }
-
-        return false;
-    }
-
-    /**
-     * 判断是否为JSONArray
-     *
-     * @param obj instanceof String ? parseArray
-     * @return
-     */
-    public static boolean isJSONArray(Object obj) {
-        if (obj instanceof JSONArray) {
-            return true;
-        }
-        if (obj instanceof String) {
-            try {
-                JSONArray json = parseArray((String) obj);
-                return json != null && json.isEmpty() == false;
-            } catch (Exception e) {
-                Log.e(TAG, "isJSONArray  catch \n" + e.getMessage());
-            }
-        }
-
-        return false;
     }
 
 }

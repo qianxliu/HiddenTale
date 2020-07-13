@@ -8,7 +8,7 @@ import hidden.edu.activity.MainTabActivity.Companion.createIntent
 import qian.xin.library.util.DataKeeper.init
 import qian.xin.library.util.SettingUtil
 
-/**
+/*
  * 闪屏activity，保证点击桌面应用图标后无延时响应
  */
 class SplashActivity : AppCompatActivity() {

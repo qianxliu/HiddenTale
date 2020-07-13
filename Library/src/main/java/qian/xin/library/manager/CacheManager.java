@@ -80,15 +80,6 @@ public class CacheManager {
         return isNotEmpty(classPath, true) ? classPath + KEY_LIST : null;
     }
 
-    /*
-     * @param clazz
-     * @return
-     */
-    public <T> String getGroupPath(Class<T> clazz) {
-        String classPath = getClassPath(clazz);
-        return !isNotEmpty(classPath, true) ? null : classPath + KEY_GROUP;
-    }
-
     private SharedPreferences getSharedPreferences(String path) {
         return !isNotEmpty(path, true)
                 ? null : context.getSharedPreferences(StringUtil.getTrimedString(path), Context.MODE_PRIVATE);
@@ -111,28 +102,11 @@ public class CacheManager {
 
     /*获取列表
      * @param clazz
-     * @return
-     */
-    public <T> List<T> getAllList(Class<T> clazz) {
-        return getList(clazz, -1, 0);
-    }
-
-    /*获取列表
-     * @param clazz
      * @param start
      * @return
      */
     public <T> List<T> getList(Class<T> clazz, int start, int pageSize) {
         return getList(clazz, null, start, pageSize);
-    }
-
-    /*获取列表
-     * @param clazz
-     * @param group
-     * @return
-     */
-    public <T> List<T> getAllList(Class<T> clazz, String group) {
-        return isNotEmpty(group, true) ? getList(clazz, group, -1, 0) : null;
     }
 
     /*获取列表
@@ -220,37 +194,6 @@ public class CacheManager {
 
     /*保存列表
      * @param clazz 类
-     * @param map 数据表
-     */
-    public <T> void addList(Class<T> clazz, LinkedHashMap<String, T> map) {
-        saveList(clazz, null, map, 0, 0);
-    }
-
-    /*添加列表
-     * @param clazz 类
-     * @param group 分组
-     * @param map 数据表
-     */
-    public <T> void addList(Class<T> clazz, String group, LinkedHashMap<String, T> map) {
-        addList(clazz, group, map, -1);
-    }
-
-    /*添加列表
-     * @param clazz 类
-     * @param group 分组
-     * @param map 数据表
-     * @param pageSize 每页大小
-     */
-    public <T> void addList(Class<T> clazz, String group, LinkedHashMap<String, T> map, int pageSize) {
-        if (isNotEmpty(group, true)) {
-            saveList(clazz, group, map, -1, pageSize);
-        } else {
-            Log.e(TAG, "addList  StringUtil.isNotEmpty(group, true) == false >> return;");
-        }
-    }
-
-    /*保存列表
-     * @param clazz 类
      * @param group 分组
      * @param map 数据表
      * @param start 存储起始位置,[start, start + map.size()]中原有的将被替换. start = start < 0 ? idList.size() : start;
@@ -270,7 +213,7 @@ public class CacheManager {
 
             Log.i(TAG, "saveList  group = " + group + "; map.size() = " + map.size()
                     + "; start = " + start + "; pageSize = " + pageSize);
-            List<String> newIdList = new ArrayList<String>(map.keySet());//用String而不是Long，因为订单Order的id超出Long的最大值
+            List<String> newIdList = new ArrayList<>(map.keySet());//用String而不是Long，因为订单Order的id超出Long的最大值
 
             Log.i(TAG, "saveList newIdList.size() = " + newIdList.size() + "; start save <<<<<<<<<<<<<<<<<\n ");
 
@@ -330,99 +273,6 @@ public class CacheManager {
         Log.i(TAG, "saveList cache.getSize() = " + cache.getSize() + "; end save \n>>>>>>>>>>>>>>>>>> \n\n");
         //		}
 
-    }
-
-    /*保存
-     * 未完成
-     * @param clazz
-     * @param data 数据
-     * @param id
-     */
-    public <T> void save(Class<T> clazz, T data, String id) {
-        save(clazz, data, id, null);
-    }
-
-    /*ROOT
-     * 保存
-     * @param clazz
-     * @param data 数据
-     * @param id
-     * @param group 分组
-     */
-    @SuppressLint("ApplySharedPref")
-    public <T> void save(Class<T> clazz, T data, String id, String group) {
-        if (!isNotEmpty(id, true)) {
-            Log.e(id, "save  data == null || StringUtil.isNotEmpty(id, true) == false  >>  return;");
-            return;
-        } else if (data == null) {
-            Log.e(id, "save  data == null || StringUtil.isNotEmpty(id, true) == false  >>  return;");
-            return;
-        }
-
-        new Cache<>(clazz, context, getListPath(clazz)).save(id, data);
-
-        SharedPreferences sp = getSharedPreferences(getGroupPath(clazz));
-        if (sp != null) {
-            group = StringUtil.getTrimedString(group);
-
-            Log.i(TAG, "save sp != null >> save to group");
-            List<String> idList = getIdList(clazz, group);
-            if (idList == null) {
-                idList = new ArrayList<>();
-            }
-            if (!idList.contains(id)) {
-                Log.i(TAG, "save idList.contains(id) == false >> add");
-                idList.add(0, id);
-                sp.edit().remove(group).putString(group, toJSONString(idList)).apply();
-            }
-        }
-    }
-
-    /*清空类
-     * @param <T>
-     * @param clazz
-     */
-    public <T> void clear(Class<T> clazz) {
-        clear(getSharedPreferences(getListPath(clazz)));
-    }
-
-    /*清空群组
-     * @param <T>
-     * @param clazz
-     * @param group
-     */
-    public <T> void clear(Class<T> clazz, String group) {
-        clear(clazz, group, false);
-    }
-
-    /*清空群组
-     * @param clazz
-     * @param group
-     * @param removeAllInGroup 删除群组内所有id对应数据
-     * @param <T>
-     */
-    public <T> void clear(Class<T> clazz, String group, boolean removeAllInGroup) {
-        Log.i(TAG, "clear  group = " + group + "; removeAllInGroup = " + removeAllInGroup);
-        List<String> list = removeAllInGroup ? getIdList(clazz, group) : null;
-        if (list != null) {
-            Cache<T> cache = new Cache<T>(clazz, context, getListPath(clazz));
-            for (String id : list) {
-                cache.remove(id);
-            }
-        }
-        clear(getSharedPreferences(getGroupPath(clazz)));
-    }
-
-    /*清空
-     * @param sp
-     */
-    @SuppressLint("ApplySharedPref")
-    public void clear(SharedPreferences sp) {
-        if (sp == null) {
-            Log.e(TAG, "clearList  sp == null >> return;");
-            return;
-        }
-        sp.edit().clear().apply();
     }
 
     public <T> void remove(Class<T> clazz, String id) {

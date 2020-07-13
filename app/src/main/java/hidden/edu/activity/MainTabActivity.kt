@@ -10,18 +10,16 @@ import android.content.Context
 import android.content.Intent
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
-import android.media.AudioManager
+import android.media.AudioAttributes
 import android.media.MediaPlayer
 import android.os.Build
 import android.os.Bundle
 import android.view.KeyEvent
 import android.view.MenuItem
 import android.view.View
-import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import com.google.android.material.navigation.NavigationView
 import com.liulishuo.filedownloader.BaseDownloadTask
 import com.liulishuo.filedownloader.FileDownloadListener
 import com.liulishuo.filedownloader.FileDownloader
@@ -29,9 +27,11 @@ import hidden.edu.R
 import hidden.edu.fragment.MapFragment
 import hidden.edu.fragment.MyRecyclerFragment
 import hidden.edu.fragment.SettingFragment
+import kotlinx.android.synthetic.main.main_tab_activity.*
 import pub.devrel.easypermissions.EasyPermissions
 import qian.xin.library.base.BaseBottomTabActivity
 import qian.xin.library.interfaces.OnBottomDragListener
+import qian.xin.library.interfaces.Presenter.Companion.INTENT_TITLE
 import qian.xin.library.manager.SystemBarTintManager
 import qian.xin.library.ui.BottomMenuWindow
 import qian.xin.library.util.CommonUtil
@@ -41,32 +41,11 @@ import kotlin.system.exitProcess
 
 /*
  * 应用主页
- *
- * @author Lemon
  * @use MainTabActivity.createIntent(...)
  */
 class MainTabActivity : BaseBottomTabActivity(), OnBottomDragListener, View.OnClickListener, EasyPermissions.PermissionCallbacks {
     private var currentPos = 0
 
-    /*
-    private View settingSetting;
-    private View settingAbout;
-    private View settingLogout;
-     */
-    //private View bottomWindowLayout;
-    /*
-    private View llAboutZBLibraryMainActivity;
-    private View llAboutShare;
-    private View llAboutComment;
-    private View llAboutDeveloper;
-    private View llAboutWeibo;
-    private View llAboutContactUs;
-    */
-    private var navigationView: NavigationView? = null
-
-    private var imageView: ImageView? = null
-
-    //private var navigationHeader : LinearLayout? = null
     private var channelID = "3"
     private var channelName = "channel_name"
     private val mSmallIconId = R.drawable.ic_launcher
@@ -120,7 +99,7 @@ class MainTabActivity : BaseBottomTabActivity(), OnBottomDragListener, View.OnCl
                     Manifest.permission.INTERNET,
                     Manifest.permission.CHANGE_WIFI_STATE,
                     Manifest.permission.ACCESS_WIFI_STATE
-                    )
+            )
         } else {
             arrayOf(
                     Manifest.permission.ACCESS_LOCATION_EXTRA_COMMANDS,
@@ -133,7 +112,7 @@ class MainTabActivity : BaseBottomTabActivity(), OnBottomDragListener, View.OnCl
                     Manifest.permission.INTERNET,
                     Manifest.permission.CHANGE_WIFI_STATE,
                     Manifest.permission.ACCESS_WIFI_STATE
-                    )
+            )
         }
         if (!EasyPermissions.hasPermissions(this, *perms)) {
             // Do not have permissions, request them now
@@ -157,12 +136,12 @@ class MainTabActivity : BaseBottomTabActivity(), OnBottomDragListener, View.OnCl
     //private MapFragment mapFragment = new MapFragment();
     private val mapFragment = MapFragment()
 
+
+    //var web : RelativeLayout = findView(R.id.web_layout)
     @SuppressLint("ResourceType")
     override fun initView() { // 必须调用
         super.initView()
         exitAnim = R.anim.bottom_push_out
-        navigationView = findViewById(R.id.nav_view)
-        imageView = findViewById(R.id.splash)
         //navigationHeader = findViewById(R.id.nav_header)
     }
 
@@ -175,8 +154,8 @@ class MainTabActivity : BaseBottomTabActivity(), OnBottomDragListener, View.OnCl
         }
 
 
-        navigationView?.setBackgroundResource(TOPBAR_COLOR_RESIDS[position])
-        imageView?.setBackgroundResource(TOPBAR_COLOR_RESIDS[position])
+        nav_view.setBackgroundResource(TOPBAR_COLOR_RESIDS[position])
+        //weblayout.setBackgroundResource(TOPBAR_COLOR_RESIDS[position])
         //navigationHeader?.setBackgroundResource(TOPBAR_COLOR_RESIDS[position]);
         /*
         settingAbout.setBackgroundResource(TOPBAR_COLOR_RESIDS[position]);
@@ -194,7 +173,7 @@ class MainTabActivity : BaseBottomTabActivity(), OnBottomDragListener, View.OnCl
         llAboutWeibo.setBackgroundResource(TOPBAR_COLOR_RESIDS[position]);
         */
         val tintManager = SystemBarTintManager(this)
-        tintManager.isStatusBarTintEnabled = true
+
         tintManager.setStatusBarTintResource(TOPBAR_COLOR_RESIDS[position]) //状态背景色，可传drawable资源
     }
 
@@ -229,7 +208,7 @@ class MainTabActivity : BaseBottomTabActivity(), OnBottomDragListener, View.OnCl
         }
 
         //findView(R.id.drawer).setOnItemClickListener(this);
-        navigationView!!.setNavigationItemSelectedListener { item: MenuItem ->
+        nav_view.setNavigationItemSelectedListener { item: MenuItem ->
             when (item.itemId) {
                 R.id.nav_explorer -> {
                     currentPos = 0
@@ -244,7 +223,7 @@ class MainTabActivity : BaseBottomTabActivity(), OnBottomDragListener, View.OnCl
                     selectFragment(currentPos)
                 }
                 R.id.nav_skin -> toActivity(BottomMenuWindow.createIntent(context, TOPBAR_COLOR_NAMES)
-                        .putExtra(BottomMenuWindow.INTENT_TITLE, "选择颜色（启动背景也会更改哦(*^_^*)）"), REQUEST_TO_BOTTOM_MENU, false)
+                        .putExtra(INTENT_TITLE, "选择颜色"), REQUEST_TO_BOTTOM_MENU, false)
             }
             false
         }
@@ -266,7 +245,11 @@ class MainTabActivity : BaseBottomTabActivity(), OnBottomDragListener, View.OnCl
                 //Must add for init
                 try {
                     mediaPlayer = MediaPlayer()
-                    mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC)
+                    mediaPlayer.setAudioAttributes(
+                            AudioAttributes.Builder()
+                                    .setContentType(AudioAttributes.CONTENT_TYPE_MUSIC)
+                                    .build())
+
 
                     mediaPlayer.setDataSource(mainFile.absolutePath)
                     mediaPlayer.isLooping = true // Set looping
@@ -287,7 +270,10 @@ class MainTabActivity : BaseBottomTabActivity(), OnBottomDragListener, View.OnCl
                             override fun completed(task: BaseDownloadTask) {
                                 //Must add for init
                                 mediaPlayer = MediaPlayer()
-                                mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC)
+                                mediaPlayer.setAudioAttributes(
+                                        AudioAttributes.Builder()
+                                                .setContentType(AudioAttributes.CONTENT_TYPE_MUSIC)
+                                                .build())
                                 mediaPlayer.setDataSource(mainFile.absolutePath)
                                 mediaPlayer.isLooping = true // Set looping
                                 mediaPlayer.prepare() // might take long! (for buffering, etc)
@@ -303,32 +289,6 @@ class MainTabActivity : BaseBottomTabActivity(), OnBottomDragListener, View.OnCl
 
     }
 
-    // This snippet hides the system bars.
-    /*
-    private void hideSystemUI() {
-        // Set the IMMERSIVE flag.
-        // Set the content to appear under the system bars so that the content
-        // doesn't resize when the system bars hide and show.
-        decorView = this.getWindow().getDecorView();
-        decorView.setSystemUiVisibility(
-                View.SYSTEM_UI_FLAG_LAYOUT_STABLE
-                        | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
-                        | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
-                        | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION // hide nav bar
-                        | View.SYSTEM_UI_FLAG_FULLSCREEN // hide status bar
-                        | View.SYSTEM_UI_FLAG_IMMERSIVE);
-    }
-
-    // This snippet shows the system bars. It does this by removing all the flags
-// except for the ones that make the content appear under the system bars.
-
-    private void showSystemUI() {
-        this.getWindow().getDecorView().setSystemUiVisibility(
-                View.SYSTEM_UI_FLAG_LAYOUT_STABLE
-                        | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
-                        | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
-    }
-*/
     override fun onDragBottom(rightToLeft: Boolean) {
         if (rightToLeft) {
             when (currentPos) {
@@ -360,12 +320,6 @@ class MainTabActivity : BaseBottomTabActivity(), OnBottomDragListener, View.OnCl
     }
 
     override fun onClick(v: View) { //直接调用不会显示v被点击效果
-        /*
-        if (v.getId() == R.id.btn_location) {
-            toActivity(NaviActivity.createIntent(context), true);
-        }
-
-         */
     }
 
     public override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
@@ -383,7 +337,7 @@ class MainTabActivity : BaseBottomTabActivity(), OnBottomDragListener, View.OnCl
         }
     }
 
-    fun notification() {
+    private fun notification() {
         try {
             mapFragment.caculate()
         } catch (e: Exception) {

@@ -20,7 +20,6 @@ import android.os.AsyncTask;
 
 import org.jetbrains.annotations.NotNull;
 
-import java.security.KeyManagementException;
 import java.security.KeyStore;
 import java.security.KeyStoreException;
 import java.security.NoSuchAlgorithmException;
@@ -120,7 +119,7 @@ public class HttpManager {
                 OkHttpClient client = null;
                 try {
                     client = getHttpClient(url);
-                } catch (KeyStoreException | NoSuchAlgorithmException | KeyManagementException e) {
+                } catch (KeyStoreException | NoSuchAlgorithmException e) {
                     e.printStackTrace();
                 }
                 if (client == null) {
@@ -310,7 +309,7 @@ public class HttpManager {
      * @param url
      * @return
      */
-    private OkHttpClient getHttpClient(String url) throws KeyStoreException, NoSuchAlgorithmException, KeyManagementException {
+    private OkHttpClient getHttpClient(String url) throws KeyStoreException, NoSuchAlgorithmException {
         Log.i(TAG, "getHttpClient  url = " + url);
         if (StringUtil.isEmpty(url)) {
             Log.e(TAG, "getHttpClient  StringUtil.isEmpty(url) >> return null;");

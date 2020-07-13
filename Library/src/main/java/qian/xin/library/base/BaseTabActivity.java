@@ -15,14 +15,12 @@ limitations under the License.*/
 package qian.xin.library.base;
 
 import android.annotation.SuppressLint;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
@@ -177,22 +175,6 @@ public abstract class BaseTabActivity extends BaseActivity implements ViewPresen
      * 当前显示的tab所在位置，对应fragment所在位置
      */
     protected int currentPosition = 0;
-
-    /*
-     * 选择下一个tab和fragment
-     */
-    public void selectNext() {
-        select((getCurrentPosition() + 1) % getCount());
-    }
-
-    /*
-     * 选择tab和fragment
-     *
-     * @param position
-     */
-    public void select(int position) {
-        topTabView.select(position);
-    }
 
     /*
      * 选择并显示fragment
@@ -379,31 +361,6 @@ public abstract class BaseTabActivity extends BaseActivity implements ViewPresen
      * 新建右上方导航栏按钮
      *
      * @param context
-     * @param drawable
-     * @return
-     */
-    public ImageView newTopRightImageView(AppCompatActivity context, int drawable) {
-        return newTopRightImageView(context, getResources().getDrawable(drawable, getTheme()));
-    }
-
-    /*
-     * 新建右上方导航栏按钮
-     *
-     * @param context
-     * @param drawable
-     * @return
-     */
-    @SuppressLint({"NewApi", "InflateParams"})
-    public ImageView newTopRightImageView(AppCompatActivity context, Drawable drawable) {
-        ImageView topRightButton = (ImageView) LayoutInflater.from(context).inflate(R.layout.top_right_iv, null);
-        topRightButton.setImageDrawable(drawable);
-        return topRightButton;
-    }
-
-    /*
-     * 新建右上方导航栏按钮
-     *
-     * @param context
      * @param name
      * @return
      */
@@ -440,23 +397,6 @@ public abstract class BaseTabActivity extends BaseActivity implements ViewPresen
      */
     public int getCount() {
         return topTabView == null ? 0 : topTabView.getCount();
-    }
-
-    /*
-     * 获取当前Tab(或Fragment)的位置
-     *
-     * @return
-     */
-    public int getCurrentPosition() {
-        return currentPosition;
-    }
-
-    public TextView getCurrentTab() {
-        return topTabView == null ? null : topTabView.getCurrentTab();
-    }
-
-    public Fragment getCurrentFragment() {
-        return fragments[currentPosition];
     }
 
 

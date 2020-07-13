@@ -19,7 +19,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
-import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -51,7 +50,6 @@ public class TimePickerWindow extends BaseViewBottomWindow<List<Entry<Integer, S
     public static final String INTENT_MAX_TIME = "INTENT_MAX_TIME";
     public static final String INTENT_DEFAULT_TIME = "INTENT_DEFAULT_TIME";
 
-    public static final String RESULT_TIME = "RESULT_TIME";
     public static final String RESULT_TIME_IN_MILLIS = "RESULT_TIME_IN_MILLIS";
     public static final String RESULT_TIME_DETAIL_LIST = "RESULT_TIME_DETAIL_LIST";
 
@@ -131,7 +129,7 @@ public class TimePickerWindow extends BaseViewBottomWindow<List<Entry<Integer, S
     private void setPickerView(final int tabPosition) {
         runThread(TAG + "setPickerView", () -> {
 
-            final ArrayList<Integer> selectedItemList = new ArrayList<Integer>();
+            final ArrayList<Integer> selectedItemList = new ArrayList<>();
             for (GridPickerConfig gpcb : configList) {
                 selectedItemList.add(Integer.parseInt(StringUtil.getNumber(gpcb.getSelectedItemName())));
             }

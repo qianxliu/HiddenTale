@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:theme="@style/activity_page0"
+    android:theme="@style/activity_page"
     tools:openDrawer="start">
 
 
@@ -28,6 +28,4 @@
             app:headerLayout="@layout/nav_header_main"
             app:menu="@menu/activity_main_drawer" />
     </androidx.drawerlayout.widget.DrawerLayout>
-
-    <!--<View style="@style/divider_horizontal_1px_gray" />-->
 </RelativeLayout>

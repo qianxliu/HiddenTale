@@ -18,7 +18,6 @@ import qian.xin.library.base.BaseModel;
 
 /*自定义Entry
  * *java.util.Map.Entry是interface，new Entry(...)不好用，其它的Entry也不好用
- * @author Lemon
  * @param <K> key
  * @param <V> value
  * @use new Entry<K, V>(...)
@@ -31,13 +30,7 @@ public class Entry<K, V> extends BaseModel {
 	
 	public K key;
 	public V value;
-	
-	public Entry() {
-		//default
-	}
-	public Entry(K key) {
-		this(key, null);
-	}
+
 	public Entry(K key, V value) {
 		this.key = key;
 		this.value = value;

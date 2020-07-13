@@ -38,8 +38,8 @@
                 <TextView
                     style="@style/content_item_lf_tv"
                     android:layout_weight="1"
-                    android:text="个人设置"
-                    tools:ignore="HardcodedText" />
+                    android:text="@string/PERSONAL_SETTINGS"
+                    />
 
                 <ImageView style="@style/content_item_rt_img"
                     tools:ignore="ContentDescription" />
@@ -55,8 +55,8 @@
                 <TextView
                     style="@style/content_item_lf_tv"
                     android:layout_weight="1"
-                    android:text="关于应用"
-                    tools:ignore="HardcodedText" />
+                    android:text="@string/ABOUT_APP"
+                    />
 
                 <ImageView style="@style/content_item_rt_img"
                     tools:ignore="ContentDescription" />
@@ -72,8 +72,8 @@
                 <TextView
                     style="@style/content_item_lf_tv"
                     android:layout_weight="1"
-                    android:text="退出应用"
-                    tools:ignore="HardcodedText" />
+                    android:text="@string/EXIT_APP"
+                    />
 
                 <ImageView style="@style/content_item_rt_img"
                     tools:ignore="ContentDescription" />

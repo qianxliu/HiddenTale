@@ -78,17 +78,7 @@ public abstract class BaseHttpRecyclerFragment<T, VH extends RecyclerView.ViewHo
     @Override
     public void setAdapter(A adapter) {
         if (adapter instanceof BaseAdapter) {
-            ((qian.xin.library.base.BaseAdapter) adapter).setOnLoadListener(new OnLoadListener() {
-                @Override
-                public void onRefresh() {
-                    srlBaseHttpRecycler.autoRefresh();
-                }
-
-                @Override
-                public void onLoadMore() {
-                    srlBaseHttpRecycler.autoLoadmore();
-                }
-            });
+            ((qian.xin.library.base.BaseAdapter) adapter).setOnLoadListener(() -> srlBaseHttpRecycler.autoLoadmore());
         }
         super.setAdapter(adapter);
     }
@@ -104,13 +94,13 @@ public abstract class BaseHttpRecyclerFragment<T, VH extends RecyclerView.ViewHo
 
     }
 
-    /**
+    /*
      * @param page 用-page作为requestCode
      */
     @Override
     public abstract void getListAsync(int page);
 
-    /**
+    /*
      * 将JSON串转为List（已在非UI线程中）
      * *直接JSON.parseArray(json, getCacheClass());可以省去这个方法，但由于可能json不完全符合parseArray条件，所以还是要保留。
      * *比如json只有其中一部分能作为parseArray的字符串时，必须先提取出这段字符串再parseArray

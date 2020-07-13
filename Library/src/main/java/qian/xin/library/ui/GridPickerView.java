@@ -17,7 +17,6 @@ package qian.xin.library.ui;
 import android.annotation.SuppressLint;
 import android.view.Gravity;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.GridView;
@@ -93,12 +92,8 @@ public class GridPickerView extends BaseView<List<Entry<Integer, String>>> {
     }
 
 
-    public ArrayList<GridPickerConfig> getConfigList() {
-        return configList;
-    }
-
     public ArrayList<String> getSelectedItemList() {
-        ArrayList<String> list = new ArrayList<String>();
+        ArrayList<String> list = new ArrayList<>();
         for (GridPickerConfig gpcb : configList) {
             list.add(gpcb.getSelectedItemName());
         }
@@ -109,10 +104,6 @@ public class GridPickerView extends BaseView<List<Entry<Integer, String>>> {
         return configList == null ? 0 : configList.size();
     }
 
-    public boolean isOnFirstTab() {
-        return getTabCount() > 0 && getCurrentTabPosition() <= 0;
-    }
-
     public boolean isOnLastTab() {
         return getTabCount() > 0 && getCurrentTabPosition() >= getTabCount() - 1;
     }
@@ -121,12 +112,6 @@ public class GridPickerView extends BaseView<List<Entry<Integer, String>>> {
 
     public int getCurrentTabPosition() {
         return currentTabPosition;
-    }
-
-    private String currentTabName;
-
-    public String getCurrentTabName() {
-        return currentTabName;
     }
 
     private String currentTabSuffix;
@@ -146,10 +131,6 @@ public class GridPickerView extends BaseView<List<Entry<Integer, String>>> {
 
     public int getCurrentSelectedItemPosition() {
         return currentSelectedItemPosition;
-    }
-
-    public String getSelectedItemName(int tabPosition) {
-        return configList.get(tabPosition).getSelectedItemName();
     }
 
     public int getSelectedItemPosition(int tabPosition) {
@@ -180,7 +161,7 @@ public class GridPickerView extends BaseView<List<Entry<Integer, String>>> {
         }
 
         currentTabPosition = configList.size() - 1;
-        currentTabName = configList.get(currentTabPosition).getTabName();
+        String currentTabName = configList.get(currentTabPosition).getTabName();
 
         int tabWidth = configList.size() < 4 ? ScreenUtil.getScreenWidth(context) / configList.size() : 3;
         llGridPickerViewTabContainer.removeAllViews();
@@ -206,7 +187,7 @@ public class GridPickerView extends BaseView<List<Entry<Integer, String>>> {
      */
     @SuppressLint("NewApi")
     private void addTab(final int tabPosition, int tabWidth, String name) {
-        if (StringUtil.isNotEmpty(name, true) == false) {
+        if (!StringUtil.isNotEmpty(name, true)) {
             return;
         }
         name = StringUtil.getTrimedString(name);
@@ -220,18 +201,15 @@ public class GridPickerView extends BaseView<List<Entry<Integer, String>>> {
         tvTab.setTextSize(18);
         tvTab.setSingleLine(true);
         tvTab.setText(name);
-        tvTab.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (tabPosition == getCurrentTabPosition()) {
-                    return;
-                }
-
-                if (onTabClickListener != null) {
-                    onTabClickListener.onTabClick(tabPosition, tvTab);
-                }
-                //点击就是要切换list，这些配置都要改bindView(tabSuffix, tabPosition, tabName, list, numColumns, maxShowRows, itemPosition)
+        tvTab.setOnClickListener(v -> {
+            if (tabPosition == getCurrentTabPosition()) {
+                return;
             }
+
+            if (onTabClickListener != null) {
+                onTabClickListener.onTabClick(tabPosition, tvTab);
+            }
+            //点击就是要切换list，这些配置都要改bindView(tabSuffix, tabPosition, tabName, list, numColumns, maxShowRows, itemPosition)
         });
         llGridPickerViewTabContainer.addView(tvTab);
     }
@@ -325,8 +303,6 @@ public class GridPickerView extends BaseView<List<Entry<Integer, String>>> {
 
     }
 
-    private int length;
-
     /*
      * 获取itemPosition，解决部分不可点击的item被选中的问题
      *
@@ -341,8 +317,8 @@ public class GridPickerView extends BaseView<List<Entry<Integer, String>>> {
             itemPosition = list.size() - 1;
         }
 
-        if (isItemEnabled(list, itemPosition) == false) {
-            length = Math.max(itemPosition, list.size() - itemPosition);
+        if (!isItemEnabled(list, itemPosition)) {
+            int length = Math.max(itemPosition, list.size() - itemPosition);
             for (int i = 1; i <= length; i++) {
                 if (isItemEnabled(list, itemPosition - i)) {
                     Log.i(TAG, "getItemPosition  return " + (itemPosition - i));
@@ -374,7 +350,7 @@ public class GridPickerView extends BaseView<List<Entry<Integer, String>>> {
      * @param itemName
      */
     @SuppressLint("SetTextI18n")
-	public void doOnItemSelected(int tabPosition, int itemPosition, String itemName) {
+    public void doOnItemSelected(int tabPosition, int itemPosition, String itemName) {
         currentTabPosition = tabPosition < getTabCount() ? tabPosition : getTabCount() - 1;
         currentSelectedItemPosition = itemPosition;
         currentSelectedItemName = StringUtil.getTrimedString(itemName);

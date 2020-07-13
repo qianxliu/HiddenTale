@@ -16,7 +16,6 @@ package qian.xin.library.util;
 
 import android.annotation.SuppressLint;
 import android.app.Application;
-import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Environment;
 
@@ -31,22 +30,15 @@ import static qian.xin.library.util.StringUtil.isNotEmpty;
 /*
  * 数据存储工具类
  *
- * @must <br> 1.将fileRootPath中的包名（这里是zblibrary.demo）改为你的应用包名
- * <br> 2.在Application中调用init方法
  */
 public class DataKeeper {
     private static final String TAG = "DataKeeper";
-
-    public static final String SAVE_SUCCEED = "保存成功";
-    public static final String SAVE_FAILED = "保存失败";
-    public static final String DELETE_SUCCEED = "删除成功";
-    public static final String DELETE_FAILED = "删除失败";
 
     public static final String ROOT_SHARE_PREFS_ = "DEMO_SHARE_PREFS_";
 
     //文件缓存<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
     /*
-     * TODO 必须将fileRootPath中的包名（这里是zblibrary.demo）改为你的应用包名
+     *
      */
     public static final String fileRootPath = getSDPath() != null ? (getSDPath() + "/hidden.edu/") : null;
     public static final String accountPath = fileRootPath + "account/";
@@ -78,45 +70,35 @@ public class DataKeeper {
 
         Log.i(TAG, "init fileRootPath = " + fileRootPath);
 
-        File froot= new File(fileRootPath);
-        if(!froot.exists())
-        {
-            boolean isDirectoryCreated = froot.mkdir();
+        File froot = new File(fileRootPath);
+        if (!froot.exists()) {
+            froot.mkdir();
         }
         //判断SD卡存在
         if (android.os.Environment.getExternalStorageState().equals(android.os.Environment.MEDIA_MOUNTED)) {
             File file = new File(imagePath);
             if (!file.exists()) {
-                boolean isDirectoryCreated= file.mkdir();
+                file.mkdir();
             }
             file = new File(videoPath);
             if (!file.exists()) {
-                boolean isDirectoryCreated= file.mkdir();
+                file.mkdir();
             }
             file = new File(audioPath);
             if (!file.exists()) {
-                boolean isDirectoryCreated= file.mkdir();
+                file.mkdir();
             }
             file = new File(fileRootPath + accountPath);
             if (!file.exists()) {
-                boolean isDirectoryCreated= file.mkdir();
+                file.mkdir();
             }
             file = new File(tempPath);
             if (!file.exists()) {
-                boolean isDirectoryCreated= file.mkdir();
-            }
-            file = new File(shotPath);
-            if (!file.exists()) {
-                boolean isDirectoryCreated= file.mkdir();
-
+                file.mkdir();
             }
         }
     }
 
-
-    public static SharedPreferences getRootSharedPreferences() {
-        return context.getSharedPreferences(ROOT_SHARE_PREFS_, Context.MODE_PRIVATE);
-    }
 
     //*外部存储缓存*
 
@@ -165,11 +147,11 @@ public class DataKeeper {
         else if (type == TYPE_FILE_VIDEO)
             path = videoPath + "VIDEO_" + Long.toHexString(System.currentTimeMillis()).toUpperCase() + "." + suffix;
         else if (type == TYPE_FILE_AUDIO)
-            path = audioPath + "VOICE_" + Long.toHexString(System.currentTimeMillis()).toUpperCase()+ "." + suffix;
+            path = audioPath + "VOICE_" + Long.toHexString(System.currentTimeMillis()).toUpperCase() + "." + suffix;
         else if (type == TYPE_FILE_TEMP)
-            path = tempPath + "TEMP_" + Long.toHexString(System.currentTimeMillis()).toUpperCase()+ "." + suffix;
+            path = tempPath + "TEMP_" + Long.toHexString(System.currentTimeMillis()).toUpperCase() + "." + suffix;
         else if (type == TYPE_FILE_SHOT)
-            path = shotPath + "SHOT_" + Long.toHexString(System.currentTimeMillis()).toUpperCase()+ "." + suffix;
+            path = shotPath + "SHOT_" + Long.toHexString(System.currentTimeMillis()).toUpperCase() + "." + suffix;
         try {
             assert path != null;
             FileOutputStream out = new FileOutputStream(path);
@@ -196,25 +178,6 @@ public class DataKeeper {
      */
     public static String getImageFileCachePath(String fileName) {
         return getFileCachePath(TYPE_FILE_IMAGE, fileName, "jpg");
-    }
-
-    /*
-     * mp4
-     *
-     * @param fileName
-     * @return
-     */
-    public static String getVideoFileCachePath(String fileName) {
-        return getFileCachePath(TYPE_FILE_VIDEO, fileName, "mp4");
-    }
-    /*
-     * mp3
-     *
-     * @param fileName
-     * @return
-     */
-    public static String getAudioFileCachePath(String fileName) {
-        return getFileCachePath(TYPE_FILE_AUDIO, fileName, "mp3");
     }
 
     /*
@@ -261,17 +224,6 @@ public class DataKeeper {
 
 
     //使用SharedPreferences保存 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-
-    /*
-     * 使用SharedPreferences保存
-     *
-     * @param path
-     * @param key
-     * @param value
-     */
-    public static void save(String path, String key, String value) {
-        save(path, Context.MODE_PRIVATE, key, value);
-    }
 
     /*
      * 使用SharedPreferences保存

@@ -16,19 +16,19 @@
 #   public *;
 #}
 -keep public class * implements com.bumptech.glide.module.GlideModule
--keep public enum com.bumptech.glide.load.resource.bitmap.ImageHeaderParser$** {
-  **[] $VALUES;
+-keep public enum com.bumptech.glide.load.resource.bitmap.ImageHeaderParser$* {
+  *[] $VALUES;
   public *;
 }
 #Fragment不需要在AndroidManifest.xml中注册，需要额外保护下
 -keep public class * extends androidx.fragment.app.Fragment
 
 # 保持测试相关的代码
--dontnote junit.framework.**
--dontnote junit.runner.**
--dontwarn android.test.**
--dontwarn android.support.test.**
--dontwarn org.junit.**
+-dontnote junit.framework.*
+-dontnote junit.runner.*
+-dontwarn android.test.*
+-dontwarn android.support.test.*
+-dontwarn org.junit.*
 
 # 保留Annotation不混淆
 -keepattributes *Annotation*,InnerClasses
@@ -42,26 +42,24 @@
 -keepattributes SourceFile,LineNumberTable
 
 # 保留R下面的资源
--keep class **.R$* {*;}
+-keep class *.R$* {*;}
 
 # 保留四大组件，自定义的Application等这些类不被混淆
 -keep public class * extends android.app.Activity
--keep public class * extends android.app.Appliction
 -keep public class * extends android.app.Service
 -keep public class * extends android.content.BroadcastReceiver
 -keep public class * extends android.content.ContentProvider
 -keep public class * extends android.preference.Preference
--keep public class com.android.vending.licensing.ILicensingService
 
 # 保留在Activity中的方法参数是view的方法，
 # 这样以来我们在layout中写的onClick就不会被影响
 -keepclassmembers class * extends android.app.Activity{
     public void *(android.view.View);
 }
-# 对于带有回调函数的onXXEvent、**On*Listener的，不能被混淆
+# 对于带有回调函数的onXXEvent、*On*Listener的，不能被混淆
 -keepclassmembers class * {
-    void *(**On*Event);
-    void *(**On*Listener);
+    void *(*On*Event);
+    void *(*On*Listener);
 }
 # 保留本地native方法不被混淆
 -keepclasseswithmembernames class * {
@@ -70,14 +68,12 @@
 
 # 保留枚举类不被混淆
 -keepclassmembers enum * {
-    public static **[] values();
-    public static ** valueOf(java.lang.String);
+    public static *[] values();
+    public static * valueOf(java.lang.String);
 }
 
 # 保留Parcelable序列化类不被混淆
--keep class * implements android.os.Parcelable {
-    public static final android.os.Parcelable$Creator *;
-}
+-keep class * implements android.os.Parcelable
 
 -keepclassmembers class * implements java.io.Serializable {
    static final long serialVersionUID;
@@ -87,20 +83,7 @@
    java.lang.Object writeReplace();
    java.lang.Object readResolve();
 }
-#assume no side effects:删除android.util.Log输出的日志
--assumenosideeffects class android.util.Log {
-    public static *** v(...);
-    public static *** d(...);
-    public static *** i(...);
-    public static *** w(...);
-    public static *** e(...);
-}
-#保留Keep注解的类名和方法
--keep,allowobfuscation @interface android.support.annotation.Keep
--keep @android.support.annotation.Keep class *
--keepclassmembers class * {
-    @android.support.annotation.Keep *;
-}
+
 
 # Retain generic type information for use by reflection by converters and adapters.
 -keepattributes Signature
@@ -114,10 +97,10 @@
 -dontwarn org.codehaus.mojo.animal_sniffer.IgnoreJRERequirement
 
 # Ignore JSR 305 annotations for embedding nullability information.
--dontwarn javax.annotation.**
+-dontwarn javax.annotation.*
 
 # JSR 305 annotations are for embedding nullability information.
--dontwarn javax.annotation.**
+-dontwarn javax.annotation.*
 
 # A resource is loaded with a relative path so the package of this class must be preserved.
 -keepnames class okhttp3.internal.publicsuffix.PublicSuffixDatabase
@@ -130,14 +113,11 @@
 
 #fastjson混淆
 -keepattributes Signature
--dontwarn com.alibaba.fastjson.**
--keep class com.alibaba.**{*;}
--keep class com.alibaba.fastjson.**{*; }
--keep public class com.ninstarscf.ld.model.entity.**{*;}
-
-#不跳过非公共的库的类成员
--dontskipnonpubliclibraryclassmembers
+-dontwarn com.alibaba.fastjson.*
+-keep class com.alibaba.*{*;}
+-keep class com.alibaba.fastjson.*{*; }
+-keep public class com.ninstarscf.ld.model.entity.*{*;}
 
 
 # 需要忽略混淆的javabean的包名或者类
--keep class qian.xin.library.* { ; }
+-keep class qian.xin.library.* { }

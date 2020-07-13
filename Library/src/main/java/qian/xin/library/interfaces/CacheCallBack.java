@@ -27,7 +27,7 @@ public interface CacheCallBack<T> {
 	 */
 	Class<T> getCacheClass();
 	
-	/**
+	/*
 	 * 获取缓存的分组
 	 * @return 含非空字符的String ？缓存至对应class的group中 : 至缓存至对应class中
 	 */
@@ -40,7 +40,7 @@ public interface CacheCallBack<T> {
 	 */
 	String getCacheId(T data);
 	
-	/**
+	/*
 	 * 获取缓存每页数量
 	 * @return > 0 ？缓存 : 不缓存
 	 */

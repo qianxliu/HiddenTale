@@ -1,24 +1,10 @@
-/*Copyright ©2015 TommyLemon(https://github.com/TommyLemon)
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.*/
-
 package qian.xin.library.ui;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.MotionEvent;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
@@ -34,7 +20,7 @@ import qian.xin.library.R;
 import qian.xin.library.base.BaseBottomWindow;
 import qian.xin.library.util.StringUtil;
 
-/**
+/*
  * 通用底部弹出菜单
  *
  * @author Lemon
@@ -142,11 +128,7 @@ public class BottomMenuWindow extends BaseBottomWindow implements OnItemClickLis
 
     //Data数据区(存在数据获取或处理代码，但不存在事件监听代码)<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
-    private String title;
-    private ArrayList<String> nameList = null;
     private ArrayList<Integer> idList = null;
-
-    private ArrayAdapter<String> adapter;
 
     @Override
     public void initData() {//必须调用
@@ -154,7 +136,7 @@ public class BottomMenuWindow extends BaseBottomWindow implements OnItemClickLis
 
         intent = getIntent();
 
-        title = intent.getStringExtra(INTENT_TITLE);
+        String title = intent.getStringExtra(INTENT_TITLE);
         if (StringUtil.isNotEmpty(title, true)) {
             assert tvBaseTitle != null;
             tvBaseTitle.setVisibility(View.VISIBLE);
@@ -176,6 +158,7 @@ public class BottomMenuWindow extends BaseBottomWindow implements OnItemClickLis
         }
 
         String[] menuItems = intent.getStringArrayExtra(INTENT_ITEMS);
+        ArrayList<String> nameList;
         if (menuItems == null || menuItems.length <= 0) {
             nameList = intent.getStringArrayListExtra(INTENT_ITEMS);
         } else {
@@ -187,7 +170,7 @@ public class BottomMenuWindow extends BaseBottomWindow implements OnItemClickLis
             return;
         }
 
-        adapter = new ArrayAdapter<>(this, R.layout.bottom_menu_item, R.id.tvBottomMenuItem, nameList);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, R.layout.bottom_menu_item, R.id.tvBottomMenuItem, nameList);
         lvBottomMenu.setAdapter(adapter);
 
     }
@@ -228,15 +211,6 @@ public class BottomMenuWindow extends BaseBottomWindow implements OnItemClickLis
 
     @Override
     protected void setResult() {
-
-    }
-
-    private boolean onTouch(View v, MotionEvent event) {
-        finish();
-        return true;
-    }
-
-    public void onReturnClick(View view) {
 
     }
 

@@ -407,16 +407,6 @@ public abstract class BaseListActivity<T, LV extends AbsListView, A extends List
 
     private CacheCallBack<T> cacheCallBack;
 
-    /*
-     * 初始化缓存
-     *
-     * @param cacheCallBack
-     * @warn 在initData前使用才有效
-     */
-    protected void initCache(CacheCallBack<T> cacheCallBack) {
-        this.cacheCallBack = cacheCallBack;
-    }
-
 
     /*
      * 刷新（从头加载）

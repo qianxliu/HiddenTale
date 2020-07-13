@@ -1,17 +1,3 @@
-/*Copyright ©2015 TommyLemon(https://github.com/TommyLemon)
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.*/
-
 package qian.xin.library.base;
 
 import android.content.Intent;
@@ -31,7 +17,7 @@ import qian.xin.library.R;
 import qian.xin.library.interfaces.FragmentPresenter;
 import qian.xin.library.util.Log;
 
-/**
+/*
  * 基础android.support.v4.app.Fragment，通过继承可获取或使用 里面创建的 组件 和 方法
  *
  * @author Lemon
@@ -123,16 +109,16 @@ public abstract class BaseFragment extends Fragment implements FragmentPresenter
     }
 
 
-    /**
+    /*
      * 可用于 打开activity与fragment，fragment与fragment之间的通讯（传值）等
      */
     protected Bundle argument = null;
-    /**
+    /*
      * 可用于 打开activity以及activity之间的通讯（传值）等；一些通讯相关基本操作（打电话、发短信等）
      */
     protected Intent intent = null;
 
-    /**
+    /*
      * 通过id查找并获取控件，使用时不需要强转
      */
     @SuppressWarnings("unchecked")
@@ -140,7 +126,7 @@ public abstract class BaseFragment extends Fragment implements FragmentPresenter
         return (V) view.findViewById(id);
     }
 
-    /**
+    /*
      * 通过id查找并获取控件，并setOnClickListener
      */
     public <V extends View> V findView(int id, OnClickListener l) {
@@ -158,7 +144,7 @@ public abstract class BaseFragment extends Fragment implements FragmentPresenter
         return findView(id);
     }
 
-    /**
+    /*
      * 通过id查找并获取控件，并setOnClickListener
      */
     public <V extends View> V findViewById(int id, OnClickListener l) {
@@ -203,41 +189,7 @@ public abstract class BaseFragment extends Fragment implements FragmentPresenter
 
     //进度弹窗<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
-    /**
-     * 展示加载进度条,无标题
-     */
-    public void showProgressDialog(int stringResId) {
-        if (!isAlive()) {
-            Log.w(TAG, "showProgressDialog  isAlive() == false >> return;");
-        }
-        context.showProgressDialog(context.getResources().getString(stringResId));
-    }
-
-    /**
-     * 展示加载进度条,无标题
-     */
-    public void showProgressDialog(String dialogMessage) {
-        if (!isAlive()) {
-            Log.w(TAG, "showProgressDialog  isAlive() == false >> return;");
-        }
-        context.showProgressDialog(dialogMessage);
-    }
-
-    /**
-     * 展示加载进度条
-     *
-     * @param dialogTitle   标题
-     * @param dialogMessage 信息
-     */
-    public void showProgressDialog(String dialogTitle, String dialogMessage) {
-        if (!isAlive()) {
-            Log.w(TAG, "showProgressDialog  isAlive() == false >> return;");
-            return;
-        }
-        context.showProgressDialog(dialogTitle, dialogMessage);
-    }
-
-    /**
+    /*
      * 隐藏加载进度
      */
     public void dismissProgressDialog() {
@@ -250,28 +202,28 @@ public abstract class BaseFragment extends Fragment implements FragmentPresenter
 
     //启动Activity<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
-    /**
+    /*
      * 打开新的Activity，向左滑入效果
      */
     public void toActivity(Intent intent) {
         toActivity(intent, true);
     }
 
-    /**
+    /*
      * 打开新的Activity
      */
     public void toActivity(Intent intent, boolean showAnimation) {
         toActivity(intent, -1, showAnimation);
     }
 
-    /**
+    /*
      * 打开新的Activity，向左滑入效果
      */
     public void toActivity(Intent intent, int requestCode) {
         toActivity(intent, requestCode, true);
     }
 
-    /**
+    /*
      * 打开新的Activity
      */
     public void toActivity(final Intent intent, final int requestCode, final boolean showAnimation) {

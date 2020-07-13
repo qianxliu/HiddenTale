@@ -145,28 +145,22 @@ public class EditTextInfoWindow extends BaseBottomWindow implements OnClickListe
     public static final String INTENT_PACKAGE_NAME = "INTENT_PACKAGE_NAME";
 
     public static final int TYPE_NICK = 200 + ContactUtil.TYPE_NICK;
-    public static final int TYPE_NAME = 200 + ContactUtil.TYPE_NAME;
 
     public static final int TYPE_PHONE = 200 + ContactUtil.TYPE_PHONE;
     public static final int TYPE_WEBSITE = 200 + ContactUtil.TYPE_WEBSITE;
     public static final int TYPE_EMAIL = 200 + ContactUtil.TYPE_EMAIL;
-    public static final int TYPE_FAX = 200 + ContactUtil.TYPE_FAX;
 
     public static final int TYPE_USUALADDRESS = 200 + ContactUtil.TYPE_USUALADDRESS;
     public static final int TYPE_MAILADDRESS = 200 + ContactUtil.TYPE_MAILADDRESS;
-    public static final int TYPE_SCHOOL = 200 + ContactUtil.TYPE_SCHOOL;
-    public static final int TYPE_COMPANY = 200 + ContactUtil.TYPE_COMPANY;
 
     public static final int TYPE_PROFESSION = 200 + ContactUtil.TYPE_PROFESSION;
     public static final int TYPE_NOTE = 200 + ContactUtil.TYPE_NOTE;
-    //	public static final int TYPE_OTHER = 200 + ContactUtil.TYPE_OTHER;
 
     public static final String INTENT_TYPE = "INTENT_TYPE";
     public static final String INTENT_KEY = "INTENT_KEY";
     public static final String INTENT_VALUE = "INTENT_VALUE";
 
     private String packageName;
-    private int intentType = 0;
     private int maxEms = 30;
 
     @SuppressLint("SetTextI18n")
@@ -177,7 +171,7 @@ public class EditTextInfoWindow extends BaseBottomWindow implements OnClickListe
         intent = getIntent();
         packageName = intent.getStringExtra(INTENT_PACKAGE_NAME);
 
-        intentType = intent.getIntExtra(INTENT_TYPE, 0);
+        int intentType = intent.getIntExtra(INTENT_TYPE, 0);
         if (isNotEmpty(intent.getStringExtra(INTENT_KEY), true)) {
             assert tvBaseTitle != null;
             Objects.requireNonNull(tvBaseTitle).setText(getCurrentString());
@@ -265,12 +259,7 @@ public class EditTextInfoWindow extends BaseBottomWindow implements OnClickListe
             public void afterTextChanged(Editable s) {
             }
         });
-        ivEditTextInfoClear.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                etEditTextInfo.setText("");
-            }
-        });
+        ivEditTextInfoClear.setOnClickListener(v -> etEditTextInfo.setText(""));
 
         etEditTextInfo.setText(getTrimedString(getIntent().getStringExtra(INTENT_VALUE)));
         etEditTextInfo.setSelection(getLength(etEditTextInfo, true));

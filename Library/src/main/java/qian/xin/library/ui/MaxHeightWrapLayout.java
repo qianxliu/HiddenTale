@@ -18,7 +18,7 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.LinearLayout;
 
-/**限制最大高度为屏幕宽度的类
+/*限制最大高度为屏幕宽度的类
  * @author Lemon
  * @use 使用方法：写在xml文件中即可
  */

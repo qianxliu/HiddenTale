@@ -12,10 +12,10 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.*/
 
-/**
+/*
  * 通用操作类所在包，里面所有方法都是static
  */
-/**
+/*
  * @author Lemon
  * @use 通用使用方法：XXUtil.xxMethod(...);
  */

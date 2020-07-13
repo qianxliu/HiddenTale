@@ -1,21 +1,6 @@
-/*Copyright ©2015 TommyLemon(https://github.com/TommyLemon)
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.*/
-
 package qian.xin.library.model;
 
-/**GridPickerView初始化配置model
- *@author Lemon
+/*GridPickerView初始化配置model
  *@date 2015-7-23 上午12:54:01
  */
 public class GridPickerConfig {
@@ -48,7 +33,7 @@ public class GridPickerConfig {
 		this.maxShowRows = maxShowRows;
 	}
 
-	/**只允许通过这个方法修改数据
+	/* 只允许通过这个方法修改数据
 	 * @param selectedItemName
 	 * @param selectedItemPostion
 	 * @return
@@ -56,7 +41,7 @@ public class GridPickerConfig {
 	public final GridPickerConfig set(String selectedItemName, int selectedItemPostion) {
 		return set(tabSuffix, selectedItemName, selectedItemPostion);
 	}
-	/**只允许通过这个方法修改数据
+	/* 只允许通过这个方法修改数据
 	 * @param tabSuffix
 	 * @param selectedItemName
 	 * @param selectedItemPostion
@@ -69,7 +54,7 @@ public class GridPickerConfig {
 		return this;
 	}
 
-	/**带后缀
+	/* 带后缀
 	 * @return
 	 */
 	public String getTabName() {
@@ -96,7 +81,7 @@ public class GridPickerConfig {
 	}
 	
 
-//	/**设置颜色
+//	/*设置颜色
 //	 * @param enableTextColor
 //	 * @param unableTextColor
 //	 * @param enableBackgroundColor

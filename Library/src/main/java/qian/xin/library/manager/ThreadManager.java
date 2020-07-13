@@ -51,7 +51,7 @@ public class ThreadManager {
 	 * @return
 	 */
 	public Handler runThread(String name, Runnable runnable) {
-		if (StringUtil.isNotEmpty(name, true) == false || runnable == null) {
+		if (!StringUtil.isNotEmpty(name, true) || runnable == null) {
 			Log.e(TAG, "runThread  StringUtil.isNotEmpty(name, true) == false || runnable == null >> return");
 			return null;
 		}
@@ -69,7 +69,7 @@ public class ThreadManager {
 		handler = new Handler(thread.getLooper());//使用HandlerThread的looper对象创建Handler
 		handler.post(runnable);//将线程post到Handler中
 
-		threadMap.put(name, new ThreadBean(name, thread, runnable, handler));
+		threadMap.put(name, new ThreadBean(name, runnable, handler));
 
 		Log.d(TAG, "runThread  added name = " + name + "; threadMap.size() = " + threadMap.size() + "\n");
 		return handler;
@@ -93,7 +93,7 @@ public class ThreadManager {
 	}
 
 
-	/**销毁线程
+	/* 销毁线程
 	 * @param nameList
 	 * @return
 	 */
@@ -104,14 +104,14 @@ public class ThreadManager {
 			}
 		}
 	}
-	/**销毁线程
+	/* 销毁线程
 	 * @param name
 	 * @return
 	 */
 	public void destroyThread(String name) {
 		destroyThread(getThread(name));
 	}
-	/**销毁线程
+	/* 销毁线程
 	 * @param tb
 	 * @return
 	 */
@@ -126,7 +126,7 @@ public class ThreadManager {
 			threadMap.remove(tb.getName());
 		}
 	}
-	/**销毁线程
+	/* 销毁线程
 	 * @param handler
 	 * @param runnable
 	 * @return
@@ -145,7 +145,7 @@ public class ThreadManager {
 	}
 
 
-	/**结束ThreadManager所有进程
+	/*结束ThreadManager所有进程
 	 */
 	public void finish() {
 		if (threadMap == null) {
@@ -155,7 +155,7 @@ public class ThreadManager {
 		} else {
 			threadMap.keySet();
 		}
-		List<String> nameList = new ArrayList<String>(threadMap.keySet());//直接用Set在系统杀掉应用时崩溃
+		List<String> nameList = new ArrayList<>(threadMap.keySet());//直接用Set在系统杀掉应用时崩溃
 		for (String name : nameList) {
 			destroyThread(name);
 		}
@@ -164,19 +164,16 @@ public class ThreadManager {
 	}
 
 
-	/**线程类
+	/*线程类
 	 */
 	private static class ThreadBean {
 
 		private String name;
-		@SuppressWarnings("unused")
-		private HandlerThread thread;
 		private Runnable runnable;
 		private Handler handler;
 
-		public ThreadBean(String name, HandlerThread thread, Runnable runnable, Handler handler) {
+		public ThreadBean(String name, Runnable runnable, Handler handler) {
 			this.name = name;
-			this.thread = thread;
 			this.runnable = runnable;
 			this.handler = handler;
 		}

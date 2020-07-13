@@ -14,7 +14,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import static qian.xin.library.util.StringUtil.*;
 
-/**
+/*
  * SQLite数据库Helper
  *
  * @author Lemon
@@ -51,7 +51,7 @@ public class SQLHelper extends SQLiteOpenHelper {
     }
 
 
-    /**
+    /*
      * 根据Cursor获取内容
      */
     private ContentValues getValue(Cursor cursor) {
@@ -71,7 +71,7 @@ public class SQLHelper extends SQLiteOpenHelper {
         return values;
     }
 
-    /**
+    /*
      * 根据Cursor获取内容
      */
     private List<ContentValues> getValueList(Cursor cursor) {
@@ -95,7 +95,7 @@ public class SQLHelper extends SQLiteOpenHelper {
         return list;
     }
 
-    /**
+    /*
      * 获取正确的的ContentValues，防止数据库操作出错
      */
     private ContentValues getCorrectValues(ContentValues values) {
@@ -115,14 +115,14 @@ public class SQLHelper extends SQLiteOpenHelper {
     }
 
 
-    /**
+    /*
      * 插入数据
      */
     public void put(int id, ContentValues values) {
         put("" + id, values);
     }
 
-    /**
+    /*
      * 插入数据
      *
      * @param value  - 筛选数据的条件值
@@ -138,35 +138,35 @@ public class SQLHelper extends SQLiteOpenHelper {
         }
     }
 
-    /**
+    /*
      * 获取单个数据
      */
     public ContentValues get(int id) {
         return getValue(query(id));
     }
 
-    /**
+    /*
      * 获取单个数据
      */
     private ContentValues get(String value) {
         return getValue(query(SQLHelper.COLUMN_ID, value));
     }
 
-    /**
+    /*
      * 获取数据列表
      */
     public List<ContentValues> getList(String column, String value) {
         return getValueList(query(column, value));
     }
 
-    /**
+    /*
      * 获取所有数据
      */
     public List<ContentValues> getAll() {
         return getList(null, null);
     }
 
-    /**
+    /*
      * 插入数据
      */
     public void insert(ContentValues values) {
@@ -178,14 +178,14 @@ public class SQLHelper extends SQLiteOpenHelper {
         }
     }
 
-    /**
+    /*
      * 更新数据
      */
     public int update(int id, ContentValues values) {
         return update(COLUMN_ID, "" + id, values);
     }
 
-    /**
+    /*
      * 更新数据
      */
     public int update(String column, String value, ContentValues values) {
@@ -198,14 +198,14 @@ public class SQLHelper extends SQLiteOpenHelper {
         return 0;
     }
 
-    /**
+    /*
      * 删除数据
      */
     public int delete(int id) {
         return delete(COLUMN_ID, "" + id);
     }
 
-    /**
+    /*
      * 删除数据
      */
     public int delete(String column, String value) {
@@ -218,7 +218,7 @@ public class SQLHelper extends SQLiteOpenHelper {
         return 0;
     }
 
-    /**
+    /*
      * 查询所有数据
      */
     public Cursor queryAll() {
@@ -231,14 +231,14 @@ public class SQLHelper extends SQLiteOpenHelper {
         return null;
     }
 
-    /**
+    /*
      * 查询单个数据
      */
     private Cursor query(int id) {
         return query(COLUMN_ID, "" + id);
     }
 
-    /**
+    /*
      * 查询单个数据
      */
     private Cursor query(String column, String value) {
@@ -252,7 +252,7 @@ public class SQLHelper extends SQLiteOpenHelper {
     }
 
 
-    /**
+    /*
      * 获取过滤条件类型
      *
      * @return StringUtil.isNotEmpty(column, false) ? column + " = ?" : null
@@ -261,7 +261,7 @@ public class SQLHelper extends SQLiteOpenHelper {
         return isNotEmpty(column, false) ? column + " = ?" : null;
     }
 
-    /**
+    /*
      * 获取过滤条件值
      *
      * @return StringUtil.isNotEmpty(column, false) ? new String[]{value} : nul

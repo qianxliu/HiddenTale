@@ -88,19 +88,6 @@ public class Cache<T> {
         sp.edit().remove(key).putString(key, JSON.toJSONString(value)).apply();
     }
 
-    /*判断是否已存
-     * @param key
-     * @return
-     */
-    public boolean isContain(String key) {
-        if (isNotEmpty(key, true)) {
-            return sp.contains(getTrimedString(key));
-        }
-        Log.e(TAG, "isContain StringUtil.isNotEmpty(key, true) == false >> return false;");
-        return false;
-
-    }
-
     /*获取
      * @param key
      * @return
@@ -133,15 +120,6 @@ public class Cache<T> {
 
     /*ROOT
      * 获取列表
-     * @return
-     */
-    public Set<String> getKeySet() {
-        Map<String, String> map = getMap();
-        return map == null ? null : map.keySet();
-    }
-
-    /*ROOT
-     * 获取列表
      * @param start < 0 ? all : [start, end]
      * @param end
      * @return
@@ -149,26 +127,6 @@ public class Cache<T> {
     public List<T> getValueList(int start, int end) {
         List<T> list = getAllValueList();
         return start < 0 || start > end || list == null || end >= list.size() ? list : list.subList(start, end);
-    }
-
-    /*ROOT
-     * 获取列表,顺序由keyList指定
-     * @param keyList
-     * @return
-     */
-    public List<T> getValueList(List<String> keyList) {
-        if (keyList != null) {
-            List<T> list = new ArrayList<>();
-            T data;
-            for (String key : keyList) {
-                data = get(key);
-                if (data != null) {
-                    list.add(data);
-                }
-            }
-            return list;
-        }
-        return null;
     }
 
     /*ROOT

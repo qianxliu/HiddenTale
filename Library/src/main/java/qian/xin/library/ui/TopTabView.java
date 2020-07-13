@@ -1,17 +1,3 @@
-/*Copyright ©2015 TommyLemon(https://github.com/TommyLemon)
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.*/
-
 package qian.xin.library.ui;
 
 import android.util.Log;
@@ -62,17 +48,7 @@ public class TopTabView extends BaseView<String[]> {
 
     private LayoutInflater inflater;
 
-    private TopTabView(AppCompatActivity context) {
-        super(context, R.layout.top_tab_view);
-        this.inflater = context.getLayoutInflater();
-    }
-
     private int minWidth;
-
-    public TopTabView(AppCompatActivity context, int minWidth) {
-        this(context);
-        this.minWidth = minWidth;
-    }
 
     public TopTabView(AppCompatActivity context, int minWidth, @LayoutRes int resource) {
         super(context, resource);
@@ -118,8 +94,6 @@ public class TopTabView extends BaseView<String[]> {
         return tvTabs[getCurrentPosition()];
     }
 
-    private int lastPosition = 1;
-
     /*
      * @param nameList
      */
@@ -132,9 +106,6 @@ public class TopTabView extends BaseView<String[]> {
         bindView(names);
     }
 
-    private int width;
-    private int maxWidth;
-
     @Override
     public void bindView(String[] names) {
         if (names == null || names.length < 2) {
@@ -143,7 +114,7 @@ public class TopTabView extends BaseView<String[]> {
         }
         super.bindView(names);
         this.names = names;
-        this.lastPosition = getCount() - 1;
+        int lastPosition = getCount() - 1;
 
         tvTabs = new TextView[getCount()];
 
@@ -160,20 +131,20 @@ public class TopTabView extends BaseView<String[]> {
                 llTopTabViewContainer.addView(tvTabs[position]);
 
                 View divider = inflater.inflate(R.layout.divider_vertical_1dp, llTopTabViewContainer, false);
-                divider.setBackgroundColor(getColor(R.color.white));
+                divider.setBackgroundResource(R.color.white);
                 llTopTabViewContainer.addView(divider);
             }
             tvTabs[position].setText(StringUtil.getTrimedString(names[position]));
             tvTabs[position].setOnClickListener(v -> select(position));
 
-            width = tvTabs[position].getWidth();
+            int width = tvTabs[position].getWidth();
             if (minWidth < width) {
                 minWidth = width;
             }
         }
 
         //防止超出
-        maxWidth = llTopTabViewContainer.getMeasuredWidth() / tvTabs.length;
+        int maxWidth = llTopTabViewContainer.getMeasuredWidth() / tvTabs.length;
         if (minWidth > maxWidth) {
             minWidth = maxWidth;
         }

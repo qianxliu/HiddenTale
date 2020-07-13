@@ -1,28 +1,12 @@
-/*Copyright ©2015 TommyLemon(https://github.com/TommyLemon)
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.*/
-
 package qian.xin.library.base;
 
 import android.content.Intent;
 import android.content.res.Resources;
-import android.graphics.drawable.Drawable;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 
 import androidx.annotation.LayoutRes;
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -47,11 +31,6 @@ public abstract class BaseView<T> extends RecyclerView.ViewHolder {
      * 点击事件
      */
     public interface OnViewClickListener {
-        /*
-         * @param bv
-         * @param v
-         */
-        void onViewClick(@NonNull BaseView bv, @NonNull View v); //BaseView<T>泛型太麻烦，不利于多层View传递
     }
 
     /*
@@ -59,7 +38,6 @@ public abstract class BaseView<T> extends RecyclerView.ViewHolder {
      * (Object) getData() - 改变的数据
      */
     public interface OnDataChangedListener {
-        void onDataChanged();
     }
 
     /*
@@ -75,16 +53,6 @@ public abstract class BaseView<T> extends RecyclerView.ViewHolder {
      * 需要在BaseView子类手动回调 onViewClickListener.onDataChanged()
      */
     protected OnDataChangedListener onDataChangedListener;//数据改变回调监听回调的实例
-
-    /*
-     * 设置数据改变事件监听回调
-     *
-     * @param listener
-     */
-    public BaseView<T> setOnDataChangedListener(OnDataChangedListener listener) {
-        onDataChangedListener = listener;
-        return this;
-    }
 
 
     /*
@@ -200,16 +168,6 @@ public abstract class BaseView<T> extends RecyclerView.ViewHolder {
         return itemView.getWidth();
     }
 
-    /*
-     * 获取itemView的高度
-     *
-     * @return
-     * @warn 只能在createView后使用
-     */
-    public int getHeight() {
-        return itemView.getHeight();
-    }
-
 
     /*
      * 设置并显示内容，建议在子类bindView内this.data = data;
@@ -238,16 +196,6 @@ public abstract class BaseView<T> extends RecyclerView.ViewHolder {
         this.data = data_;
 
         //不一定要用单选功能，实现也不一定要用这种方式，这里写会影响所有BaseView子类的性能，子类写更好 itemView.setSelected(selected);
-    }
-
-    /*
-     * 获取可见性
-     *
-     * @return 可见性 (View.VISIBLE, View.GONE, View.INVISIBLE);
-     * @warn 只能在createView后使用
-     */
-    public int getVisibility() {
-        return itemView.getVisibility();
     }
 
     /*
@@ -295,14 +243,6 @@ public abstract class BaseView<T> extends RecyclerView.ViewHolder {
 
     public String getString(int id) {
         return getResources().getString(id);
-    }
-
-    public int getColor(int id) {
-        return getResources().getColor(id);
-    }
-
-    public Drawable getDrawable(int id) {
-        return getResources().getDrawable(id, context.getTheme());
     }
 
     public float getDimension(int id) {

@@ -18,7 +18,7 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.RelativeLayout;
 
-/**通用正方形视图
+/*通用正方形视图
  * @author Lemon
  * @use 写在xml文件中即可
  */

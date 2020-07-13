@@ -120,7 +120,6 @@ public class PlacePickerWindow extends BaseViewBottomWindow<List<Entry<Integer, 
     //Data数据区(存在数据获取或处理代码，但不存在事件监听代码)<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
     private int minLevel;
-    private int maxLevel;
 
     private CityDB cityDB;
 
@@ -129,7 +128,7 @@ public class PlacePickerWindow extends BaseViewBottomWindow<List<Entry<Integer, 
         super.initData();
 
         minLevel = getIntent().getIntExtra(INTENT_MIN_LEVEL, 0);
-        maxLevel = getIntent().getIntExtra(INTENT_MAX_LEVEL, 2);
+        int maxLevel = getIntent().getIntExtra(INTENT_MAX_LEVEL, 2);
         if (maxLevel < 0 || minLevel > maxLevel) {
             Log.e(TAG, "initData maxLevel < 0 || minLevel > maxLevel >> finish(); return; ");
             finish();

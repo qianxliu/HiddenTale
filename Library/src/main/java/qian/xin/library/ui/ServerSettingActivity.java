@@ -28,6 +28,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import qian.xin.library.R;
 import qian.xin.library.base.BaseActivity;
 import qian.xin.library.interfaces.OnBottomDragListener;
+import qian.xin.library.interfaces.Presenter;
 import qian.xin.library.util.CommonUtil;
 import qian.xin.library.util.DataKeeper;
 import qian.xin.library.util.SettingUtil;
@@ -39,7 +40,7 @@ import qian.xin.library.util.StringUtil;
  * @author Lemon
  * @use toActivity(ServerSettingActivity.createIntent ( ...));
  */
-public class ServerSettingActivity extends BaseActivity implements OnClickListener, OnBottomDragListener {
+public class ServerSettingActivity extends BaseActivity implements OnClickListener, OnBottomDragListener, Presenter {
     //	private static final String TAG = "ServerSettingActivity";
 
     //启动方法<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<

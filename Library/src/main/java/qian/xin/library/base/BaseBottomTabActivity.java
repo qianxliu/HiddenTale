@@ -95,7 +95,7 @@ public abstract class BaseBottomTabActivity extends BaseActivity {
         }
     }
 */
-    /**
+    /*
      * == true >> 每次点击相应tab都加载，调用getFragment方法重新对点击的tab对应的fragment赋值。
      * 如果不希望重载，可以重写selectFragment。
      */

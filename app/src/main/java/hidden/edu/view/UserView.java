@@ -40,8 +40,6 @@ import qian.xin.library.ui.WebViewActivity;
 import qian.xin.library.util.CommonUtil;
 import qian.xin.library.util.StringUtil;
 
-import static hidden.edu.model.User.ARCHIVE;
-
 /*
  * 用户View
  *
@@ -153,7 +151,7 @@ public class UserView extends BaseView<User> implements OnClickListener {
                  case R.id.tvUserViewSex:
                  data.setSex(data.getSex() == User.SEX_FEMALE ? User.SEX_MAIL : User.SEX_FEMALE);
                  break;
-                 **/
+                 */
             }
             bindView(data);
         }

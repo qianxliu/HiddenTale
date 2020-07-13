@@ -19,7 +19,7 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.LinearLayout;
 
-/**限制控件最大宽度的类
+/*限制控件最大宽度的类
  * @author Lemon
  * @use 写在xml文件中即可
  */

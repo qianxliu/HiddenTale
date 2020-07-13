@@ -4,7 +4,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
-/**
+/*
  * @author lijiaqi
  * @date 2019/6/14.
  *
@@ -21,28 +21,20 @@ public class SingleThreadPool {
 
     }
 
-    private void initThreadPoolExecutor(){
-        if (mExecutor == null || mExecutor.isShutdown() || mExecutor.isTerminated()){
-            synchronized (SingleThreadPool.class){
-                if (mExecutor == null || mExecutor.isShutdown() || mExecutor.isTerminated()){
+    private void initThreadPoolExecutor() {
+        if (mExecutor == null || mExecutor.isShutdown() || mExecutor.isTerminated()) {
+            synchronized (SingleThreadPool.class) {
+                if (mExecutor == null || mExecutor.isShutdown() || mExecutor.isTerminated()) {
                     mExecutor = Executors.newSingleThreadExecutor();
                 }
             }
         }
     }
 
-    public void execute(Runnable task){
-        initThreadPoolExecutor();
-        mExecutor.execute(task);
-    }
-
-
-    public Future submit(Runnable task){
+    public Future submit(Runnable task) {
         initThreadPoolExecutor();
         return mExecutor.submit(task);
     }
-
-
 }
 
 

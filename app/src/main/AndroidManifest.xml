@@ -34,10 +34,6 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         android:usesCleartextTraffic="true"
         tools:targetApi="n">
-        <activity
-            android:name="hidden.edu.demo.DemoThreadPoolActivity"
-            tools:ignore="InnerclassSeparator" />
-
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="${applicationId}.fileprovider"
@@ -72,86 +68,9 @@
             android:screenOrientation="fullSensor"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name="hidden.edu.activity.UserActivity"
-            android:screenOrientation="fullSensor"
-            android:windowSoftInputMode="stateAlwaysHidden" />
-        <activity
             android:name="hidden.edu.activity.PdfViewActivity"
             android:screenOrientation="fullSensor"
             android:windowSoftInputMode="stateAlwaysHidden" />
-        <activity
-            android:name="hidden.edu.activity.ScanActivity"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateAlwaysHidden"
-            tools:ignore="LockedOrientationActivity" />
-        <activity
-            android:name="hidden.edu.activity.QRCodeActivity"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateAlwaysHidden"
-            tools:ignore="LockedOrientationActivity" /> <!-- Demo <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
-        <activity
-            android:name="hidden.edu.demo.DemoMainActivity"
-            android:screenOrientation="fullSensor"
-            android:windowSoftInputMode="stateAlwaysHidden"
-            tools:ignore="InnerclassSeparator" />
-        <activity
-            android:name="hidden.edu.demo.DemoActivity"
-            android:screenOrientation="fullSensor"
-            android:windowSoftInputMode="stateAlwaysHidden"
-            tools:ignore="InnerclassSeparator" />
-        <activity
-            android:name="hidden.edu.demo.DemoListActivity"
-            android:screenOrientation="fullSensor"
-            android:windowSoftInputMode="stateAlwaysHidden"
-            tools:ignore="InnerclassSeparator" />
-        <activity
-            android:name="hidden.edu.demo.DemoRecyclerActivity"
-            android:screenOrientation="fullSensor"
-            android:windowSoftInputMode="stateAlwaysHidden"
-            tools:ignore="InnerclassSeparator" />
-        <activity
-            android:name="hidden.edu.demo.DemoHttpListActivity"
-            android:screenOrientation="fullSensor"
-            android:windowSoftInputMode="stateAlwaysHidden"
-            tools:ignore="InnerclassSeparator" />
-        <activity
-            android:name="hidden.edu.demo.DemoHttpRecyclerActivity"
-            android:screenOrientation="fullSensor"
-            android:windowSoftInputMode="stateAlwaysHidden"
-            tools:ignore="InnerclassSeparator" />
-        <activity
-            android:name="hidden.edu.demo.DemoFragmentActivity"
-            android:launchMode="singleTop"
-            android:screenOrientation="fullSensor"
-            android:windowSoftInputMode="stateAlwaysHidden"
-            tools:ignore="InnerclassSeparator" />
-        <activity
-            android:name="hidden.edu.demo.DemoTabActivity"
-            android:screenOrientation="fullSensor"
-            android:windowSoftInputMode="stateAlwaysHidden"
-            tools:ignore="InnerclassSeparator" />
-        <activity
-            android:name="hidden.edu.demo.DemoSQLActivity"
-            android:screenOrientation="fullSensor"
-            android:windowSoftInputMode="stateHidden|adjustResize|adjustUnspecified"
-            tools:ignore="InnerclassSeparator" />
-        <activity
-            android:name="hidden.edu.demo.DemoTimeRefresherActivity"
-            android:screenOrientation="fullSensor"
-            android:windowSoftInputMode="stateHidden|adjustResize|adjustUnspecified"
-            tools:ignore="InnerclassSeparator" />
-        <activity
-            android:name="hidden.edu.demo.DemoBroadcastReceiverActivity"
-            android:screenOrientation="fullSensor"
-            android:windowSoftInputMode="stateAlwaysHidden"
-            tools:ignore="InnerclassSeparator" />
-        <activity
-            android:name="hidden.edu.demo.DemoBottomWindow"
-            android:screenOrientation="fullSensor"
-            android:theme="@style/Window"
-            android:windowSoftInputMode="stateAlwaysHidden"
-            tools:ignore="InnerclassSeparator" /> <!-- Demo >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
-        <!-- ZBLibrary <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
         <activity
             android:name="qian.xin.library.ui.SelectPictureActivity"
             android:screenOrientation="fullSensor"

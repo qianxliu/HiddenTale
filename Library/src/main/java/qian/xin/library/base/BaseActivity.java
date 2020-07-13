@@ -17,8 +17,6 @@ package qian.xin.library.base;
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.ProgressDialog;
-import android.content.BroadcastReceiver;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -46,7 +44,6 @@ import qian.xin.library.R;
 import qian.xin.library.interfaces.ActivityPresenter;
 import qian.xin.library.interfaces.OnBottomDragListener;
 import qian.xin.library.manager.ThreadManager;
-import qian.xin.library.util.CommonUtil;
 import qian.xin.library.util.Log;
 import qian.xin.library.util.ScreenUtil;
 import qian.xin.library.util.StringUtil;
@@ -68,19 +65,12 @@ import qian.xin.library.util.StringUtil;
  */
 public abstract class BaseActivity extends AppCompatActivity implements ActivityPresenter, OnGestureListener {
     private static final String TAG = "BaseActivity";
-
-
-    @Override
-    public Activity getActivity() {
-        return this; //必须return this;
-    }
-
     /*
      * 该Activity实例，命名为context是因为大部分方法都只需要context，写成context使用更方便
      *
      * @warn 不能在子类中创建
      */
-    protected BaseActivity context = null;
+    protected BaseActivity context = this;
     /*
      * 该Activity的界面，即contentView
      *
@@ -115,8 +105,6 @@ public abstract class BaseActivity extends AppCompatActivity implements Activity
         inflater = getLayoutInflater();
 
         threadNameList = new ArrayList<>();
-
-        BaseBroadcastReceiver.register(context, receiver, ACTION_EXIT_APP);
     }
 
     /*
@@ -165,7 +153,7 @@ public abstract class BaseActivity extends AppCompatActivity implements Activity
         setContentView(layoutResID);
 
         onBottomDragListener = listener;
-        gestureDetector = new GestureDetector(this, this);//初始化手势监听类
+        gestureDetector = new GestureDetector(context, context);//初始化手势监听类
 
         try { //以防万一中间的值为 null 导致 throw NullPointerException
             view = ((ViewGroup) getWindow().getDecorView().findViewById(android.R.id.content)).getChildAt(0);
@@ -270,7 +258,7 @@ public abstract class BaseActivity extends AppCompatActivity implements Activity
      */
     public void showProgressDialog(int stringResId) {
         try {
-            showProgressDialog(null, context.getResources().getString(stringResId));
+            showProgressDialog(null, getActivity().getResources().getString(stringResId));
         } catch (Exception e) {
             Log.e(TAG, "showProgressDialog  showProgressDialog(null, context.getResources().getString(stringResId));");
         }
@@ -294,7 +282,7 @@ public abstract class BaseActivity extends AppCompatActivity implements Activity
     public void showProgressDialog(final String title, final String message) {
         runUiThread(() -> {
             if (progressDialog == null) {
-                progressDialog = new ProgressDialog(context);
+                progressDialog = new ProgressDialog(getActivity());
             }
             if (progressDialog.isShowing()) {
                 progressDialog.dismiss();
@@ -438,24 +426,6 @@ public abstract class BaseActivity extends AppCompatActivity implements Activity
     //Activity的返回按钮和底部弹窗的取消按钮几乎是必备，正好原生支持反射；而其它比如Fragment极少用到，也不支持反射<<<<<<<<<
 
     /*
-     * 返回按钮被点击，默认处理是onBottomDragListener.onDragBottom(false)，重写可自定义事件处理
-     *
-     * @param v
-     * @use layout.xml中的组件添加android:onClick="onReturnClick"即可
-     * @warn 只能在Activity对应的contentView layout中使用；
-     * *给对应View setOnClickListener会导致android:onClick="onReturnClick"失效
-     */
-    @Override
-    public void onReturnClick(View v) {
-        Log.d(TAG, "onReturnClick >>>");
-        if (onBottomDragListener != null) {
-            onBottomDragListener.onDragBottom(false);
-        } else {
-            onBackPressed();//会从最外层子类调finish();BaseBottomWindow就是示例
-        }
-    }
-
-    /*
      * 前进按钮被点击，默认处理是onBottomDragListener.onDragBottom(true)，重写可自定义事件处理
      *
      * @param v
@@ -487,15 +457,23 @@ public abstract class BaseActivity extends AppCompatActivity implements Activity
      * 一般用于对不支持的数据的处理，比如onCreate中获取到不能接受的id(id<=0)可以这样处理
      */
 
-    public void finishWithError(String error) {
-        enterAnim = exitAnim = R.anim.null_anim;
-        CommonUtil.showShortToast(this.getActivity(), error);
-        finish();
-    }
-
     @Override
     public void finish() {
-        super.finish();//必须写在最前才能显示自定义动画
+        super.finish();
+        runUiThread(() -> {
+            if (enterAnim > 0 && exitAnim > 0) {
+                try {
+                    overridePendingTransition(enterAnim, exitAnim);
+                } catch (Exception e) {
+                    Log.e(TAG, "finish overridePendingTransition(enterAnim, exitAnim);" +
+                            " >> catch (Exception e) {  " + e.getMessage());
+                }
+            }
+        });
+    }
+
+    public void finish(View view) {
+        super.finish();
         runUiThread(() -> {
             if (enterAnim > 0 && exitAnim > 0) {
                 try {
@@ -533,7 +511,6 @@ public abstract class BaseActivity extends AppCompatActivity implements Activity
     protected void onDestroy() {
         Log.d(TAG, "\n onDestroy <<<<<<<<<<<<<<<<<<<<<<<");
         dismissProgressDialog();
-        BaseBroadcastReceiver.unregister(context, receiver);
         ThreadManager.getInstance().destroyThread(threadNameList);
         if (view != null) {
             try {
@@ -558,31 +535,10 @@ public abstract class BaseActivity extends AppCompatActivity implements Activity
         threadNameList = null;
 
         intent = null;
-
         context = null;
-
         Log.d(TAG, "onDestroy >>>>>>>>>>>>>>>>>>>>>>>>\n");
     }
 
-
-    private BroadcastReceiver receiver = new BroadcastReceiver() {
-
-        public void onReceive(Context context, Intent intent) {
-            String action = intent == null ? null : intent.getAction();
-            if (!isAlive() || !StringUtil.isNotEmpty(action, true)) {
-                Log.e(TAG, "receiver.onReceive  isAlive() == false" +
-                        " || StringUtil.isNotEmpty(action, true) == false >> return;");
-                return;
-            }
-
-            if (ACTION_EXIT_APP.equals(action)) {
-                finish();
-            }
-        }
-    };
-
-
-    //手机返回键和菜单键实现同点击标题栏左右按钮效果<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
     private boolean isOnKeyLongPress = false;
 
@@ -668,7 +624,7 @@ public abstract class BaseActivity extends AppCompatActivity implements Activity
 
 
         //底部滑动实现同点击标题栏左右按钮效果
-        if (onBottomDragListener != null && e1.getRawY() > ScreenUtil.getScreenSize(this)[1]
+        if (onBottomDragListener != null && e1.getRawY() > ScreenUtil.getScreenSize(context)[1]
                 - ((int) getResources().getDimension(R.dimen.bottom_drag_height))) {
 
             float maxDragHeight = getResources().getDimension(R.dimen.bottom_drag_max_height);
@@ -700,5 +656,8 @@ public abstract class BaseActivity extends AppCompatActivity implements Activity
 
     //底部滑动实现同点击标题栏左右按钮效果>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-
+    @Override
+    public Activity getActivity() {
+        return context;
+    }
 }

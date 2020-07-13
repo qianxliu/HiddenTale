@@ -1,27 +1,11 @@
-/*Copyright ©2015 TommyLemon(https://github.com/TommyLemon)
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.*/
-
 package qian.xin.library.util;
 
 import android.annotation.SuppressLint;
 import android.util.Log;
 
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
-import java.util.Objects;
 
 /*
  * 通用时间类
@@ -96,8 +80,6 @@ public class TimeUtil {
 
     public static class Day {
 
-        public static final String NAME_THE_DAY_BEFORE_YESTERDAY = "前天";
-        public static final String NAME_YESTERDAY = "昨天";
         public static final String NAME_TODAY = "今天";
         public static final String NAME_TOMORROW = "明天";
         public static final String NAME_THE_DAY_AFTER_TOMORROW = "后天";
@@ -158,12 +140,8 @@ public class TimeUtil {
     }
 
 
-    public static final int YEAR = 0;
-    public static final int MONTH = 1;
-    public static final int DAY_OF_MONTH = 2;
     public static final int HOUR_OF_DAY = 3;
     public static final int MINUTE = 4;
-    public static final int SECOND = 5;
 
 
     public static final int[] MIN_TIME_DETAILS = {0, 0, 0};
@@ -220,41 +198,6 @@ public class TimeUtil {
                 + details[2] + "日  " + details[3] + "时" + details[4] + "分";
     }
 
-
-    /*
-     * 将long型时间长度数据转化为文字形式时间长度
-     * 去掉了1970年1月1日8时的初始值
-     *
-     * @param duration
-     * @return
-     */
-    public static String getSmartTime(long duration) {
-
-        int[] smartDetail = getWholeDetail(duration);
-
-        String smartTime = "";
-
-        if (smartDetail[5] > 0) {
-            smartTime = smartDetail[5] + "秒" + smartTime;
-        }
-        if (smartDetail[4] > 0) {
-            smartTime = smartDetail[4] + "分" + smartTime;
-        }
-        if (smartDetail[3] > 8) {
-            smartTime = smartDetail[3] + "时" + smartDetail[4] + "分";
-        }
-        if (smartDetail[2] > 1) {
-            smartTime = smartDetail[2] + "天" + smartDetail[3] + "时";
-        }
-        if (smartDetail[1] > 1) {
-            smartTime = smartDetail[1] + "月" + smartDetail[2] + "天";
-        }
-        if (smartDetail[0] > 1970) {
-            smartTime = smartDetail[0] + "年" + smartTime;
-        }
-
-        return smartTime;
-    }
 
     public static String getSmartDate(Date date) {
         return date == null ? "" : getSmartDate(date.getTime());
@@ -319,16 +262,6 @@ public class TimeUtil {
     /*
      * 获取日期 年，月， 日 对应值
      *
-     * @param date
-     * @return
-     */
-    public static int[] getDateDetail(Date date) {
-        return date == null ? null : getDateDetail(date.getTime());
-    }
-
-    /*
-     * 获取日期 年，月， 日 对应值
-     *
      * @param time
      * @return
      */
@@ -378,56 +311,6 @@ public class TimeUtil {
     }
 
     /*
-     * 获取两个时间的时间间隔
-     *
-     * @param sdf
-     * @param dateLong0
-     * @param dateLong1
-     * @return
-     */
-    @SuppressLint("SimpleDateFormat")
-    public static long getBetween(SimpleDateFormat sdf, long dateLong0, long dateLong1) {
-        if (sdf == null) {
-            sdf = new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
-        }
-        Date date0;
-        Date date1;
-        long between = 0;
-        try {
-
-            date0 = sdf.parse(sdf.format(new Date(dateLong0)));
-            date1 = sdf.parse(sdf.format(new Date(dateLong1)));
-            assert date0 != null;
-            assert date1 != null;
-            between = (Objects.requireNonNull(date0).getTime() - Objects.requireNonNull(date1).getTime()) / 1000;//除以1000是为了转换成秒
-        } catch (ParseException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-        //		System.out.println("between=" + String.valueOf(between));
-        return between;
-    }
-
-    /*
-     * 根据生日获取年龄
-     *
-     * @param birthday
-     * @return
-     */
-    public static int getAge(Date birthday) {
-        if (birthday == null) {
-            return 0;
-        }
-        Calendar bt = Calendar.getInstance();
-        bt.setTime(birthday);
-        if (bt.get(Calendar.YEAR) - 1900 > getDateDetail(System.currentTimeMillis())[0]) {
-            birthday.setYear(birthday.getYear() - TimeUtil.SYSTEM_START_DATE[0]);
-        }
-
-        return getAge(new int[]{birthday.getYear(), birthday.getMonth(), birthday.getDay()});
-    }
-
-    /*
      * 根据生日获取年龄
      *
      * @param birthday
@@ -464,29 +347,6 @@ public class TimeUtil {
 
 
     /*
-     * 根据生日计算星座
-     *
-     * @param birthday
-     * @return constellation
-     */
-    public static String getStar(Date birthday) {
-        Calendar c = Calendar.getInstance();
-        c.setTime(birthday);
-        int month = c.get(Calendar.MONTH);                // 月份从0 ~ 11
-        int dayOfMonth = c.get(Calendar.DAY_OF_MONTH);
-        int[] DayArr = {19, 18, 20, 19, 20, 21, 22, 22, 22, 23, 22, 21};
-        String[] starArr = {"魔羯座", "水瓶座", "双鱼座", "白羊座", "金牛座", "双子座", "巨蟹座", "狮子座", "处女座", "天秤座", "天蝎座", "射手座"};
-        if (dayOfMonth > DayArr[month]) {
-            month = month + 1;
-            if (month == 12) {
-                month = 0;
-            }
-        }
-        return starArr[month];
-    }
-
-
-    /*
      * 获取生日,不带年份
      *
      * @param date
@@ -505,16 +365,6 @@ public class TimeUtil {
      */
     public static String getBirthday(Date date, boolean needYear) {
         return date == null ? "" : getBirthday(date.getTime(), needYear);
-    }
-
-    /*
-     * 获取生日,不带年份
-     *
-     * @param date
-     * @return
-     */
-    public static String getBirthday(long date) {
-        return getBirthday(date, false);
     }
 
     /*

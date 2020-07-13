@@ -396,16 +396,6 @@ public abstract class BaseRecyclerActivity<T, VH extends ViewHolder, A extends A
 
     private CacheCallBack<T> cacheCallBack;
 
-    /*
-     * 初始化缓存
-     *
-     * @param cacheCallBack
-     * @warn 在initData前使用才有效
-     */
-    protected void initCache(CacheCallBack<T> cacheCallBack) {
-        this.cacheCallBack = cacheCallBack;
-    }
-
 
     /*
      * 刷新（从头加载）

@@ -1,22 +1,6 @@
-/*Copyright ©2015 TommyLemon(https://github.com/TommyLemon)
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.*/
-
 package qian.xin.library.util;
 
 import android.app.Activity;
-import android.app.ActivityManager;
-import android.app.ActivityManager.RunningTaskInfo;
 import android.app.ProgressDialog;
 import android.content.ClipData;
 import android.content.ClipboardManager;
@@ -42,20 +26,18 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.List;
-import java.util.Objects;
 
 import qian.xin.library.R;
 
-/**
+/*
  * 通用操作类
  *
- * @author Lemon
  * @use CommonUtil.xxxMethod(...);
  */
 public class CommonUtil {
     private static final String TAG = "CommonUtil";
 
-    public CommonUtil() {/* 不能实例化**/}
+    public CommonUtil() {/* 不能实例化*/}
 
     //电话>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -142,21 +124,6 @@ public class CommonUtil {
     }
 
     /*
-     * 打开网站
-     *
-     * @param context
-     * @param webSite
-     */
-    public static void openWebSite(Activity context, String webSite) {
-        if (context == null || !StringUtil.isNotEmpty(webSite, true)) {
-            Log.e(TAG, "openWebSite  context == null || StringUtil.isNotEmpty(webSite, true) == false >> return;");
-            return;
-        }
-
-        toActivity(context, new Intent(Intent.ACTION_VIEW, Uri.parse(StringUtil.getCorrectUrl(webSite))));
-    }
-
-    /*
      * 复制文字
      *
      * @param context
@@ -236,26 +203,13 @@ public class CommonUtil {
     /*
      * 展示加载进度条,无标题
      *
-     * @param stringResId
-     */
-    public static void showProgressDialog(Activity context, int stringResId) {
-        try {
-            showProgressDialog(context, null, context.getResources().getString(stringResId));
-        } catch (Exception e) {
-            Log.e(TAG, "showProgressDialog  showProgressDialog(Context context, null, context.getResources().getString(stringResId));");
-        }
-    }
-
-    /*
-     * 展示加载进度条,无标题
-     *
      * @param dialogMessage
      */
     public void showProgressDialog(Activity context, String dialogMessage) {
         showProgressDialog(context, null, dialogMessage);
     }
 
-    /**
+    /*
      * 展示加载进度条
      */
     public static void showProgressDialog(final Activity context, final String dialogTitle, final String dialogMessage) {
@@ -282,17 +236,6 @@ public class CommonUtil {
     }
 
 
-    /**
-     * 隐藏加载进度
-     */
-    public static void dismissProgressDialog(Activity context) {
-        if (!progressDialog.isShowing()) {
-            return;
-        } else if (context == null || progressDialog == null) {
-            return;
-        }
-        context.runOnUiThread(() -> progressDialog.dismiss());
-    }
     //显示与关闭进度弹窗方法>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
     //show short toast 方法<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
@@ -444,22 +387,6 @@ public class CommonUtil {
         return android.os.Environment.getExternalStorageState().equals(android.os.Environment.MEDIA_MOUNTED);
     }
 
-    /*
-     * 获取顶层 Activity
-     *
-     * @param context
-     * @return
-     */
-    public static String getTopActivity(Context context) {
-        ActivityManager manager = (ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE);
-        assert manager != null;
-        @SuppressWarnings("deprecation")
-        List<RunningTaskInfo> runningTaskInfos = Objects.requireNonNull(manager).getRunningTasks(1);
-
-        assert runningTaskInfos.get(0).topActivity != null;
-        return Objects.requireNonNull(runningTaskInfos.get(0).topActivity).getClassName();
-    }
-
 
     /*
      * 检查是否有位置权限
@@ -482,7 +409,7 @@ public class CommonUtil {
         try {
             return PackageManager.PERMISSION_GRANTED == context.getPackageManager().checkPermission(name, context.getPackageName());
         } catch (Exception e) {
-            // TODO: handle exception
+            e.printStackTrace();
         }
         return false;
     }

@@ -11,41 +11,15 @@
         <item name="android:minWidth">@dimen/topbar_btn_min_width</item>
         <item name="background">@drawable/texture3</item>
     </style>
-    <!--
-        Base application theme, dependent on API level. This theme is replaced
-        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
-    -->
-    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
 
-        <!--
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-        -->
+    <style name="content_item_white" parent="content_item">
+        <item name="background">@drawable/white_to_gray</item>
     </style>
 
-    <!-- Application theme. -->
-    <style name="AppTheme" parent="AppBaseTheme">
-        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
-    </style>
-
-
-
-    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
-
-        <!-- 闪屏背景，可用图片 -->
-        <item name="android:windowBackground">@drawable/splash</item>
-        <item name="android:windowFullscreen">true</item>
-    </style>
-
-    <style name="bottom_tab_ll" parent="ll_vertical_match_match">
-        <item name="android:width">0dp</item>
-    </style>
-
-    <style name="bottom_tab_iv" parent="img_btn" />
-
-    <style name="bottom_tab_tv" parent="text_micro">
-        <item name="android:textColor">@color/black_to_white</item>
+    <style name="content_item_lf_tv" parent="text_middle">
+        <item name="android:paddingRight">@dimen/padding_big</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">left</item>
     </style>
 
 </resources>

@@ -27,7 +27,7 @@ import qian.xin.library.ui.WebViewActivity;
 import qian.xin.library.util.CommonUtil;
 import qian.xin.library.util.SettingUtil;
 
-/**
+/*
  * 关于界面
  *
  * @author Lemon
@@ -38,7 +38,7 @@ public class AboutActivity extends BaseActivity implements OnClickListener, OnLo
     //启动方法<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 
-    /**
+    /*
      * 启动这个Activity的Intent
      */
     public static Intent createIntent(AppCompatActivity context) {
@@ -116,7 +116,7 @@ public class AboutActivity extends BaseActivity implements OnClickListener, OnLo
 
     private Bitmap qRCodeBitmap;
 
-    /**
+    /*
      * 显示二维码
      */
     protected void setQRCode() {
@@ -128,7 +128,7 @@ public class AboutActivity extends BaseActivity implements OnClickListener, OnLo
         });
     }
 
-    /**
+    /*
      * 下载应用
      */
     private void downloadApp() {
@@ -142,7 +142,7 @@ public class AboutActivity extends BaseActivity implements OnClickListener, OnLo
          dismissProgressDialog();
          DownloadUtil.openFile(context, file);
          });
-         **/
+         */
     }
 
     //Data数据区(存在数据获取或处理代码，但不存在事件监听代码)>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

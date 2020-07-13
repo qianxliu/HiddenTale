@@ -2,7 +2,6 @@ package hidden.edu.activity
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import hidden.edu.R
@@ -47,7 +46,7 @@ open class SettingActivity : BaseActivity(), OnBottomDragListener {
     private var settings: BooleanArray? = null
     private val switchResIds = intArrayOf(R.drawable.off, R.drawable.on)
 
-    /**
+    /*
      * 设置开关
      */
     private fun setSwitch(which: Int, isToOn: Boolean) {
@@ -82,7 +81,7 @@ open class SettingActivity : BaseActivity(), OnBottomDragListener {
     //Event事件区(只要存在事件监听代码就是)<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
     override fun initEvent() { //必须调用
         for (i in ivSettings!!.indices) {
-            ivSettings!![i]!!.setOnClickListener { v: View? ->
+            ivSettings!![i]!!.setOnClickListener {
                 isSettingChanged = true
                 setSwitch(i, !settings!![i])
             }
@@ -126,8 +125,9 @@ open class SettingActivity : BaseActivity(), OnBottomDragListener {
     //内部类,尽量少用>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
     companion object {
         private const val TAG = "SettingActivity"
+
         //启动方法<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-        /**
+        /*
          * 启动这个Activity的Intent
          */
         @JvmStatic

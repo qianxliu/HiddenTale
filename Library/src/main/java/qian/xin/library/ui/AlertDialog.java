@@ -1,17 +1,3 @@
-/*Copyright ©2015 TommyLemon(https://github.com/TommyLemon)
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.*/
-
 package qian.xin.library.ui;
 
 import android.annotation.SuppressLint;
@@ -26,10 +12,10 @@ import qian.xin.library.R;
 import qian.xin.library.util.StringUtil;
 
 /*通用对话框类
- * @author Lemon
  * @use new AlertDialog(...).show();
  */
 public class AlertDialog extends Dialog implements android.view.View.OnClickListener {
+
     //	private static final String TAG = "AlertDialog";
 
     /*
@@ -45,13 +31,11 @@ public class AlertDialog extends Dialog implements android.view.View.OnClickList
     }
 
 
-    @SuppressWarnings("unused")
-    private Activity context;
     private String title;
     private String message;
     private String strPositive;
     private String strNegative;
-    private boolean showNegativeButton = true;
+    private boolean showNegativeButton;
     private int requestCode;
     private OnDialogButtonClickListener listener;
 
@@ -62,44 +46,12 @@ public class AlertDialog extends Dialog implements android.view.View.OnClickList
                        int requestCode, OnDialogButtonClickListener listener) {
         super(context, R.style.MyDialog);
 
-        this.context = context;
         this.title = title;
         this.message = message;
         this.showNegativeButton = showNegativeButton;
         this.requestCode = requestCode;
         this.listener = listener;
     }
-
-    public AlertDialog(Activity context, String title, String message, boolean showNegativeButton,
-                       String strPositive, int requestCode, OnDialogButtonClickListener listener) {
-        super(context, R.style.MyDialog);
-
-        this.context = context;
-        this.title = title;
-        this.message = message;
-        this.showNegativeButton = showNegativeButton;
-        this.strPositive = strPositive;
-        this.requestCode = requestCode;
-        this.listener = listener;
-    }
-
-    public AlertDialog(Activity context, String title, String message,
-                       String strPositive, String strNegative, int requestCode, OnDialogButtonClickListener listener) {
-        super(context, R.style.MyDialog);
-
-        this.context = context;
-        this.title = title;
-        this.message = message;
-        this.strPositive = strPositive;
-        this.strNegative = strNegative;
-        this.requestCode = requestCode;
-        this.listener = listener;
-    }
-
-    private TextView tvTitle;
-    private TextView tvMessage;
-    private Button btnPositive;
-    private Button btnNegative;
 
     @SuppressLint("SetTextI18n")
     @Override
@@ -108,10 +60,10 @@ public class AlertDialog extends Dialog implements android.view.View.OnClickList
         setContentView(R.layout.alert_dialog);
         setCanceledOnTouchOutside(true);
 
-        tvTitle = findViewById(R.id.tvAlertDialogTitle);
-        tvMessage = findViewById(R.id.tvAlertDialogMessage);
-        btnPositive = findViewById(R.id.btnAlertDialogPositive);
-        btnNegative = findViewById(R.id.btnAlertDialogNegative);
+        TextView tvTitle = findViewById(R.id.tvAlertDialogTitle);
+        TextView tvMessage = findViewById(R.id.tvAlertDialogMessage);
+        Button btnPositive = findViewById(R.id.btnAlertDialogPositive);
+        Button btnNegative = findViewById(R.id.btnAlertDialogNegative);
 
         tvTitle.setVisibility(StringUtil.isNotEmpty(title, true) ? View.VISIBLE : View.GONE);
         tvTitle.setText("" + StringUtil.getCurrentString());

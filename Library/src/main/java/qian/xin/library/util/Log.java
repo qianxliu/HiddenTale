@@ -28,7 +28,7 @@ public class Log {
 			android.util.Log.d(TAG, msg);
 		}
 	}
-	/**
+	/*
 	 * @param TAG
 	 * @param msg
 	 * @param tr
@@ -39,7 +39,7 @@ public class Log {
 		}
 	}
 
-	/**
+	/*
 	 * @param TAG
 	 * @param msg
 	 */
@@ -49,7 +49,7 @@ public class Log {
 		}
 	}
 
-	/**
+	/*
 	 * @param TAG
 	 * @param msg
 	 */
@@ -59,7 +59,7 @@ public class Log {
 		}
 	}
 
-	/**
+	/*
 	 * @param TAG
 	 * @param msg
 	 */
@@ -69,7 +69,7 @@ public class Log {
 		}
 	}
 
-	/**
+	/*
 	 * @param TAG
 	 * @param msg
 	 */

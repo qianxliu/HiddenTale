@@ -303,7 +303,7 @@ public abstract class BaseRecyclerFragment<T, VH extends ViewHolder, A extends A
      */
     public synchronized void handleList(int page, List<T> newList, boolean isCache) {
         if (newList == null) {
-            newList = new ArrayList<T>();
+            newList = new ArrayList<>();
         }
         isSucceed = !newList.isEmpty();
         Log.i(TAG, "\n\n<<<<<<<<<<<<<<<<<\n handleList  newList.size = " + newList.size() + "; isCache = " + isCache
@@ -312,7 +312,7 @@ public abstract class BaseRecyclerFragment<T, VH extends ViewHolder, A extends A
         if (page <= PAGE_NUM_0) {
             Log.i(TAG, "handleList  page <= PAGE_NUM_0 >>>>  ");
             saveCacheStart = 0;
-            list = new ArrayList<T>(newList);
+            list = new ArrayList<>(newList);
             if (!isCache && !list.isEmpty()) {
                 Log.i(TAG, "handleList  isCache == false && list.isEmpty() == false >>  isToLoadCache = false;");
                 isToLoadCache = false;
@@ -354,24 +354,17 @@ public abstract class BaseRecyclerFragment<T, VH extends ViewHolder, A extends A
      * @param isCache newList是否为缓存
      */
     private synchronized void onLoadSucceed(final int page, final List<T> newList, final boolean isCache) {
-        runThread(TAG + "onLoadSucceed", new Runnable() {
-            @Override
-            public void run() {
-                Log.i(TAG, "onLoadSucceed  page = " + page + "; isCache = " + isCache + " >> handleList...");
-                handleList(page, newList, isCache);
+        runThread(TAG + "onLoadSucceed", () -> {
+            Log.i(TAG, "onLoadSucceed  page = " + page + "; isCache = " + isCache + " >> handleList...");
+            handleList(page, newList, isCache);
 
-                runUiThread(new Runnable() {
+            runUiThread(() -> {
+                stopLoadData(page, isCache);
+                setList(list);
+            });
 
-                    @Override
-                    public void run() {
-                        stopLoadData(page, isCache);
-                        setList(list);
-                    }
-                });
-
-                if (isToSaveCache && isCache == false) {
-                    saveCache(newList);
-                }
+            if (isToSaveCache && !isCache) {
+                saveCache(newList);
             }
         });
     }
@@ -385,7 +378,7 @@ public abstract class BaseRecyclerFragment<T, VH extends ViewHolder, A extends A
     public synchronized void onLoadFailed(int page, Exception e) {
         Log.e(TAG, "onLoadFailed page = " + page + "; e = " + (e == null ? null : e.getMessage()));
         stopLoadData(page);
-        CommonUtil.showShortToast(context, context.getString(R.string.get_failed));
+        CommonUtil.showShortToast(getActivity(), context.getString(R.string.get_failed));
     }
 
 
@@ -412,7 +405,7 @@ public abstract class BaseRecyclerFragment<T, VH extends ViewHolder, A extends A
             return;
         }
 
-        LinkedHashMap<String, T> map = new LinkedHashMap<String, T>();
+        LinkedHashMap<String, T> map = new LinkedHashMap<>();
         for (T data : newList) {
             if (data != null) {
                 map.put(cacheCallBack.getCacheId(data), data);//map.put(null, data);不会崩溃
